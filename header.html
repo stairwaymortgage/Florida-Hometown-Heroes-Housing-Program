@@ -1,0 +1,30 @@
+<!-- ============================================
+     HEADER.HTML — clean white header per user spec
+     - NO top utility bar (removed)
+     - Orange logo + nav + Loan Calculator outline + APPLY NOW solid
+     ============================================ -->
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">Florida Hometown Heroes Housing Program</a>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="eligible-occupations.html">Eligible Occupations</a>
+      <a href="income-limits.html">Income Limits</a>
+      <a href="contact-us.html">Contact us</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#calculator" class="btn-calc">LOAN CALCULATOR</a>
+      <a href="#apply" class="btn-apply">APPLY NOW</a>
+    </div>
+
+    <button class="menu-btn" onclick="document.getElementById('site-nav').classList.toggle('open')" aria-label="Menu">
+      <svg width="24" height="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="0" y1="2" x2="24" y2="2"/>
+        <line x1="0" y1="10" x2="24" y2="10"/>
+        <line x1="0" y1="18" x2="24" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
