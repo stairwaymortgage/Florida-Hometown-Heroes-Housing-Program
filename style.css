@@ -14,7 +14,8 @@
   --blue-dark: #007ECC;
   --orange: #FF6400;         /* orange CTA fill - Apply Now buttons (label is white) */
   --orange-hover: #E55600;
-  --orange-text: #B34700;    /* darkened brand orange for text labels — 4.5:1+ on white/tint/sage */
+  --orange-text: #B34700;    /* darkened brand orange: text labels + fills w/ white label — 4.5:1+ */
+  --orange-text-hover: #8F3900; /* hover for darkened orange controls — white 7.6:1 */
   --sage-bg: #E8F0E7;        /* soft sage section background */
   --sage-text: #2E5C2E;      /* sage dark - on light sage */
   --peach-tint: #FDE7E3;     /* soft peach callout */
@@ -66,7 +67,7 @@ body {
   line-height: 1.7;
   font-size: var(--body-size);
 }
-a { color: var(--blue); text-decoration: none; transition: color 0.15s; }
+a { color: var(--blue-deep); text-decoration: none; transition: color 0.15s; }
 a:hover { color: var(--navy); }
 img { max-width: 100%; height: auto; display: block; }
 
@@ -160,8 +161,8 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0;
   transition: color 0.15s;
 }
-.site-nav > a:hover { color: var(--orange); }
-.site-nav > a.nav-active { color: var(--orange); }
+.site-nav > a:hover { color: var(--orange-text); }
+.site-nav > a.nav-active { color: var(--orange-text); }
 .header-cta {
   display: flex;
   gap: 0.6rem;
@@ -169,8 +170,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .btn-calc {
   background: transparent;
-  color: var(--orange);
-  border: 2px solid var(--orange);
+  color: var(--orange-text);
+  border: 2px solid var(--orange-text);
   padding: 0.65rem 1.4rem;
   font-size: 13px;
   font-weight: 700;
@@ -179,9 +180,9 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.04em;
   transition: all 0.15s;
 }
-.btn-calc:hover { background: var(--orange); color: var(--white); }
+.btn-calc:hover { background: var(--orange-text); color: var(--white); border-color: var(--orange-text); }
 .btn-apply {
-  background: var(--orange);
+  background: var(--orange-text);
   color: var(--white);
   padding: 0.7rem 1.6rem;
   font-size: 13px;
@@ -190,9 +191,9 @@ img { max-width: 100%; height: auto; display: block; }
   text-transform: uppercase;
   letter-spacing: 0.04em;
   transition: all 0.15s;
-  border: 2px solid var(--orange);
+  border: 2px solid var(--orange-text);
 }
-.btn-apply:hover { background: var(--orange-hover); border-color: var(--orange-hover); color: var(--white); }
+.btn-apply:hover { background: var(--orange-text-hover); border-color: var(--orange-text-hover); color: var(--white); }
 
 .menu-btn {
   display: none;
@@ -330,12 +331,12 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: 0.04em;
   white-space: nowrap;
 }
-.btn-orange { background: var(--orange); color: var(--white); border-color: var(--orange); }
-.btn-orange:hover { background: var(--orange-hover); border-color: var(--orange-hover); color: var(--white); }
+.btn-orange { background: var(--orange-text); color: var(--white); border-color: var(--orange-text); }
+.btn-orange:hover { background: var(--orange-text-hover); border-color: var(--orange-text-hover); color: var(--white); }
 .btn-navy { background: var(--navy); color: var(--white); border-color: var(--navy); }
 .btn-navy:hover { background: var(--navy-darker); color: var(--white); }
-.btn-blue { background: var(--blue); color: var(--white); border-color: var(--blue); }
-.btn-blue:hover { background: var(--blue-dark); color: var(--white); }
+.btn-blue { background: var(--blue-deep); color: var(--white); border-color: var(--blue-deep); }
+.btn-blue:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
 .btn-outline-white {
   background: transparent;
   color: var(--white);
@@ -348,6 +349,29 @@ img { max-width: 100%; height: auto; display: block; }
   border-color: var(--navy);
 }
 .btn-outline-navy:hover { background: var(--navy); color: var(--white); }
+
+/* Visible keyboard focus — ring (not colour-only), high contrast on light surfaces */
+.btn:focus-visible,
+.btn-apply:focus-visible,
+.btn-calc:focus-visible,
+.form-submit:focus-visible,
+.menu-btn:focus-visible,
+.scroll-top:focus-visible,
+.site-nav > a:focus-visible,
+.quicknav a:focus-visible,
+.footer-grid a:focus-visible,
+.faq-item summary:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
+/* White ring for controls that sit on dark surfaces */
+.footer-grid a:focus-visible,
+.hero .btn:focus-visible,
+.cta-banner .btn:focus-visible,
+.section-navy .btn:focus-visible {
+  outline-color: var(--text-inverse);
+}
 
 /* ============================================
    SECTIONS — alternating white / bright blue / sage
@@ -495,11 +519,11 @@ li strong { color: var(--text-black); font-weight: 700; }
   transition: color 0.15s;
 }
 .faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary:hover { color: var(--blue); }
+.faq-item summary:hover { color: var(--blue-deep); }
 .faq-item summary::after {
   content: '+';
   font-size: 22px;
-  color: var(--orange);
+  color: var(--orange-text);
   font-weight: 400;
   flex-shrink: 0;
 }
@@ -766,7 +790,7 @@ table.county-table td:first-child {
   color: var(--navy);
   transition: all 0.15s;
 }
-.quicknav a:hover { background: var(--blue); color: var(--white); border-color: var(--blue); }
+.quicknav a:hover { background: var(--blue-deep); color: var(--white); border-color: var(--blue-deep); }
 
 /* ============================================
    CONTACT FORM
@@ -822,9 +846,15 @@ table.county-table td:first-child {
   border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(0,156,255,0.15);
 }
+.form-group input:focus-visible,
+.form-group textarea:focus-visible,
+.form-group select:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 1px;
+}
 .form-group textarea { min-height: 130px; resize: vertical; }
 .form-submit {
-  background: var(--orange);
+  background: var(--orange-text);
   color: var(--white);
   padding: 0.85rem 2rem;
   font-size: 14px;
@@ -836,7 +866,7 @@ table.county-table td:first-child {
   cursor: pointer;
   transition: background 0.15s;
 }
-.form-submit:hover { background: var(--orange-hover); }
+.form-submit:hover { background: var(--orange-text-hover); }
 
 /* ============================================
    FOOTER — DEEP BLUE (WCAG AA, white text 5.2:1)
