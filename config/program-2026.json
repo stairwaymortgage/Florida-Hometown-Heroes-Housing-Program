@@ -1,53 +1,207 @@
 {
-  "program": "Florida Hometown Heroes Housing Program",
-  "program_year": 2026,
-  "verified_on": null,
-  "source": "https://www.floridahousing.org/programs/homebuyer-overview-page/hometown-heroes",
-
-  "dpa": {
-    "max": 35000,
-    "min": 10000,
-    "pct": 0.05,
-    "basis": "first_mortgage"
-  },
-
-  "loan_types": {
-    "fha": {
-      "label": "FHA",
-      "min_down_pct": 0.035,
-      "mi": { "upfront_pct": 0.0175, "annual_pct": 0.0055 }
-    },
-    "conv": {
-      "label": "Conventional",
-      "min_down_pct": 0.03,
-      "mi": { "upfront_pct": 0, "annual_pct": 0.005 }
-    },
-    "va": {
-      "label": "VA",
-      "min_down_pct": 0,
-      "mi": { "upfront_pct": 0.0215, "annual_pct": 0 }
-    },
-    "usda": {
-      "label": "USDA-RD",
-      "min_down_pct": 0,
-      "mi": { "upfront_pct": 0.01, "annual_pct": 0.0035 }
-    }
+  "_meta": {
+    "program_year": 2026,
+    "verified_on": "2026-07-23",
+    "sources": [
+      "https://www.ehousingplus.com/homeownership/florida-housing-finance-corporation/program-highlights/",
+      "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-07-20-26.pdf",
+      "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-Bond-GUide-07-20-26.pdf"
+    ],
+    "note": "Figures pulled from the official FHFC / eHousingPlus lender guide dated 07-20-2026 and the live rate card dated 07-22-2026. Rates change daily — lender confirms in the eHPortal at lock."
   },
 
   "funding_status": {
     "open": true,
     "round_opened": "2026-07-13",
     "allocation": 50000000,
-    "note": "2026 round opened 2026-07-13 with a $50M appropriation. Assistance is reserved through the eHousingPlus portal on a first-come, first-served basis and historically depletes within 3-6 months."
+    "remaining_stated": "Over $45 million",
+    "remaining_as_of": "2026-07-22",
+    "basis": "first-come, first-served via participating lenders",
+    "note": "Cannot switch an existing reservation to HTH."
   },
 
-  "county_income_limits": {},
-  "purchase_price_caps": {},
+  "dpa": {
+    "pct": 0.05,
+    "basis": "total_loan_amount",
+    "min": 10000,
+    "max": 35000,
+    "rate": 0,
+    "term_years": 30,
+    "amortizing": false,
+    "forgivable": false,
+    "monthly_payment": 0,
+    "counts_toward_dti": false,
+    "prepayment_penalty": false,
+    "assumable": false,
+    "repayment_triggers": [
+      "sale",
+      "transfer of deed",
+      "satisfaction of first mortgage",
+      "refinance of first mortgage",
+      "borrower ceases to occupy as primary residence"
+    ],
+    "restrictions": [
+      "Not a stand-alone DPA — must close with an HTH first mortgage",
+      "Cannot be combined with any other Florida Housing DPA program",
+      "Other agencies' DPA permitted only if stand-alone and in third lien position",
+      "Cannot bridge an appraisal gap or repay borrower debt"
+    ],
+    "_provenance": {
+      "basis_includes_financed_mi": null,
+      "note": "UNVERIFIED. The guide says '5% of the TOTAL loan amount' and the eHPortal auto-calculates it. Whether 'total' includes financed UFMIP / VA funding fee / USDA guarantee fee is not stated. Confirm with a participating lender. Until then compute off the base loan and label the output as an estimate the lender confirms at reservation."
+    }
+  },
 
-  "_provenance": {
-    "county_income_limits": "TO FILL — 2026 Florida Housing county tables (owner to pull separately)",
-    "purchase_price_caps": "TO FILL — 2026 Florida Housing purchase-price caps (owner to pull separately)",
-    "mi_rates": "Representative 2025 agency values — VERIFY against current FHFC / FHA / VA / USDA guidelines before launch. Not yet confirmed against 2026 tables.",
-    "verified_on": "Set to the ISO date these numbers are confirmed against official 2026 Florida Housing sources."
+  "funding_options": {
+    "tba": {
+      "label": "TBA (The Bond Alternative)",
+      "income_counted": "credit qualifying / AUS income of borrowers on the loan, including any non-occupying co-signor",
+      "household_size_adjusted": false,
+      "fthb_status_checked": "occupying borrowers only",
+      "note": "Household income is not used. FTHB status of a spouse not on the loan is not considered."
+    },
+    "bond": {
+      "label": "Bond",
+      "income_counted": "all occupants aged 18 and older",
+      "household_size_adjusted": true,
+      "fthb_status_checked": "all borrowers, non-purchasing spouse, and anyone on the deed"
+    },
+    "switching": "A change from HTH Bond to HTH TBA is not allowed unless the property address changes."
+  },
+
+  "rates": {
+    "as_of": "2026-07-22",
+    "changes_daily": true,
+    "hth_bond": {
+      "government_fha_usda_va": 0.0625,
+      "freddie_mac_hfa_advantage": 0.065,
+      "fannie_mae_hfa_preferred": 0.0675
+    },
+    "hth_tba": {
+      "government_fha_usda_va": 0.065,
+      "freddie_mac_hfa_advantage_at_or_below_80_ami": 0.0675,
+      "freddie_mac_hfa_advantage_over_80_ami": 0.0675
+    }
+  },
+
+  "credit": {
+    "min_fico_all_loan_types": 640,
+    "min_fico_manual_underwrite": 660,
+    "min_fico_manufactured_housing": 640,
+    "blended_fico_permitted": false
+  },
+
+  "dti": {
+    "max_with_aus_approve_eligible": 0.50,
+    "max_manual_underwrite": 0.43,
+    "max_manufactured_housing": 0.45,
+    "rounding": "Servicer rounds up at .50 and down at .49"
+  },
+
+  "loan_types": {
+    "fha": { "min_down_pct": 0.035, "ufmip_pct": 0.0175, "annual_mip_pct": null },
+    "usda": { "min_down_pct": 0.0, "upfront_fee_pct": null, "annual_fee_pct": null },
+    "va": { "min_down_pct": 0.0, "funding_fee_pct": null },
+    "conventional_hfa_advantage": {
+      "min_down_pct": 0.03,
+      "pmi_pct": null,
+      "note": "Freddie Mac HFA Advantage only. Reduced-cost MI when credit qualifying income is at or below 80% AMI (Freddie Mac sets the AMI, not FL Housing). LPA required — DU not accepted."
+    },
+    "_provenance": {
+      "note": "UNVERIFIED. MI and funding-fee percentages are agency figures, not published in the FHFC guide. Verify against current FHA/VA/USDA/Freddie Mac schedules before showing a monthly payment."
+    }
+  },
+
+  "fees": {
+    "origination_pct": 0,
+    "origination_note": "HTH waives the standard 1% origination fee. Lenders may not charge it.",
+    "tax_service_fee": 85,
+    "compliance_fee": 275,
+    "funding_fee": 400,
+    "lender_fees_cap": 1750,
+    "realtor_fees_paid_by_borrower_cap": 500,
+    "broker_fees_permitted": false,
+    "doc_stamp_intangible_tax_exempt": true,
+    "doc_stamp_note": "First and second notes and mortgages are exempt under s.420.513(1) F.S. Deeds are NOT exempt."
+  },
+
+  "eligibility": {
+    "first_time_homebuyer_required": true,
+    "fthb_lookback_years": 3,
+    "fthb_exemptions": [
+      "purchasing in a federally designated targeted area",
+      "veterans discharged under other than dishonorable conditions (DD214 required, COE not accepted)",
+      "active-duty military and Reserves/National Guard under TBA with a current LES"
+    ],
+    "employment": {
+      "full_time_required": true,
+      "florida_based_employer_required": true,
+      "brick_and_mortar_required": true,
+      "remote_workers_eligible": false,
+      "hybrid_workers_eligible": true,
+      "offer_letters_accepted": false,
+      "only_one_occupying_borrower_must_qualify": true,
+      "veterans_note": "Veterans must be employed full-time. They are exempt from the eligible-employer requirement, NOT from the full-time requirement."
+    },
+    "homebuyer_education": {
+      "required": true,
+      "who": "one primary borrower",
+      "certificate_valid_years": 2,
+      "post_closing_accepted": false,
+      "exempt": "Veterans, active military, Reserves and National Guard — unless using HFA Advantage. Co-signors never need to attend."
+    },
+    "occupancy": {
+      "owner_occupied_only": true,
+      "must_occupy_within_days": 60
+    },
+    "loan_purpose": {
+      "purchases_only": true,
+      "refinances_eligible": false,
+      "construction_to_permanent": false
+    },
+    "one_time_participation": "All borrowers, including non-occupying co-signors, are limited to one-time participation across all Florida Housing homebuyer programs — first and second mortgages.",
+    "non_occupying_co_borrowers_permitted": false,
+    "co_signors": "Permitted with FHA and Freddie Mac only. Cannot appear on the deed or execute the mortgage. Their income IS counted under TBA.",
+    "subject_to_recapture_tax": false
+  },
+
+  "property_types": {
+    "single_family_attached_detached": true,
+    "townhomes": true,
+    "condos": "Follow agency guidelines. Single-unit approval permitted for FHA.",
+    "units_2_to_4": "Borrower must occupy one unit as primary residence.",
+    "manufactured_housing": "1994 or newer. FHA, USDA-RD and VA only. Max 45% DTI."
+  },
+
+  "timeline": {
+    "reservation_to_uw_certification_days": 60,
+    "reservation_to_purchase_days": 60,
+    "auto_cancel_day": 91,
+    "extensions_allowed": 1,
+    "extension_fees_points": {
+      "7_day": 0.0625,
+      "15_day": 0.125,
+      "22_day": 0.1875,
+      "30_day": 0.25
+    },
+    "new_construction": "Certificate of Occupancy must be issued before reservation. Cancels at day 91, no exceptions.",
+    "note": "Lender must hold a fully executed purchase contract before locking."
+  },
+
+  "income_limits_tba": {},
+  "income_limits_bond": {},
+  "purchase_price_limits": {},
+  "max_loan_limits": {},
+
+  "_limits_provenance": {
+    "status": "PENDING — tables not yet populated",
+    "income_limits_effective": "2026-05-06",
+    "loan_limits_effective": "2026-01-02",
+    "why_empty": "The 67-county tables live on pages 18-19 of the FHFC TBA lender guide as embedded images and did not extract as text. They must be transcribed from the PDF or requested from a participating lender.",
+    "tba_note": "One flat limit per county. No household-size adjustment. Higher than Bond.",
+    "bond_note": "Adjusted by household size (1-2 person vs 3+ person). Lower than TBA.",
+    "targeted_area_note": "Bond income limits are higher in federally designated targeted areas (Qualified Census Tracts), and the first-time homebuyer requirement is waived there.",
+    "usda_note": "USDA-RD first mortgages follow USDA's own income limits, which are generally lower.",
+    "rule": "Until populated, eligibility gates must render 'pending verification'. Never guess a number."
   }
 }
