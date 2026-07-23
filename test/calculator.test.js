@@ -47,6 +47,12 @@ eq('estimate DPA adds $0 to DTI', est.dti.dpa_contribution, 0);
 assert.ok(est.monthly.principal_interest > 0, 'P&I computed');
 assert.ok(est.dti.back > est.dti.front, 'back-end DTI includes debts');
 
+// Cash to close: $300k FHA -> down 10500 + fees 760 = 11260; DPA 14475 covers it -> $0.
+eq('cash: lender fees total = 760', est.cash_to_close.fees.lender_total, 760);
+eq('cash: origination charged = 0 (1% waived)', est.cash_to_close.origination_charged, 0);
+eq('cash: doc stamp/intangible exempt', est.cash_to_close.doc_stamp_intangible_exempt, true);
+eq('cash: to-close = 0 (assistance exceeds it)', est.cash_to_close.estimated_cash_to_close, 0);
+
 // Guards
 assert.throws(function () { calc.dpaBreakdown(config, 0, 'fha'); }, /positive/);
 assert.throws(function () { calc.dpaBreakdown(config, 300000, 'xyz'); }, /Unknown loan type/);

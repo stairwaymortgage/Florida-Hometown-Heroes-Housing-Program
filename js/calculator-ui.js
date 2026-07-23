@@ -69,6 +69,25 @@
       html += '<p class="calc-note"><strong>Debt-to-income:</strong> add your income and monthly debts above to estimate DTI.</p>';
     }
 
+    // Cash to close — real HTH fee schedule.
+    var cc = c.cash_to_close;
+    if (cc) {
+      html += '<h4>Estimated cash to close</h4>';
+      html += '<div class="table-wrap"><table class="comparison"><tbody>';
+      html += '<tr><td>Down payment (base)</td><td>' + money(cc.down_payment) + '</td></tr>';
+      html += '<tr><td>Tax service fee</td><td>' + money(cc.fees.tax_service) + '</td></tr>';
+      html += '<tr><td>Compliance fee</td><td>' + money(cc.fees.compliance) + '</td></tr>';
+      html += '<tr><td>Funding fee</td><td>' + money(cc.fees.funding) + '</td></tr>';
+      html += '<tr><td>Origination fee <span class="gate-detail">standard 1% waived by HTH — saves ~' + money(cc.origination_waived_savings) + '</span></td><td><strong>$0</strong></td></tr>';
+      if (cc.doc_stamp_intangible_exempt) {
+        html += '<tr><td>Doc stamp + intangible tax <span class="gate-detail">exempt on both the first and second notes &amp; mortgages</span></td><td><strong>$0</strong></td></tr>';
+      }
+      html += '<tr><td>Less: Hometown Heroes assistance applied</td><td>&minus;' + money(cc.assistance_applied) + '</td></tr>';
+      html += '<tr><td><strong>Estimated cash to close</strong></td><td><strong>' + money(cc.estimated_cash_to_close) + '</strong></td></tr>';
+      html += '</tbody></table></div>';
+      html += '<p class="calc-note">Excludes title, prepaids (tax/insurance escrows), appraisal, and other third-party costs — your lender itemizes those on the Loan Estimate. The doc-stamp/intangible exemption applies to the notes and mortgages; deeds are not exempt.</p>';
+    }
+
     // Eligibility gates (funding-aware).
     html += '<h4>Eligibility checks (' + esc(fundingLabel) + ' income basis)</h4><ul class="gate-list">';
     html += gateRow('Household income within county limit', e.income_limit,
@@ -168,6 +187,7 @@
             monthly: est.monthly,
             upfront_mortgage_insurance: est.upfront_mortgage_insurance,
             dti: est.dti,
+            cash_to_close: est.cash_to_close,
             eligibility: est.eligibility
           },
           consent: { tcpa: form.consent.checked, text: consentEl ? consentEl.textContent.replace(/\s+/g, ' ').trim() : '' },

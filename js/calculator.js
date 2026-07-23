@@ -142,6 +142,27 @@
     var frontDTI = grossMonthly > 0 && pi != null ? (piti / grossMonthly) * 100 : null;
     var backDTI = grossMonthly > 0 && pi != null ? ((piti + monthlyDebts) / grossMonthly) * 100 : null;
 
+    // Cash to close (real HTH fee schedule; excludes title/prepaids/appraisal).
+    var fees = config.fees || {};
+    var lenderFees = num(fees.tax_service_fee) + num(fees.compliance_fee) + num(fees.funding_fee);
+    var grossCash = b.base_down + lenderFees;
+    var assistApplied = Math.min(b.dpa, grossCash);   // DPA offsets down payment + closing
+    var cashToClose = Math.max(0, grossCash - b.dpa);
+    var cash = {
+      down_payment: round2(b.base_down),
+      fees: {
+        tax_service: num(fees.tax_service_fee),
+        compliance: num(fees.compliance_fee),
+        funding: num(fees.funding_fee),
+        lender_total: round2(lenderFees)
+      },
+      origination_charged: 0,                                  // HTH waives the 1%
+      origination_waived_savings: round2(P * 0.01),           // what the standard 1% would have been
+      doc_stamp_intangible_exempt: !!fees.doc_stamp_intangible_tax_exempt,
+      assistance_applied: round2(assistApplied),
+      estimated_cash_to_close: round2(cashToClose)
+    };
+
     return {
       funding_option: fundingOption,
       rate: rate,
@@ -164,6 +185,7 @@
         back: backDTI == null ? null : round2(backDTI),
         dpa_contribution: 0                    // repayable 2nd adds $0 to DTI
       },
+      cash_to_close: cash,
       eligibility: eligibility(config, {
         funding_option: fundingOption, county: input.county,
         annual_income: input.annual_income, price: input.price
