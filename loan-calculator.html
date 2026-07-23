@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Calculator – Florida Hometown Heroes Housing Program 2026</title>
+  <meta name="description" content="Estimate your Florida Hometown Heroes assistance — a repayable second mortgage — plus monthly payment, cash to close, and county eligibility. 5% of the total loan amount, $10,000–$35,000.">
+  <link rel="canonical" href="https://floridahometownheroeshousingprogram2026.com/loan-calculator">
+  <link rel="stylesheet" href="style.css">
+  <script src="includes.js" defer></script>
+  <style>[data-include]{min-height:60px;}</style>
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main>
+    <section class="hero hero-calculator" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Loan Calculator</span>
+        <h1>Estimate your Hometown Heroes assistance</h1>
+        <p class="hero-sub">See your <strong>repayable second-mortgage</strong> assistance, monthly payment, cash to close, and county eligibility — in about a minute. It's an estimate; your lender confirms the numbers.</p>
+      </div>
+    </section>
+
+    <!-- CALCULATOR — moved from the homepage; the estimator itself -->
+    <section class="section-white" id="calculator">
+      <div class="section-inner">
+        <div class="funding-banner" id="funding-banner" role="status" hidden></div>
+        <span class="eyebrow">Estimate</span>
+        <h2>Hometown Heroes Assistance Estimator</h2>
+        <p class="lead">Estimate your assistance and monthly payment in a minute. Remember: this assistance is a <strong>repayable second mortgage</strong> — not a grant and never forgiven — so the full amount comes due when you sell, refinance, or pay off your first mortgage.</p>
+
+        <form class="contact-form" id="calc-form" novalidate>
+          <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span> are required. The rest sharpen your estimate.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_price">Purchase Price <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="calc_price" name="calc_price" inputmode="numeric" min="1" step="1000"
+                     placeholder="300000" required aria-required="true" aria-describedby="err-calc_price">
+              <span class="field-error" id="err-calc_price" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="calc_loan_type">Loan Type <span class="req" aria-hidden="true">*</span></label>
+              <select id="calc_loan_type" name="calc_loan_type" required aria-required="true" aria-describedby="err-calc_loan_type">
+                <option value="" disabled selected>Select a loan type…</option>
+                <option value="fha">FHA (3.5% down)</option>
+                <option value="conventional_hfa_advantage">Conventional — HFA Advantage (3% down)</option>
+                <option value="va">VA (0% down)</option>
+                <option value="usda">USDA-RD (0% down)</option>
+              </select>
+              <span class="field-error" id="err-calc_loan_type" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_funding">Funding Option <span class="req" aria-hidden="true">*</span></label>
+              <div class="helper" id="help-calc_funding">TBA counts only your (borrower) income, with no household-size adjustment. Bond counts all occupants 18+ and adjusts for household size. Rates differ between them.</div>
+              <select id="calc_funding" name="calc_funding" required aria-required="true" aria-describedby="help-calc_funding err-calc_funding">
+                <option value="tba" selected>TBA — The Bond Alternative (most common)</option>
+                <option value="bond">Bond</option>
+                <option value="not_sure">Not sure (we'll assume TBA)</option>
+              </select>
+              <span class="field-error" id="err-calc_funding" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="calc_county">County</label>
+              <div class="helper" id="help-calc_county">Enables the eligibility checks. The first-mortgage rate is applied automatically from the current program rate card.</div>
+              <select id="calc_county" name="calc_county" autocomplete="address-level2" aria-describedby="help-calc_county">
+                <option value="" selected>Select (optional)…</option>
+                <option>Alachua</option><option>Baker</option><option>Bay</option><option>Bradford</option>
+                <option>Brevard</option><option>Broward</option><option>Calhoun</option><option>Charlotte</option>
+                <option>Citrus</option><option>Clay</option><option>Collier</option><option>Columbia</option>
+                <option>DeSoto</option><option>Dixie</option><option>Duval</option><option>Escambia</option>
+                <option>Flagler</option><option>Franklin</option><option>Gadsden</option><option>Gilchrist</option>
+                <option>Glades</option><option>Gulf</option><option>Hamilton</option><option>Hardee</option>
+                <option>Hendry</option><option>Hernando</option><option>Highlands</option><option>Hillsborough</option>
+                <option>Holmes</option><option>Indian River</option><option>Jackson</option><option>Jefferson</option>
+                <option>Lafayette</option><option>Lake</option><option>Lee</option><option>Leon</option>
+                <option>Levy</option><option>Liberty</option><option>Madison</option><option>Manatee</option>
+                <option>Marion</option><option>Martin</option><option>Miami-Dade</option><option>Monroe</option>
+                <option>Nassau</option><option>Okaloosa</option><option>Okeechobee</option><option>Orange</option>
+                <option>Osceola</option><option>Palm Beach</option><option>Pasco</option><option>Pinellas</option>
+                <option>Polk</option><option>Putnam</option><option>St. Johns</option><option>St. Lucie</option>
+                <option>Santa Rosa</option><option>Sarasota</option><option>Seminole</option><option>Sumter</option>
+                <option>Suwannee</option><option>Taylor</option><option>Union</option><option>Volusia</option>
+                <option>Wakulla</option><option>Walton</option><option>Washington</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_tax">Annual Property Tax ($)</label>
+              <input type="number" id="calc_tax" name="calc_tax" inputmode="numeric" min="0" step="100" placeholder="3300">
+            </div>
+            <div class="form-group">
+              <label for="calc_insurance">Annual Home Insurance ($)</label>
+              <input type="number" id="calc_insurance" name="calc_insurance" inputmode="numeric" min="0" step="100" placeholder="2400">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_hoa">Monthly HOA ($)</label>
+              <input type="number" id="calc_hoa" name="calc_hoa" inputmode="numeric" min="0" step="10" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="calc_income">Gross Annual Household Income ($)</label>
+              <div class="helper" id="help-calc_income">Enables DTI + the income-limit check</div>
+              <input type="number" id="calc_income" name="calc_income" inputmode="numeric" min="0" step="1000" placeholder="90000" aria-describedby="help-calc_income">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="calc_debts">Total Monthly Debt Payments ($)</label>
+            <div class="helper" id="help-calc_debts">Car, student loans, credit cards — used for back-end DTI</div>
+            <input type="number" id="calc_debts" name="calc_debts" inputmode="numeric" min="0" step="10" placeholder="450" aria-describedby="help-calc_debts">
+          </div>
+
+          <h3>Where should we send your estimate?</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name"
+                     required aria-required="true" aria-describedby="err-first_name">
+              <span class="field-error" id="err-first_name" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="last_name" name="last_name" autocomplete="family-name"
+                     required aria-required="true" aria-describedby="err-last_name">
+              <span class="field-error" id="err-last_name" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com"
+                   required aria-required="true" aria-describedby="err-email">
+            <span class="field-error" id="err-email" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="(555) 555-0100"
+                   required aria-required="true" aria-describedby="err-phone">
+            <span class="field-error" id="err-phone" aria-live="polite"></span>
+          </div>
+
+          <!-- Honeypot: real users never see or fill this. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company_website">Company Website</label>
+            <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="err-consent">
+            <label for="consent" class="consent-text" id="calc-consent-text">By checking this box, I agree to be contacted by Stairway Mortgage, a Division of NEXA Mortgage LLC, at the phone number and email address I provided — including by autodialed and prerecorded calls and text messages — about mortgage products and services. Consent is not a condition of any purchase. Message and data rates may apply; message frequency varies. Reply STOP to opt out or HELP for help.</label>
+          </div>
+          <span class="field-error consent-error" id="err-consent" aria-live="polite"></span>
+
+          <button type="submit" class="form-submit" id="calc-submit">Show My Estimate →</button>
+          <div class="form-status" id="calc-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="calc-results" id="calc-results" hidden></div>
+      </div>
+    </section>
+
+    <!-- HOW ASSISTANCE IS CALCULATED -->
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">How it's calculated</span>
+        <h2>How much assistance can you get?</h2>
+        <p class="lead">Your assistance equals <strong>5% of the total loan amount</strong>, with a <strong>minimum of $10,000</strong> and a <strong>maximum of $35,000</strong>. The calculator estimates it from your first mortgage; your lender confirms the exact figure at reservation.</p>
+        <ul>
+          <li><strong>0% interest</strong>, 30-year deferred second mortgage.</li>
+          <li><strong>$0 monthly payment</strong> — and it does <strong>not</strong> count toward your debt-to-income ratio.</li>
+          <li>It is a <strong>repayable second mortgage — never a grant, and never forgiven.</strong></li>
+          <li>It cannot be a stand-alone product: it must close with a Hometown Heroes first mortgage, and cannot be combined with another Florida Housing down-payment program.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TBA vs BOND -->
+    <section class="section-sage">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Choose your path</span>
+        <h2>TBA vs. Bond — it changes two things</h2>
+        <p>The funding option you choose changes <strong>both the income test and your interest rate</strong>. Pick the wrong one and your estimate is off, so this is worth getting right with your lender.</p>
+        <div class="occ-category">
+          <h3>TBA (The Bond Alternative)</h3>
+          <ul>
+            <li>Counts only the <strong>credit-qualifying / AUS income of the borrowers on the loan</strong> (including a non-occupying co-signor).</li>
+            <li><strong>No household-size adjustment.</strong></li>
+            <li>First-time-homebuyer status is checked for <strong>occupying borrowers only</strong>.</li>
+          </ul>
+        </div>
+        <div class="occ-category">
+          <h3>Bond</h3>
+          <ul>
+            <li>Counts <strong>all occupants aged 18 and older</strong>.</li>
+            <li><strong>Adjusted by household size.</strong></li>
+            <li>First-time-homebuyer status is checked for <strong>all borrowers, a non-purchasing spouse, and anyone on the deed</strong>.</li>
+          </ul>
+        </div>
+        <p style="margin-top:1rem;">A change from Bond to TBA is not allowed unless the property address changes.</p>
+      </div>
+    </section>
+
+    <!-- 2026 RATE TABLE -->
+    <section class="section-white">
+      <div class="section-inner">
+        <span class="eyebrow">2026 rate card</span>
+        <h2>First-mortgage interest rates</h2>
+        <p>Current Hometown Heroes first-mortgage rates by funding option and loan type. <strong>Rates change daily</strong> — your lender confirms the rate in the eHousingPlus portal at lock.</p>
+        <div class="table-wrap">
+          <table class="comparison">
+            <thead>
+              <tr><th>First mortgage</th><th>Bond</th><th>TBA</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Government</strong> — FHA / USDA-RD / VA</td><td>6.250%</td><td>6.500%</td></tr>
+              <tr><td><strong>Freddie Mac HFA Advantage</strong> (conventional)</td><td>6.500%</td><td>6.750%</td></tr>
+              <tr><td><strong>Fannie Mae HFA Preferred</strong> (conventional)</td><td>6.750%</td><td>Not offered under TBA</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:13px;color:var(--text-light);margin-top:0.75rem;">Rate card effective 7/22/2026. The second-mortgage assistance is always 0% interest.</p>
+      </div>
+    </section>
+
+    <!-- REPAYMENT / NEVER FORGIVEN -->
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">The catch to understand</span>
+        <h2>It's repayable — and never forgiven</h2>
+        <p>Unlike a forgivable grant, the Hometown Heroes second mortgage is <strong>never forgiven</strong>. The full balance becomes due when any of these happen:</p>
+        <ul>
+          <li>You <strong>sell</strong> the home.</li>
+          <li>You <strong>transfer the deed</strong>.</li>
+          <li>You <strong>pay off (satisfy) the first mortgage</strong>.</li>
+          <li>You <strong>refinance the first mortgage</strong>.</li>
+          <li>You <strong>stop occupying the home as your primary residence</strong>.</li>
+        </ul>
+        <p>The program is for <strong>purchases only</strong> — it can't be used to refinance an existing loan.</p>
+      </div>
+    </section>
+
+    <!-- FEES & TAX SAVINGS -->
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Costs &amp; savings</span>
+        <h2>Fees, waived origination, and tax exemptions</h2>
+        <p>Hometown Heroes carries a defined fee schedule and two meaningful savings baked in:</p>
+        <ul>
+          <li><strong>Tax service fee:</strong> $85</li>
+          <li><strong>Compliance fee:</strong> $275</li>
+          <li><strong>Funding fee:</strong> $400</li>
+          <li><strong>Origination fee: $0</strong> — the standard 1% origination fee is <strong>waived</strong>, and lenders may not charge it.</li>
+          <li><strong>Documentary stamp + intangible tax: exempt</strong> on both the first and second notes and mortgages (deeds are not exempt).</li>
+        </ul>
+        <p style="font-size:13px;color:var(--text-light);">The calculator applies the $85 / $275 / $400 fees and your assistance to estimate cash to close; title, prepaids, and appraisal are quoted by your lender.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Quick answers</span>
+        <h2>Calculator FAQ</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is this a grant?</summary>
+            <div class="faq-answer"><p><strong>No.</strong> It is a 0% interest, repayable second mortgage — never a grant and never forgiven. The full amount (5% of your total loan, from $10,000 to $35,000) is due when you sell, refinance, or pay off your first mortgage.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How much can I receive?</summary>
+            <div class="faq-answer"><p>5% of the total loan amount, with a $10,000 minimum and a $35,000 maximum.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Does it add to my monthly payment or DTI?</summary>
+            <div class="faq-answer"><p>No. The second mortgage is deferred: $0 per month, and it does not count toward your debt-to-income ratio.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Should I choose TBA or Bond?</summary>
+            <div class="faq-answer"><p>They differ on the income test and the rate. TBA counts only the borrowers' income with no household-size adjustment; Bond counts all occupants 18+ and adjusts for household size. Your lender will confirm which fits and applies the matching rate.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I use it to refinance?</summary>
+            <div class="faq-answer"><p>No — the program is for purchases only, and refinancing your first mortgage triggers full repayment of the assistance.</p></div>
+          </details>
+        </div>
+        <p class="calc-disclaimer" style="margin-top:1.5rem;">Estimate only. Not a loan approval, commitment to lend, or offer of assistance. Figures are approximate, depend on the inputs you provide, and exclude some costs. Actual rate, mortgage insurance, fees, and eligibility are set by the lender and the Florida Housing Finance Corporation. Hometown Heroes assistance is a repayable second mortgage, not a grant.</p>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <!-- Shared lead pipeline + calculator math + UI, then load config and init. -->
+  <script src="js/lead.js"></script>
+  <script src="js/form-validate.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/calculator-ui.js"></script>
+  <script>
+    fetch('config/program-2026.json')
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (config) { FHTH.initCalculator(config); })
+      .catch(function () {
+        var s = document.getElementById('calc-status');
+        if (s) { s.className = 'form-status error'; s.textContent = 'The calculator could not load right now. Please call (602) 344-9333 for an estimate.'; }
+      });
+  </script>
+</body>
+</html>

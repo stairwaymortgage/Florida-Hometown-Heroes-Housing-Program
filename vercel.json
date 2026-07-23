@@ -1,6 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/loan-calculator", "destination": "/loan-calculator.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
