@@ -19,12 +19,18 @@
   --peach-tint: #FDE7E3;     /* soft peach callout */
   --rust: #B15E4A;           /* rust accent */
 
+  /* ACCESSIBLE SURFACES (WCAG AA) */
+  --surface-tint: #EAF4FF;   /* light blue panel — navy 12.6:1, body text 9.3:1 */
+  --blue-deep: #0A70B8;      /* darkened brand blue — white text 5.2:1 (footer) */
+
   /* TEXT */
   --text-black: #000000;
   --text-dark: #282828;
   --text-body: #404040;
   --text-mid: #515151;
   --text-light: #6B6B6B;
+  --text: #282828;           /* primary dark ink */
+  --text-inverse: #FFFFFF;   /* text on dark/navy surfaces */
 
   /* BG */
   --white: #FFFFFF;
@@ -353,7 +359,9 @@ section { padding: 4rem 1.5rem; }
 .section-inner.narrow { max-width: 900px; }
 
 .section-white { background: var(--white); }
-.section-blue { background: var(--blue); color: var(--white); }
+.section-blue { background: var(--surface-tint); color: var(--text-body); }
+.section-blue .btn-outline-white { color: var(--navy); border-color: var(--navy); }
+.section-blue .btn-outline-white:hover { background: var(--navy); color: var(--text-inverse); }
 .section-sage { background: var(--sage-bg); }
 .section-peach { background: var(--peach-tint); }
 .section-navy { background: var(--navy); color: var(--white); }
@@ -369,7 +377,7 @@ section { padding: 4rem 1.5rem; }
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
-.section-blue .eyebrow, .section-navy .eyebrow { color: var(--white); }
+.section-navy .eyebrow { color: var(--white); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -383,7 +391,7 @@ h2 {
   margin-bottom: 1.25rem;
   color: var(--navy);
 }
-.section-blue h2, .section-navy h2 { color: var(--white); }
+.section-navy h2 { color: var(--white); }
 .section-sage h2 { color: var(--navy); }
 
 h3 {
@@ -392,7 +400,7 @@ h3 {
   margin: 1.5rem 0 0.75rem;
   font-weight: 700;
 }
-.section-blue h3, .section-navy h3 { color: var(--white); }
+.section-navy h3 { color: var(--white); }
 
 h4 {
   font-size: var(--h4-size);
@@ -400,7 +408,7 @@ h4 {
   margin: 1.25rem 0 0.6rem;
   font-weight: 700;
 }
-.section-blue h4, .section-navy h4 { color: var(--white); }
+.section-navy h4 { color: var(--white); }
 
 p {
   margin-bottom: 1rem;
@@ -409,15 +417,14 @@ p {
   font-size: 15px;
 }
 p strong { color: var(--text-black); font-weight: 700; }
-.section-blue p, .section-navy p { color: rgba(0, 0, 0, 0.95); }
-.section-blue p strong, .section-navy p strong { color: #000; }
+.section-navy p { color: var(--text-inverse); }
+.section-navy p strong { color: var(--text-inverse); }
 
 ul, ol { margin: 0 0 1.25rem 1.5rem; }
 li { margin-bottom: 0.5rem; color: var(--text-body); line-height: 1.7; font-size: 15px; }
 li strong { color: var(--text-black); font-weight: 700; }
-.section-blue li, .section-navy li { color: rgba(0, 0, 0, 0.95); }
-.section-blue li strong, .section-navy li strong { color: var(--white); }
-.section-blue ul li::marker, .section-blue ol li::marker { color: #000; }
+.section-navy li { color: var(--text-inverse); }
+.section-navy li strong { color: var(--text-inverse); }
 
 .lead {
   font-size: 17px;
@@ -469,11 +476,9 @@ li strong { color: var(--text-black); font-weight: 700; }
   margin: 2rem 0;
   border-top: 1px solid var(--border);
 }
-.section-blue .faq-list { border-top-color: rgba(255,255,255,0.3); }
 .faq-item {
   border-bottom: 1px solid var(--border);
 }
-.section-blue .faq-item { border-bottom-color: rgba(255,255,255,0.3); }
 .faq-item summary {
   list-style: none;
   cursor: pointer;
@@ -490,8 +495,6 @@ li strong { color: var(--text-black); font-weight: 700; }
 }
 .faq-item summary::-webkit-details-marker { display: none; }
 .faq-item summary:hover { color: var(--blue); }
-.section-blue .faq-item summary { color: var(--white); }
-.section-blue .faq-item summary:hover { color: var(--navy); }
 .faq-item summary::after {
   content: '+';
   font-size: 22px;
@@ -500,7 +503,6 @@ li strong { color: var(--text-black); font-weight: 700; }
   flex-shrink: 0;
 }
 .faq-item[open] summary::after { content: '−'; color: var(--navy); }
-.section-blue .faq-item[open] summary::after { color: var(--white); }
 .faq-item[open] summary { color: var(--navy); }
 .faq-answer {
   padding: 0 0 1.5rem;
@@ -508,7 +510,6 @@ li strong { color: var(--text-black); font-weight: 700; }
   font-size: 15px;
   line-height: 1.75;
 }
-.section-blue .faq-answer { color: rgba(255,255,255,0.95); }
 .faq-answer p { margin-bottom: 0.75rem; }
 .faq-answer p:last-child { margin-bottom: 0; }
 
@@ -546,7 +547,7 @@ table.comparison tr:nth-child(even), table.county-table tr:nth-child(even) {
   background: var(--off-white);
 }
 table.comparison tr:hover, table.county-table tr:hover {
-  background: #EFF8FF;
+  background: var(--surface-tint);
 }
 table.comparison td strong, table.county-table td strong {
   color: var(--navy);
@@ -621,7 +622,6 @@ table.county-table td:first-child {
   counter-increment: stepcounter;
   margin: 0;
 }
-.section-blue .steps-list li { border-bottom-color: rgba(255,255,255,0.3); }
 .steps-list li:last-child { border-bottom: none; }
 .steps-list li::before {
   content: counter(stepcounter);
@@ -640,9 +640,7 @@ table.county-table td:first-child {
   font-family: var(--heading-font);
   font-size: 16px;
 }
-.section-blue .steps-list li::before { background: var(--white); color: var(--navy); }
 .steps-list h4 { margin: 0 0 0.5rem; color: var(--text-black); font-size: 17px; }
-.section-blue .steps-list h4 { color: var(--white); }
 .steps-list p { margin-bottom: 0; }
 
 /* ============================================
@@ -840,11 +838,11 @@ table.county-table td:first-child {
 .form-submit:hover { background: var(--orange-hover); }
 
 /* ============================================
-   FOOTER — BRIGHT BLUE #009CFF
+   FOOTER — DEEP BLUE (WCAG AA, white text 5.2:1)
    ============================================ */
 .site-footer {
-  background: var(--blue);
-  color: var(--white);
+  background: var(--blue-deep);
+  color: var(--text-inverse);
   padding: 3.5rem 1.5rem 1.25rem;
 }
 .footer-inner {
@@ -887,7 +885,7 @@ table.county-table td:first-child {
   align-items: center;
   gap: 0.4rem;
 }
-.footer-grid a:hover { color: var(--navy); }
+.footer-grid a:hover { color: var(--text-inverse); text-decoration: underline; }
 .footer-grid p {
   color: var(--white);
   font-size: 13px;
@@ -1005,5 +1003,5 @@ table.county-table td:first-child {
   .section-side-image { background-image: none !important; }
 }
 .occ-category strong p{
-  color:#000;
+  color: var(--text);
 }
