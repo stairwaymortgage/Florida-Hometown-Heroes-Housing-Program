@@ -1168,3 +1168,29 @@ table.county-table td:first-child {
   font-style: italic;
   margin-top: 1.5rem;
 }
+
+/* Funding-availability banner (from config.funding_status) */
+.funding-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  background: var(--navy);
+  color: var(--text-inverse);
+  border-left: 5px solid var(--orange);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.75rem;
+  font-size: clamp(16px, 2.4vw, 20px);
+  line-height: 1.45;
+}
+.funding-banner::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 4px rgba(27, 127, 59, 0.35);
+  flex-shrink: 0;
+}
+.funding-banner strong { color: var(--text-inverse); }
+.funding-asof { font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.8); }

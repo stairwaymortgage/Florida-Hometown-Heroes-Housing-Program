@@ -117,6 +117,14 @@
   }
 
   NS.initCalculator = function (config) {
+    // Funding banner — the strongest message on the page right now.
+    var banner = el('funding-banner'), fs = config.funding_status;
+    if (banner && fs && fs.open) {
+      banner.innerHTML = '<span><strong>' + esc(fs.remaining_stated) + ' still available</strong> — first come, first served.</span>' +
+        '<span class="funding-asof">As of ' + esc(fs.remaining_as_of) + '.</span>';
+      banner.hidden = false;
+    }
+
     var form = el('calc-form');
     if (!form || !NS.enhanceForm || !NS.calc) return;
 
