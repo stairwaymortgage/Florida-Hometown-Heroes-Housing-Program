@@ -1,9 +1,7 @@
 /* ============================================================
    calculator.test.js  —  run: node test/calculator.test.js
-   The 6 cases per CLAUDE.md (reconstructed from owner's answers, since
-   CLAUDE.md is currently empty): 4 DPA-math cases + 2 eligibility gates.
-   Cases 1-4 verified correct earlier; #2 corrected to $150k FHA.
-   Cases 5-6 are eligibility gates -> pending until county tables land.
+   The 6 CLAUDE.md cases (4 DPA math + 2 eligibility gates), plus schema
+   coverage: config-derived rates (TBA/Bond) and null-MI handling.
    ============================================================ */
 var assert = require('assert');
 var calc = require('../js/calculator.js');
@@ -16,36 +14,37 @@ function eq(name, got, want) {
   pass++;
 }
 
-console.log('Hometown Heroes calculator — CLAUDE.md cases\n');
+console.log('Hometown Heroes calculator — CLAUDE.md cases + 2026 schema\n');
 
-// 1. SANITY: a $320,000 first mortgage -> $16,000 (VA = 0% down, so price == FM).
+// --- DPA math (basis: 5% of the base first mortgage, floored) ---
 eq('1. $320k first mortgage (VA) -> 16000', calc.dpa(config, 320000, 'va'), 16000);
-
-// 2. FLOOR: $150k FHA -> base down $5,250 -> FM $144,750 -> 5% = $7,237.50 -> floors to 10000.
 eq('2. $150k FHA -> floor 10000', calc.dpa(config, 150000, 'fha'), 10000);
 eq('2. clamp flagged floor', calc.dpaBreakdown(config, 150000, 'fha').clamp, 'floor');
-
-// 3. MID-BAND: $300k FHA -> FM $289,500 -> 5% = $14,475.
 eq('3. $300k FHA -> 14475', calc.dpa(config, 300000, 'fha'), 14475);
-
-// 4. CEILING: $800k conventional -> FM $776,000 -> 5% = $38,800 -> caps to 35000.
-eq('4. $800k conv -> ceiling 35000', calc.dpa(config, 800000, 'conv'), 35000);
-eq('4. clamp flagged ceiling', calc.dpaBreakdown(config, 800000, 'conv').clamp, 'ceiling');
-
-// 5. ELIGIBILITY GATE — income limit: county tables empty -> pending (never blocks).
-eq('5. income-limit gate -> pending', calc.eligibility(config, { county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pending');
-
-// 6. ELIGIBILITY GATE — purchase-price cap: tables empty -> pending.
-eq('6. price-cap gate -> pending', calc.eligibility(config, { county: 'Orange', annual_income: 95000, price: 300000 }).purchase_price_cap, 'pending');
-
-// FLOOR behaviour (proves floor, not round): $310k FHA -> FM $299,150 -> 5% = $14,957.50 -> 14957 (round would give 14958).
+eq('4. $800k conventional -> ceiling 35000', calc.dpa(config, 800000, 'conventional_hfa_advantage'), 35000);
+eq('4. clamp flagged ceiling', calc.dpaBreakdown(config, 800000, 'conventional_hfa_advantage').clamp, 'ceiling');
 eq('floor-not-round: $310k FHA -> 14957', calc.dpa(config, 310000, 'fha'), 14957);
 
-// Full-estimate smoke: DPA is deferred -> $0/month, $0 DTI.
-var est = calc.estimate(config, { price: 300000, loan_type: 'fha', interest_rate: 6.375, annual_tax: 3300, annual_insurance: 2400, monthly_hoa: 0, annual_income: 90000, monthly_debts: 450 });
-eq('estimate: DPA second is $0/month', est.monthly.dpa_second, 0);
-eq('estimate: DPA adds $0 to DTI', est.dti.dpa_contribution, 0);
-assert.ok(est.monthly.total_piti > 0, 'PITI computed');
+// --- Eligibility gates: tables empty -> pending, and funding-aware ---
+eq('5. TBA income-limit gate -> pending', calc.eligibility(config, { funding_option: 'tba', county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pending');
+eq('6. TBA price-cap gate -> pending', calc.eligibility(config, { funding_option: 'tba', county: 'Orange', annual_income: 95000, price: 300000 }).purchase_price_cap, 'pending');
+eq('5b. Bond income-limit gate -> pending', calc.eligibility(config, { funding_option: 'bond', county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pending');
+
+// --- Rates pulled from the matching block ---
+eq('rate TBA government (fha)  -> 0.065',  calc.rateFor(config, 'tba', 'fha'), 0.065);
+eq('rate Bond government (fha) -> 0.0625', calc.rateFor(config, 'bond', 'fha'), 0.0625);
+eq('rate TBA HFA Advantage     -> 0.0675', calc.rateFor(config, 'tba', 'conventional_hfa_advantage'), 0.0675);
+eq('rate Bond HFA Advantage    -> 0.065',  calc.rateFor(config, 'bond', 'conventional_hfa_advantage'), 0.065);
+eq('funding "not sure" -> TBA rate', calc.rateFor(config, 'not_sure', 'fha'), 0.065);
+
+// --- Full estimate: MI is null (unverified) -> not fabricated ---
+var est = calc.estimate(config, { price: 300000, loan_type: 'fha', funding_option: 'tba', annual_tax: 3300, annual_insurance: 2400, monthly_hoa: 0, annual_income: 90000, monthly_debts: 450 });
+eq('estimate rate = TBA gov 0.065', est.rate, 0.065);
+eq('estimate MI null (unverified)', est.monthly.mortgage_insurance, null);
+eq('estimate mi_estimated false', est.monthly.mi_estimated, false);
+eq('estimate DPA second $0/mo', est.monthly.dpa_second, 0);
+eq('estimate DPA adds $0 to DTI', est.dti.dpa_contribution, 0);
+assert.ok(est.monthly.principal_interest > 0, 'P&I computed');
 assert.ok(est.dti.back > est.dti.front, 'back-end DTI includes debts');
 
 // Guards
@@ -55,16 +54,14 @@ console.log('  ok  guards: bad price + bad loan type throw');
 
 console.log('\n' + pass + ' assertions passed.\n');
 
-console.log('Breakdown (price, loan, base down, first mortgage, 5% raw, DPA, clamp):');
-[[320000, 'va'], [150000, 'fha'], [300000, 'fha'], [310000, 'fha'], [800000, 'conv'], [250000, 'va']]
+console.log('DPA breakdown:');
+[[320000, 'va'], [150000, 'fha'], [300000, 'fha'], [800000, 'conventional_hfa_advantage']]
   .forEach(function (c) {
     var r = calc.dpaBreakdown(config, c[0], c[1]);
-    console.log('  $' + r.purchase_price + '  ' + r.loan_type.padEnd(4) +
-      '  down $' + r.base_down + '  FM $' + r.first_mortgage +
+    console.log('  $' + r.purchase_price + '  ' + r.loan_type + '  FM $' + r.first_mortgage +
       '  raw $' + r.dpa_uncapped + '  DPA $' + r.dpa + '  ' + (r.clamp || '-'));
   });
-
-console.log('\nMonthly estimate ($300k FHA @6.375%, tax 3300, ins 2400, income 90k, debts 450):');
-console.log('  P&I $' + est.monthly.principal_interest + '  MI $' + est.monthly.mortgage_insurance +
-  '  Tax $' + est.monthly.taxes + '  Ins $' + est.monthly.insurance +
-  '  PITI $' + est.monthly.total_piti + '  DTI ' + est.dti.front + '% / ' + est.dti.back + '%');
+console.log('\nEstimate ($300k FHA / TBA @' + (est.rate * 100).toFixed(3) + '%): P&I $' +
+  est.monthly.principal_interest + '  PITI $' + est.monthly.total_piti +
+  '  MI ' + (est.monthly.mortgage_insurance == null ? '(lender-confirmed)' : '$' + est.monthly.mortgage_insurance) +
+  '  DTI ' + est.dti.front + '% / ' + est.dti.back + '%');
