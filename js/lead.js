@@ -62,12 +62,22 @@
   }
 
   /* The ONE place the site talks to the backend. Every form funnels here.
-     STUB: no endpoint yet — logs the payload and resolves ok. Replace the
-     body with the real request; keep the {ok:boolean} contract. */
+     POSTs the nested payload to /api/lead. Resolves { ok } so callers can
+     surface real success/failure. A 200 (incl. the log-fallback when the
+     webhook is unset, and honeypot drops) counts as success; 4xx/5xx and
+     network errors resolve { ok:false } so the form shows its error +
+     phone-number fallback. */
   function postLead(payload) {
-    console.log('postLead (stub) — payload:', payload);
-    return new w.Promise(function (resolve) {
-      w.setTimeout(function () { resolve({ ok: true }); }, 700);
+    return w.fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (body) {
+        return { ok: r.ok && body && body.ok !== false, status: r.status, body: body };
+      });
+    }).catch(function () {
+      return { ok: false, status: 0, error: 'network' };
     });
   }
 
