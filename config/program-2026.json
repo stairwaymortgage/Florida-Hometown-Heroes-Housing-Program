@@ -1,0 +1,53 @@
+{
+  "program": "Florida Hometown Heroes Housing Program",
+  "program_year": 2026,
+  "verified_on": null,
+  "source": "https://www.floridahousing.org/programs/homebuyer-overview-page/hometown-heroes",
+
+  "dpa": {
+    "max": 35000,
+    "min": 10000,
+    "pct": 0.05,
+    "basis": "first_mortgage"
+  },
+
+  "loan_types": {
+    "fha": {
+      "label": "FHA",
+      "min_down_pct": 0.035,
+      "mi": { "upfront_pct": 0.0175, "annual_pct": 0.0055 }
+    },
+    "conv": {
+      "label": "Conventional",
+      "min_down_pct": 0.03,
+      "mi": { "upfront_pct": 0, "annual_pct": 0.005 }
+    },
+    "va": {
+      "label": "VA",
+      "min_down_pct": 0,
+      "mi": { "upfront_pct": 0.0215, "annual_pct": 0 }
+    },
+    "usda": {
+      "label": "USDA-RD",
+      "min_down_pct": 0,
+      "mi": { "upfront_pct": 0.01, "annual_pct": 0.0035 }
+    }
+  },
+
+  "funding_status": {
+    "open": true,
+    "round_opened": "2026-07-13",
+    "allocation": 50000000,
+    "note": "2026 round opened 2026-07-13 with a $50M appropriation. Assistance is reserved through the eHousingPlus portal on a first-come, first-served basis and historically depletes within 3-6 months."
+  },
+
+  "county_income_limits": {},
+  "purchase_price_caps": {},
+
+  "_provenance": {
+    "county_income_limits": "TO FILL — 2026 Florida Housing county tables (owner to pull separately)",
+    "purchase_price_caps": "TO FILL — 2026 Florida Housing purchase-price caps (owner to pull separately)",
+    "mi_rates": "Representative 2025 agency values — VERIFY against current FHFC / FHA / VA / USDA guidelines before launch. Not yet confirmed against 2026 tables.",
+    "verified_on": "Set to the ISO date these numbers are confirmed against official 2026 Florida Housing sources."
+  }
+}
