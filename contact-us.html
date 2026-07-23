@@ -8,7 +8,46 @@
   <link rel="canonical" href="https://floridahometownheroeshousingprogram2026.com/contact-us">
   <link rel="stylesheet" href="style.css">
   <script src="includes.js" defer></script>
-  <style>[data-include]{min-height:60px;}</style>
+  <style>
+    [data-include]{min-height:60px;}
+
+    /* Honeypot — visually hidden, off-screen, kept out of the a11y tree */
+    .hp-field{position:absolute !important;left:-9999px !important;top:auto;width:1px;height:1px;overflow:hidden;}
+
+    .form-note{font-size:13px;color:var(--text-light);margin:-0.5rem 0 1.5rem;}
+    .req{color:var(--orange-text);font-weight:700;}
+
+    /* Inline validation */
+    .field-error{display:block;min-height:1em;margin-top:0.35rem;font-size:13px;font-weight:700;color:#b00020;}
+    .form-group input[aria-invalid="true"],
+    .form-group textarea[aria-invalid="true"],
+    .form-group select[aria-invalid="true"]{
+      border-color:#b00020;
+      box-shadow:0 0 0 3px rgba(176,0,32,0.12);
+    }
+
+    /* Consent */
+    .consent{display:flex;gap:0.65rem;align-items:flex-start;margin:0.5rem 0 1.5rem;}
+    .consent input[type="checkbox"]{width:auto;margin-top:0.2rem;flex-shrink:0;}
+    .consent .consent-text{font-size:13px;line-height:1.6;color:var(--text-body);}
+    .consent .field-error{margin-top:0.5rem;}
+
+    /* Submit + loading state */
+    .form-submit:disabled{opacity:0.7;cursor:not-allowed;}
+    .form-submit.is-loading{cursor:progress;}
+    .form-submit.is-loading::after{
+      content:'';display:inline-block;width:0.9em;height:0.9em;margin-left:0.55em;
+      border:2px solid rgba(255,255,255,0.55);border-top-color:#fff;border-radius:50%;
+      vertical-align:-0.12em;animation:btn-spin 0.6s linear infinite;
+    }
+    @keyframes btn-spin{to{transform:rotate(360deg);}}
+
+    /* DOM status messages (never alert) */
+    .form-status{margin-top:1.5rem;font-size:15px;font-weight:700;line-height:1.5;}
+    .form-status:empty{margin-top:0;}
+    .form-status.success{color:#1b7f3b;}
+    .form-status.error{color:#b00020;}
+  </style>
 </head>
 <body>
   <div data-include="header"></div>
@@ -24,45 +63,260 @@
 
     <section class="section-white">
       <div class="section-inner">
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <!-- No action/method: submission is handled in JS via postLead() (stub). -->
+        <form class="contact-form" id="lead-form" novalidate>
+          <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
 
           <div class="form-row">
             <div class="form-group">
-              <label>First Name</label>
-              <input type="text" name="first_name" placeholder="First Name" required>
+              <label for="first_name">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name"
+                     required aria-required="true" aria-describedby="err-first_name">
+              <span class="field-error" id="err-first_name" aria-live="polite"></span>
             </div>
             <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" name="last_name" placeholder="Last Name" required>
+              <label for="last_name">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="last_name" name="last_name" autocomplete="family-name"
+                     required aria-required="true" aria-describedby="err-last_name">
+              <span class="field-error" id="err-last_name" aria-live="polite"></span>
             </div>
           </div>
 
           <div class="form-group">
-            <label>Your Email</label>
-            <div class="helper">Where to reply</div>
-            <input type="email" name="email" placeholder="you@example.com" required>
+            <label for="email">Your Email <span class="req" aria-hidden="true">*</span></label>
+            <div class="helper" id="help-email">Where to reply</div>
+            <input type="email" id="email" name="email" autocomplete="email"
+                   placeholder="you@example.com" required aria-required="true"
+                   aria-describedby="help-email err-email">
+            <span class="field-error" id="err-email" aria-live="polite"></span>
           </div>
 
           <div class="form-group">
-            <label>Phone Number</label>
-            <div class="helper">Best number to reach you</div>
-            <input type="tel" name="phone" placeholder="(555) 555-0100">
+            <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+            <div class="helper" id="help-phone">Best number to reach you</div>
+            <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel"
+                   placeholder="(555) 555-0100" required aria-required="true"
+                   aria-describedby="help-phone err-phone">
+            <span class="field-error" id="err-phone" aria-live="polite"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="occupation">Occupation <span class="req" aria-hidden="true">*</span></label>
+              <div class="helper" id="help-occupation">The program is occupation-based</div>
+              <select id="occupation" name="occupation" autocomplete="organization-title"
+                      required aria-required="true" aria-describedby="help-occupation err-occupation">
+                <option value="" disabled selected>Select your field…</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="education">Education / Teacher</option>
+                <option value="public_safety">Public safety / First responder</option>
+                <option value="childcare">Childcare</option>
+                <option value="military_veteran">Military / Veteran</option>
+                <option value="other">Other / Not sure</option>
+              </select>
+              <span class="field-error" id="err-occupation" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="timeline">Buying Timeline <span class="req" aria-hidden="true">*</span></label>
+              <div class="helper" id="help-timeline">When are you looking to buy?</div>
+              <select id="timeline" name="timeline" autocomplete="off"
+                      required aria-required="true" aria-describedby="help-timeline err-timeline">
+                <option value="" disabled selected>Select a timeline…</option>
+                <option value="0-30">Within 30 days</option>
+                <option value="1-3">1–3 months</option>
+                <option value="3-6">3–6 months</option>
+                <option value="6-plus">6+ months</option>
+                <option value="exploring">Just exploring</option>
+              </select>
+              <span class="field-error" id="err-timeline" aria-live="polite"></span>
+            </div>
           </div>
 
           <div class="form-group">
-            <label>Anything Else You'd Like to Share</label>
-            <div class="helper">Tell us a little about your situation — property location, how many heirs are involved, your timeline, or whatever feels relevant. There are no wrong answers.</div>
-            <textarea name="message" placeholder="Your situation..." required></textarea>
+            <label for="county">County <span class="req" aria-hidden="true">*</span></label>
+            <div class="helper" id="help-county">Where you're house-hunting — limits vary by county</div>
+            <select id="county" name="county" autocomplete="address-level2"
+                    required aria-required="true" aria-describedby="help-county err-county">
+              <option value="" disabled selected>Select a county…</option>
+              <option>Alachua</option><option>Baker</option><option>Bay</option><option>Bradford</option>
+              <option>Brevard</option><option>Broward</option><option>Calhoun</option><option>Charlotte</option>
+              <option>Citrus</option><option>Clay</option><option>Collier</option><option>Columbia</option>
+              <option>DeSoto</option><option>Dixie</option><option>Duval</option><option>Escambia</option>
+              <option>Flagler</option><option>Franklin</option><option>Gadsden</option><option>Gilchrist</option>
+              <option>Glades</option><option>Gulf</option><option>Hamilton</option><option>Hardee</option>
+              <option>Hendry</option><option>Hernando</option><option>Highlands</option><option>Hillsborough</option>
+              <option>Holmes</option><option>Indian River</option><option>Jackson</option><option>Jefferson</option>
+              <option>Lafayette</option><option>Lake</option><option>Lee</option><option>Leon</option>
+              <option>Levy</option><option>Liberty</option><option>Madison</option><option>Manatee</option>
+              <option>Marion</option><option>Martin</option><option>Miami-Dade</option><option>Monroe</option>
+              <option>Nassau</option><option>Okaloosa</option><option>Okeechobee</option><option>Orange</option>
+              <option>Osceola</option><option>Palm Beach</option><option>Pasco</option><option>Pinellas</option>
+              <option>Polk</option><option>Putnam</option><option>St. Johns</option><option>St. Lucie</option>
+              <option>Santa Rosa</option><option>Sarasota</option><option>Seminole</option><option>Sumter</option>
+              <option>Suwannee</option><option>Taylor</option><option>Union</option><option>Volusia</option>
+              <option>Wakulla</option><option>Walton</option><option>Washington</option>
+            </select>
+            <span class="field-error" id="err-county" aria-live="polite"></span>
           </div>
 
-          <button type="submit" class="form-submit">Send My Message →</button>
+          <div class="form-group">
+            <label for="message">Anything Else You'd Like to Share <span class="req" aria-hidden="true">*</span></label>
+            <div class="helper" id="help-message">Tell us a little about your situation — property location, how many heirs are involved, your timeline, or whatever feels relevant. There are no wrong answers.</div>
+            <textarea id="message" name="message" autocomplete="off" placeholder="Your situation..."
+                      required aria-required="true" aria-describedby="help-message err-message"></textarea>
+            <span class="field-error" id="err-message" aria-live="polite"></span>
+          </div>
 
-          <p style="font-size:12px;color:var(--text-light);margin-top:1.25rem;">⚠ To activate this form: sign up at <a href="https://formspree.io" target="_blank">formspree.io</a>, create a form, and replace <code>YOUR_FORM_ID</code> in the form action.</p>
+          <!-- Honeypot: real users never see or fill this. Bots often do. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company_website">Company Website</label>
+            <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required aria-required="true"
+                   aria-describedby="err-consent">
+            <label for="consent" class="consent-text">
+              By checking this box, I agree to be contacted by Stairway Mortgage, a Division of NEXA Mortgage LLC,
+              at the phone number and email address I provided — including by autodialed and prerecorded calls and
+              text messages — about mortgage products and services. Consent is not a condition of any purchase.
+              Message and data rates may apply; message frequency varies. Reply STOP to opt out or HELP for help.
+              <span class="field-error" id="err-consent" aria-live="polite"></span>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit" id="lead-submit">Send My Message →</button>
+
+          <!-- Success / error land here in the DOM — never alert() -->
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
     </section>
   </main>
 
   <div data-include="footer"></div>
+
+  <script>
+    (function () {
+      'use strict';
+      var form = document.getElementById('lead-form');
+      if (!form) return;
+
+      var statusEl = document.getElementById('form-status');
+      var submitBtn = document.getElementById('lead-submit');
+      var submitLabel = submitBtn.textContent;
+
+      // Field definitions: id -> validator returning '' (ok) or an error message.
+      var fields = [
+        { id: 'first_name', v: function (val) { return val.trim() ? '' : 'Please enter your first name.'; } },
+        { id: 'last_name',  v: function (val) { return val.trim() ? '' : 'Please enter your last name.'; } },
+        { id: 'email',      v: function (val) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim()) ? '' : 'Please enter a valid email address.'; } },
+        { id: 'phone',      v: function (val) { return (val.replace(/\D/g, '').length >= 10) ? '' : 'Please enter a valid phone number (at least 10 digits).'; } },
+        { id: 'occupation', v: function (val) { return val ? '' : 'Please select your occupation.'; } },
+        { id: 'timeline',   v: function (val) { return val ? '' : 'Please select your buying timeline.'; } },
+        { id: 'county',     v: function (val) { return val ? '' : 'Please select your county.'; } },
+        { id: 'message',    v: function (val) { return val.trim() ? '' : 'Please share a little about your situation.'; } },
+        { id: 'consent',    v: function (_val, el) { return el.checked ? '' : 'Please agree to be contacted so we can reply.'; } }
+      ];
+
+      function valueOf(el) { return el.type === 'checkbox' ? (el.checked ? 'on' : '') : el.value; }
+
+      function setError(id, msg) {
+        var el = document.getElementById(id);
+        var err = document.getElementById('err-' + id);
+        if (err) err.textContent = msg;
+        el.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      }
+
+      function validateField(f) {
+        var el = document.getElementById(f.id);
+        var msg = f.v(valueOf(el), el);
+        setError(f.id, msg);
+        return !msg;
+      }
+
+      // Live validation: check on blur, and re-check on input once an error is showing.
+      fields.forEach(function (f) {
+        var el = document.getElementById(f.id);
+        var evt = (el.tagName === 'SELECT' || el.type === 'checkbox') ? 'change' : 'blur';
+        el.addEventListener(evt, function () { validateField(f); });
+        el.addEventListener('input', function () {
+          var err = document.getElementById('err-' + f.id);
+          if (err && err.textContent) validateField(f);
+        });
+      });
+
+      function setStatus(kind, text) {
+        statusEl.className = 'form-status' + (kind ? ' ' + kind : '');
+        statusEl.textContent = text;
+      }
+
+      function setLoading(on) {
+        submitBtn.disabled = on;
+        submitBtn.classList.toggle('is-loading', on);
+        submitBtn.textContent = on ? 'Sending…' : submitLabel;
+        if (on) { form.setAttribute('aria-busy', 'true'); }
+        else { form.removeAttribute('aria-busy'); }
+      }
+
+      // STUB: no backend yet. Replace the body with the real endpoint call next.
+      function postLead(payload) {
+        console.log('postLead (stub) — payload:', payload);
+        // Simulated latency so the loading state is observable; delete when wiring the real call.
+        return new Promise(function (resolve) {
+          setTimeout(function () { resolve({ ok: true }); }, 700);
+        });
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        setStatus('', '');
+
+        // Honeypot: if filled, it's a bot. Pretend success, send nothing.
+        if (form.company_website && form.company_website.value.trim() !== '') {
+          form.reset();
+          setStatus('success', 'Thanks — your message has been sent.');
+          return;
+        }
+
+        // Validate every field (marks all errors); keep the first invalid to focus.
+        var firstInvalid = null;
+        fields.forEach(function (f) {
+          if (!validateField(f) && !firstInvalid) firstInvalid = document.getElementById(f.id);
+        });
+        if (firstInvalid) {
+          setStatus('error', 'Please fix the highlighted fields and try again.');
+          firstInvalid.focus();
+          return;
+        }
+
+        var payload = {
+          first_name: form.first_name.value.trim(),
+          last_name: form.last_name.value.trim(),
+          email: form.email.value.trim(),
+          phone: form.phone.value.trim(),
+          occupation: form.occupation.value,
+          timeline: form.timeline.value,
+          county: form.county.value,
+          message: form.message.value.trim(),
+          consent: form.consent.checked,
+          submitted_at: new Date().toISOString()
+        };
+
+        setLoading(true);
+        postLead(payload)
+          .then(function (res) {
+            if (!res || !res.ok) throw new Error('postLead did not return ok');
+            form.reset();
+            fields.forEach(function (f) { setError(f.id, ''); });
+            setStatus('success', 'Thanks — your message has been sent. Jim will get back to you shortly.');
+          })
+          .catch(function () {
+            setStatus('error', 'Something went wrong sending your message. Please try again, or call (602) 344-9333.');
+          })
+          .then(function () { setLoading(false); });
+      });
+    })();
+  </script>
 </body>
 </html>
