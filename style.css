@@ -12,8 +12,9 @@
   --navy-darker: #001a47;
   --blue: #009CFF;           /* bright blue - top bar, footer, accent sections */
   --blue-dark: #007ECC;
-  --orange: #FF6400;         /* orange CTA - Apply Now buttons */
+  --orange: #FF6400;         /* orange CTA fill - Apply Now buttons (label is white) */
   --orange-hover: #E55600;
+  --orange-text: #B34700;    /* darkened brand orange for text labels — 4.5:1+ on white/tint/sage */
   --sage-bg: #E8F0E7;        /* soft sage section background */
   --sage-text: #2E5C2E;      /* sage dark - on light sage */
   --peach-tint: #FDE7E3;     /* soft peach callout */
@@ -369,7 +370,7 @@ section { padding: 4rem 1.5rem; }
 
 .eyebrow {
   display: inline-block;
-  color: var(--orange);
+  color: var(--orange-text);
   font-family: var(--heading-font);
   font-size: 12px;
   font-weight: 700;
@@ -584,7 +585,7 @@ table.county-table td:first-child {
 .proscons-card.pros { border-top: 4px solid var(--sage-text); }
 .proscons-card.cons { border-top: 4px solid var(--orange); }
 .proscons-card.pros h3 { color: var(--sage-text); }
-.proscons-card.cons h3 { color: var(--orange); }
+.proscons-card.cons h3 { color: var(--orange-text); }
 .proscons-list { list-style: none; margin: 0; padding: 0; }
 .proscons-list li {
   padding: 0.65rem 0 0.65rem 1.75rem;
@@ -693,7 +694,7 @@ table.county-table td:first-child {
   border-radius: 0;
 }
 .not-qualified h3 {
-  color: var(--orange);
+  color: var(--orange-text);
   margin-top: 0;
 }
 .not-qualified h4 {
