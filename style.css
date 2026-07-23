@@ -34,6 +34,10 @@
   --text: #282828;           /* primary dark ink */
   --text-inverse: #FFFFFF;   /* text on dark/navy surfaces */
 
+  /* STATUS (WCAG AA on white) */
+  --error: #B00020;          /* form errors — 7.3:1 on white */
+  --success: #1B7F3B;        /* form success — 5.1:1 on white */
+
   /* BG */
   --white: #FFFFFF;
   --off-white: #FAFAFA;
@@ -1036,3 +1040,60 @@ table.county-table td:first-child {
 .occ-category strong p{
   color: var(--text);
 }
+
+/* ============================================
+   FORM ENHANCEMENTS — validation, consent, status
+   (paired with js/form-validate.js)
+   ============================================ */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-note { font-size: 13px; color: var(--text-light); margin: -0.5rem 0 1.5rem; }
+.req { color: var(--orange-text); font-weight: 700; }
+
+.field-error {
+  display: block;
+  min-height: 1em;
+  margin-top: 0.35rem;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--error);
+}
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"],
+.form-group select[aria-invalid="true"] {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(176, 0, 32, 0.12);
+}
+
+.consent { display: flex; gap: 0.65rem; align-items: flex-start; margin: 0.5rem 0; }
+.consent input[type="checkbox"] { width: auto; margin-top: 0.2rem; flex-shrink: 0; }
+.consent .consent-text { font-size: 13px; line-height: 1.6; color: var(--text-body); }
+.consent-error { margin: 0 0 1.5rem; }
+
+.form-submit:disabled { opacity: 0.7; cursor: not-allowed; }
+.form-submit.is-loading { cursor: progress; }
+.form-submit.is-loading::after {
+  content: '';
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.55em;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-top-color: var(--text-inverse);
+  border-radius: 50%;
+  vertical-align: -0.12em;
+  animation: btn-spin 0.6s linear infinite;
+}
+@keyframes btn-spin { to { transform: rotate(360deg); } }
+
+.form-status { margin-top: 1.5rem; font-size: 15px; font-weight: 700; line-height: 1.5; }
+.form-status:empty { margin-top: 0; }
+.form-status.success { color: var(--success); }
+.form-status.error { color: var(--error); }

@@ -8,46 +8,7 @@
   <link rel="canonical" href="https://floridahometownheroeshousingprogram2026.com/contact-us">
   <link rel="stylesheet" href="style.css">
   <script src="includes.js" defer></script>
-  <style>
-    [data-include]{min-height:60px;}
-
-    /* Honeypot — visually hidden, off-screen, kept out of the a11y tree */
-    .hp-field{position:absolute !important;left:-9999px !important;top:auto;width:1px;height:1px;overflow:hidden;}
-
-    .form-note{font-size:13px;color:var(--text-light);margin:-0.5rem 0 1.5rem;}
-    .req{color:var(--orange-text);font-weight:700;}
-
-    /* Inline validation */
-    .field-error{display:block;min-height:1em;margin-top:0.35rem;font-size:13px;font-weight:700;color:#b00020;}
-    .form-group input[aria-invalid="true"],
-    .form-group textarea[aria-invalid="true"],
-    .form-group select[aria-invalid="true"]{
-      border-color:#b00020;
-      box-shadow:0 0 0 3px rgba(176,0,32,0.12);
-    }
-
-    /* Consent */
-    .consent{display:flex;gap:0.65rem;align-items:flex-start;margin:0.5rem 0 1.5rem;}
-    .consent input[type="checkbox"]{width:auto;margin-top:0.2rem;flex-shrink:0;}
-    .consent .consent-text{font-size:13px;line-height:1.6;color:var(--text-body);}
-    .consent .field-error{margin-top:0.5rem;}
-
-    /* Submit + loading state */
-    .form-submit:disabled{opacity:0.7;cursor:not-allowed;}
-    .form-submit.is-loading{cursor:progress;}
-    .form-submit.is-loading::after{
-      content:'';display:inline-block;width:0.9em;height:0.9em;margin-left:0.55em;
-      border:2px solid rgba(255,255,255,0.55);border-top-color:#fff;border-radius:50%;
-      vertical-align:-0.12em;animation:btn-spin 0.6s linear infinite;
-    }
-    @keyframes btn-spin{to{transform:rotate(360deg);}}
-
-    /* DOM status messages (never alert) */
-    .form-status{margin-top:1.5rem;font-size:15px;font-weight:700;line-height:1.5;}
-    .form-status:empty{margin-top:0;}
-    .form-status.success{color:#1b7f3b;}
-    .form-status.error{color:#b00020;}
-  </style>
+  <style>[data-include]{min-height:60px;}</style>
 </head>
 <body>
   <div data-include="header"></div>
@@ -63,7 +24,7 @@
 
     <section class="section-white">
       <div class="section-inner">
-        <!-- No action/method: submission is handled in JS via postLead() (stub). -->
+        <!-- No action/method: submission is handled by js/form-validate.js -> FHTH.postLead(). -->
         <form class="contact-form" id="lead-form" novalidate>
           <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
 
@@ -176,14 +137,9 @@
           <div class="consent">
             <input type="checkbox" id="consent" name="consent" required aria-required="true"
                    aria-describedby="err-consent">
-            <label for="consent" class="consent-text">
-              By checking this box, I agree to be contacted by Stairway Mortgage, a Division of NEXA Mortgage LLC,
-              at the phone number and email address I provided — including by autodialed and prerecorded calls and
-              text messages — about mortgage products and services. Consent is not a condition of any purchase.
-              Message and data rates may apply; message frequency varies. Reply STOP to opt out or HELP for help.
-              <span class="field-error" id="err-consent" aria-live="polite"></span>
-            </label>
+            <label for="consent" class="consent-text" id="consent-text">By checking this box, I agree to be contacted by Stairway Mortgage, a Division of NEXA Mortgage LLC, at the phone number and email address I provided — including by autodialed and prerecorded calls and text messages — about mortgage products and services. Consent is not a condition of any purchase. Message and data rates may apply; message frequency varies. Reply STOP to opt out or HELP for help.</label>
           </div>
+          <span class="field-error consent-error" id="err-consent" aria-live="polite"></span>
 
           <button type="submit" class="form-submit" id="lead-submit">Send My Message →</button>
 
@@ -196,127 +152,55 @@
 
   <div data-include="footer"></div>
 
+  <!-- Shared lead pipeline: attribution + postLead(), then the generic form enhancer. -->
+  <script src="js/lead.js"></script>
+  <script src="js/form-validate.js"></script>
   <script>
-    (function () {
-      'use strict';
-      var form = document.getElementById('lead-form');
-      if (!form) return;
-
-      var statusEl = document.getElementById('form-status');
-      var submitBtn = document.getElementById('lead-submit');
-      var submitLabel = submitBtn.textContent;
-
-      // Field definitions: id -> validator returning '' (ok) or an error message.
-      var fields = [
-        { id: 'first_name', v: function (val) { return val.trim() ? '' : 'Please enter your first name.'; } },
-        { id: 'last_name',  v: function (val) { return val.trim() ? '' : 'Please enter your last name.'; } },
-        { id: 'email',      v: function (val) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim()) ? '' : 'Please enter a valid email address.'; } },
-        { id: 'phone',      v: function (val) { return (val.replace(/\D/g, '').length >= 10) ? '' : 'Please enter a valid phone number (at least 10 digits).'; } },
-        { id: 'occupation', v: function (val) { return val ? '' : 'Please select your occupation.'; } },
-        { id: 'timeline',   v: function (val) { return val ? '' : 'Please select your buying timeline.'; } },
-        { id: 'county',     v: function (val) { return val ? '' : 'Please select your county.'; } },
-        { id: 'message',    v: function (val) { return val.trim() ? '' : 'Please share a little about your situation.'; } },
-        { id: 'consent',    v: function (_val, el) { return el.checked ? '' : 'Please agree to be contacted so we can reply.'; } }
-      ];
-
-      function valueOf(el) { return el.type === 'checkbox' ? (el.checked ? 'on' : '') : el.value; }
-
-      function setError(id, msg) {
-        var el = document.getElementById(id);
-        var err = document.getElementById('err-' + id);
-        if (err) err.textContent = msg;
-        el.setAttribute('aria-invalid', msg ? 'true' : 'false');
-      }
-
-      function validateField(f) {
-        var el = document.getElementById(f.id);
-        var msg = f.v(valueOf(el), el);
-        setError(f.id, msg);
-        return !msg;
-      }
-
-      // Live validation: check on blur, and re-check on input once an error is showing.
-      fields.forEach(function (f) {
-        var el = document.getElementById(f.id);
-        var evt = (el.tagName === 'SELECT' || el.type === 'checkbox') ? 'change' : 'blur';
-        el.addEventListener(evt, function () { validateField(f); });
-        el.addEventListener('input', function () {
-          var err = document.getElementById('err-' + f.id);
-          if (err && err.textContent) validateField(f);
-        });
-      });
-
-      function setStatus(kind, text) {
-        statusEl.className = 'form-status' + (kind ? ' ' + kind : '');
-        statusEl.textContent = text;
-      }
-
-      function setLoading(on) {
-        submitBtn.disabled = on;
-        submitBtn.classList.toggle('is-loading', on);
-        submitBtn.textContent = on ? 'Sending…' : submitLabel;
-        if (on) { form.setAttribute('aria-busy', 'true'); }
-        else { form.removeAttribute('aria-busy'); }
-      }
-
-      // STUB: no backend yet. Replace the body with the real endpoint call next.
-      function postLead(payload) {
-        console.log('postLead (stub) — payload:', payload);
-        // Simulated latency so the loading state is observable; delete when wiring the real call.
-        return new Promise(function (resolve) {
-          setTimeout(function () { resolve({ ok: true }); }, 700);
-        });
-      }
-
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        setStatus('', '');
-
-        // Honeypot: if filled, it's a bot. Pretend success, send nothing.
-        if (form.company_website && form.company_website.value.trim() !== '') {
-          form.reset();
-          setStatus('success', 'Thanks — your message has been sent.');
-          return;
-        }
-
-        // Validate every field (marks all errors); keep the first invalid to focus.
-        var firstInvalid = null;
-        fields.forEach(function (f) {
-          if (!validateField(f) && !firstInvalid) firstInvalid = document.getElementById(f.id);
-        });
-        if (firstInvalid) {
-          setStatus('error', 'Please fix the highlighted fields and try again.');
-          firstInvalid.focus();
-          return;
-        }
-
-        var payload = {
-          first_name: form.first_name.value.trim(),
-          last_name: form.last_name.value.trim(),
-          email: form.email.value.trim(),
-          phone: form.phone.value.trim(),
-          occupation: form.occupation.value,
-          timeline: form.timeline.value,
-          county: form.county.value,
-          message: form.message.value.trim(),
-          consent: form.consent.checked,
-          submitted_at: new Date().toISOString()
+    FHTH.enhanceForm('lead-form', {
+      honeypot: 'company_website',
+      fields: [
+        { id: 'first_name', validate: FHTH.validators.required('Please enter your first name.') },
+        { id: 'last_name',  validate: FHTH.validators.required('Please enter your last name.') },
+        { id: 'email',      validate: FHTH.validators.email() },
+        { id: 'phone',      validate: FHTH.validators.phone(10, 'Please enter a valid phone number (at least 10 digits).') },
+        { id: 'occupation', validate: FHTH.validators.required('Please select your occupation.') },
+        { id: 'timeline',   validate: FHTH.validators.required('Please select your buying timeline.') },
+        { id: 'county',     validate: FHTH.validators.required('Please select your county.') },
+        { id: 'message',    validate: FHTH.validators.required('Please share a little about your situation.') },
+        { id: 'consent',    validate: FHTH.validators.required('Please agree to be contacted so we can reply.') }
+      ],
+      messages: {
+        success: 'Thanks — your message has been sent. Jim will get back to you shortly.',
+        botSuccess: 'Thanks — your message has been sent.',
+        fixErrors: 'Please fix the highlighted fields and try again.',
+        networkError: 'Something went wrong sending your message. Please try again, or call (602) 344-9333.'
+      },
+      buildPayload: function (form) {
+        var consentEl = document.getElementById('consent-text');
+        return {
+          source: 'contact',
+          page_url: location.href,
+          submitted_at: new Date().toISOString(),
+          contact: {
+            first_name: form.first_name.value.trim(),
+            last_name: form.last_name.value.trim(),
+            email: form.email.value.trim(),
+            phone: form.phone.value.trim()
+          },
+          profile: {
+            occupation: form.occupation.value,
+            county: form.county.value,
+            timeline: form.timeline.value
+          },
+          calculator: null,
+          consent: {
+            tcpa: form.consent.checked,
+            text: consentEl ? consentEl.textContent.replace(/\s+/g, ' ').trim() : ''
+          },
+          meta: FHTH.getAttribution()
         };
-
-        setLoading(true);
-        postLead(payload)
-          .then(function (res) {
-            if (!res || !res.ok) throw new Error('postLead did not return ok');
-            form.reset();
-            fields.forEach(function (f) { setError(f.id, ''); });
-            setStatus('success', 'Thanks — your message has been sent. Jim will get back to you shortly.');
-          })
-          .catch(function () {
-            setStatus('error', 'Something went wrong sending your message. Please try again, or call (602) 344-9333.');
-          })
-          .then(function () { setLoading(false); });
-      });
-    })();
+      }
+    });
   </script>
 </body>
 </html>
