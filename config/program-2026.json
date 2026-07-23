@@ -7,9 +7,8 @@
       "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-07-20-26.pdf",
       "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-Bond-GUide-07-20-26.pdf"
     ],
-    "note": "Figures pulled from the official FHFC / eHousingPlus lender guide dated 07-20-2026 and the live rate card dated 07-22-2026. Rates change daily — lender confirms in the eHPortal at lock."
+    "note": "Figures pulled from the official FHFC / eHousingPlus lender guide dated 07-20-2026 and the live rate card dated 07-22-2026. Rates change daily \u00e2\u20ac\u201d lender confirms in the eHPortal at lock."
   },
-
   "funding_status": {
     "open": true,
     "round_opened": "2026-07-13",
@@ -19,7 +18,6 @@
     "basis": "first-come, first-served via participating lenders",
     "note": "Cannot switch an existing reservation to HTH."
   },
-
   "dpa": {
     "pct": 0.05,
     "basis": "total_loan_amount",
@@ -41,7 +39,7 @@
       "borrower ceases to occupy as primary residence"
     ],
     "restrictions": [
-      "Not a stand-alone DPA — must close with an HTH first mortgage",
+      "Not a stand-alone DPA \u00e2\u20ac\u201d must close with an HTH first mortgage",
       "Cannot be combined with any other Florida Housing DPA program",
       "Other agencies' DPA permitted only if stand-alone and in third lien position",
       "Cannot bridge an appraisal gap or repay borrower debt"
@@ -51,7 +49,6 @@
       "note": "UNVERIFIED. The guide says '5% of the TOTAL loan amount' and the eHPortal auto-calculates it. Whether 'total' includes financed UFMIP / VA funding fee / USDA guarantee fee is not stated. Confirm with a participating lender. Until then compute off the base loan and label the output as an estimate the lender confirms at reservation."
     }
   },
-
   "funding_options": {
     "tba": {
       "label": "TBA (The Bond Alternative)",
@@ -68,7 +65,6 @@
     },
     "switching": "A change from HTH Bond to HTH TBA is not allowed unless the property address changes."
   },
-
   "rates": {
     "as_of": "2026-07-22",
     "changes_daily": true,
@@ -83,35 +79,42 @@
       "freddie_mac_hfa_advantage_over_80_ami": 0.0675
     }
   },
-
   "credit": {
     "min_fico_all_loan_types": 640,
     "min_fico_manual_underwrite": 660,
     "min_fico_manufactured_housing": 640,
     "blended_fico_permitted": false
   },
-
   "dti": {
-    "max_with_aus_approve_eligible": 0.50,
+    "max_with_aus_approve_eligible": 0.5,
     "max_manual_underwrite": 0.43,
     "max_manufactured_housing": 0.45,
     "rounding": "Servicer rounds up at .50 and down at .49"
   },
-
   "loan_types": {
-    "fha": { "min_down_pct": 0.035, "ufmip_pct": 0.0175, "annual_mip_pct": null },
-    "usda": { "min_down_pct": 0.0, "upfront_fee_pct": null, "annual_fee_pct": null },
-    "va": { "min_down_pct": 0.0, "funding_fee_pct": null },
+    "fha": {
+      "min_down_pct": 0.035,
+      "ufmip_pct": 0.0175,
+      "annual_mip_pct": null
+    },
+    "usda": {
+      "min_down_pct": 0.0,
+      "upfront_fee_pct": null,
+      "annual_fee_pct": null
+    },
+    "va": {
+      "min_down_pct": 0.0,
+      "funding_fee_pct": null
+    },
     "conventional_hfa_advantage": {
       "min_down_pct": 0.03,
       "pmi_pct": null,
-      "note": "Freddie Mac HFA Advantage only. Reduced-cost MI when credit qualifying income is at or below 80% AMI (Freddie Mac sets the AMI, not FL Housing). LPA required — DU not accepted."
+      "note": "Freddie Mac HFA Advantage only. Reduced-cost MI when credit qualifying income is at or below 80% AMI (Freddie Mac sets the AMI, not FL Housing). LPA required \u00e2\u20ac\u201d DU not accepted."
     },
     "_provenance": {
       "note": "UNVERIFIED. MI and funding-fee percentages are agency figures, not published in the FHFC guide. Verify against current FHA/VA/USDA/Freddie Mac schedules before showing a monthly payment."
     }
   },
-
   "fees": {
     "origination_pct": 0,
     "origination_note": "HTH waives the standard 1% origination fee. Lenders may not charge it.",
@@ -124,7 +127,6 @@
     "doc_stamp_intangible_tax_exempt": true,
     "doc_stamp_note": "First and second notes and mortgages are exempt under s.420.513(1) F.S. Deeds are NOT exempt."
   },
-
   "eligibility": {
     "first_time_homebuyer_required": true,
     "fthb_lookback_years": 3,
@@ -148,7 +150,7 @@
       "who": "one primary borrower",
       "certificate_valid_years": 2,
       "post_closing_accepted": false,
-      "exempt": "Veterans, active military, Reserves and National Guard — unless using HFA Advantage. Co-signors never need to attend."
+      "exempt": "Veterans, active military, Reserves and National Guard \u00e2\u20ac\u201d unless using HFA Advantage. Co-signors never need to attend."
     },
     "occupancy": {
       "owner_occupied_only": true,
@@ -159,12 +161,11 @@
       "refinances_eligible": false,
       "construction_to_permanent": false
     },
-    "one_time_participation": "All borrowers, including non-occupying co-signors, are limited to one-time participation across all Florida Housing homebuyer programs — first and second mortgages.",
+    "one_time_participation": "All borrowers, including non-occupying co-signors, are limited to one-time participation across all Florida Housing homebuyer programs \u00e2\u20ac\u201d first and second mortgages.",
     "non_occupying_co_borrowers_permitted": false,
     "co_signors": "Permitted with FHA and Freddie Mac only. Cannot appear on the deed or execute the mortgage. Their income IS counted under TBA.",
     "subject_to_recapture_tax": false
   },
-
   "property_types": {
     "single_family_attached_detached": true,
     "townhomes": true,
@@ -172,7 +173,6 @@
     "units_2_to_4": "Borrower must occupy one unit as primary residence.",
     "manufactured_housing": "1994 or newer. FHA, USDA-RD and VA only. Max 45% DTI."
   },
-
   "timeline": {
     "reservation_to_uw_certification_days": 60,
     "reservation_to_purchase_days": 60,
@@ -187,21 +187,557 @@
     "new_construction": "Certificate of Occupancy must be issued before reservation. Cancels at day 91, no exceptions.",
     "note": "Lender must hold a fully executed purchase contract before locking."
   },
-
-  "income_limits_tba": {},
+  "income_limits_tba": {
+    "Alachua": {
+      "fha_va_hfa": 156000,
+      "usda": 119850
+    },
+    "Baker": {
+      "fha_va_hfa": 150900,
+      "usda": 119850
+    },
+    "Bay": {
+      "fha_va_hfa": 148350,
+      "usda": 119850
+    },
+    "Bradford": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Brevard": {
+      "fha_va_hfa": 149400,
+      "usda": 119850
+    },
+    "Broward": {
+      "fha_va_hfa": 190200,
+      "usda": 131200
+    },
+    "Calhoun": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Charlotte": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Citrus": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Clay": {
+      "fha_va_hfa": 163050,
+      "usda": 119850
+    },
+    "Collier": {
+      "fha_va_hfa": 181500,
+      "usda": 132150
+    },
+    "Columbia": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "DeSoto": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Dixie": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Duval": {
+      "fha_va_hfa": 163050,
+      "usda": 119850
+    },
+    "Escambia": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Flagler": {
+      "fha_va_hfa": 156450,
+      "usda": 119850
+    },
+    "Franklin": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Gadsden": {
+      "fha_va_hfa": 149250,
+      "usda": 119850
+    },
+    "Gilchrist": {
+      "fha_va_hfa": 156000,
+      "usda": 119850
+    },
+    "Glades": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Gulf": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Hamilton": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Hardee": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Hendry": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Hernando": {
+      "fha_va_hfa": 172050,
+      "usda": 119850
+    },
+    "Highlands": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Hillsborough": {
+      "fha_va_hfa": 172050,
+      "usda": 119850
+    },
+    "Holmes": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Indian River": {
+      "fha_va_hfa": 153450,
+      "usda": 119850
+    },
+    "Jackson": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Jefferson": {
+      "fha_va_hfa": 149250,
+      "usda": 119850
+    },
+    "Lafayette": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Lake": {
+      "fha_va_hfa": 172350,
+      "usda": 119850
+    },
+    "Lee": {
+      "fha_va_hfa": 168600,
+      "usda": 119850
+    },
+    "Leon": {
+      "fha_va_hfa": 149250,
+      "usda": 119850
+    },
+    "Levy": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Liberty": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Madison": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Manatee": {
+      "fha_va_hfa": 171150,
+      "usda": 119850
+    },
+    "Marion": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Martin": {
+      "fha_va_hfa": 153600,
+      "usda": 119850
+    },
+    "Miami-Dade": {
+      "fha_va_hfa": 204300,
+      "usda": 131200
+    },
+    "Monroe": {
+      "fha_va_hfa": 214950,
+      "usda": 151900
+    },
+    "Nassau": {
+      "fha_va_hfa": 163050,
+      "usda": 119850
+    },
+    "Okaloosa": {
+      "fha_va_hfa": 160050,
+      "usda": 123050
+    },
+    "Okeechobee": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Orange": {
+      "fha_va_hfa": 172350,
+      "usda": 119850
+    },
+    "Osceola": {
+      "fha_va_hfa": 172350,
+      "usda": 119850
+    },
+    "Palm Beach": {
+      "fha_va_hfa": 192750,
+      "usda": 134400
+    },
+    "Pasco": {
+      "fha_va_hfa": 172050,
+      "usda": 119850
+    },
+    "Pinellas": {
+      "fha_va_hfa": 172050,
+      "usda": 119850
+    },
+    "Polk": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Putnam": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Santa Rosa": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Sarasota": {
+      "fha_va_hfa": 171150,
+      "usda": 123750
+    },
+    "Seminole": {
+      "fha_va_hfa": 172350,
+      "usda": 119850
+    },
+    "St. Johns": {
+      "fha_va_hfa": 163050,
+      "usda": 119850
+    },
+    "St. Lucie": {
+      "fha_va_hfa": 153600,
+      "usda": 119850
+    },
+    "Sumter": {
+      "fha_va_hfa": 156150,
+      "usda": 119850
+    },
+    "Suwannee": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Taylor": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Union": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Volusia": {
+      "fha_va_hfa": 148650,
+      "usda": 119850
+    },
+    "Wakulla": {
+      "fha_va_hfa": 150600,
+      "usda": 119850
+    },
+    "Walton": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    },
+    "Washington": {
+      "fha_va_hfa": 148050,
+      "usda": 119850
+    }
+  },
   "income_limits_bond": {},
   "purchase_price_limits": {},
-  "max_loan_limits": {},
-
+  "max_loan_limits": {
+    "Alachua": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Baker": {
+      "fha": 580750,
+      "hfa_va": 832750
+    },
+    "Bay": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Bradford": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Brevard": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Broward": {
+      "fha": 667000,
+      "hfa_va": 832750
+    },
+    "Calhoun": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Charlotte": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Citrus": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Clay": {
+      "fha": 580750,
+      "hfa_va": 832750
+    },
+    "Collier": {
+      "fha": 764750,
+      "hfa_va": 832750
+    },
+    "Columbia": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "DeSoto": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Dixie": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Duval": {
+      "fha": 580750,
+      "hfa_va": 832750
+    },
+    "Escambia": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Flagler": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Franklin": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Gadsden": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Gilchrist": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Glades": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Gulf": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Hamilton": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Hardee": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Hendry": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Hernando": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Highlands": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Hillsborough": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Holmes": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Indian River": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Jackson": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Jefferson": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Lafayette": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Lake": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Lee": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Leon": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Levy": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Liberty": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Madison": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Manatee": {
+      "fha": 547400,
+      "hfa_va": 832750
+    },
+    "Marion": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Martin": {
+      "fha": 603750,
+      "hfa_va": 832750
+    },
+    "Miami-Dade": {
+      "fha": 667000,
+      "hfa_va": 832750
+    },
+    "Monroe": {
+      "fha": 990150,
+      "hfa_va": 990150
+    },
+    "Nassau": {
+      "fha": 580750,
+      "hfa_va": 832750
+    },
+    "Okaloosa": {
+      "fha": 603750,
+      "hfa_va": 832750
+    },
+    "Okeechobee": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Orange": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Osceola": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Palm Beach": {
+      "fha": 667000,
+      "hfa_va": 832750
+    },
+    "Pasco": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Pinellas": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Polk": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Putnam": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Santa Rosa": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Sarasota": {
+      "fha": 547400,
+      "hfa_va": 832750
+    },
+    "Seminole": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "St. Johns": {
+      "fha": 580750,
+      "hfa_va": 832750
+    },
+    "St. Lucie": {
+      "fha": 603750,
+      "hfa_va": 832750
+    },
+    "Sumter": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Suwannee": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Taylor": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Union": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Volusia": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Wakulla": {
+      "fha": 541287,
+      "hfa_va": 832750
+    },
+    "Walton": {
+      "fha": 603750,
+      "hfa_va": 832750
+    },
+    "Washington": {
+      "fha": 541287,
+      "hfa_va": 832750
+    }
+  },
   "_limits_provenance": {
-    "status": "PENDING — tables not yet populated",
+    "status": "TBA income + max-loan limits POPULATED (vision-transcribed 2026-07-23); Bond + purchase-price limits PENDING",
     "income_limits_effective": "2026-05-06",
     "loan_limits_effective": "2026-01-02",
-    "why_empty": "The 67-county tables live on pages 18-19 of the FHFC TBA lender guide as embedded images and did not extract as text. They must be transcribed from the PDF or requested from a participating lender.",
-    "tba_note": "One flat limit per county. No household-size adjustment. Higher than Bond.",
-    "bond_note": "Adjusted by household size (1-2 person vs 3+ person). Lower than TBA.",
-    "targeted_area_note": "Bond income limits are higher in federally designated targeted areas (Qualified Census Tracts), and the first-time homebuyer requirement is waived there.",
-    "usda_note": "USDA-RD first mortgages follow USDA's own income limits, which are generally lower.",
-    "rule": "Until populated, eligibility gates must render 'pending verification'. Never guess a number."
+    "tba_source": "FHFC HTH TBA Lender Guide 7.20.26, pp.18-19 (embedded table images, rendered + read)",
+    "tba_note": "income_limits_tba.<county>.fha_va_hfa applies to FHA/VA/Freddie HFA Advantage; .usda applies to USDA-RD. max_loan_limits.<county>.fha for FHA; .hfa_va for VA/HFA Advantage. TBA has no purchase-price limit.",
+    "tba_verification": "Transcribed by vision from image tables; NOT machine-extracted. Spot-check against source before launch.",
+    "bond_status": "PENDING \u2014 Bond table (pp.18-19) has 8 columns x 67 counties (NonTargeted/Targeted x 1-2/3+ person, USDA 1-2/3+, purchase price NonTargeted/Targeted). Too dense to certify digit-perfect from vision; left empty rather than risk a wrong income limit.",
+    "bond_needs": "Transcribe from the PDF with verification, or obtain the CSV from a participating lender. Bond gating also needs household size + targeted-area (QCT) determination.",
+    "rule": "Until a table is populated, its eligibility gate must render 'pending verification'. Never guess a county's figure or infer it from another."
   }
 }

@@ -96,25 +96,53 @@
     return principal * r / (1 - Math.pow(1 + r, -n));
   }
 
+  // Defensive: only pass/fail against a real numeric limit; anything else -> pending.
   function gate(threshold, value) {
-    if (threshold == null) return 'pending';
+    if (typeof threshold !== 'number' || !isFinite(threshold)) return 'pending';
     if (!(value > 0)) return 'pending';
     return value <= threshold ? 'pass' : 'fail';
   }
 
-  // Income limits depend on the funding option: TBA and Bond use different tables.
+  // Resolve income + loan/price limit by funding option and loan type.
+  // TBA: income by loan type (USDA has its own lower limit) + max-LOAN limit.
+  // Bond: purchase-PRICE limit; tables not populated -> pending (also needs
+  // household size + targeted-area determination before it can go live).
   function eligibility(config, o) {
     o = o || {};
-    var incTable = (o.funding_option === 'bond' ? config.income_limits_bond : config.income_limits_tba) || {};
-    var capTable = config.purchase_price_limits || {};
-    var limit = (o.county && Object.prototype.hasOwnProperty.call(incTable, o.county)) ? incTable[o.county] : null;
-    var cap = (o.county && Object.prototype.hasOwnProperty.call(capTable, o.county)) ? capTable[o.county] : null;
+    var funding = o.funding_option === 'bond' ? 'bond' : 'tba';
+    var loan = o.loan_type;
+    var incomeLimit = null, incomeBasis = null;
+    var secondLimit = null, secondKind, secondBasis, secondValue;
+
+    if (funding === 'tba') {
+      var inc = (config.income_limits_tba || {})[o.county];
+      if (inc) {
+        incomeLimit = (loan === 'usda') ? inc.usda : inc.fha_va_hfa;
+        incomeBasis = (loan === 'usda') ? 'USDA income limit' : 'FHA / VA / HFA Advantage income limit';
+      }
+      var ll = (config.max_loan_limits || {})[o.county];
+      if (ll && loan === 'fha') { secondLimit = ll.fha; secondBasis = 'FHA maximum loan'; }
+      else if (ll && (loan === 'va' || loan === 'conventional_hfa_advantage')) { secondLimit = ll.hfa_va; secondBasis = 'VA / HFA Advantage maximum loan'; }
+      else { secondBasis = 'maximum loan'; }        // USDA: no published loan-limit column -> pending
+      secondKind = 'max_loan';
+      secondValue = num(o.first_mortgage);
+    } else {
+      var pp = (config.purchase_price_limits || {})[o.county];
+      secondLimit = (typeof pp === 'number') ? pp : null;
+      secondKind = 'purchase_price';
+      secondBasis = 'purchase-price limit';
+      secondValue = num(o.price);
+    }
+
     return {
-      funding_option: o.funding_option === 'bond' ? 'bond' : 'tba',
-      income_limit: gate(limit, num(o.annual_income)),
-      purchase_price_cap: gate(cap, num(o.price)),
-      income_limit_value: (limit == null ? null : limit),
-      purchase_price_cap_value: (cap == null ? null : cap)
+      funding_option: funding,
+      income_limit: gate(incomeLimit, num(o.annual_income)),
+      income_limit_value: (typeof incomeLimit === 'number' ? incomeLimit : null),
+      income_basis: incomeBasis,
+      second: gate(secondLimit, secondValue),
+      second_kind: secondKind,                       // 'max_loan' (TBA) | 'purchase_price' (Bond)
+      second_basis: secondBasis,
+      second_value: (typeof secondLimit === 'number' ? secondLimit : null)
     };
   }
 
@@ -187,8 +215,8 @@
       },
       cash_to_close: cash,
       eligibility: eligibility(config, {
-        funding_option: fundingOption, county: input.county,
-        annual_income: input.annual_income, price: input.price
+        funding_option: fundingOption, loan_type: input.loan_type, county: input.county,
+        annual_income: input.annual_income, price: input.price, first_mortgage: P
       })
     };
   }

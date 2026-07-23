@@ -15,7 +15,7 @@
 
   var GATE = {
     pass: { cls: 'gate-pass', label: 'Likely OK' },
-    fail: { cls: 'gate-fail', label: 'Over limit' },
+    fail: { cls: 'gate-fail', label: 'May exceed — verify' },
     pending: { cls: 'gate-pending', label: 'Pending verification' }
   };
   function gateRow(name, state, detail) {
@@ -88,13 +88,21 @@
       html += '<p class="calc-note">Excludes title, prepaids (tax/insurance escrows), appraisal, and other third-party costs — your lender itemizes those on the Loan Estimate. The doc-stamp/intangible exemption applies to the notes and mortgages; deeds are not exempt.</p>';
     }
 
-    // Eligibility gates (funding-aware).
-    html += '<h4>Eligibility checks (' + esc(fundingLabel) + ' income basis)</h4><ul class="gate-list">';
-    html += gateRow('Household income within county limit', e.income_limit,
-      e.income_limit === 'pending' ? '2026 ' + fundingLabel + ' income table not yet loaded' : (e.income_limit_value ? 'limit ' + money(e.income_limit_value) : ''));
-    html += gateRow('Purchase price within county limit', e.purchase_price_cap,
-      e.purchase_price_cap === 'pending' ? '2026 price limits not yet loaded' : (e.purchase_price_cap_value ? 'limit ' + money(e.purchase_price_cap_value) : ''));
+    // Eligibility gates (funding + loan-type aware).
+    html += '<h4>Eligibility checks (' + esc(fundingLabel) + ')</h4><ul class="gate-list">';
+    html += gateRow('Household income within county limit' + (e.income_basis ? ' — ' + e.income_basis : ''), e.income_limit,
+      e.income_limit === 'pending'
+        ? (e.funding_option === 'bond' ? 'Bond income limits pending verification' : 'select a county to check')
+        : (e.income_limit_value ? 'limit ' + money(e.income_limit_value) : ''));
+    var secondName = e.second_kind === 'purchase_price' ? 'Purchase price within county limit' : 'First mortgage within ' + (e.second_basis || 'maximum loan');
+    html += gateRow(secondName, e.second,
+      e.second === 'pending'
+        ? (e.funding_option === 'bond' ? 'Bond price limits pending verification' : (e.second_value ? '' : 'not published for this loan type'))
+        : (e.second_value ? 'limit ' + money(e.second_value) : ''));
     html += '</ul>';
+    if (e.funding_option === 'tba') {
+      html += '<p class="gate-detail" style="display:block;margin:-0.75rem 0 1.25rem;">County figures are current FHFC limits (effective 5/06/2026), transcribed from the lender guide — confirm with your lender.</p>';
+    }
 
     // Payback comparison — the site's editorial angle.
     html += '<h4>Repayable vs. forgivable — the trade-off</h4>';

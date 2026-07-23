@@ -25,10 +25,18 @@ eq('4. $800k conventional -> ceiling 35000', calc.dpa(config, 800000, 'conventio
 eq('4. clamp flagged ceiling', calc.dpaBreakdown(config, 800000, 'conventional_hfa_advantage').clamp, 'ceiling');
 eq('floor-not-round: $310k FHA -> 14957', calc.dpa(config, 310000, 'fha'), 14957);
 
-// --- Eligibility gates: tables empty -> pending, and funding-aware ---
-eq('5. TBA income-limit gate -> pending', calc.eligibility(config, { funding_option: 'tba', county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pending');
-eq('6. TBA price-cap gate -> pending', calc.eligibility(config, { funding_option: 'tba', county: 'Orange', annual_income: 95000, price: 300000 }).purchase_price_cap, 'pending');
-eq('5b. Bond income-limit gate -> pending', calc.eligibility(config, { funding_option: 'bond', county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pending');
+// --- Eligibility gates: TBA populated (live), Bond still pending ---
+var eP = calc.eligibility(config, { funding_option: 'tba', loan_type: 'fha', county: 'Orange', annual_income: 95000, price: 300000, first_mortgage: 289500 });
+eq('5. TBA FHA income 95k <= Orange 172350 -> pass', eP.income_limit, 'pass');
+eq('5. TBA FHA first mtg 289500 <= 541287 -> pass', eP.second, 'pass');
+eq('6. TBA FHA income 250k -> fail', calc.eligibility(config, { funding_option: 'tba', loan_type: 'fha', county: 'Orange', annual_income: 250000, first_mortgage: 289500 }).income_limit, 'fail');
+var eU = calc.eligibility(config, { funding_option: 'tba', loan_type: 'usda', county: 'Orange', annual_income: 125000, first_mortgage: 300000 });
+eq('TBA USDA uses lower USDA limit -> 125k > 119850 fail', eU.income_limit, 'fail');
+eq('TBA USDA loan limit not published -> pending', eU.second, 'pending');
+var eB = calc.eligibility(config, { funding_option: 'bond', loan_type: 'fha', county: 'Orange', annual_income: 95000, price: 300000, first_mortgage: 289500 });
+eq('Bond income -> pending (table empty)', eB.income_limit, 'pending');
+eq('Bond price -> pending (table empty)', eB.second, 'pending');
+eq('no county -> income pending', calc.eligibility(config, { funding_option: 'tba', loan_type: 'fha', annual_income: 95000, first_mortgage: 289500 }).income_limit, 'pending');
 
 // --- Rates pulled from the matching block ---
 eq('rate TBA government (fha)  -> 0.065',  calc.rateFor(config, 'tba', 'fha'), 0.065);
