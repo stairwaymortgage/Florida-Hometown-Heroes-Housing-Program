@@ -57,7 +57,18 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_funding">Funding Option <span class="req" aria-hidden="true">*</span></label>
+              <div class="helper" id="help-calc_funding">TBA counts only your (borrower) income, with no household-size adjustment. Bond counts all occupants 18+ and adjusts for household size. Rates differ between them.</div>
+              <select id="calc_funding" name="calc_funding" required aria-required="true" aria-describedby="help-calc_funding err-calc_funding">
+                <option value="tba" selected>TBA — The Bond Alternative (most common)</option>
+                <option value="bond">Bond</option>
+                <option value="not_sure">Not sure (we'll assume TBA)</option>
+              </select>
+              <span class="field-error" id="err-calc_funding" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
               <label for="calc_county">County</label>
               <div class="helper" id="help-calc_county">Enables the eligibility checks. The first-mortgage rate is applied automatically from the current program rate card.</div>
               <select id="calc_county" name="calc_county" autocomplete="address-level2" aria-describedby="help-calc_county">
@@ -80,6 +91,7 @@
                 <option>Suwannee</option><option>Taylor</option><option>Union</option><option>Volusia</option>
                 <option>Wakulla</option><option>Walton</option><option>Washington</option>
               </select>
+            </div>
           </div>
 
           <div class="form-row">

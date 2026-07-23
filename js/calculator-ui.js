@@ -105,7 +105,7 @@
       var lt = config.loan_types[key];
       return lt ? lt.min_down_pct * 100 : 0;
     }
-    function fundingChoice() { return 'tba'; } // selector added in the funding-option commit
+    function fundingChoice() { return val('calc_funding') || 'tba'; } // 'not_sure' resolves to TBA in calc
 
     NS.enhanceForm(form, {
       honeypot: 'company_website',
@@ -116,6 +116,7 @@
       fields: [
         { id: 'calc_price', validate: function (v) { return parseFloat(v) > 0 ? '' : 'Enter a purchase price.'; } },
         { id: 'calc_loan_type', validate: NS.validators.required('Select a loan type.') },
+        { id: 'calc_funding', validate: NS.validators.required('Select a funding option.') },
         { id: 'first_name', validate: NS.validators.required('Please enter your first name.') },
         { id: 'last_name', validate: NS.validators.required('Please enter your last name.') },
         { id: 'email', validate: NS.validators.email() },
