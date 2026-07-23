@@ -118,12 +118,18 @@
 
       var payload = opts.buildPayload ? opts.buildPayload(form) : {};
 
+      // Optional hook: runs after validation passes, before the network call
+      // (e.g. render a calculator result from client-side math).
+      if (typeof opts.onValid === 'function') { try { opts.onValid(form, payload); } catch (e) {} }
+
       setLoading(true);
       NS.postLead(payload)
         .then(function (res) {
           if (!res || !res.ok) throw new Error('postLead did not return ok');
-          form.reset();
-          fields.forEach(function (f) { setError(f.id, ''); });
+          if (opts.resetOnSuccess !== false) {   // calculators keep their inputs + result
+            form.reset();
+            fields.forEach(function (f) { setError(f.id, ''); });
+          }
           setStatus('success', msgs.success || 'Thanks — your message has been sent.');
         })
         .catch(function () {

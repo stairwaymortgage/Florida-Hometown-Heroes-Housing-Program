@@ -22,8 +22,152 @@
         <p class="hero-sub">Complete Florida Hometown Heroes Housing Program guide 2025 — understand the Hometown Heroes Program Florida's $35,000 deferred loan structure vs. forgivable grants, county alternatives, repayment requirements &amp; strategic decision-making for essential workers.</p>
         <div class="hero-actions">
           <a href="/contact-us?src=hero-apply" class="btn btn-orange">Apply Now →</a>
-          <a href="/contact-us?src=hero-calc" class="btn btn-outline-white">Talk to an Expert</a>
+          <a href="#calculator" class="btn btn-outline-white">Loan Calculator</a>
         </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR — target of the hero "Loan Calculator" CTA -->
+    <section class="section-white" id="calculator">
+      <div class="section-inner">
+        <span class="eyebrow">Estimate</span>
+        <h2>Hometown Heroes Assistance Estimator</h2>
+        <p class="lead">Estimate your assistance and monthly payment in a minute. Remember: this assistance is a <strong>repayable second mortgage</strong> — not a grant and never forgiven — so the full amount comes due when you sell, refinance, or pay off your first mortgage.</p>
+
+        <form class="contact-form" id="calc-form" novalidate>
+          <p class="form-note">Fields marked <span class="req" aria-hidden="true">*</span> are required. The rest sharpen your estimate.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_price">Purchase Price <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="calc_price" name="calc_price" inputmode="numeric" min="1" step="1000"
+                     placeholder="300000" required aria-required="true" aria-describedby="err-calc_price">
+              <span class="field-error" id="err-calc_price" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="calc_loan_type">Loan Type <span class="req" aria-hidden="true">*</span></label>
+              <select id="calc_loan_type" name="calc_loan_type" required aria-required="true" aria-describedby="err-calc_loan_type">
+                <option value="" disabled selected>Select a loan type…</option>
+                <option value="fha">FHA (3.5% down)</option>
+                <option value="conv">Conventional (3% down)</option>
+                <option value="va">VA (0% down)</option>
+                <option value="usda">USDA-RD (0% down)</option>
+              </select>
+              <span class="field-error" id="err-calc_loan_type" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_rate">Interest Rate (%) <span class="req" aria-hidden="true">*</span></label>
+              <div class="helper" id="help-calc_rate">First mortgage APR estimate</div>
+              <input type="number" id="calc_rate" name="calc_rate" inputmode="decimal" min="0" max="25" step="0.001"
+                     placeholder="6.375" required aria-required="true" aria-describedby="help-calc_rate err-calc_rate">
+              <span class="field-error" id="err-calc_rate" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="calc_county">County</label>
+              <div class="helper" id="help-calc_county">Enables the eligibility checks</div>
+              <select id="calc_county" name="calc_county" autocomplete="address-level2" aria-describedby="help-calc_county">
+                <option value="" selected>Select (optional)…</option>
+                <option>Alachua</option><option>Baker</option><option>Bay</option><option>Bradford</option>
+                <option>Brevard</option><option>Broward</option><option>Calhoun</option><option>Charlotte</option>
+                <option>Citrus</option><option>Clay</option><option>Collier</option><option>Columbia</option>
+                <option>DeSoto</option><option>Dixie</option><option>Duval</option><option>Escambia</option>
+                <option>Flagler</option><option>Franklin</option><option>Gadsden</option><option>Gilchrist</option>
+                <option>Glades</option><option>Gulf</option><option>Hamilton</option><option>Hardee</option>
+                <option>Hendry</option><option>Hernando</option><option>Highlands</option><option>Hillsborough</option>
+                <option>Holmes</option><option>Indian River</option><option>Jackson</option><option>Jefferson</option>
+                <option>Lafayette</option><option>Lake</option><option>Lee</option><option>Leon</option>
+                <option>Levy</option><option>Liberty</option><option>Madison</option><option>Manatee</option>
+                <option>Marion</option><option>Martin</option><option>Miami-Dade</option><option>Monroe</option>
+                <option>Nassau</option><option>Okaloosa</option><option>Okeechobee</option><option>Orange</option>
+                <option>Osceola</option><option>Palm Beach</option><option>Pasco</option><option>Pinellas</option>
+                <option>Polk</option><option>Putnam</option><option>St. Johns</option><option>St. Lucie</option>
+                <option>Santa Rosa</option><option>Sarasota</option><option>Seminole</option><option>Sumter</option>
+                <option>Suwannee</option><option>Taylor</option><option>Union</option><option>Volusia</option>
+                <option>Wakulla</option><option>Walton</option><option>Washington</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_tax">Annual Property Tax ($)</label>
+              <input type="number" id="calc_tax" name="calc_tax" inputmode="numeric" min="0" step="100" placeholder="3300">
+            </div>
+            <div class="form-group">
+              <label for="calc_insurance">Annual Home Insurance ($)</label>
+              <input type="number" id="calc_insurance" name="calc_insurance" inputmode="numeric" min="0" step="100" placeholder="2400">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="calc_hoa">Monthly HOA ($)</label>
+              <input type="number" id="calc_hoa" name="calc_hoa" inputmode="numeric" min="0" step="10" placeholder="0">
+            </div>
+            <div class="form-group">
+              <label for="calc_income">Gross Annual Household Income ($)</label>
+              <div class="helper" id="help-calc_income">Enables DTI + the income-limit check</div>
+              <input type="number" id="calc_income" name="calc_income" inputmode="numeric" min="0" step="1000" placeholder="90000" aria-describedby="help-calc_income">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="calc_debts">Total Monthly Debt Payments ($)</label>
+            <div class="helper" id="help-calc_debts">Car, student loans, credit cards — used for back-end DTI</div>
+            <input type="number" id="calc_debts" name="calc_debts" inputmode="numeric" min="0" step="10" placeholder="450" aria-describedby="help-calc_debts">
+          </div>
+
+          <h3>Where should we send your estimate?</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="first_name" name="first_name" autocomplete="given-name"
+                     required aria-required="true" aria-describedby="err-first_name">
+              <span class="field-error" id="err-first_name" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="last_name" name="last_name" autocomplete="family-name"
+                     required aria-required="true" aria-describedby="err-last_name">
+              <span class="field-error" id="err-last_name" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com"
+                   required aria-required="true" aria-describedby="err-email">
+            <span class="field-error" id="err-email" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" inputmode="numeric" autocomplete="tel" placeholder="(555) 555-0100"
+                   required aria-required="true" aria-describedby="err-phone">
+            <span class="field-error" id="err-phone" aria-live="polite"></span>
+          </div>
+
+          <!-- Honeypot: real users never see or fill this. -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company_website">Company Website</label>
+            <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="err-consent">
+            <label for="consent" class="consent-text" id="calc-consent-text">By checking this box, I agree to be contacted by Stairway Mortgage, a Division of NEXA Mortgage LLC, at the phone number and email address I provided — including by autodialed and prerecorded calls and text messages — about mortgage products and services. Consent is not a condition of any purchase. Message and data rates may apply; message frequency varies. Reply STOP to opt out or HELP for help.</label>
+          </div>
+          <span class="field-error consent-error" id="err-consent" aria-live="polite"></span>
+
+          <button type="submit" class="form-submit" id="calc-submit">Show My Estimate →</button>
+          <div class="form-status" id="calc-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="calc-results" id="calc-results" hidden></div>
       </div>
     </section>
 
@@ -482,5 +626,20 @@
   </main>
 
   <div data-include="footer"></div>
+
+  <!-- Calculator: shared lead pipeline + calc math + UI, then load config and init. -->
+  <script src="js/lead.js"></script>
+  <script src="js/form-validate.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/calculator-ui.js"></script>
+  <script>
+    fetch('config/program-2026.json')
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (config) { FHTH.initCalculator(config); })
+      .catch(function () {
+        var s = document.getElementById('calc-status');
+        if (s) { s.className = 'form-status error'; s.textContent = 'The calculator could not load right now. Please call (602) 344-9333 for an estimate.'; }
+      });
+  </script>
 </body>
 </html>

@@ -1097,3 +1097,74 @@ table.county-table td:first-child {
 .form-status:empty { margin-top: 0; }
 .form-status.success { color: var(--success); }
 .form-status.error { color: var(--error); }
+
+/* ============================================
+   CALCULATOR RESULTS
+   ============================================ */
+.calc-results {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 3px solid var(--navy);
+}
+.calc-headline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  background: var(--surface-tint);
+  border-left: 4px solid var(--navy);
+  padding: 1.5rem;
+  margin: 0.5rem 0 1.25rem;
+}
+.calc-figure {
+  font-family: var(--heading-font);
+  font-size: clamp(32px, 6vw, 46px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+.calc-figure-label { font-size: 15px; color: var(--text-body); max-width: 42ch; }
+.calc-sub { font-size: 15px; color: var(--text-body); }
+.calc-note {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-body);
+  background: var(--grey-soft);
+  border-left: 3px solid var(--orange-text);
+  padding: 0.85rem 1.15rem;
+  margin: 1rem 0;
+}
+
+.gate-list { list-style: none; margin: 0.5rem 0 1.5rem; padding: 0; }
+.gate-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15px;
+  color: var(--text-body);
+}
+.gate-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.6rem;
+  color: var(--text-inverse);
+  white-space: nowrap;
+}
+.gate-badge.gate-pass { background: var(--success); }
+.gate-badge.gate-fail { background: var(--error); }
+.gate-badge.gate-pending { background: var(--text-light); }
+.gate-detail { font-size: 13px; color: var(--text-light); }
+
+.calc-disclaimer {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 1.5rem;
+}
