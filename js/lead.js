@@ -34,6 +34,11 @@
       if (val && !stored[k]) { stored[k] = val; changed = true; }
     });
 
+    // src = which CTA drove this visit (last-touch: the newest click wins,
+    // since a CTA links straight to the form it precedes).
+    var src = params.get('src');
+    if (src && stored.src !== src) { stored.src = src; changed = true; }
+
     // First cross-origin referrer only, captured once.
     if (!stored.referrer) {
       var ref = w.document.referrer || '';
@@ -51,7 +56,8 @@
       utm_medium: s.utm_medium || null,
       utm_campaign: s.utm_campaign || null,
       gclid: s.gclid || null,
-      referrer: s.referrer || null
+      referrer: s.referrer || null,
+      src: s.src || null
     };
   }
 
