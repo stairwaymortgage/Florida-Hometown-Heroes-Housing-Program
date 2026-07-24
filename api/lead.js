@@ -64,6 +64,65 @@ function validate(p) {
   return null;
 }
 
+// GHL's merge-tag parser can't resolve nested dot-notation (contact.email),
+// so the contact arrives with no email/phone and gets rejected. Flatten to a
+// one-level map with underscore joins for the wire only — our logs keep the
+// nested shape. Every key is sent even when empty: GHL only exposes keys it
+// has actually received, so omitting empties makes fields vanish from mapping.
+// Booleans and numbers are stringified.
+function ghlStr(v) {
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'string') return v;
+  return String(v);
+}
+
+function flattenForGhl(p) {
+  var c = p.contact || {};
+  var pr = p.profile || {};
+  var calc = p.calculator || {};
+  var con = p.consent || {};
+  var srv = p.server || {};
+  var m = p.meta || {};
+  return {
+    // Already top-level — kept as-is.
+    source: ghlStr(p.source),
+    page_url: ghlStr(p.page_url),
+    submitted_at: ghlStr(p.submitted_at),
+
+    first_name: ghlStr(c.first_name),
+    last_name: ghlStr(c.last_name),
+    email: ghlStr(c.email),
+    phone: ghlStr(c.phone),
+
+    occupation: ghlStr(pr.occupation),
+    county: ghlStr(pr.county),
+    timeline: ghlStr(pr.timeline),
+
+    calculator_purchase_price: ghlStr(calc.purchase_price),
+    calculator_loan_type: ghlStr(calc.loan_type),
+    calculator_funding_option: ghlStr(calc.funding_option),
+    calculator_estimated_assistance: ghlStr(calc.estimated_assistance),
+    calculator_estimated_monthly: ghlStr(calc.estimated_monthly),
+    calculator_cash_to_close: ghlStr(calc.cash_to_close),
+    calculator_dti: ghlStr(calc.dti),
+    calculator_eligible: ghlStr(calc.eligible),
+
+    consent_tcpa: ghlStr(con.tcpa),
+    consent_text: ghlStr(con.text),
+
+    server_received_at: ghlStr(srv.received_at),
+    server_ip: ghlStr(srv.ip),
+    server_user_agent: ghlStr(srv.user_agent),
+
+    utm_source: ghlStr(m.utm_source),
+    utm_medium: ghlStr(m.utm_medium),
+    utm_campaign: ghlStr(m.utm_campaign),
+    gclid: ghlStr(m.gclid),
+    referrer: ghlStr(m.referrer),
+    src: ghlStr(m.src)
+  };
+}
+
 async function forwardOnce(url, body) {
   var ac = new AbortController();
   var timer = setTimeout(function () { ac.abort(); }, FORWARD_TIMEOUT_MS);
@@ -121,11 +180,14 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({ ok: true, forwarded: false, stored: 'log' });
   }
 
+  // Flatten only what goes over the wire; `enriched` stays nested for our logs.
+  var ghlBody = flattenForGhl(enriched);
+
   // Forward with 8s timeout + one retry (2 attempts total).
   var lastErr = null;
   for (var i = 0; i < 2; i++) {
     try {
-      var r = await forwardOnce(webhook, enriched);
+      var r = await forwardOnce(webhook, ghlBody);
       if (r.ok) return res.status(200).json({ ok: true, forwarded: true });
       lastErr = 'status ' + r.status;
     } catch (e) {
