@@ -38,13 +38,10 @@
         <div class="cta-banner">
           <h3>Pick a Time That Works for You</h3>
           <p>This is a real strategy conversation, not a sales pitch. We'll tell you honestly whether Hometown Heroes is right for you — even if the answer is "use a different program instead."</p>
-          <a href="tel:+16023449333" class="btn btn-orange">📞 Call (602) 344-9333</a>
+          <a href="https://stairwaymortgage.com/schedule-call" id="book-call" class="btn btn-orange">📅 Book Your Call →</a>
+          <a href="tel:+16023449333" class="btn btn-outline-white" style="margin-left:0.5rem;">📞 Call (602) 344-9333</a>
           <a href="contact-us.html" class="btn btn-outline-white" style="margin-left:0.5rem;">Or Send a Message →</a>
         </div>
-
-        <p style="font-size:13px;color:var(--text-light);text-align:center;margin-top:2rem;">
-          ⚠ <strong>Calendly/scheduler integration pending:</strong> Once you connect a Calendly or similar scheduling tool, embed the booking widget here. For now, the call and message buttons above work as alternatives.
-        </p>
       </div>
     </section>
 
@@ -66,5 +63,25 @@
   </main>
 
   <div data-include="footer"></div>
+
+  <!-- Shared lead pipeline: needed for FHTH.getAttribution() below. -->
+  <script src="js/lead.js"></script>
+  <script>
+    // Booking flow lives on an external domain — attribution won't carry across
+    // the jump on its own. Rebuild the outbound href at runtime from this
+    // session's stored first-touch attribution so every click carries it.
+    (function () {
+      var link = document.getElementById('book-call');
+      if (!link || !window.FHTH || !FHTH.getAttribution) return;
+      var a = FHTH.getAttribution();
+      var params = new URLSearchParams();
+      if (a.utm_source)   params.set('utm_source', a.utm_source);
+      if (a.utm_medium)   params.set('utm_medium', a.utm_medium);
+      if (a.utm_campaign) params.set('utm_campaign', a.utm_campaign);
+      if (a.gclid)        params.set('gclid', a.gclid);
+      params.set('src', 'schedule-page');
+      link.href = 'https://stairwaymortgage.com/schedule-call?' + params.toString();
+    })();
+  </script>
 </body>
 </html>
