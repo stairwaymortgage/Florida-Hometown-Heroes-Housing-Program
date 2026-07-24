@@ -66,6 +66,82 @@ assert.throws(function () { calc.dpaBreakdown(config, 0, 'fha'); }, /positive/);
 assert.throws(function () { calc.dpaBreakdown(config, 300000, 'xyz'); }, /Unknown loan type/);
 console.log('  ok  guards: bad price + bad loan type throw');
 
+// --- flattenForGhl: the flat scalar map GHL actually receives over the wire ---
+var lead = require('../api/lead.js');
+
+// Reproduce the nested `calculator` block that js/calculator-ui.js emits.
+function buildCalcBlock(cfg, input) {
+  var e = calc.estimate(cfg, input);
+  return {
+    inputs: input,
+    funding_option: e.funding_option,
+    rate: e.rate,
+    min_down_display: cfg.loan_types[input.loan_type].min_down_pct * 100,
+    dpa: e.dpa.dpa,
+    dpa_clamp: e.dpa.clamp,
+    first_mortgage: e.first_mortgage,
+    base_down: e.base_down,
+    monthly: e.monthly,
+    upfront_mortgage_insurance: e.upfront_mortgage_insurance,
+    dti: e.dti,
+    cash_to_close: e.cash_to_close,
+    eligibility: e.eligibility
+  };
+}
+
+function assertAllStrings(obj, label) {
+  Object.keys(obj).forEach(function (k) {
+    assert.strictEqual(typeof obj[k], 'string', label + '.' + k + ' must be a string, got ' + typeof obj[k]);
+    assert.notStrictEqual(obj[k], '[object Object]', label + '.' + k + ' is a silent stringified object');
+  });
+}
+
+var cb = buildCalcBlock(config, {
+  price: 300000, loan_type: 'fha', funding_option: 'tba', term_years: 30,
+  annual_tax: 4200, annual_insurance: 2400, monthly_hoa: 150,
+  annual_income: 85000, monthly_debts: 600, county: 'Orange'
+});
+var flat = lead.flattenForGhl({
+  source: 'calculator',
+  page_url: 'https://x/loan-calculator',
+  submitted_at: '2026-07-24T15:30:00.000Z',
+  contact: { first_name: 'Maria', last_name: 'Gonzalez', email: 'maria@example.com', phone: '(407) 555-0142' },
+  profile: { occupation: null, county: 'Orange', timeline: null },
+  calculator: cb,
+  consent: { tcpa: true, text: 'consent string' },
+  server: { received_at: '2026-07-24T15:30:00.512Z', ip: '203.0.113.77', user_agent: 'UA' },
+  meta: { utm_source: 'google', utm_medium: 'cpc', utm_campaign: 'c', gclid: 'g', referrer: 'r', src: 's' }
+});
+
+// The core guarantee: every value is a string, none is a silent "[object Object]".
+assertAllStrings(flat, 'flat');
+console.log('  ok  flattenForGhl: all ' + Object.keys(flat).length + ' values are strings, none "[object Object]"');
+pass++;
+
+// The calculator fields now carry real data (previously blank / "[object Object]").
+eq('flat purchase_price <- inputs.price', flat.calculator_purchase_price, '300000');
+eq('flat loan_type <- inputs.loan_type', flat.calculator_loan_type, 'fha');
+eq('flat funding_option', flat.calculator_funding_option, 'tba');
+eq('flat estimated_assistance <- dpa', flat.calculator_estimated_assistance, String(cb.dpa));
+eq('flat estimated_monthly <- monthly.total_piti', flat.calculator_estimated_monthly, String(cb.monthly.total_piti));
+eq('flat cash_to_close <- estimated_cash_to_close', flat.calculator_cash_to_close, String(cb.cash_to_close.estimated_cash_to_close));
+eq('flat dti <- dti.back rounded 1dp', flat.calculator_dti, String(Math.round(cb.dti.back * 10) / 10));
+eq('flat eligible (TBA FHA both gates pass)', flat.calculator_eligible, 'pass');
+eq('flat eligibility_notes empty on clean pass', flat.calculator_eligibility_notes, '');
+
+// eligibilityStatus: pending dominates fail; never "fail" on an unloaded table.
+eq('elig pending dominates a genuine fail', lead.eligibilityStatus({ funding_option: 'tba', income_limit: 'fail', second: 'pending' }).status, 'pending');
+eq('elig both gates pass -> pass', lead.eligibilityStatus({ funding_option: 'tba', income_limit: 'pass', second: 'pass' }).status, 'pass');
+eq('elig income fail -> fail', lead.eligibilityStatus({ funding_option: 'tba', income_limit: 'fail', second: 'pass' }).status, 'fail');
+eq('elig income fail note', lead.eligibilityStatus({ funding_option: 'tba', income_limit: 'fail', second: 'pass' }).notes, 'income over county limit');
+eq('elig Bond pending note', lead.eligibilityStatus({ funding_option: 'bond', income_limit: 'pending', second: 'pending' }).notes, 'Bond limits pending verification');
+
+// Hardening: an object landing in a scalar slot -> '' + warning, never "[object Object]".
+var badFlat = lead.flattenForGhl({ source: 'calculator', contact: { email: {} }, calculator: { inputs: { price: {} } } });
+assertAllStrings(badFlat, 'badFlat');
+eq('guard: object email -> empty', badFlat.email, '');
+eq('guard: object price -> empty', badFlat.calculator_purchase_price, '');
+
 console.log('\n' + pass + ' assertions passed.\n');
 
 console.log('DPA breakdown:');

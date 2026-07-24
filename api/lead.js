@@ -70,10 +70,53 @@ function validate(p) {
 // nested shape. Every key is sent even when empty: GHL only exposes keys it
 // has actually received, so omitting empties makes fields vanish from mapping.
 // Booleans and numbers are stringified.
-function ghlStr(v) {
+// Stringify one scalar for a GHL field. null/undefined -> '' (send the key
+// anyway; GHL only exposes keys it has seen). Booleans/numbers stringified.
+// An object/array reaching here means a mapping points at a nested block
+// instead of a scalar — the exact bug that let a silent "[object Object]"
+// land in a CRM field and read as real data. Warn (with the key) and emit ''.
+function ghlStr(v, key) {
   if (v === null || v === undefined) return '';
   if (typeof v === 'string') return v;
-  return String(v);
+  if (typeof v === 'object') {
+    console.warn('[lead] flattenForGhl: non-scalar value for "' + (key || '?') +
+      '" — emitting empty string instead of "[object Object]"');
+    return '';
+  }
+  return String(v); // booleans, numbers
+}
+
+// Overall eligibility from calc.eligibility's two gates (income_limit + second).
+// PENDING DOMINATES: any gate still pending -> whole thing 'pending'. We never
+// report 'fail' just because a config table isn't loaded yet. Only when both
+// gates hold real numeric limits do we settle to 'pass' / 'fail'. Notes carry
+// a short human reason ('' on a clean pass).
+function eligibilityStatus(e) {
+  if (!e || typeof e !== 'object') return { status: 'pending', notes: 'eligibility not evaluated' };
+  var gates = [e.income_limit, e.second];
+  if (gates.indexOf('pending') !== -1) {
+    var notes;
+    if (e.funding_option === 'bond') {
+      notes = 'Bond limits pending verification';
+    } else {
+      var p = [];
+      if (e.income_limit === 'pending') p.push('income limit');
+      if (e.second === 'pending') p.push('loan limit');
+      notes = (p.length ? p.join(' and ') : 'eligibility') + ' pending verification';
+    }
+    return { status: 'pending', notes: notes };
+  }
+  if (gates.indexOf('fail') !== -1) {
+    var reasons = [];
+    if (e.income_limit === 'fail') reasons.push('income over county limit');
+    if (e.second === 'fail') {
+      reasons.push(e.second_kind === 'purchase_price'
+        ? 'purchase price over county limit'
+        : 'first mortgage over county maximum loan');
+    }
+    return { status: 'fail', notes: reasons.join('; ') };
+  }
+  return { status: 'pass', notes: '' };
 }
 
 function flattenForGhl(p) {
@@ -83,43 +126,58 @@ function flattenForGhl(p) {
   var con = p.consent || {};
   var srv = p.server || {};
   var m = p.meta || {};
+
+  // The calculator block is nested (see js/calculator-ui.js buildPayload):
+  // inputs.*, a scalar dpa, and monthly/dti/cash_to_close/eligibility objects.
+  // Reach into the paths the UI actually emits and pull one scalar from each.
+  var ci = calc.inputs || {};
+  var monthly = calc.monthly || {};
+  var cash = calc.cash_to_close || {};
+  // DTI: back-end ratio as a percentage rounded to one decimal (e.g. 41.8).
+  var dtiBack = (calc.dti && typeof calc.dti.back === 'number' && isFinite(calc.dti.back))
+    ? Math.round(calc.dti.back * 10) / 10
+    : null;
+  var elig = eligibilityStatus(calc.eligibility);
+
   return {
     // Already top-level — kept as-is.
-    source: ghlStr(p.source),
-    page_url: ghlStr(p.page_url),
-    submitted_at: ghlStr(p.submitted_at),
+    source: ghlStr(p.source, 'source'),
+    page_url: ghlStr(p.page_url, 'page_url'),
+    submitted_at: ghlStr(p.submitted_at, 'submitted_at'),
 
-    first_name: ghlStr(c.first_name),
-    last_name: ghlStr(c.last_name),
-    email: ghlStr(c.email),
-    phone: ghlStr(c.phone),
+    first_name: ghlStr(c.first_name, 'first_name'),
+    last_name: ghlStr(c.last_name, 'last_name'),
+    email: ghlStr(c.email, 'email'),
+    phone: ghlStr(c.phone, 'phone'),
 
-    occupation: ghlStr(pr.occupation),
-    county: ghlStr(pr.county),
-    timeline: ghlStr(pr.timeline),
+    occupation: ghlStr(pr.occupation, 'occupation'),
+    county: ghlStr(pr.county, 'county'),
+    timeline: ghlStr(pr.timeline, 'timeline'),
 
-    calculator_purchase_price: ghlStr(calc.purchase_price),
-    calculator_loan_type: ghlStr(calc.loan_type),
-    calculator_funding_option: ghlStr(calc.funding_option),
-    calculator_estimated_assistance: ghlStr(calc.estimated_assistance),
-    calculator_estimated_monthly: ghlStr(calc.estimated_monthly),
-    calculator_cash_to_close: ghlStr(calc.cash_to_close),
-    calculator_dti: ghlStr(calc.dti),
-    calculator_eligible: ghlStr(calc.eligible),
+    calculator_purchase_price: ghlStr(ci.price, 'calculator_purchase_price'),
+    calculator_loan_type: ghlStr(ci.loan_type, 'calculator_loan_type'),
+    calculator_funding_option: ghlStr(calc.funding_option, 'calculator_funding_option'),
+    calculator_estimated_assistance: ghlStr(calc.dpa, 'calculator_estimated_assistance'),
+    calculator_estimated_monthly: ghlStr(monthly.total_piti, 'calculator_estimated_monthly'),
+    // Total cash due at closing after HTH assistance is applied.
+    calculator_cash_to_close: ghlStr(cash.estimated_cash_to_close, 'calculator_cash_to_close'),
+    calculator_dti: ghlStr(dtiBack, 'calculator_dti'),
+    calculator_eligible: ghlStr(elig.status, 'calculator_eligible'),
+    calculator_eligibility_notes: ghlStr(elig.notes, 'calculator_eligibility_notes'),
 
-    consent_tcpa: ghlStr(con.tcpa),
-    consent_text: ghlStr(con.text),
+    consent_tcpa: ghlStr(con.tcpa, 'consent_tcpa'),
+    consent_text: ghlStr(con.text, 'consent_text'),
 
-    server_received_at: ghlStr(srv.received_at),
-    server_ip: ghlStr(srv.ip),
-    server_user_agent: ghlStr(srv.user_agent),
+    server_received_at: ghlStr(srv.received_at, 'server_received_at'),
+    server_ip: ghlStr(srv.ip, 'server_ip'),
+    server_user_agent: ghlStr(srv.user_agent, 'server_user_agent'),
 
-    utm_source: ghlStr(m.utm_source),
-    utm_medium: ghlStr(m.utm_medium),
-    utm_campaign: ghlStr(m.utm_campaign),
-    gclid: ghlStr(m.gclid),
-    referrer: ghlStr(m.referrer),
-    src: ghlStr(m.src)
+    utm_source: ghlStr(m.utm_source, 'utm_source'),
+    utm_medium: ghlStr(m.utm_medium, 'utm_medium'),
+    utm_campaign: ghlStr(m.utm_campaign, 'utm_campaign'),
+    gclid: ghlStr(m.gclid, 'gclid'),
+    referrer: ghlStr(m.referrer, 'referrer'),
+    src: ghlStr(m.src, 'src')
   };
 }
 
@@ -200,3 +258,8 @@ module.exports = async function handler(req, res) {
   console.error('[lead] GHL forward failed (' + lastErr + '); logging for recovery: ' + JSON.stringify(enriched));
   return res.status(502).json({ ok: false, error: 'forward_failed' });
 };
+
+// Exposed for unit tests only. Vercel invokes module.exports as the request
+// handler; these extra properties on the function are inert at runtime.
+module.exports.flattenForGhl = flattenForGhl;
+module.exports.eligibilityStatus = eligibilityStatus;
