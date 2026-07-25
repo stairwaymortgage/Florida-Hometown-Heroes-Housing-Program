@@ -21,6 +21,7 @@
   "dpa": {
     "pct": 0.05,
     "basis": "total_loan_amount",
+    "basis_includes_financed_mi": false,
     "min": 10000,
     "max": 35000,
     "rate": 0,
@@ -45,8 +46,8 @@
       "Cannot bridge an appraisal gap or repay borrower debt"
     ],
     "_provenance": {
-      "basis_includes_financed_mi": null,
-      "note": "UNVERIFIED. The guide says '5% of the TOTAL loan amount' and the eHPortal auto-calculates it. Whether 'total' includes financed UFMIP / VA funding fee / USDA guarantee fee is not stated. Confirm with a participating lender. Until then compute off the base loan and label the output as an estimate the lender confirms at reservation."
+      "flag": "dpa.basis_includes_financed_mi (above) — currently false.",
+      "note": "UNVERIFIED. The guide says '5% of the TOTAL loan amount' and the eHPortal auto-calculates it. Whether 'total' includes financed UFMIP / VA funding fee / USDA guarantee fee is not stated. Confirm with a participating lender. While the flag stays false, the calculator computes 5% off the BASE loan (purchase price minus base down payment) and labels the output an estimate the lender confirms at reservation. When a participating lender confirms 'total' includes financed MI, set dpa.basis_includes_financed_mi to true — that single boolean is the entire change (js/calculator.js dpaBreakdown reads it). Note the financed-MI basis also needs the upfront-MI % (loan_types.*.ufmip_pct / funding_fee_pct / upfront_fee_pct), several of which are still null; where null, the basis falls back to the base loan until that % is supplied."
     }
   },
   "funding_options": {
@@ -457,7 +458,29 @@
       "usda": 119850
     }
   },
-  "income_limits_bond": {},
+  "income_limits_bond": {
+    "_README": "Bond income + purchase-price limits, per county. While this object holds only _README/_field_guide/_TEMPLATE (no real county keys), every Bond eligibility gate renders 'pending' — the safe default. To ACTIVATE a county: copy the _TEMPLATE object, rename the key to the county's EXACT dropdown name (e.g. \"Miami-Dade\", \"St. Johns\"), and replace every 0 with the real figure from the FHFC HTH Bond Lender Guide (7.20.26, pp.18-19). Any field left 0 keeps that gate 'pending' — 0 is never treated as a real limit. Do NOT invent, round, or infer numbers from another county.",
+    "_field_guide": {
+      "income_non_targeted_1_2_person": "annual household income cap — non-targeted area, 1-2 person household",
+      "income_non_targeted_3_plus_person": "annual household income cap — non-targeted area, 3+ person household",
+      "income_targeted_1_2_person": "annual household income cap — federally targeted area (QCT), 1-2 person",
+      "income_targeted_3_plus_person": "annual household income cap — federally targeted area (QCT), 3+ person",
+      "usda_1_2_person": "USDA-RD income cap — 1-2 person (applies only to USDA loans)",
+      "usda_3_plus_person": "USDA-RD income cap — 3+ person",
+      "purchase_price_non_targeted": "maximum purchase price — non-targeted area",
+      "purchase_price_targeted": "maximum purchase price — federally targeted area (QCT)"
+    },
+    "_TEMPLATE": {
+      "income_non_targeted_1_2_person": 0,
+      "income_non_targeted_3_plus_person": 0,
+      "income_targeted_1_2_person": 0,
+      "income_targeted_3_plus_person": 0,
+      "usda_1_2_person": 0,
+      "usda_3_plus_person": 0,
+      "purchase_price_non_targeted": 0,
+      "purchase_price_targeted": 0
+    }
+  },
   "purchase_price_limits": {},
   "max_loan_limits": {
     "Alachua": {

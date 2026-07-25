@@ -28,6 +28,9 @@
 
   function round2(n) { return Math.round(n * 100) / 100; }
   function num(n) { var v = parseFloat(n); return isFinite(v) ? v : 0; }
+  // A usable positive limit, else null (so gate() -> 'pending'). Treats 0,
+  // placeholders, and non-numbers as "not set" — never as a real $0 cap.
+  function posNum(n) { return (typeof n === 'number' && isFinite(n) && n > 0) ? n : null; }
 
   var GOV = { fha: 1, usda: 1, va: 1 };
 
@@ -66,10 +69,25 @@
   function dpaBreakdown(config, price, key) {
     if (!(price > 0)) throw new Error('Purchase price must be a positive number.');
     var band = config.dpa;
-    var pct = loanType(config, key).min_down_pct;
+    var lt = loanType(config, key);
+    var pct = lt.min_down_pct;
     var baseDown = price * pct;                 // full precision
     var fm = price - baseDown;                  // base loan / first mortgage
-    var raw = fm * band.pct;                    // dpa.pct of the base loan
+
+    // The 5% DPA basis. dpa.basis_includes_financed_mi answers the open lender
+    // question: is the 5% taken on the base loan, or on the loan AFTER upfront MI
+    // (UFMIP / VA funding fee / USDA guarantee fee) is financed in? Default false
+    // -> base loan (current behaviour). Flip that single config boolean to true
+    // once a participating lender confirms; nothing else changes. When true but
+    // the upfront-MI % is still null (unverified), there is nothing to add, so the
+    // basis safely stays the base loan until that % is supplied too.
+    var dpaBasis = fm;
+    if (band.basis_includes_financed_mi) {
+      var up = miPcts(lt).upfront;
+      if (up != null) dpaBasis = fm + fm * up;  // base loan + financed upfront MI
+    }
+
+    var raw = dpaBasis * band.pct;              // dpa.pct of the chosen basis
     var clamped = Math.min(band.max, Math.max(band.min, raw));
     var dpa = Math.floor(round2(clamped));      // FLOOR to whole dollars (never up)
     var hit = clamped >= band.max ? 'ceiling' : (clamped <= band.min ? 'floor' : null);
@@ -79,6 +97,8 @@
       base_down_pct: pct,
       base_down: round2(baseDown),
       first_mortgage: round2(fm),
+      dpa_basis: round2(dpaBasis),
+      dpa_basis_includes_financed_mi: !!band.basis_includes_financed_mi,
       dpa_uncapped: round2(raw),
       dpa: dpa,
       clamp: hit
@@ -127,8 +147,24 @@
       secondKind = 'max_loan';
       secondValue = num(o.first_mortgage);
     } else {
-      var pp = (config.purchase_price_limits || {})[o.county];
-      secondLimit = (typeof pp === 'number') ? pp : null;
+      // Bond: read the per-county block from income_limits_bond when present.
+      // Household size + targeted-area (QCT) are not collected on the form yet,
+      // so we default to the NON-TARGETED, 1-2-person column — the lowest cap,
+      // which never overstates eligibility. USDA loans use the USDA column.
+      // A missing block or any 0 placeholder -> posNum() returns null -> gate()
+      // renders 'pending'. Refining the tier (household size, targeted-area
+      // detection) is the remaining Bond work and needs new form inputs, not a
+      // change here. Top-level purchase_price_limits is legacy and unused now.
+      var bond = (config.income_limits_bond || {})[o.county];
+      if (bond) {
+        incomeLimit = (loan === 'usda')
+          ? posNum(bond.usda_1_2_person)
+          : posNum(bond.income_non_targeted_1_2_person);
+        incomeBasis = (loan === 'usda')
+          ? 'USDA Bond income limit (1–2 person)'
+          : 'Bond income limit (non-targeted, 1–2 person)';
+        secondLimit = posNum(bond.purchase_price_non_targeted);
+      }
       secondKind = 'purchase_price';
       secondBasis = 'purchase-price limit';
       secondValue = num(o.price);

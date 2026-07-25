@@ -66,6 +66,48 @@ assert.throws(function () { calc.dpaBreakdown(config, 0, 'fha'); }, /positive/);
 assert.throws(function () { calc.dpaBreakdown(config, 300000, 'xyz'); }, /Unknown loan type/);
 console.log('  ok  guards: bad price + bad loan type throw');
 
+// --- DPA basis flag (dpa.basis_includes_financed_mi): safe default is false ---
+var bDefault = calc.dpaBreakdown(config, 300000, 'fha');
+eq('basis flag default false', bDefault.dpa_basis_includes_financed_mi, false);
+eq('basis = base first mortgage when false', bDefault.dpa_basis, 289500);
+eq('DPA off base loan unchanged = 14475', bDefault.dpa, 14475);
+// Flip the ONE boolean -> DPA computes off the financed loan (base + upfront MI).
+var cfgFinanced = JSON.parse(JSON.stringify(config));
+cfgFinanced.dpa.basis_includes_financed_mi = true;         // fha.ufmip_pct already 0.0175
+var bFin = calc.dpaBreakdown(cfgFinanced, 300000, 'fha');
+var expBasis = 289500 + 289500 * 0.0175;                   // = 294566.25
+eq('basis flag true reported', bFin.dpa_basis_includes_financed_mi, true);
+eq('basis = base + financed UFMIP when true', bFin.dpa_basis, Math.round(expBasis * 100) / 100);
+assert.ok(bFin.dpa > bDefault.dpa, 'financed-MI basis yields a higher DPA than base (' + bFin.dpa + ' > ' + bDefault.dpa + ')');
+console.log('  ok  basis flag true -> DPA off financed loan = ' + bFin.dpa + ' (vs base ' + bDefault.dpa + ')');
+pass++;
+// If the flag is true but the upfront-MI % is null, basis falls back to base loan.
+var cfgFinNoMi = JSON.parse(JSON.stringify(config));
+cfgFinNoMi.dpa.basis_includes_financed_mi = true;
+cfgFinNoMi.loan_types.va.funding_fee_pct = null;           // already null; explicit
+eq('flag true + null upfront % -> basis = base loan', calc.dpaBreakdown(cfgFinNoMi, 320000, 'va').dpa_basis, 320000);
+
+// --- Bond eligibility: empty table pending; lights up when a county block is added ---
+var eBondEmpty = calc.eligibility(config, { funding_option: 'bond', loan_type: 'fha', county: 'Orange', annual_income: 95000, price: 300000 });
+eq('Bond income pending when no county block', eBondEmpty.income_limit, 'pending');
+eq('Bond price pending when no county block', eBondEmpty.second, 'pending');
+// Populate one county with positive (test-only) values -> gate uses them.
+var cfgBond = JSON.parse(JSON.stringify(config));
+cfgBond.income_limits_bond['Orange'] = {
+  income_non_targeted_1_2_person: 120000, income_non_targeted_3_plus_person: 138000,
+  income_targeted_1_2_person: 144000, income_targeted_3_plus_person: 168000,
+  usda_1_2_person: 110000, usda_3_plus_person: 145000,
+  purchase_price_non_targeted: 350000, purchase_price_targeted: 428000
+};
+eq('Bond income 95k <= 120k -> pass', calc.eligibility(cfgBond, { funding_option: 'bond', loan_type: 'fha', county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pass');
+eq('Bond income 130k > 120k -> fail', calc.eligibility(cfgBond, { funding_option: 'bond', loan_type: 'fha', county: 'Orange', annual_income: 130000, price: 300000 }).income_limit, 'fail');
+eq('Bond price 300k <= 350k -> pass', calc.eligibility(cfgBond, { funding_option: 'bond', loan_type: 'fha', county: 'Orange', annual_income: 95000, price: 300000 }).second, 'pass');
+eq('Bond price 400k > 350k -> fail', calc.eligibility(cfgBond, { funding_option: 'bond', loan_type: 'fha', county: 'Orange', annual_income: 95000, price: 400000 }).second, 'fail');
+eq('Bond USDA uses USDA column (95k <= 110k pass)', calc.eligibility(cfgBond, { funding_option: 'bond', loan_type: 'usda', county: 'Orange', annual_income: 95000, price: 300000 }).income_limit, 'pass');
+// A county copied from _TEMPLATE but left at 0 stays pending (0 is never a real cap).
+cfgBond.income_limits_bond['Lee'] = JSON.parse(JSON.stringify(config.income_limits_bond._TEMPLATE));
+eq('Bond zero-placeholder county still pending', calc.eligibility(cfgBond, { funding_option: 'bond', loan_type: 'fha', county: 'Lee', annual_income: 95000, price: 300000 }).income_limit, 'pending');
+
 // --- flattenForGhl: the flat scalar map GHL actually receives over the wire ---
 var lead = require('../api/lead.js');
 
