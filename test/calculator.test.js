@@ -150,7 +150,11 @@ var flat = lead.flattenForGhl({
   contact: { first_name: 'Maria', last_name: 'Gonzalez', email: 'maria@example.com', phone: '(407) 555-0142' },
   profile: { occupation: null, county: 'Orange', timeline: null },
   calculator: cb,
-  consent: { tcpa: true, text: 'consent string' },
+  consent: {
+    tcpa: true, text: 'consent string',
+    email_opt_in: true,
+    email_opt_in_text: 'Email me my estimate and related program updates. I can unsubscribe anytime.'
+  },
   server: { received_at: '2026-07-24T15:30:00.512Z', ip: '203.0.113.77', user_agent: 'UA' },
   meta: { utm_source: 'google', utm_medium: 'cpc', utm_campaign: 'c', gclid: 'g', referrer: 'r', src: 's' }
 });
@@ -170,6 +174,16 @@ eq('flat cash_to_close <- estimated_cash_to_close', flat.calculator_cash_to_clos
 eq('flat dti <- dti.back rounded 1dp', flat.calculator_dti, String(Math.round(cb.dti.back * 10) / 10));
 eq('flat eligible (TBA FHA both gates pass)', flat.calculator_eligible, 'pass');
 eq('flat eligibility_notes empty on clean pass', flat.calculator_eligibility_notes, '');
+
+// Email opt-in: boolean stringified, wording carried verbatim. A form that never
+// offered the checkbox (contact page) must flatten to '' — never a stray "true".
+eq('flat email_opt_in <- consent.email_opt_in', flat.consent_email_opt_in, 'true');
+eq('flat email_opt_in_text verbatim', flat.consent_email_opt_in_text,
+  'Email me my estimate and related program updates. I can unsubscribe anytime.');
+var noOptIn = lead.flattenForGhl({ source: 'contact', consent: { tcpa: true, text: 'consent string' } });
+eq('flat email_opt_in absent -> empty', noOptIn.consent_email_opt_in, '');
+eq('flat email_opt_in unchecked -> false',
+  lead.flattenForGhl({ source: 'calculator', consent: { email_opt_in: false } }).consent_email_opt_in, 'false');
 
 // eligibilityStatus: pending dominates fail; never "fail" on an unloaded table.
 eq('elig pending dominates a genuine fail', lead.eligibilityStatus({ funding_option: 'tba', income_limit: 'fail', second: 'pending' }).status, 'pending');

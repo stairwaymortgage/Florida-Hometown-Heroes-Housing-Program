@@ -167,6 +167,10 @@ function flattenForGhl(p) {
 
     consent_tcpa: ghlStr(con.tcpa, 'consent_tcpa'),
     consent_text: ghlStr(con.text, 'consent_text'),
+    // Calculator form only. Non-calculator forms send neither key, so these
+    // flatten to '' — a blank is "not offered", not an opt-in.
+    consent_email_opt_in: ghlStr(con.email_opt_in, 'consent_email_opt_in'),
+    consent_email_opt_in_text: ghlStr(con.email_opt_in_text, 'consent_email_opt_in_text'),
 
     server_received_at: ghlStr(srv.received_at, 'server_received_at'),
     server_ip: ghlStr(srv.ip, 'server_ip'),

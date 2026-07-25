@@ -179,6 +179,9 @@
         };
         var est = NS.calc.estimate(config, input);
         var consentEl = el('calc-consent-text');
+        // Optional email opt-in — absent or unchecked means false, never assumed.
+        var emailOptInBox = el('calc-email-consent');
+        var emailOptInEl = el('calc-email-consent-text');
         return {
           source: 'calculator',
           page_url: w.location.href,
@@ -206,7 +209,14 @@
             cash_to_close: est.cash_to_close,
             eligibility: est.eligibility
           },
-          consent: { tcpa: form.consent.checked, text: consentEl ? consentEl.textContent.replace(/\s+/g, ' ').trim() : '' },
+          consent: {
+            tcpa: form.consent.checked,
+            text: consentEl ? consentEl.textContent.replace(/\s+/g, ' ').trim() : '',
+            // The wording is recorded either way — it is evidence of what was
+            // displayed; the boolean records what the user actually chose.
+            email_opt_in: !!(emailOptInBox && emailOptInBox.checked),
+            email_opt_in_text: emailOptInEl ? emailOptInEl.textContent.replace(/\s+/g, ' ').trim() : ''
+          },
           meta: NS.getAttribution()
         };
       },

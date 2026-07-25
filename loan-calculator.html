@@ -162,6 +162,14 @@
           </div>
           <span class="field-error consent-error" id="err-consent" aria-live="polite"></span>
 
+          <!-- Optional email opt-in. NOT required: unchecking it still shows the
+               on-screen estimate. The label is the verbatim consent string that
+               buildPayload reads live — same pattern as #calc-consent-text above. -->
+          <div class="consent">
+            <input type="checkbox" id="calc-email-consent" name="calc_email_consent" checked>
+            <label for="calc-email-consent" class="consent-text" id="calc-email-consent-text">Email me my estimate and related program updates. I can unsubscribe anytime.</label>
+          </div>
+
           <button type="submit" class="form-submit" id="calc-submit">Show My Estimate →</button>
           <div class="form-status" id="calc-status" role="status" aria-live="polite"></div>
         </form>
