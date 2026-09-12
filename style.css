@@ -306,6 +306,15 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--white);
 }
 .hero h1 .accent { color: var(--blue); }
+.hero h2 { color: var(--white); }
+.hero h3 { color: var(--white); }
+.hero h4 { color: var(--white); }
+.hero p { color: rgba(255,255,255,0.92); }
+.hero p strong { color: var(--white); }
+.hero strong { color: var(--white); }
+.hero li { color: rgba(255,255,255,0.92); }
+.hero li strong { color: var(--white); }
+.hero a { color: var(--white); }
 .hero-sub {
   font-size: 17px;
   color: rgba(255,255,255,0.92);
