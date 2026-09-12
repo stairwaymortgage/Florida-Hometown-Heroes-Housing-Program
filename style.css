@@ -388,9 +388,28 @@ section { padding: 4rem 1.5rem; }
 .section-inner.narrow { max-width: 900px; }
 
 .section-white { background: var(--white); }
-.section-blue { background: var(--surface-tint); color: var(--text-body); }
-.section-blue .btn-outline-white { color: var(--navy); border-color: var(--navy); }
-.section-blue .btn-outline-white:hover { background: var(--navy); color: var(--text-inverse); }
+.section-blue { background: var(--blue-deep); color: var(--text-inverse); }
+.section-blue .eyebrow { color: rgba(255,255,255,0.85); }
+.section-blue h2 { color: var(--white); }
+.section-blue h3 { color: var(--white); }
+.section-blue h4 { color: var(--white); }
+.section-blue p { color: var(--text-inverse); }
+.section-blue p strong { color: var(--text-inverse); }
+.section-blue li { color: var(--text-inverse); }
+.section-blue li strong { color: var(--text-inverse); }
+.section-blue a { color: var(--white); text-decoration: underline; }
+.section-blue a:hover { color: rgba(255,255,255,0.8); }
+.section-blue .btn-outline-white { color: var(--white); border-color: var(--white); text-decoration: none; }
+.section-blue .btn-outline-white:hover { background: var(--white); color: var(--blue-deep); }
+.section-blue .btn.btn-orange { text-decoration: none; }
+.section-blue .faq-list { border-top-color: rgba(255,255,255,0.25); }
+.section-blue .faq-item { border-bottom-color: rgba(255,255,255,0.25); }
+.section-blue .faq-item summary { color: var(--white); }
+.section-blue .faq-item summary:hover { color: rgba(255,255,255,0.8); }
+.section-blue .faq-item summary::after { color: rgba(255,255,255,0.7); }
+.section-blue .faq-item[open] summary { color: var(--white); }
+.section-blue .faq-item[open] summary::after { color: var(--white); }
+.section-blue .faq-answer { color: var(--text-inverse); }
 .section-sage { background: var(--sage-bg); }
 .section-peach { background: var(--peach-tint); }
 .section-navy { background: var(--navy); color: var(--white); }

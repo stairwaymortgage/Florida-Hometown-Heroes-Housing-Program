@@ -162,7 +162,7 @@
         success: 'Your estimate is below. A licensed specialist will follow up to confirm the numbers.',
         botSuccess: 'Your estimate is below.',
         fixErrors: 'Please fix the highlighted fields to see your estimate.',
-        networkError: 'Your estimate is shown below, but we could not send your details. Please try again, or call (602) 344-9333.'
+        networkError: 'Your estimate is shown below, but we could not send your details. Please try again, or call (954) 993-1625.'
       },
       buildPayload: function (form) {
         var input = {
