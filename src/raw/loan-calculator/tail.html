@@ -1,0 +1,14 @@
+  <!-- Shared lead pipeline + calculator math + UI, then load config and init. -->
+  <script src="/js/lead.js"></script>
+  <script src="/js/form-validate.js"></script>
+  <script src="/js/calculator.js"></script>
+  <script src="/js/calculator-ui.js"></script>
+  <script>
+    fetch('/config/program-2026.json')
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (config) { FHTH.initCalculator(config); })
+      .catch(function () {
+        var s = document.getElementById('calc-status');
+        if (s) { s.className = 'form-status error'; s.textContent = 'The calculator could not load right now. Please call (954) 993-1625 for an estimate.'; }
+      });
+  </script>

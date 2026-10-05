@@ -14,26 +14,33 @@ Never label the assistance a "grant" or "free money" anywhere in copy or calcula
 
 ## Repo structure
 
+Astro 5 static site (migrated from plain HTML, Oct 2026). Output URLs are unchanged:
+`build.format: 'file'` emits `contact-us.html` etc. and Vercel `cleanUrls` serves `/contact-us`.
+
 ```
-index.html                  15-section long-form guide (contains #calculator)
-eligible-occupations.html   occupation categories
-income-limits.html          county income limits + TBA vs Bond explainer
-contact-us.html             the site's primary lead form
-schedule-a-call.html        consultation page — Calendly slot still a placeholder
-header.html / footer.html   partials injected at runtime by includes.js
-style.css                   single stylesheet, token-based
-js/includes.js              injects header/footer into [data-include]
-js/lead.js                  FHTH.postLead() + attribution capture
-js/form-validate.js         FHTH.enhanceForm() — generic, form-agnostic
-js/calculator.js            pure DPA math, no DOM, config-injected
-js/calculator-ui.js         calculator DOM wiring
-config/program-2026.json    all program constants
-test/calculator.test.js     node test/calculator.test.js
+src/pages/*.astro           one per route; each imports its raw HTML fragments
+src/raw/<page>/head.html    page <title>, meta, canonical (verbatim from the old HTML)
+src/raw/<page>/main.html    page body between header and footer (verbatim)
+src/raw/<page>/tail.html    page scripts after the footer (verbatim)
+src/raw/header.html         header partial — rendered at BUILD time (was runtime includes.js)
+src/raw/footer.html         footer partial — rendered at build time
+src/layouts/Base.astro      shell: head + header + main + footer + tail; nav-active highlight
+public/style.css            single stylesheet, token-based
+public/js/lead.js           FHTH.postLead() + attribution capture
+public/js/form-validate.js  FHTH.enhanceForm() — generic, form-agnostic
+public/js/calculator.js     pure DPA math, no DOM, config-injected
+public/js/calculator-ui.js  calculator DOM wiring
+public/config/program-2026.json  all program constants (also the data source for county pages)
+api/lead.js                 Vercel serverless function (stays at repo root, CommonJS)
+test/calculator.test.js     npm test
 ```
 
+Build: `npm install && npm run build` → `dist/`. Sitemap is generated (`sitemap-index.xml`).
+Do not add `"type": "module"` to package.json — `api/lead.js` and the tests are CommonJS.
+Deploy branch is `main`.
+
 **Script load order matters.** `lead.js` → `form-validate.js` → page init.
-Plain `<script>` before `</body>`, no defer. Header/footer are injected at runtime, so
-never put form markup inside a partial without re-checking init timing.
+Plain `<script>` before `</body>`, no defer.
 
 ---
 

@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schedule a Call – Florida Hometown Heroes Housing Program 2026</title>
-  <meta name="description" content="Book a 30-minute consultation with a Florida Hometown Heroes Housing Program expert. Free strategy review.">
-  <link rel="canonical" href="https://floridahometownheroeshousingprogram2026.com/schedule-a-call">
-  <link rel="stylesheet" href="style.css">
-  <script src="includes.js" defer></script>
-  <style>[data-include]{min-height:60px;}</style>
-</head>
-<body>
-  <div data-include="header"></div>
-
   <main>
     <section class="hero hero-schedule">
       <div class="hero-inner">
@@ -62,26 +47,4 @@
     </section>
   </main>
 
-  <div data-include="footer"></div>
-
-  <!-- Shared lead pipeline: needed for FHTH.getAttribution() below. -->
-  <script src="js/lead.js"></script>
-  <script>
-    // Booking flow lives on an external domain — attribution won't carry across
-    // the jump on its own. Rebuild the outbound href at runtime from this
-    // session's stored first-touch attribution so every click carries it.
-    (function () {
-      var link = document.getElementById('book-call');
-      if (!link || !window.FHTH || !FHTH.getAttribution) return;
-      var a = FHTH.getAttribution();
-      var params = new URLSearchParams();
-      if (a.utm_source)   params.set('utm_source', a.utm_source);
-      if (a.utm_medium)   params.set('utm_medium', a.utm_medium);
-      if (a.utm_campaign) params.set('utm_campaign', a.utm_campaign);
-      if (a.gclid)        params.set('gclid', a.gclid);
-      params.set('src', 'schedule-page');
-      link.href = 'https://stairwaymortgage.com/schedule-call?' + params.toString();
-    })();
-  </script>
-</body>
-</html>
+  
