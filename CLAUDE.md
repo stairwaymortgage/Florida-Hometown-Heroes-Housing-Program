@@ -35,6 +35,12 @@ api/lead.js                 Vercel serverless function (stays at repo root, Comm
 test/calculator.test.js     npm test
 ```
 
+County pages: `src/pages/[slug].astro` → `/{county}-county-housing-program` (67) + hub
+`/florida-county-housing-programs`. Data: `src/data/counties.json`, limits from `public/config/program-2026.json`.
+County news: `src/data/county-news.json`, refreshed daily by `.github/workflows/county-news.yml`
+(runs `scripts/update-county-news.mjs`; titles + links only, commits as stairwaymortgage so Vercel deploys).
+Manual refresh: GitHub → Actions → "County news refresh" → Run workflow.
+
 Build: `npm install && npm run build` → `dist/`. Sitemap is generated (`sitemap-index.xml`).
 Do not add `"type": "module"` to package.json — `api/lead.js` and the tests are CommonJS.
 Deploy branch is `main`.
