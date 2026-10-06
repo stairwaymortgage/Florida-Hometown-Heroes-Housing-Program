@@ -1,7 +1,31 @@
 {
  "Alachua": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "source": "Gainesville Sun",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMzhJRDFjMHFwUGdPXzlidWg1TkZ2cGV4UjB4SmNRX3lyZVJIdEZURU96U3NUamNuNWlRbm5HRnhwcUQwU1NlMUFzMGZNTkV2RzgtRUlHdXItWXR5SEVhZGZOZXdHQ3dKMk9hTHJWMGJ3bGQxdzFWc3ROVEhHbFFEZ200Tlc5US1oeVVENlhicFRBeEpqaWlKbFNlR3ZuemlaOFpYcVJMUzhtZzVOSHB4a2pRTEt6LUJiaXp1TjRkMFRKRFVPQS1vWV9TVmYzUllKRVI5QWM5SzdvRzlZd1E?oc=5",
+    "title": "UF's Bell spotlights university's economic reach across Alachua County",
+    "summary": "University of Florida's economic impact demonstrates regional growth and employment expansion that supports housing demand and development opportunities."
+   },
+   {
+    "title": "Alachua County code violations to cost Majestic Oaks apartments $278,880",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSHo4aGgzdVJya2g1NmhpX3RXbWxGWE94VkViWXM4ZGdhcFRhYkJOZlpJdDA5c1lwTDJZdkNPMjFHcm5wQ2JpNHA3ejlpcjkzY3FFTE10RVk1SVh5cWtjMEFpalRDWDMtR2Z0ckYzWUxSbjAzUUtZLVUxNlJIR2FGZUF0YlpsYXk2OGV1bDFuamtabWJk?oc=5",
+    "source": "Mainstreet Daily News Gainesville",
+    "date": "2026-09-30"
+   },
+   {
+    "title": "Congresswoman Kat Cammack secures continued housing for homeless veterans in Ocala and Gainesville",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPN1dUdHRDQmRuc1diZzNQanZyTWR5YmlSQjg2WkI1NndZOXAtT0p1WUpHOEZjcEpuTGQ4TV94eFQzZTJPYm5RV0pPNDEySk55VnFXUldQSlhtLWxkMHFRSS1oVVhXTmVTUlA1blZOSmRERjN5RTR4QUxsZ1FMaXZlZHNiVUxoeHlSVkRPRENZZUdJeWFsa2tBSmh3YnBTVEgwOS1pOGhGSHhUQ3pmRVJybHpxUUVYTFR3V3hIWVF3eFJ2LTI4WWVj?oc=5",
+    "source": "Alachua Chronicle",
+    "date": "2026-09-30"
+   },
+   {
+    "title": "Gainesville City Commission discusses housing, adopts annual assessments, approves tentative property tax rates and budget",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcjlqOUVSNy1Xdm1oRTVCYUo5SkpRVTc0elBfdnhXLVhaa3B0N1FzaU1DM08zOG1JVWxfZW5PU2M2dV9kbnFIOEZFRzcyQ0gxeXJEdVc5NHByc2l2Uld5amZNZVozZ0lRUHdGdEt1cjJKUDFmZDFWRXdMM2MzYUFPVWFOUHpfYU9SeTRHSDh2S0hYanR5blJIelRuUTJndlhOVjFWYTlwSDJJc09yUUhGUDd5TE5kRUk1dy12SlJFbklkRlhVTXdPekJESFRieXIxN0N2YkJHbFFaUVliWnRxTEFzMWs?oc=5",
+    "source": "Alachua Chronicle",
+    "date": "2026-09-16"
+   },
    {
     "source": "Gainesville Sun",
     "date": "2026-09-14",
@@ -10,40 +34,34 @@
     "summary": "Recent home price appreciation in Alachua County reflects current market conditions relevant to prospective builders and buyers evaluating property values."
    },
    {
-    "source": "Gainesville Sun",
+    "title": "Gainesville Housing Authority to host ‘Storytime at the Plaza’ on Saturday",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQzhyNi1wOWpqRXZXU3VZVjR5RTVaQ2pLRW81QmZ2bU9IVWFJVVBKQUY1c3FoS3pQS0h0UVMzem9LXzBJbUlINjhONDc0N1ZjU19CaTVFQmtBTWpINXRjcm1WcGYtNWc3bWN0eUVubk5iZncwdDhCTFRJY3ZHQ0NLUXZmckZPR0NUMEZHYzdSUFM4VU9BRUpXcEJB?oc=5",
+    "source": "Mainstreet Daily News Gainesville",
+    "date": "2026-09-10"
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Baker": {
+  "items": [
+   {
+    "source": "flgov.com",
     "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQMzhJRDFjMHFwUGdPXzlidWg1TkZ2cGV4UjB4SmNRX3lyZVJIdEZURU96U3NUamNuNWlRbm5HRnhwcUQwU1NlMUFzMGZNTkV2RzgtRUlHdXItWXR5SEVhZGZOZXdHQ3dKMk9hTHJWMGJ3bGQxdzFWc3ROVEhHbFFEZ200Tlc5US1oeVVENlhicFRBeEpqaWlKbFNlR3ZuemlaOFpYcVJMUzhtZzVOSHB4a2pRTEt6LUJiaXp1TjRkMFRKRFVPQS1vWV9TVmYzUllKRVI5QWM5SzdvRzlZd1E?oc=5",
-    "title": "UF's Bell spotlights university's economic reach across Alachua County",
-    "summary": "University of Florida's economic impact demonstrates regional growth and employment expansion that supports housing demand and development opportunities."
-   }
-  ]
- },
- "Marion": {
-  "updated": "2026-10-05",
-  "items": [
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNk1HQVdRTjZwbi1yQTFIbzV3QjFfZW1CYmdlVzB3S2RpWnJPN0NTNjJtMGtvSGJCNFBQakstaTJ5bURQbXVaT1pObFVZX29oeEdEclpDb216MlZEdWlfM0xUcl9wTVNKMHotZHRPYjBRYkgyb2hXN2hUU0VoVVdKdEp3QVVQRE5UaW9hOWFfQVhXRFJvMmY0SmhNNnd1OWM4VmRrVTAzYUZlLVBIanpVdDhJaTM?oc=5",
+    "title": "Governor Ron DeSantis Appoints Three to the Baker County Development Commission",
+    "summary": "New Development Commission leadership may influence zoning decisions, infrastructure projects, and future residential development patterns in Baker County."
+   },
    {
-    "source": "WCJB | TV20",
-    "date": "2026-09-18",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWGNPUmNaRWx4dVdkVUJld2p4TzFtNk0xdnlhem5SZXhzdnh1Zlg1RFBMRzBydUtCMjNmVVFTSmJ4ZzBvX1NVQzFGNkJFRFdLSWExZUR4QV80eHluSkNhd08wVEYzWGR0UFJMd05ONDZyZkhtbU5wTlZ5dlQtdGczZmZ3dmFHNmtTckdIbEJVVW80SjR3Tnh2c21NSEhDSGc?oc=5",
-    "title": "Workers drive bridge foundation piles for new I-75 exit in Marion County",
-    "summary": "New I-75 exit infrastructure development expands transportation access and may open adjacent land for future residential and commercial growth."
+    "source": "News4JAX",
+    "date": "2026-09-11",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjJQRWRueXdRNEp2WGR6NHE4LWRHeFgxSXZvdVVLT1JSS19yWmI1YlB5NldEOF96OWVYYkQyZGlLTEcwMnR0V2N4bTY4bldpOXh5cTlLdEQ5ZW1DMHhGM0V4LW10aGUyZGRibWNxQ09zTEd1QlllekRwLUY4amd3eGczUGMtZWJUSG9oaEJuTUE2RjVCc1RVc1VJVHlRNFZVX2hQRGJWekZxclJRTXdRWlpkNWdaOWFpcjM3QjEtS3ZYeVVueC1GTFZaSWgtTHE3YnBOcUQ0b2o?oc=5",
+    "title": "More inventory, fewer sales as Northeast Florida housing market moves toward balance in August",
+    "summary": "Increasing home inventory and shifting buyer demand patterns create different market dynamics for both sellers and prospective homebuyers in the region."
    }
-  ]
- },
- "Okaloosa": {
-  "updated": "2026-09-19",
-  "items": [
-   {
-    "source": "WEAR-TV",
-    "date": "2026-09-19",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWURySDJmR0FSS3J0cHhhd25vVzJqQVhzV2EzWEZjVm41RUY4Wld5bGJBSVhxUmswbFB3WWZjU0RIaDFYdm41NGhDT3hGVE9QOWVQbkhHQjBUU241Q3Z5WEhZU3hJTWVLUXFkMmNCMm1iNkdqZURLeTJpQlhmNER6b0c1UWw2Yjd5cHpkWDFNb0lqZkhHMW42T2hKNTlCbjJ4M09n?oc=5",
-    "title": "Okaloosa County commissioners opt to regulate data centers, not ban them - WEAR-TV",
-    "summary": "County's data center regulation strategy may influence commercial development patterns and local economic growth affecting property values and construction opportunities."
-   }
-  ]
+  ],
+  "updated": "2026-10-05"
  },
  "Bay": {
-  "updated": "2026-10-05",
   "items": [
    {
     "source": "Florida for Boomers",
@@ -59,37 +77,139 @@
     "title": "Bay County moves forward with new development impact fees",
     "summary": "Bay County's updated impact fees will affect construction project budgets and development timelines for new residential and commercial properties."
    }
-  ]
+  ],
+  "updated": "2026-10-05"
+ },
+ "Bradford": {
+  "items": [
+   {
+    "source": "Florida Politics",
+    "date": "2026-09-02",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXNTY1IyTUlXREtDaTBnNkQxQ0kxSjdEbU1LOHBEN0NwenY5Umc1R29wUEhhckdYTWQtUW4tVWU0aXhEaHB6Z1JIR1ZWNFl2UF9CQmRoWk5xOVRFQlpnbUhaRUN2UEpsdzR5eTZtT2c3N3ctbmtsNVBkRlFWeExoVnlqUHFtVHVjUjJ0X2YxRUV1M2tmTmVJRHowaFJoamdpZnVDNUZvRWpSNW5YMkZUWGFvYW5aZi1hQ1V2Ty05Y0FieXhQUGxNSnJyWmc1VWxpdnJmQXVNRFVVZw?oc=5",
+    "title": "Gov. DeSantis sends more than $15M to rural communities for economic and infrastructure development",
+    "summary": "State infrastructure funding to rural Florida communities can support roads, utilities, and services essential for residential development and housing growth."
+   }
+  ],
+  "updated": "2026-10-01"
+ },
+ "Brevard": {
+  "items": [
+   {
+    "source": "Florida Today",
+    "date": "2026-10-04",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN3hyVHc2dHpjYWFySWhwSGJ5djZfRFVUaERweGVqUjg0NGFNazlub05FWmt4aVhhMGI4b0lUN1UwbjNBd2NMbV9BNWozQW9CbDgtblhJRklyVUVUSXAxWVFDWjA1ZUs2aVQ2Nkp2SHU1YnpwMGQ0ZDRNWVN1WE5lc1VxVy1rVmd3RzVSeTdMS3draWhHRUl3TmFnLXdQaWNpV0xKbEZnVWxXTUs5LV9rNGxYT21IVlZoUk1XZDNWQWtNS3cy?oc=5",
+    "title": "Florida families can't afford Washington's version of the economy",
+    "summary": "Rising cost-of-living pressures in Florida may influence housing demand and affordability for Brevard County homebuyers and developers."
+   },
+   {
+    "source": "FOX 35 Orlando",
+    "date": "2026-09-21",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNamNkX1RQenl6eUVvdlRMZEs4a2xiV2hkSW5IRi1qR3RBclNNcGFhNDJPSUluOGhlbWlFbWpvaUlNU1Ixb1FNTHNnazN0dHRwT281YXRud2VEOTFlV0NaVHJVR1hlZ1VrWU84QXVNbFZ0M2FxbE9ldkc3MWNyVmR1U1dlSlF4NUk?oc=5",
+    "title": "Health First cuts over 200 jobs in Brevard County",
+    "summary": "Major employer job losses in Brevard County may impact local housing demand and economic conditions for residential real estate development."
+   },
+   {
+    "title": "Former Brevard attorney pleads guilty to multi-year real estate fraud scheme",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOLXREMkVXSHZjRFNibEtjaFRaODRrZ0UwRlBEN00zWHFJU2FBcUNYU1V5Mk5QVW5MS2Q1aXh2R2NFdXVibTgyY1ByZTBUaXQ5ZzMwYUhfbnpKQ3k0Z25hTngxMXlIcmdFODZjNTIwd3hsXy0zM2ZaQWRlX2w4bUw4THNHWW9fZEpyYVdQMWdDMGZTdDhiV2RwVXlMQjFTbEpod2JydTlSVWtHZlRsc1RPZnN5dFU2Z0dx?oc=5",
+    "source": "Orlando-News.com",
+    "date": "2026-09-14"
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Broward": {
-  "updated": "2026-10-05",
   "items": [
    {
-    "source": "The Business Journals",
-    "date": "2026-10-01",
+    "title": "Broward County Growth Plan: Housing, Rail and Flood Resilience",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcUlfVHhPSFZTY1UwalNIODZqUWthdmtxTmd0bGpHTzZ5U05yUTR0TUpGQTJRbVFXZ1JxbTRmUmNUNGpQZEZrTTdudGlSS1RUb2tBS3hTN1dKRlNrN1pFanRoVXNJTDhkZTUyemd6N0EzYXRpeW82QU5VclJVTUw3YzkzZGtaYUo3dndwZTRVeXl3R0ppOXlTY1JhejZKRkUtZTRWb091dEE?oc=5",
+    "source": "Hoodline",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Broward’s growth story: Talent, affordability and resilience take center stage",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNOXNtQ0F2Mzk2ODBpMnJyNGNYUWFUc1B2ajhRaDlhcTdlaVhmV0M0V19zZndLbzR5Y3d1TmRvNmpFYWZPLXgzeDFnR1RzNlN1RGpzOXFuX2wtZ1FILWJDUDVJZGxtZjFuYXRBRnp2cUtUTFN2RnR2RXVPZjNuaVRpaEJONmZXMllyNXZfSUozR3hCTTd0Ul8xaFFfdTVPTmNCdDV3MlVRUXRnaERM?oc=5",
-    "title": "Broward's growth story: Talent, affordability and resilience take center stage",
-    "summary": "Broward County's economic growth and affordability factors are attracting new residents and development opportunities for construction and homebuying."
+    "source": "The Business Journals",
+    "date": "2026-10-01"
    },
    {
-    "source": "The Real Deal",
-    "date": "2026-09-28",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb3lxVjFUc2VaeE9YVVhzcHNldzlxYWg2Rzl0R2ROaWdxMVdqbUN1N1NMbHRKdXVyNVNnb0NJMVp6Q1RLMTdPZXVSams3QTM5b0M2Y1A5TTJZWVZzV2dfa3BLUS15QWR2dmxLclZZem9DUEZ1QXVZc1lUZzUtOExxb2d4RDRZcW1qZG41U3JYd1BPT2lWQXhJWDBEUGh5Z3M?oc=5",
     "title": "Pinnacle taps Broward incentives for apartments with workforce housing units in Sunrise",
-    "summary": "New apartment development in Sunrise uses county incentives to create workforce housing, expanding residential options in the Broward market."
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb3lxVjFUc2VaeE9YVVhzcHNldzlxYWg2Rzl0R2ROaWdxMVdqbUN1N1NMbHRKdXVyNVNnb0NJMVp6Q1RLMTdPZXVSams3QTM5b0M2Y1A5TTJZWVZzV2dfa3BLUS15QWR2dmxLclZZem9DUEZ1QXVZc1lUZzUtOExxb2d4RDRZcW1qZG41U3JYd1BPT2lWQXhJWDBEUGh5Z3M?oc=5",
+    "source": "The Real Deal",
+    "date": "2026-09-28"
    },
    {
-    "source": "citybiz",
-    "date": "2026-09-09",
-    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPaEx0dWNuRXBrZ21hUldKSVQwR3JYdkR2ZEY4UENLQU1SMXVDaVViTkV1QmdFdjloZUdfcDhrSFlXQXBIUVBPS1AzV0MzLVRjbHFkbHNDNThLNUZ6amRCRVlmaUxXbm5iRHB6TnFJMVhVdmw5b3R3bHlTR3RuaHZrampkaXM0SXJDQlhkUDM0am42T1ZYbEFmZ0xtaEM5R2g4SjBPelItc2YybHBuWUJickdSM3JrRUFZMWxRRk5aMTYyVjBZMjFBRFlacF9XaWM2Q1BQRWxYMW5pcGx2WFlsT0dMZDc?oc=5",
-    "title": "As Housing Costs Rise, Pinnacle Secures $40.2 Million for Affordable Senior Housing Development in Broward County",
-    "summary": "Major funding for senior housing development addresses rising costs and creates new residential construction opportunities in Broward County."
+    "title": "Candidates for Plantation mayor say affordable housing high on agendas",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcm9NVzcwVkRUSnZlcE9YTUdFRHdYaEpycjRtM0JwTVVSOWNFaE12bDR3Z0hsYjdNUXJNZWNKQnlkeEU1dW90OEpTZEJWQkw3TmFoVGFFSlFOZHROdWJLZWVoU1N1dnowLWd0cklJOEJfd3ZkSXR4cVBpbjNGN1J4Wk1BdFUtZTc1U0hPTV9YQXNTdE1KaEV6Szc0Q044Wk00SHUzVnVJWWlrOERhY0dUN0JOenFuYVU2SERzSg?oc=5",
+    "source": "WPLG Local 10",
+    "date": "2026-09-28"
+   },
+   {
+    "title": "Broward $1M-plus home sales rise 22.6% in August",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQVXJZTjRrM2ttME5qZmE0SnNIQ21kVjRlRFpldzVucXlkSXAxOE12VUlLV3R6bXFNa3l3YmJVeVhEcDdUNDBwaElhbEZKR1Jja01RT2g5OGFxNW9FVm9GeWdxYkw5SGttYUJrSlFWNWVKNGwwaTlUS0YxMWpCUzRtQ0VyU3huMHFRSmotcnoxcUYzV1RrU1owbHJFaGVUdFVEdWdtZW8wUG8zYjJRM3p5S0hELV95NER0b202S0M5QzduZU1XeE9CYW1n?oc=5",
+    "source": "keysnews.com",
+    "date": "2026-09-26"
+   },
+   {
+    "title": "Let’s solve Broward’s affordability crisis together | Opinion",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPc3JfcXRHN04tZ1hsSlhxUFJWcUpHZGppZ3g4ckxCWFNoS3BwLUJSRmd5S0ZuRVduRzQxWFZmOHdYQUlvaXNMeXl0YjU3V1ExdFRDNm10SmhreXJVWndPX0xNdFNsWXZHMjZqUWpsbmFmby1TV211dzdmdEJSWVlDYXNuZ3Z1TEo1X2s5R29FcnhwRU5mMTc1OWlNdHU5X00?oc=5",
+    "source": "Sun Sentinel",
+    "date": "2026-09-16"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Calhoun": {
+  "items": [
+   {
+    "title": "Calhoun County Deputy Michael Dobbins Retires After 26 Years of Service",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYWg4dDEtYnA5X0c4T1VKMnVzUU51aFhiWk95My1KNXFaTmZ6ZTZ0a3Y4dTdZbGU3MHNmUEU5WktrZ25HbThDajZJaHBvWHoxYVQ3YlFENzJvMVJULWdDZ0VSQjhmd2U1YzRCc01URnk0VXlzMDFIb0VUQ2ZzbkgwZQ?oc=5",
+    "source": "weisradio.com",
+    "date": "2026-10-01"
+   },
+   {
+    "source": "Yahoo",
+    "date": "2026-08-24",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3NYREVXb2hLRTJ4NWR4SFhXaVBCazVReFNETHF2YmhDNzc3anM3bDNCNGo4eHp1bVpLNmRQY0lDeWt6Q0F1Nm9xWHhqdnNtTk1WS0NIYmd4OTdJQWNmU2RoZnVzSnowemdpeHpJWHNWTXRsWERGSU5yZC1PR1pOQzBUbDM5RTBjYUx3d3l4bHFldDRJNC04emFGbFhHdw?oc=5",
+    "title": "Four Development Control Easements Approved",
+    "summary": "Development control easement approvals facilitate land use planning and infrastructure coordination for future residential and commercial projects in Calhoun County."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Charlotte": {
+  "items": [
+   {
+    "source": "HousingWire",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80RFVJWnNFVXA5ZVRyT05fNExVTlpFRzJYalhMUFZTZW9nMGd4LTItRkFUSnowXzdjWDhYVG91QjNxeHBEbFZyN3NjcFVNNFc1bThveUY4VFozcjhVdmdrTTlzTkdNMUc2My0tdWZsU29QVEU?oc=5",
+    "title": "Stellar MLS expands into Hernando County, Florida via merger",
+    "summary": "Regional real estate infrastructure expansion provides enhanced market access and information tools for homebuyers and sellers."
+   },
+   {
+    "source": "Florida Weekly",
+    "date": "2026-09-22",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSjl5dGNYWjNuUkFJYUN1aXRQVnhKaXFpOFFzRDNwOU5ZazFINm1nSUhaWl9sSmNmaUZPM0lmOGsxdlVxZ0xGQW5lUmQ4dVlrTGprV1ZUZ3hnMmZwYjFhS2M3bXF6ejhtenVPdi14ZjNpcHNYSEplRURpMlFZeWphTVZjRU5WT2ZVaXdsZHp6THNLbHU2RzFGSjdkRkJ5LWhiZGw0U2ZpUmxsaUFqLWlpa0YyTWgteEhZZVNndnNXMm4?oc=5",
+    "title": "Construction underway for nearly 300 apartments and retail in Estero",
+    "summary": "New mixed-use development adding housing and commercial space to the Estero area, expanding local residential options."
+   },
+   {
+    "source": "WINK News",
+    "date": "2026-09-09",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNX2t6YjZWcmV1dHU4RTI0VUlaZkhxRWp0Mk9tQlVTUTlUMFNvOWljYTlGQ1NuTmRyVjBDMDBuWVNxcVFtTjljQkF1Y09jLWJVQ2hUYkRoSk9WV19UVFowOHdBalFHVE1zR0t1ZGVSNlRPUTFGNWYzVWEzRDQyM1Y3MmRMTTZNSVIwWE9lakxNN0tJcVFTS1lub3Fjb3pzaWQ0ZUdCOTlHSXFGTUdhMFgxMXppWmREcUdGNjRndWJ2NjZlQzRIY2dDVEtFRDhPbHlxRVMza0NLckcxUW9xdjFLSHJqVkVvR1RWOHpDd1pGcw?oc=5",
+    "title": "Charlotte County approves Buc-ee's site plan near Peace River on I-75",
+    "summary": "Site plan approval signals continued commercial development and infrastructure growth along the I-75 corridor in Charlotte County."
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Citrus": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "The clock is ticking for some Citrus homebuyers",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNURwLUJMNmpxa0V6Y0tVdVBlWGx3ak1iQmtDLTZ1amNjdmxnRm4zRW8zN3ZqRWFRSVk5NjBvU1lEbFdZbFZEWWJ5a0Q0NWNzamNKZTJkbFJ3SlkxTWgwZWt2SlRtWDk2WXJKZ2JxNUdrTzFVRVlOR0dNU19GQXdoWDkySWxHWDVNWHVOcHo2SjBlb0FJOGVVNF9QQXR4S19jbXN2ekRLbUxVM2pJT09NZmxGd3RrcHNUQThZVDg4clNmcDJrb0JWWEF1LUJqQndpTHJtNHNaUQ?oc=5",
+    "source": "chronicleonline.com",
+    "date": "2026-10-02"
+   },
    {
     "source": "Yahoo",
     "date": "2026-09-12",
@@ -97,11 +217,36 @@
     "title": "Florida's citrus acreage keeps disappearing as storms, disease, and development take a toll",
     "summary": "Development pressure on agricultural land may influence future zoning and available properties for residential construction in Citrus County."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Clay": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "source": "Clay Today",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObVFaX29UNWFoRnVBYXdzQ2h3bkJiNFRSWG1VN0RTZE81RFlySC1UTkpKSFp5SjFRMnZxeFB5MV9obkstRXU3c1NfVjlBR1pDVTh1UlBQRTRpa0c2SmlrdHdEOTBuUUVueDhMYTgwVlljZy1DdjNFWG52eXRCUGtGRVRYTmxBNUJKWVBoem44Ni1nOGRzRU1mTUZLTVQ?oc=5",
+    "title": "NOTICE OF PROPOSED ZONING ATLAS CHANGE ZON-26-0020",
+    "summary": "Proposed zoning changes may impact future development patterns and land use opportunities across Clay County."
+   },
+   {
+    "title": "Funding to support mental wellness for first responders, veterans lands in Clay",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPd0Vid1JpaWYtRzdRSTk3dmJxSWk2cUNZVXRpS2dTeF9JeG9kTUdEYlRTa3FjYm1fc3kwXzQ3TTRHeGs4SDhndnVLV3d6QnlPakRNclJUdGVyM0FIME96RU84Y1pjYjBOTXk4Q0phQy0yRzJtc1NEM1A1OHdDQm9WZFJ5WkU5cXdYSVA0VTNVaHh3NmpKYWtKb1p2Uy1yTjRzUUo5YVZtNUkya2IyS2I0UFFuQW5aVWdLV2QwcWctcXZ0NmM?oc=5",
+    "source": "Clay Today",
+    "date": "2026-10-01"
+   },
+   {
+    "title": "KCPD Detective & Clay County Sheriff's Deputy Rescue Driver From Burning Truck",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZXdaZEc1VXFvTFhDVG1aejFKRXJxUGVZSmRRQlVVVWs0Zm9jLTR6WmZaUDN0OGFPYWJJdTRTRjJpNmlqV2xJMkQzcTFvQXgzSUR3SzM4YlVNR255Y3dsV29ZcDhFdUhJY3h1VXZFS1M0Si1MQ3M3ZHJzMTZVN1VCblZ2Z0ExRW5saUNfUzFwVlJNM0EtcUpuNzBtSEI1YXpuWVFkTlBiNWR1d2p4UENXREIzMURRRjFf?oc=5",
+    "source": "Kansas City Missouri Police Department",
+    "date": "2026-09-30"
+   },
+   {
+    "title": "Video captures Kansas City police, Clay County deputy rescue man from burning truck",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUjlUd0ZiSC11WXlTdzQyUXBlYTQ3azIzYTZNWnVJajRJaUctNFFQX0lVT2x5SGNVRE11RzNLMXR0dEVvNVBtOGVyS3FRdmFPRnlZX3BFdDlmNzJYZHZCc2EydkxwbkhZcjVXYmRXdVlycVJyeWVLdXdQaDR6MEM3dUdibDd5Q1lCWlhsdzhXTUZWWEFTQWs0cHF0d2pFMDFOYWhtcllMb3lLWTNuWWNycUxNZDRYUTk1SzNRQ000TW5QaTQ?oc=5",
+    "source": "Scripps News",
+    "date": "2026-09-30"
+   },
    {
     "source": "Business Wire",
     "date": "2026-09-28",
@@ -110,16 +255,53 @@
     "summary": "Expanded broadband infrastructure enhances property appeal and supports remote work capabilities for new homebuyers and businesses in Clay County."
    },
    {
-    "source": "Clay Today",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObVFaX29UNWFoRnVBYXdzQ2h3bkJiNFRSWG1VN0RTZE81RFlySC1UTkpKSFp5SjFRMnZxeFB5MV9obkstRXU3c1NfVjlBR1pDVTh1UlBQRTRpa0c2SmlrdHdEOTBuUUVueDhMYTgwVlljZy1DdjNFWG52eXRCUGtGRVRYTmxBNUJKWVBoem44Ni1nOGRzRU1mTUZLTVQ?oc=5",
-    "title": "NOTICE OF PROPOSED ZONING ATLAS CHANGE ZON-26-0020",
-    "summary": "Proposed zoning changes may impact future development patterns and land use opportunities across Clay County."
+    "title": "Family responds after Clay County deputy shoots, kills Keystone Heights man",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWmkteTVoTGJicXQ5Ty1uWnRVckkzZ3MwOVAwWVBZbUx6N3lkTHhZZGFMTFdPbVMwSFBaZTI4YlVFdnBsancwZEFPd2Jqb29qMlJhek9DYzRIS2oxQlhDSk5PWkFwLUp6cy1OYmFhMzVjdG9oWHFWbTR5ZWhNNUdIc0dSWTVhNGE3TkZSR0NfeWJ5ZjZYUkZnbG12Nm9zVEQ1OXdHNTdCZk5qaDdoNmlqbTRfOA?oc=5",
+    "source": "WCJB | TV20",
+    "date": "2026-09-23"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Collier": {
+  "items": [
+   {
+    "source": "Naples Daily News",
+    "date": "2026-09-24",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObWZCWmtfaFprWWEtQV9Sc0R2QTRRdlpaZU1femd0SVFxR1o0UUVlSjF3Z3I1NlRfQjFGY1hWU01Zd2tDLVhGcWU5N2ZMVEphalExbGw4OE1QeG10N0I3NkhDRk9wQ0lYbnl0cjhpcUdGT21JbnBmZnMtOFBqdV9hWlZpZjExNWJTMm1CVko4Z0s4eFdDWXdUZ3RKYks3VnMxTXc3bXlQcHdnakduV2tfZXQ5VWRsZ194T2txVEJNTE1oaTl2ekxfTl90UGZldnNaZkRwNE1DbDlmWDdW",
+    "title": "Ave Maria grows in east Collier County with more homes, jobs, students",
+    "summary": "Established community expansion demonstrates residential growth momentum and economic development in eastern Collier County."
+   },
+   {
+    "source": "WINK News",
+    "date": "2026-09-24",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNlNZeDdkYmdySEhkY3VHSjQxYXdIZnhnY0FTYl9jZ3BCaS1jbkpSQUsyQ25JeE5TY0o5dy1NZUd5Ylc2UHpERVZ5TFFZT1o0VUl4UlZVSEpCRGF2Ni1BTHRjS2REZ3pzRFlQMmF3dzUyU2JkS0J0TGVjYjA4anNuVWRzZERMTUQ4dk5CcjdsME82WS0wZHBPa2VxLTRMbWRKTmF5c096cDJERkJ1VDdHTTR5aVRCNEhoWW1La21iYUdFQm9MdU9IaUdrMk4zdEwxUnI4REhsRS1teERJMEhITkVHRVU",
+    "title": "South Naples citrus grove could turn into housing development",
+    "summary": "Potential land conversion from agricultural use signals new residential development opportunity in south Collier County."
+   },
+   {
+    "source": "gulfcoastnewsnow.com",
+    "date": "2026-09-24",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb1NIWHRTOGgyVEU5Nng2dkl2cGxlYUg4dGFZckZqdTJfbG43US1kSVVjdGlkLXlHYUhMU05yLWY4VHRiRlpPcU1oM1RRTFhhOWlxRnJUVHQ2SUMxckN5NGNnSTRPU3FrY0huWXpvZGcwOWxtRE9PWGVhbHdqY1R5VDJFTXU3TVJPbEFhNU12SUFPWmFONmFsNlVJRHBIdw",
+    "title": "Collier County citrus grove rezoned for private golf course despite community concerns",
+    "summary": "Land rezoning demonstrates changing land use patterns and ongoing development decisions affecting Collier County's growth trajectory."
+   },
+   {
+    "title": "Real estate: Collier County's Top-10 most expensive homes for August",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPTUJ1d1lSVWdueWR2NFFEMHhYc05aMEZ6T3lSMzNhdTFwa1VvM2NwS0QxcWZGOUVmNTAyQ2pkcVdlbFZQTXlFYWJWb0JDYU5JQk5HYVZESzJBM0Y5YXBMbkg3YUREOTFxYTFnUmdKQU9HSzN4MUN2Y0pINEktaEVRWkFwQnBLVVRtSVp2djBMamhjX1k1XzY4RWJzSF91QnNveEE5b08xR2YzMS1aaHNzeVFlUFZYVUhxZk90aW96eGlvV1dscFV1TUE0OG9sRTVVd3NEMnNHTW0yRDA0cExDMDI5MFRLYjZRN3hRUWdIbC0xNktnNGc?oc=5",
+    "source": "Naples Daily News",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "Affordability crisis in Collier County: first responders struggling to live where they work",
+    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNNUZjaGk1bmpuQTNoLVhmcEpjMFk4bEhRd29EeW5Pb0J1c3VZYWlRMUJkc1lxY1QxZGZlOC0zWlFCX2JCRkpjM3pKSkFoZEgzYThjeFlLYlp0MDVqUDJMTm5hLUR3Vm9ySEE0M01rc0lmY09XUjdMdGlTZzRmRmhoMnZ5TmV1Q3czWGRWeEpEZF8zNHVVMnJCbnFzYzVuSlhvRTBpNFJidmtrVUI4dldCdzFiaGhGUmdteC1Jb1oweVJobW1QNkdKdHltckpSR0JWV28tdFNrbGFZWFpPYkJrZGd4OW1ucWVjdy03Q1hHS1loVEVzR3NXNE9sZEJld3pyRFhkR2tkMVJYQzQ?oc=5",
+    "source": "WINK News",
+    "date": "2026-09-08"
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Columbia": {
-  "updated": "2026-09-26",
   "items": [
    {
     "source": "wtwcfox",
@@ -127,11 +309,23 @@
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVWFkdDVNRWp0NTlITjdVQWptNVFLNnZ4LV95SDVJUG9NZUJXa2NScDdLSDg3WlJQdGxaTXk2OF92RTR2QVZ5X1ZId05jYjVnUnNob1pjcEhIclJlZTJzM0xPY05OM25mc0hybl9WX1RyS3VmbnpXU3dfQWZWckRQVmwwSlFGVjVxOU54NG5YZUJjUjNDYmlLY1R2bmJHUWViTlMxNHNiOERGX2h5U3l0aWNETEc?oc=5",
     "title": "North Florida communities land millions in state grants for roads, economic development",
     "summary": "State funding for infrastructure and economic development in North Florida regions supports growth conditions for new residential construction projects."
+   },
+   {
+    "title": "New emergency housing on its way to full approval in Columbia County",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdDlZQnROZThjTEkxMDMzWENxLThtZEtlUmRJMFZmSzlOOE16b01tbjVaOFdqY0szV0VWVVE0SkUzelJDS3ZXeXZ1Z2UyNkJWVGQ0TmNacDNBTjVBMzdSeHUteUs2TTBHZVNDZWhMYlpZQ0xYZHo3VG1SWTI4akdXNndVQ3RWb01nenM2dUtDejlyTlE?oc=5",
+    "source": "Yahoo",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "5 finalists named for Columbia County Teacher of the Year",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZ1ZPSzRNVFhMQ29NbW5QZVNwdjNPZlpQengxTWRNc1J5Q255Ml9XQzZIb2ROaGdzVzlRZDZYZm9ySzhpbUYxYk1hLUJEZExZWUN6RTZuZ3IwVlJ4dDRodGl5eXVhTVEtQlFDbGVpNEhiUW15YlQ5MHlQNGgwbEU2bmlOTFUzWDJGa2xTeXlR?oc=5",
+    "source": "WTOC",
+    "date": "2026-09-10"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "DeSoto": {
-  "updated": "2026-10-03",
   "items": [
    {
     "source": "WINK News",
@@ -140,10 +334,72 @@
     "title": "'This county is not for sale': Some Arcadia residents fear local data center expansion, planned to be one of the largest on Earth",
     "summary": "Major data center development in DeSoto County signals significant commercial infrastructure growth and potential economic expansion affecting the local real estate market."
    }
-  ]
+  ],
+  "updated": "2026-10-03"
+ },
+ "Dixie": {
+  "items": [
+   {
+    "title": "Fishing tournament raises money for Dixie County first responders",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbk9walBhWE5LV0JILTlIZDhkTkNuaEpBcXFBUm0zMUJFU3U4WTNxYjZsTml1Q29IbWowZ3k1UTFHRnZoUV9nSEN0TnA4M0gycGdLcy1IRWtWV0g1WDgwRGNSNU5tQzk2STZIMWFVWkxkWTVXQ19xc2dqeVpOVGtSalVmR2xsa1FuSnNpQWhNRmNGamRHS21IUFFB0gGuAUFVX3lxTE9JNHJHQTVjeG5aWG8wT3NfSlFZUkliQ2tERWhZQmR5OUFlSm1FTUZETk4xeW8tUy01MlpVWWF1bkE5VDJpQkdxRU5FYlBfNEtyRE1kclpUbVAwRm9obGE3cklIbEtleE44Z2tRUVlxWTRFeXg4SzRyMDVmY3dUQUlOR2RJOHoxTzJCOVo3RUhScDBuN19WV0xuZnd1SkZZUWZFNGl0QVFvOEJfRElRQQ?oc=5",
+    "source": "WCJB | TV20",
+    "date": "2026-09-26"
+   },
+   {
+    "source": "Florida Politics",
+    "date": "2026-09-20",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTHZNQnV6cUF6dVdEdGJrREp4blVMcy0zUXZGbFBtQk8wRGVVSHBhOEE1ekhmRGFwMDA2d2NYVi1FZXpVNXpEOFNXdVE1bmpzU3VsU3NJNmt6Z2xtcFhKTTZOLTVaUEpSVTdma2xwbHRfU0VKeXRycm9vdEVzdWxTRnJTZU5PdXVrQU1BNVp4TE9YMXNLeVRiODB1NjBkeVd0Q2dMWGtrX0NXTDZxdjVsVFJmVlhJYVFxZGRJUlQyRTZwbkhTbWNmczdZV1NJQklUYTA2Sw?oc=5",
+    "title": "Kat Cammack announces major federal funding for several Big Bend area infrastructure projects",
+    "summary": "Federal infrastructure funding supports regional development that can enhance utilities, roads, and services critical for residential and construction projects in Dixie County."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Duval": {
+  "items": [
+   {
+    "source": "News4JAX",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSkNCajFlNWJQQXdEU3RTVVA0VThaR0lkTGw5UjNCRGxIdWtnTkU2N01YMDN0VTM4MXNpTDFmU01taEdwYU0ydktDcndwUEl2R3pHWTRVeWdaUXFDelhkQTJ3aEc1Qkg4M01UN0poZlRlNzhKVWJTempIeGhRN3JFSGhpZ2FESWlheGsxcjdQcmdkalRpNGpHNnhuUk1FTTVoVkNCWEVhZTRFZnU4MmhXcE5nSUlfN055cEEw?oc=5",
+    "title": "Unemployment rate rises to 4.8% across Northeast Florida region in August",
+    "summary": "Regional employment trends reflect economic conditions affecting household purchasing power and demand for residential construction in Duval County."
+   },
+   {
+    "title": "Duval County educators, parents discuss one-mill school tax renewal",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZFR6TXZtUGplQ2otX3lWNFpCRllLRzRmTW1NVktudWlicWxlOXJ6ckJlOVc1NnZtSmozWHkwVFdvTllxM1g3UXUtRUNBZjAtTEI0VG1aajJSdnl4YWhEM3ZIRkdoZGhsaF9Jd2FDRnNraExYczlQR2lMN1FFamxWLVY1dEtZdFFmc2phMzVMY1ZzYzc5ZTR6d1lWbWhOb3hpREhjQWFNd29uUDJrX3JYcEtuaVU?oc=5",
+    "source": "News4JAX",
+    "date": "2026-10-04"
+   },
+   {
+    "title": "‘The down payment is the biggest hurdle’: 8 Jacksonville residents receive $20K grant in assistance from JWB",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNSWdzZ0FEZFd1OEg0d3l1ZlhlbE9Tb0VVbzRRakpXeVhaQnpDYzZUcWVRTURKOV9KMHNObDE3d1RhQzFiY25EeTNPY1d6UmlVcHpSN1pzdXlSRTdaSUdLekZaWWViN00xUGZ5M3JtNVRjbjBvejRQa3BHSXVMM2t0d0NzWldKN09RY2ZHNjNweHVfSnlGbzFlUmZyUzRySHNmOXlndTY4R2xwWWxzbE5FT2Z3ckVCSzA3MC1ka25SOW5fcFFNWUo5UE9UMUo4Sl96NFVfZk1qMjFXdGs?oc=5",
+    "source": "News4JAX",
+    "date": "2026-09-23"
+   },
+   {
+    "title": "Jacksonville city council passes $2B budget, restores $4.9M in affordable housing funds",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOelFLcVBndktfV1lWcXBKUVliU3hnSURzWEJZQjdncVA4OHU0VkhfRXZsdlNUcDdWWlpqZldvbmgwc2RWajc3SjJrRUJERmo3eFBMbGVDWXFoTGhXLVByd1QydDJaTTA3Q1dwQVhqNFV4dFZhell1OFZTYjVyVE95czdKZFZzeXFvVzZUSkNycDdEWkJ3cmlVTHlyRm1wQVAwT2lRMENXQWNZQkl5QklMSk1Ma18xLTNwMEFMSTktMi0zVnoxTXNrRDk1SDJHcmRRYmdJQQ?oc=5",
+    "source": "News4JAX",
+    "date": "2026-09-22"
+   },
+   {
+    "source": "Florida for Boomers",
+    "date": "2026-09-22",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOHU4YnZuT3plUFJBNWt6TFZzN3EtU1RHSk1kLUl2ZmJhWmQ4eXZnMEJMd29ydTJULTBuUUYzanRUZ0tsaGRSVU56am5YVFM3M2otcURMTnNuOEFhYURPR01haWRVMHBnNGlLMHFhTl83NW9yRWVvdVhEc0VsbjcyWGRKTk5RZ283VEVwczFxeDA?oc=5",
+    "title": "Florida Counties with the Highest and Lowest Property Tax Rates",
+    "summary": "Property tax rates significantly impact long-term homeownership costs and investment returns in Duval County compared to other Florida regions."
+   },
+   {
+    "source": "News4JAX",
+    "date": "2026-09-11",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjJQRWRueXdRNEp2WGR6NHE4LWRHeFgxSXZvdVVLT1JSS19yWmI1YlB5NldEOF96OWVYYkQyZGlLTEcwMnR0V2N4bTY4bldpOXh5cTlLdEQ5ZW1DMHhGM0V4LW10aGUyZGRibWNxQ09zTEd1QlllekRwLUY4amd3eGczUGMtZWJUSG9oaEJuTUE2RjVCc1RVc1VJVHlRNFZVX2hQRGJWekZxclJRTXdRWlpkNWdaOWFpcjM3QjEtS3ZYeVVueC1GTFZaSWgtTHE3YnBOcUQ0b2o?oc=5",
+    "title": "More inventory, fewer sales as Northeast Florida housing market moves toward balance in August",
+    "summary": "Increasing inventory levels provide more home selection options for buyers while potentially affecting negotiating power in the Duval County market."
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Escambia": {
-  "updated": "2026-09-24",
   "items": [
    {
     "source": "Chattanooga Times Free Press",
@@ -152,10 +408,10 @@
     "title": "Alabama to borrow $200M to build new prison in Escambia County",
     "summary": "Major infrastructure investment signals economic development activity and potential job creation in the Escambia County region."
    }
-  ]
+  ],
+  "updated": "2026-09-24"
  },
  "Flagler": {
-  "updated": "2026-10-05",
   "items": [
    {
     "source": "FlaglerLive",
@@ -164,10 +420,77 @@
     "title": "Flagler County Unemployment Stable But House-Sale Values Continue Sharp, Inflation-Caused Decline",
     "summary": "Home values in Flagler County are experiencing significant declines due to inflation, affecting property valuations for buyers and sellers."
    }
-  ]
+  ],
+  "updated": "2026-10-05"
+ },
+ "Franklin": {
+  "items": [
+   {
+    "title": "First Responders Host National Night Out in Franklin County",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcjlVRDVvaVVOYmc5S3E4MDNJNTdtby15bkRGdnUySVJhMi1EQmtpODF2TnE0ampfOUxWNnFpbFFpbXhZSFgxUnRZR3ZuU284NVBzdkd5TEZtdWRhQUFmaXNPT01KVWFHRXZqUk5SaVhEdkVqcVNFUk5IWjY0czZ4a0xJNEl6SnVRdzA3cFpfT1VoQ0FWeC1vSkRFbTZodw?oc=5",
+    "source": "KPLC 7 News",
+    "date": "2026-10-03"
+   },
+   {
+    "source": "WCTV",
+    "date": "2026-09-09",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRVVBVFhBS1ZGd3V6VjJQUk1Qd0xSdnl0Q2czSVd0cTdSYnRHNFBpQmg0MU1MdmVnSVRjM2oyaGR2TzR0Q1dkdzJyRHlNV25lVmhOSC14YS11dndjSkRKdjlZM1duZUZwMkstRlZ4N19lamVBNmRYMlFYWGpvcEpQZDZQUDlXeTB4WlhuODRXSjFrQ1AtZUY1TFlNenBVWXFlMVFCNUxqakJfQTUxWWszblRR?oc=5",
+    "title": "Franklin County road closed due to culvert collapse now expected to be fixed this week",
+    "summary": "Road infrastructure repairs in Franklin County will improve accessibility for construction projects and property access throughout the region."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Gadsden": {
+  "items": [
+   {
+    "source": "WCTV",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVjZDXy1yVlhsX0l6enlMNzR0em53YjUyOGNLdTFCNUlIeloteTZZZ0Z4UHJoWTNEdFZzX0JFUDczMTByUHRYQ3BWLUNYT1E5VzVzcGxPMlN2eUF2UWdaVFptWlNhZVU4ZTExQUJHaXJWZkp6UWI0MXZqLTY1NDJiRWJvUVVFTmZNRlHSAZ4BQVVfeXFMTUxfQ0h6ZDc3bGV1b19EdkVXVWtIaW1HMUpwcnlPc1BNTTJ0cnhpQnYzbGFzMmZDLWJjcng1TWVVOVhmeERwT3BzWnRMTEt4T0NzaXUxVW41NS1BeVY1eU5Tc2NnbHdidUpzbkdkcWQ1ekJGcVgtX2JRdUxqblRnYWpJalRBX1o2eTZGM3ZKOWp5ZjdnSzVLMU9CeVZ3Nmc?oc=5",
+    "title": "Gadsden County breaks ground on Havana Medical Center",
+    "summary": "New medical facility construction represents infrastructure development that can influence property values and community growth in the Havana area."
+   }
+  ],
+  "updated": "2026-10-05"
+ },
+ "Gilchrist": {
+  "items": [
+   {
+    "title": "Drivers may need extra time for Trenton High School homecoming parade",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOd2hxbVFhR2RqZzNMNGlDZGRPSDdVTXc4X1pfT3BzaFpMM09ja0YxbW0xSDByb0FRdzNzREtiaHFhcWVLVVAzZFZ6TEp4TVVCRW9feFRuUmx2N2JUeTVWaVV1Sy1palV1XzNZUmYtZnItM1htNTE3Mmo5UERsWmptMEFXNTlTWjIzN0ppSC1Uc2ZsQzc0SnpPZEJaaldUWG_SAbMBQVVfeXFMTTlNNkxJVkplVWlvMUUteDJIUmhCV2R2LXNTNDQtMW5LUkxydVFPaW1Vd09PYUF2Y1czV2NwU3VPTjJpeXZpZEpHekppSGcySks3UWpOVWxGb3RlVllqdGROTXNjb0VmSE8yWXZ4dGpZTG5LaFFUbnVBYnJ5Y21iZlFxOUM3b2pBMENrMGF5TmhZVk9zVW5jS3FjRUdrVlhrQnBOcElnMm91d1RnT05tXzlrRXM?oc=5",
+    "source": "WCJB | TV20",
+    "date": "2026-10-03"
+   },
+   {
+    "source": "The Times of India",
+    "date": "2026-09-06",
+    "url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOUVZRUVVSYUFhN1cyYWs3ZXgzU25ReVZOSlBjc3duSW1lbUVWbjczLWhwcjhJQUgyamZHN2F2SzVONDdKcmlMcDI5M0hFcy1ZX3JSZkxaWnJOZEp4emM5TWZ2cDFIZnVUS29QZzduczN2cXk1dmE3Um5PQXhqaXFUamhmNFhhMHpLUTFkQ1FrbDF3bmE2QVdNb3ZnZnFUSkp0SVoxaGtfcnpPdkxjZm1tWnBWQi1ILXNUY1lxRnVNTE5zaC12aUFhUzlJT2I2RW5PYWVBREtWZHRBVHF4dWEwbmFSaVN5djJVR1BtalVvanl1dkRfOWxCaGtTb3Q2R1BMaEswVjhnc0dBRUFQQUQ4VHhmc3JHd2trUWI1MXpXazJDTzJJUkxyUnY3YUJKbVI0Y09mM1BsNWlVUVRVaG1lbENXYXpGLWJpX19KNVBISi0zMUx4MVZ1MWh2S0RSU0I3SlVWQlZB0gHrAkFVX3lxTFAzNDhGUTZyZEdtS0ZzLTltdzluZWJWcHhzX3JoSVJWVHF1SUdRTko0RXhPYXFqYzlGRzFDdkNuZnhBWkRQbEhFOHVReXlTVTBmdzMwR0ZpeHVNOERxMzdOaDlJbFk2U1huYVp0eWpfOVFlX2FpaVdqR3FqcU80ZmhhZ1BqT1lTeWhqeTZvOEhUMl81V1Z4aEFuaWgzUklGNGVnNjBVSF9ZR1NIc04xTkF2dHJQN2VUWjVfM0U2T056UTN5X2VzczNTcTNnZTMxTWNyRTZGSW9SaE42LTIyTDNtRTJDLU51eVBldUlSamsxMVdyckptRnZ5TlFFS19UNHM0blcwUGxXVEFVbHE0TU1iaEc4T28wNFYxb2J2WXIzRWpKVWk0U2NVRWtONFFpNmsyYldZWi1WNXZyZ0xiZ1FLdkZ6dk5FZnlHMnYzVmhub1JYaFA2QjJBc3RuMTdFNFFGXzNUWWp5U0FEdw?oc=5",
+    "title": "In 2024, Florida paid $1.54 million for development rights to the Watson family's 550-acre Gilchrist Coun",
+    "summary": "Conservation of large acreage impacts available land for future residential and commercial development in the county."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Glades": {
+  "items": [
+   {
+    "source": "WINK News",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxObXJiZ08yRkdCVnlzd3NlVHRQaEJBRTVKbUUtc0Z6X1VsZ2dPTDRFWFc3MXoxQ1pKVmM1U1U2RG5qMHBOc1RVamxHd0UzUTY3Mk5kZnI2aVc1bVJqYUlIR1FxeFlOdlpaWUw3RDFRSDZGbzlKVUtQMklTVnJ6RnltV2Z2b1Frc29FRXBTT0c2Q2thZHI5TGZQOTlvUExQWE92WW9HcFBEYW5qaWFvWEdEcExlMzVHMkVZdmFlcPN2YVNwNUdVc19fRjE3YmxyRDY3T0xNRjhVTWZER2poMnZ3NGJXcGN3WUlYdGJRZjBqMmVrQQ?oc=5",
+    "title": "72 acres in Ortona could become RV resort, Glades County residents worried",
+    "summary": "Large-scale development project in Ortona may reshape local land use and community character in Glades County."
+   },
+   {
+    "source": "Woodall's Campground Magazine",
+    "date": "2026-09-09",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOajN6NF9wVGhEeFJXV3ZNUG1sdWM3TXdzS1U0dWhuYkVZVXJSS1NXSmJ5bS1aMHVlYXJSWEd6aVNLbWxRYlJCc0pYV1FySTZLT1habmVpM1VaMk1CTmFGcEdBR25CaDRXNHJmMTJ4ZUtRQmIzM294SUQ2QS1GWWtBcUpZNmh0VUJr?oc=5",
+    "title": "Proposed 700-Site RV Resort Sparks Controversy in Florida",
+    "summary": "Large recreational development project signals expanding commercial and residential growth activity in the region."
+   }
+  ],
+  "updated": "2026-10-05"
  },
  "Gulf": {
-  "updated": "2026-08-29",
   "items": [
    {
     "source": "WorldAtlas",
@@ -176,10 +499,28 @@
     "title": "Where People Are Moving To On The Gulf Coast In 2026",
     "summary": "Gulf County's appeal as a relocation destination reflects growing demand for housing and potential community development opportunities."
    }
-  ]
+  ],
+  "updated": "2026-08-29"
+ },
+ "Hamilton": {
+  "items": [
+   {
+    "title": "HAND opens six affordable homes in Carmel as housing demand grows across Hamilton County",
+    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZmo4R1Z3UG9MbXkxbFNBclIwVGo2MmJmUHpyOVUwN2NLNVVGaFl4TjFTOWdMM3ZDdzF1TmVrUmJLbEtXcXVBY1czTGowN2loY1dFTFBQQ2FjdmRGZlF5cmxPLVUxUW0xY3M2OEhId1F5WWp1eFl1dnNreElTd3cwclJYMVF1amdBNEJJVXBVV3NVV0h3Xy14aGpxbWlsYS1kYTlmcDc3YXAxQlJGRDFTa1RQem54U2xad1NjajZMejQxRnBVUFdWdUtKQQ?oc=5",
+    "source": "LarryInFishers",
+    "date": "2026-10-02"
+   },
+   {
+    "source": "Florida Politics",
+    "date": "2026-09-02",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXNTY1IyTUlXREtDaTBnNkQxQ0kxSjdEbU1LOHBEN0NwenY5Umc1R29wUEhhckdYTWQtUW4tVWU0aXhEaHB6Z1JIR1ZWNFl2UF9CQmRoWk5xOVRFQlpnbUhaRUN2UEpsdzR5eTZtT2c3N3ctbmtsNVBkRlFWeExoVnlqUHFtVHVjUjJ0X2YxRUV1M2tmTmVJRHowaFJoamdpZnVDNUZvRWpSNW5YMkZUWGFvYW5aZi1hQ1V2Ty05Y0FieXhQUGxNSnJyWmc1VWxpdnJmQXVNRFVVZw?oc=5",
+    "title": "Gov. DeSantis sends more than $15M to rural communities for economic and infrastructure development",
+    "summary": "State infrastructure funding to rural communities can support road, utility, and development projects that facilitate residential and commercial construction growth."
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Hardee": {
-  "updated": "2026-10-05",
   "items": [
    {
     "source": "Florida Politics",
@@ -195,10 +536,76 @@
     "title": "What is the gross domestic product (GDP) in Hardee County, FL?",
     "summary": "Understanding local GDP growth indicators helps assess Hardee County's economic trajectory and housing market expansion potential."
    }
-  ]
+  ],
+  "updated": "2026-10-05"
+ },
+ "Hendry": {
+  "items": [
+   {
+    "source": "news-press.com",
+    "date": "2026-08-31",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQOFFMUC1PRTlYZGhHVDA5NUZ3MHFFdXRRNm9rUHpSOUk3Smtvb3VJY0JKbnlGN1hUOUNTc2pGVk9NVFlKS2Z3dFF0UjRuaHlGaUhrVDE3c01tb3VaeWhXSHNPelJtcjNocS1hTWRmSTVDWGVrdnp1SGU3MEdDdmFJam5XNV9BZmItTUJBb1ZUX1BycGdoYjBKODVNWlBWVzVEdGVCaUlueHdOeUxhYnNfVjJPaWpHUmR6ckdOc2h1akFQaWYta2lMdWZNQlpXeWpHRjRCMVZiZW1VSnhGdDNfYURLaDdaSDRkS0V5elJ4Y0VkRWlT?oc=5",
+    "title": "Florida's rural Unbuilt Triangle adds Publix, Home Depot, Aldi, more - news-press.com",
+    "summary": "Major retail development including Home Depot signals infrastructure growth and increased commercial activity in the region."
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "Hernando": {
+  "items": [
+   {
+    "source": "HousingWire",
+    "date": "2026-09-28",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00RFVJWnNFVXA5ZVRyT05fNExVTlpFRzJYalhMUFZTZW9nMGd4LTItRkFUSnowXzdjWDhYVG91QjNxeHBEbFZyN3NjcFVNNFc1bThveUY4VFozcjhVdmdrTTlzTkdNMUc2My0tdWZsU29QVEU?oc=5",
+    "title": "Stellar MLS expands into Hernando County, Florida via merger",
+    "summary": "Expanded MLS services provide local real estate professionals with enhanced tools and market data for property transactions in Hernando County."
+   },
+   {
+    "title": "Lightning strike sparks Brooksville apartment complex fire",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPR2FPekt6VEZZdWdVQXMtTE1DNS14d2JKbjY4NmdlYVhXRk4tSTJMTHVmYkItUF93RTZ2bjVGT2loTU0yakJXYlQ3SmlrZVlJTUx4SUN5Y09rU3ExYmhtUjU4TUZjUWpNMWJJX1JjT01GTUZGQWNqc0N4anlXRnNhakVFdXpYd2tjVlphajhWaXNpMC1JdXB5WWE5djlUSW51dEV1ZQ?oc=5",
+    "source": "www.tampabaybeacons.com",
+    "date": "2026-09-10"
+   },
+   {
+    "title": "Lightning strike sparks fire at Brooksville apartment complex, displacing 34 residents: HCFR",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQc0Zfc0huQ0liN2FveVlBMS16emdZNjlTLUNFVmNWSDlzRTVLVjZ3X21nU1BCdXdrVGhPcW5OTU9SbjNXMWtGdmstQ3F2cmtSeTF5aEZqQmNTTTNJMDRCT1M2bVo4bUtxZ3QyRVlJWGREM2NSTjNFcWJhN0lReFpFNVZnNkx5SV84TjFDdi1yejFDNjVYM2xLZXE1dWoweVpDbnJ0RlpMcjFNbjkyc3dNbmotWHpGN0l0cGVTQ2I0dUw5SUYxc3F1dEVXZW51V3pxU1pXbm5WVklBQXBraVE?oc=5",
+    "source": "Tampa Bay 28",
+    "date": "2026-09-09"
+   },
+   {
+    "title": "Lightning strike sparks apartment fire in Brooksville, dozens displaced overnight: HCFR",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWFptS3B5QU55VFNuazZrRThVR0dxeXJJZ3NQTXFESFJfOGx6TFVvNk02NV93NjRWU2l0UG43YWp2Q3ZHazNRaEI0UzBsTmtwWW85RndzV19DTF8wZENIZ0J2aDJCb1VidGlDV3QxdUlfQ1dOeDdXU050cTVNc0p1WF9pc3lxcEkzUEloaV8tVzNnZ0dobWtsdHFrLXM4a1dMTm9fYzNn?oc=5",
+    "source": "FOX 13 Tampa Bay",
+    "date": "2026-09-09"
+   },
+   {
+    "title": "Dozens displaced after lightning strikes Brooksville apartments, sparks fire",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPR096X3pBcV9QTjNHS3kySHd5X1UwSXRZaVBEMmpVckdUYzN3cEpUNXA2Qk1kV1RSejk4Q19GQ0hsMG45Q25UZFJaSTVyWnV5RG90NjhhTlY1SlNBU3lWUUE0WW9ZNGFGTk9namZUOFVUZWpmelhmMDZvV1p5Mm1UYzlSeG5yV09PUUFPcmZkZWs4SW1Y?oc=5",
+    "source": "AOL.com",
+    "date": "2026-09-09"
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Highlands": {
+  "items": [
+   {
+    "title": "A Guide to Florida Flood Insurance (2026)",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CYnZidHRiZ3BLVGJaaFQ5Sm5SQW80c1c0RDcyazBKT0hBZGFEZ1FkS1JFaVBZY1hMUkVmUWxTZ3pqTGpMYUpzMkFZX3FiakZ1RGRmR0xud2NEaEN1cl9CRGN4by1BWDRvWVhoY2pWdEZCLXFO?oc=5",
+    "source": "Insurify",
+    "date": "2026-09-30"
+   },
+   {
+    "source": "Mid Florida Newspapers",
+    "date": "2026-08-11",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQT1V2b3FMTm5nLUdQbXZKVHQteEZ2WjAtX2MzeFRNd25xdV9tOFZCV2lGMGUwMjlXVUo5alo2eUVIWDVfcnpkanliYTlfdmZqWHAzalFaMmhocjlxeXk2NTlrelAyUzMzbEVyUEJ2Vk9mV3FsZFhuQ21EaTY2NWotbmhnX3JBWEtuSFR6eFhrOGJCNnVmbmYtYVdkSVRsenVURHlTMTJmQ1FZU01UWUVNQ1JDOGZoRTlrX0VfZGRHb0RmOEFzM2U3STZjc0o1Ukk?oc=5",
+    "title": "Impact fees are on the table | Highlands News-Sun",
+    "summary": "Impact fees charged to new construction projects affect development costs and housing affordability in Highlands County."
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Hillsborough": {
-  "updated": "2026-10-05",
   "items": [
    {
     "source": "6AM City",
@@ -208,16 +615,53 @@
     "summary": "Strong job market in major industries drives demand for housing and supports construction activity across Hillsborough County."
    },
    {
+    "title": "Tampa Rent vs Buy Gap Hits $1,100 a Month, Zillow Finds",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPd1NMSEJoX09vNXFFbU5KMmZ1MXRGRGJKQl9VY2FfX3RjWV9XZldlQ1RQazctbVNObXlRVmloXzJaLUVsYzhESHdqeE5FMG5nNHNWOXJyOWo4MnZ6SUV0ZnJYdFpyX2d3QnBFNGRYMnZDaHY2djhkckR3ZjVvdUlwRy1uMmFaQTk1NDduSjhqeUtfeWx1WUJQRmRRWk1Lakk?oc=5",
+    "source": "Hoodline",
+    "date": "2026-09-25"
+   },
+   {
     "source": "wtsp.com",
     "date": "2026-09-16",
     "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPYjJTVmg5clZuUGNJd0l0U3dWVzVsb0hLRUdVRnQzNlh4NEMtcDZfaTlDVWhGdVQ4eTJSbkZPVWRRRGNKOHNQdjRCTGNfN1hHeExvRVNBQlJsNlhqekEzRjRTSUFOeGVMTTZ0SmFqelFsTkdKN1dFbjJWTGRtUmtLSjA5ZDZ6c2VHLWJNMUNtVjVTWWV1T0k2dXJwdWNWY1lyYVFTM0xyVTN0UVVkOTE4S196eG9lZF9TWlFic0RnSl81VEZQZGFhV0x5M0Uwa1hPT1BkNnlYcnhqT29aRjdIUlI3MzRRdUVpVVBUeU1HNjJlQnR4amtHdGhKTzFYcnZUZGhSOHR3?oc=5",
     "title": "Hillsborough County families can apply for these funds to repair their homes",
     "summary": "Available home repair funding programs help property owners upgrade and maintain homes in Hillsborough County."
+   },
+   {
+    "title": "Hillsborough school district, teachers union reach tentative benefits deal",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVmJCaGV3ckZRVGdsYjY5UGNyMm9jcHdlMVZYQjdBV1ZzMTVKbmRNVm16Vk1qWnQxYlpSaDVkRzNkUVBBU3B4OExna0JEaTRzaXJjNnRuOG5sZXctMVBsdUtaNEt0c19FUlJYR1RuejlIZ0luUzl0clhsRzQ4ZjFyVlpRM09XbDJKVHBwbDA2QkY5VWNIamt1MjNlOHlaVUZOZXlsTzc5b1VlZl8tUWd6dzhoSGcxUVFYSkVxWnMzb0oxTDQ?oc=5",
+    "source": "Tampa Bay Times",
+    "date": "2026-09-14"
+   },
+   {
+    "title": "Wimauma emerges as Hillsborough County's next major housing market with Berry Bay and Balm Grove developments",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQYnNYcGd4RFJJdDd3azdJbTJvcnhoWXFfX3lQSnJQNi1aWmdiblkyVno0Y1ZIWDZsSlMtaEtFY0E4UkRlM1BDZUJ1dzM5eUlJZE9zdWRTckNkNGhQSUJtcEs4bTQtVWlPYVhvS2tQc2V6RzdPRGpTOTZjSTZJMDFYT3YwRDRwRENqRFBtRU96UGtRLTcxTGdsLXZnN0VNZkZUUUtibFBR?oc=5",
+    "source": "The Business Journals",
+    "date": "2026-09-10"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Holmes": {
+  "items": [
+   {
+    "source": "WJHG",
+    "date": "2026-08-24",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOb2VEN1BBSVBpNkppT0tXME01YWNpX1ZEa1JYMGNYdkxHWjRLRjNDaWdibTVlbGROYkpIemNteG14NFA1VHp0Y3A5bVFUaWpxT0FDbDJhajh3c0xuYTJnb3kyN09HWWlnREFRRFVrU1lkZ3d5WTR0Z2twd3g0V2UtbWw4ZEo4XzE5d1AtSl9TSVRlc1I3Qm1GVE5B0gGuAUFVX3lxTE9PekhZb0Y3cThJZm9ia3dpN1FFN19nelFjUDhzSEVoaG1SYU9YWTU5dUVzeGtyWlhiMmszT1JvQmdLZVRpTXRQN1NNbG9kUVBSNl92WnBOLTBXc0xuT2RzdzFZTjVQUmdMX2l2NHgtQWV1OS0tbm9jZ2JsdFoyeE9XeHU0VV9VSHFCSXFCX2Z1ZDVrQTNZQy1RSWpMRllnWU1XNUVFNTQ0ZncxVjdrdw?oc=5",
+    "title": "Amendment 3 property tax overhaul sparks debate in Holmes County",
+    "summary": "Property tax changes could significantly impact homeownership costs and real estate values in Holmes County."
+   },
+   {
+    "source": "thecentersquare.com",
+    "date": "2026-08-21",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOS2RUb3FrZHJ4YXl5dnVNZnBacFM5anJMRmhfS0l3R1ZlQi1hQzZtcDl6MFRyeDhRMmlQSURSTVJQOFdPOGVGYXJxZVZSdS1WYzBsZ2RKYm9sekp1QnVCYnlhUXRwQ1oxTC1mbXR2Y280eVpxeGNncC0yek1hRENHazlRVWFQYldFTmcyajhWTmNSNEXSAZgBQVVfeXFMUFJ3YjVQRHlaOTdTYTdYSUFiejZkYXhfWWJFVEU4LUFYLVZlRTZ2RHZYb1o1bXhza3N3RV9KRHA4VDU1Zl9HUU9HU29YdVltQ2tJQnBzbzVMWWFCbzM5WDZ0Q3FDSDhvN3NfblM3YnpJbGFWMlVVTXEyQmZkdnN1R0dLbG9xeWhuSFdNT2hqWTNJQk4wVDRESTM?oc=5",
+    "title": "Florida directs $8.8M to rural infrastructure, planning",
+    "summary": "State infrastructure funding supports rural development and planning initiatives that enable housing growth in Holmes County."
+   }
+  ],
+  "updated": "2026-09-19"
  },
  "Indian River": {
-  "updated": "2026-10-01",
   "items": [
    {
     "source": "WPEC",
@@ -226,22 +670,64 @@
     "title": "New surf park could turn Indian River County into a surfing destination",
     "summary": "Recreational amenities like planned attractions enhance community appeal and property values for prospective homebuyers in the area."
    }
-  ]
+  ],
+  "updated": "2026-10-01"
+ },
+ "Jackson": {
+  "items": [
+   {
+    "source": "Florida Politics",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMFo2cXFqLTVrWFpkUFNnSUtjaDFMQVdIenRDc0JkVzBCUm5LczM5WnVmTGlrNDFQZjdJMVdMdVlWUDFET1JaQWJPMnBweTNpVXpuYXFGNVBqdlY3X0JFN3VYcktTM3JzMVlFR21haFhxaE9VNjczeWVYeUxJWnEzMFVMUXJxbkhNc1lKTmtmRi1EUkxDZ1FacDNiQTFSaXpWdHM2R2xLS1Y3ME5XNURQX2RvdXFQbHBJN3YzUXV2U3ZQSHdxU3RzbnBVelF4UQ?oc=5",
+    "title": "Jackson County lands $3.8M federal economic development grant with Shumaker Advisors' help",
+    "summary": "Federal funding supports Jackson County's economic development, potentially creating infrastructure and business opportunities that attract new residents and housing demand."
+   },
+   {
+    "title": "Housing, wildfire and mental health shape Reichenbach’s Jackson County Commission campaign",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaXFWS0FUR3hDeFNGX1owVE1icmwxODlocUo5c2NjVjdaaC0taEhvM3phRFhDbDVMdjlaSTFpemZMZjl1dUI5XzlNbkJJNnpBempTM3V5aWVIaDI2X1lhWWJsTGFZUUp6bHhhZExFY2NnMnViWWNzWTBuWGRuT2RlWlVXUk5QcURVRzhUbHBuVWc1a3V3NEVhWGxSTFhlQ2FnU1pab2pUa2tsNWsw?oc=5",
+    "source": "Jefferson Public Radio",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Jackson’s 100 Homes Program extends down payment assistance initiative",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdGZhU1JlNGY3MF9pWVpDUXZLQ3ZzdUh6RVh4M0NOcUJiV3RsLUJ0S1ZTVUJHV2ZqeDktRDczdjdLWkdJUzlRb1RyTDdPczk4anhJUUdXdHItUHRVMTZmSWo0bnhXR0lFanpUYjVKd1E0blVXbl9oSVlkVlJkR3BQeXBzRHhsWHVHYkplMjJ2cFRPeUdlNkV2NElxdFFVRWZU0gGmAUFVX3lxTFBCRVcwMjhnM0E4TS14WDlWR1ItMWJkcU5BMENhNXhXc1I3UWpsZ3J5X1psSUs4Z1VsekFvOEZHdUlHV3JPUXJlVFQ4RGo1a2tFUWdtR3JmdzNRdURRSTN6N2JlRFFRM0tPVWZSaldvdC1LUUgwQlZ4bGhLaFhzR3NJNDZ0cWt1ZWs1NVZEMk1aOXNVSFU2VzVMUE1ZbUJDcktyTjBjbnc?oc=5",
+    "source": "WLNS 6 News",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Jackson County Legislature is about to turn over. What candidates say on property taxes, stadiums",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRldvWWllbUZHTGVLSUF2TzhuZ0g0V19fWllBSnJDeUZzMVVDQzh0cFJUaDJsbjdTNlAwNHhlMUhPUm5LdnFrbUlmUnIxSXJXWllKcHNRTXlrUVJiLUlIbFZyTUdTazFmOExXeEJhUjB5WXdyYklLR29wRUpoM1NnZXJaaEtuSXRMWjJnU205NjZSdXpFTUdISmlLeUN0UHhhWGxF?oc=5",
+    "source": "The Wichita Beacon",
+    "date": "2026-09-23"
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Jefferson": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "New Jefferson County Animal Care and Control facility to begin housing animals within weeks",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQck1hNUN2ODdVMlJ4VjZkTEVmRGRUMDlUc2p1MVJYVjJOeThsTW5xcnpScnBzQXVhUUFkNnZzQkl2bVY3cWpYNmljdURhUjRGQWRMM0tWWUtEMDNfSmtYSGtuTkloMktOUHpSVTdOQnJaSUZoRVdsaG9LV0lyRVp6NTJzTkVKNlA2ZUoxV09sem5KMm5oQlFTYzRmMGt4bTQ?oc=5",
+    "source": "WVTM Channel 13",
+    "date": "2026-09-30"
+   },
    {
     "source": "Duke Energy | News Center",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbGJpcTdrWURvSFpiQ1pQYVdkRm9saGhmbWoyWjctZ1ZUU2puU3hGcnNTODd4bktVUHBKS1dvMVc0djJWZ2tQMDBGbG41dU96QjZkYWJNQ3RFM0hHV1ROWlhfVFZIZ2ttVVJhN2ZKeVdVb3dHdWlXMEpSUFg3NlEwV3JfNGlPbDJGd0Vmd0ZqZW9HdG9j?oc=5",
     "title": "Duke Energy grants $326,500 to boost Florida's economy",
     "summary": "Economic investment in the region supports infrastructure development and business growth that can increase property values and development opportunities."
+   },
+   {
+    "title": "Jefferson County's new manager Laura Aldrete talks to Denver7 about affordability, housing and wildfire risk",
+    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOekFVY1REeERzODFQbFFsdmpMQlVza0llN25fZEJmcE9xWDVWWW1oOUc4M2JyLXNDMVJmZXhXRGhnYjJrUG1qT28wU3BpeGZrWHh3UERqb0hWQjVIZG5kTHVMalFFUW54X3ZpNjlMeGJuZ2NEczlBTjRJak4xUElnT0drSDZTYWZNS0xwbnp0Tm9QUEFSTWJCSjZhQkhzTUNxMlFkQTlXTUIzNTJ3V2NCNGhqbmZUOTl5QVg2SGJwcXVMQ2xxVG9OUlhJVXFRcnNON3dqdWRMS0Y3NjZLYk1uRDN2WWdld2hpd0d6YlJJZkNTdWNGTDhwd3ZIa1VoNmV4?oc=5",
+    "source": "Denver7",
+    "date": "2026-09-17"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Lafayette": {
-  "updated": "2026-10-04",
   "items": [
    {
     "source": "PR Newswire",
@@ -250,11 +736,23 @@
     "title": "Duke Energy grants $326,500 to boost Florida's economy",
     "summary": "Energy infrastructure investment supports regional economic development that can facilitate residential and commercial construction projects."
    }
-  ]
+  ],
+  "updated": "2026-10-04"
  },
  "Lake": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "Lake County OKs $5 million contract for transitional housing",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTXM5bXdEa2dWX2MzeFlpZkUxN2J0UHpldFROalJ1aEwzMXA0dFVVS1ZyQzdVVWg5WEJkQk10OHFHamhUelVfTmx0ckE3U2FvOGppeGEzemJLdDNXc1o0OVI1NHl6ZG1BcWVadTBsRmRub1NMZ29tYmhNeVA5bkl2MHR5Y3lWay1EWEtoMHQwS04zQXg4UEQ5c0Jlei1jLTA2S3IyenVZUXNKVUVfLW12NUNxTnFRUjJqeDVYbGx4SGlQVUk5d21jWS0wc0t3WVBrVUVqMURoaVo1M2RGR01wYUswdHpZOGZ1eHpHSlNsN2s?oc=5",
+    "source": "Mid Florida Newspapers",
+    "date": "2026-09-22"
+   },
+   {
+    "title": "Other Side Prep School Opens New Housing in Salt Lake City",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZXZUa0xKMXFXNWNfT2daYWdZMFZiWHdobEFPUFRWTF9XUWVWUHhKSnB0eHg5YTA1Y2ZxZnpxVUNOXzRtdDVxVGlZVmlYM3NjOFJBTG41LXNMenR5MzAyYXloM003X2dERHd1SWdLS1lPc3FqSldOQk1FRWFHWFJXTktfNDJGaC1aNXhMWm5KLXZ0SFVWNGdJR29ZS09QaEZuWlkzNWM0NFY1QW1X?oc=5",
+    "source": "Hoodline",
+    "date": "2026-09-22"
+   },
    {
     "source": "GrowthSpotter",
     "date": "2026-09-16",
@@ -263,11 +761,10 @@
     "summary": "A major residential subdivision is expanding in Lake County, indicating growing housing development and infrastructure investment in the region."
    },
    {
-    "source": "Mid Florida Newspapers",
-    "date": "2026-09-22",
-    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNTXM5bXdEa2dWX2MzeFlpZkUxN2J0UHpldFROalJ1aEwzMXA0dFVVS1ZyQzdVVWg5WEJkQk10OHFHamhUelVfTmx0ckE3U2FvOGppeGEzemJLdDNXc1o0OVI1NHl6ZG1BcWVadTBsRmRub1NMZ29tYmhNeVA5bkl2MHR5Y3lWay1EWEtoMHQwS04zQXg4UEQ5c0Jlei1jLTA2S3IyenVZUXNKVUVfLW12NUNxTnFRUjJqeDVYbGx4SGlQVUk5d21jWS0wc0t3WVBrVUVqMURoaVo1M2RGR01wYUswdHpZOGZ1eHpHSlNsN2s?oc=5",
-    "title": "Lake County OKs $5 million contract for transitional housing",
-    "summary": "County investment in housing infrastructure reflects continued commitment to residential development and community growth initiatives."
+    "title": "Split vote advances Glendale rezone as Salt Lake City tables citywide housing proposal",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPa2tnUVRRLWhMSnlWQ3UtQTcwbnpFajZha1R3Rm5UcXJ1Qnk1ajI0R1JYUE9qTUdPMmZJWS1kNHFpaUtqVUFMakszYVRKallXU1VhR1EwUDdwYVROQXF0YUpOZEF4Q0d4SjlVdWE2aUdkQlBneEZ1QXhidWx3aTMySllzQWc1YVpKTlQydUQySTZ2dW13NEVBb1ZmblpuLWlaZ05IZGl2OFlYOHdKc0FISXRWaFRucTdhUVhETy1IejVjWU9acGJJR0Vod0V3VGNmTWpPYThzQ3FTNDEw?oc=5",
+    "source": "FOX 13 News Utah",
+    "date": "2026-09-10"
    },
    {
     "source": "clickorlando.com",
@@ -276,23 +773,90 @@
     "title": "Lake County roundabout in the works after nearly 100 crashes at intersection",
     "summary": "Infrastructure improvements to address traffic safety will enhance accessibility and property values in affected areas of Lake County."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Lee": {
+  "items": [
+   {
+    "source": "floridaweekly.com",
+    "date": "2026-10-02",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbjRlUmJhX1pyS0l5NnVETnQ1VUlkV1VjS3ZLc3NZQkI5bG1zU2pvTWhDbVp5YjdZaTAtQm53YXJoSU5IdmQxNExPTngtVjFaUHVod1hsbko1bnl1cFBuc19xaWI1NzBNZlBtczNLTDk2d2V3dHVzMHNDRlYtT1l1MGJ2dVI2X09iSTZmYmJBMWMwel9tMXhaX0Naa2RabWtfODc0UHhzVUltS3Rt?oc=5",
+    "title": "Southwest Florida debates taxes, jobs and data centers",
+    "summary": "Regional discussion of economic development priorities, including data center projects, reflects Lee County's growth trajectory and business climate."
+   },
+   {
+    "source": "Yahoo",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdlBxaGZ2RERDRkFzZ3NYZzBEbGp6Y2NUcm5pZTZmVkJHS25lTGNFd2hic0I0RU1SNzNzamVDNEhSdlpFRXYybFJfeUJsRmNyaHczeEtCRkl5T2VRcllnSFJXNGRBQ3o3N3ptS2tFSFE3STdJek82ZXpKeUM0TnpFUjZsV2lSaUJOZ0NaMEcyOGY2Rzlib1Q3Tg?oc=5",
+    "title": "'It's so ridiculous': Florida residents mocked a bid to silence development input",
+    "summary": "Lee County residents engaged in development approval processes, highlighting community involvement in local growth and zoning decisions."
+   },
+   {
+    "title": "Whispering Lakes offers affordable homes for educators | Lee County",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQ19CQnFuSkZnUHYySTJFcEt3UmRVRzZna0VtOWxzNFVtWmRkYnlpaklxZWN3eDFCd0VaY2tOTFhyWHM4ZER4ZGdiZVBUWnZZMF9vcGN3UFFhU1dtWWpGMjlVcEpGN21rVkVWRWpEV2Z2LXJiLVRaTkhPN0VBWG02aVdmakJRWVpfbHRuQm1nWURjZkhqOXhhZ0syUnJyTEk2ODVES3Q1SXBoa1hsQjBwNEdjUl9tM2t5eHhUTFJqa3FHZWVxR1V0Wm9tMWVPMTVneGI4WDJrZXI5eTJESm1mMndVQQ?oc=5",
+    "source": "WINK News",
+    "date": "2026-09-18"
+   },
+   {
+    "title": "Cape Coral sees rental prices fall as housing supply outpaces demand",
+    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZm1FMVNScF91ZGkwWFJZZm1SUFhBS0FuVE1CQWZBaXoxTU5ZcEVhVVk5VnpaYnh4aDFvbDNseUhHRFQ0NExuZjBoRTM5QldCM1lpUG1XcEU4aGVadGtkc0lBbEI1NHFCNjBWRU9xRXdfR3BsejRfSkFtdUd1SFV4RXhuV3M3bkswQ2ZRQzlybGhyU3Z2Skp6Y09tQ2Y4d2hySkpKQTRuNVF4SjhVTlBNY3pKcU02U0FyT0Z5MDI5d0xORHFCYTJERDRRT3NDYVBGT0U4ZktZTmptNUJEMUwtWXVGaVk1Tnc?oc=5",
+    "source": "WINK News",
+    "date": "2026-09-09"
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Leon": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "Tallahassee Veterans Village shifts to 90-day housing model as VA program transitions",
+    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMERmUnRBRlk1WkhLN2xVQWNHb1YwZTF5TUVYdDdEQ2ZiT3Z5TE9kdTJnWDFLTXYtZk1JOXBqMnZEWnVWNi1kS2xQRWFvUi1mMm5zVkxnZFJhSHI2MjI3bExpQVBMRG9VbFhzQlkzaTg2am9acWdSMEd6eEVzaG5BR1N1bk9yOUstbTZwakpXLUFQajctYWFXT21CQWo1cWdkM2gtN1JPSUVIZHZjeUVsVDJVUjdKTFFJOTF3SGZCOVNNM2RwSDFLZE5iR1F5MTBFdElqTXNPY0gwTThScEZWNVlNaDUtdDhGMVBPakhZcFJGYU1YYzJyTVlUWQ?oc=5",
+    "source": "WTXL ABC 27",
+    "date": "2026-09-30"
+   },
    {
     "source": "Tallahassee Democrat",
     "date": "2026-09-25",
     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYlNQeW5ydEdYYVp3aklEXzJ6UWFnbkphcDFKY2QzN242TnNVckJXQ3NNdVRjZG1WMF9sQW5hakF2dXl4UmN2UlVIYXdhWkFMQmZlZ29HcHRkZkRUTGprNjNrV19BSGxNMjhkTjhQVlh4TlNBX0I4REJ0NHBLZnZmN00zdTBWYU1mSFZzZHkwVzBrUDRReElBMzZJVTU2dEN4dDQ3MlJDU3FGM1dSOUhHS2Z6aHljQQ?oc=5",
     "title": "Why Leon County job reports show different results",
     "summary": "Local employment trends indicate economic activity levels that influence housing demand and development opportunities in Leon County."
+   },
+   {
+    "title": "Leon County commissioners seek state, federal help amid potential property tax shortfall",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPVjA4b3I3RXpERHhsNURDY1IzaHpKMlhRdmxneVNDd0hYV19fbHV2TXByZG1XRGVMdE1Tb0FHT3BrX1FzRnM4Um81SDBMTVNMWUVMcS05VFl3RWxqVTFucUZkOERlSG0wSUUteFZnWFQ5dEN0RWx1TjFSVWVLTmtVSGtKOWlKVU92ZjVGVDZOa0U3V3o4NUtyam45YUFiSnMzY2h3YnFCbmJjZDdXSUVVSVlPN3RqeTZOcEF6bERfdFN5bDlzQjlaLQ?oc=5",
+    "source": "WTXL ABC 27",
+    "date": "2026-09-22"
+   },
+   {
+    "title": "Tallahassee city commissioners to vote on historical marker honoring community housing activist",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNS0luV0NfVFhLWnhsUjRTVVRNRS1DTU9yMXc0STJ5dVlMLUlKeDJ5VTB3T0xQbVplYkFncWtRNXpyNkNmODl6d2R0N0U4VWxUMmhZcW8tVzBGcll5VjBZdzk0cFpQbmlTbXpkemY1eWl5RVZaUHpXeGhqa09fYWRjUkpOSE5OdmRvWmlxcDFGNFBUZTNHRnhEdGxCVmpoZU96MU56cVZYdW02bEpxN0NabDA2LVgzMldXSmo1UlNR?oc=5",
+    "source": "WCTV",
+    "date": "2026-09-22"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Levy": {
+  "items": [
+   {
+    "source": "Duke Energy | News Center",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbGJpcTdrWURvSFpiQ1pQYVdkRm9saGhmbWoyWjctZ1ZUU2puU3hGcnNTODd4bktVUHBKS1dvMVc0djJWZ2tQMDBGbG41dU96QjZkYWJNQ3RFM0hHV1ROWlhfVFZIZ2ttVVJhN2ZKeVdVb3dHdWlXMEpSUFg3NlEwV3JfNGlPbDJGd0Vmd0ZqZW9HdG9j?oc=5",
+    "title": "Duke Energy grants $326,500 to boost Florida's economy",
+    "summary": "Energy infrastructure investment supports regional economic development and growth capacity for new residential and commercial projects."
+   }
+  ],
+  "updated": "2026-10-05"
  },
  "Liberty": {
-  "updated": "2026-10-02",
   "items": [
+   {
+    "title": "Liberty County approves property tax rate increase commissioners say will help fund jail",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTGd6b2FmR3Z4cWptUFdianUzOGxpZnRBaWZHT2NkeDV0bm85TzVKc2o4eE9lNjl1MFVKcndwdUYwV3c4ZnM5eWZBYjFCTW9RYWpLXzZyRmlHbnVkcGhvcFBqdGNFYnFUbFp0Z0FDcm1LZktLNDR5ZzlqRnBrWmducmgzQkFXU050QWpyMUdzMzRnaVdOUVZaVkZWU1hGSkJyREt0YkJrX1I1c1dVRXNFTjZVVF9XUHpYeXdUSG1B0gHDAUFVX3lxTFBnaXJTaXlsd2oxbV8yZGt0c3B1alhtNFQ2WXdDZ2hLX0ZNRk1za1J6Ylp4TGZ4ZW4yZmJ6SW5CSHR4cWZYbEt5WTVTT3VKdWEtNnFoRjJPeTc1NjVqVzNQZXFKZ1NCaXkwMllMdUR0T0ZaWXNsMHViTTBSOUhhZV9KWTczRnRKZ1pOdzNDWmJZOXIyWVlPNFl0MWEwRVZCdjJNVjFyVko3a1hZN2xweFViZWRYWHNwbWtuR2tpY1BvZXZRRQ?oc=5",
+    "source": "ABC13 Houston",
+    "date": "2026-10-01"
+   },
    {
     "source": "Florida Politics",
     "date": "2026-09-03",
@@ -300,23 +864,120 @@
     "title": "Jeff Brandes: How Amendment 3 could teach rural Florida to stop worrying and love the data center",
     "summary": "Data center development in rural Florida could drive infrastructure improvements and economic growth affecting property values and development opportunities in Liberty County."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Madison": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "Madison County real estate: 10 most expensive homes sold September 2026",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYWs1NDFYU0RwN3JGTTN3dUt4ejZTQUZaQzVzWnBzaE1fZTlIVkJrZ1g4RE9uU3N5N0d6TWFaWU9FNUY4d0FxVEctaDlSOHpfX0xuUnZEbUh5ay1wU3B1dHRpbkI0eWZ0ZkZhRnN0aXMwT2xObjdJMHd2TjZ2TWcwS1h0YXR2Zzk5RFJXLXBhaUxXSDIxckxFTFBvby1MTE9rZTZ5QzRJX2dycGxSNHlXemtUU25PTjM5emJ3clpDZ1Z6dw?oc=5",
+    "source": "Syracuse.com",
+    "date": "2026-10-06"
+   },
    {
     "source": "Tallahassee Democrat",
     "date": "2026-09-29",
     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVklRVWNKODlXd19QZmZDRWNPT0QzVk1hN0MwVjFGcG1xNWV2YXloc01JSXp4cUdNUVBuWkM3YS11MFU4SGtLZEdTMlRmQVoyX2Q5ZGh0b0ViMXc2ckZLc2NFeEN2YVFWb1NYR3k0UFlPQnFfaHc0SUFvOTI4dE95QXlIWC1xUDNtTndYdmdVWFR3a1NOYWtPS1BYRVNmQmw0a2xtd0dHMkdmeVE5UnlJNHFnS2lqREtoVjRFRXgyV2tOUUs4d2QyTmY3QU4ya2VFOUpaODlGaWVhNXNOcWJMWmtB?oc=5",
     "title": "Florida House District 9 candidates debate jobs, housing",
     "summary": "Local political focus on housing indicates community attention to residential development and affordability challenges in Madison County."
+   },
+   {
+    "title": "Madison County real estate: See all residential properties sold, Sept. 14-20",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMjBCT0gyVy1mRVhFWGhSWDBqT3JweFBmX3pfU09RbHpwd1F0azNWUmNsb0drVWhlNnpIX2tVb0pMaVJHVjJRajVLcHkzSmVwTWNNWkppZ2NFdGZZUmhWall4RENmai1aZFI5WkpHUkNIeVhtblRPWW5wR3BmRXg0azAwS0FLLW9LMy1hLUxQMExCQ2djM3JLMHRpMW9WSGpvTnVtYVpCTVVxQnBNNENueGEzT0RGUVpETGdtZ1ZpSmd6bm05Z1E?oc=5",
+    "source": "Syracuse.com",
+    "date": "2026-09-27"
+   },
+   {
+    "title": "Madison County real estate: See all residential properties sold, Sept. 7-13",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnI4SWdlZENSN1p1UERIRFBiNVc3THhnTXgtZnRKcFNRQVU4RWdfUEZYb2wycWxna2dLbmJ5MWNVRURxZHlUQlZNRloyMnlBU2JkdmZmNmJyNWoxVUJsVGoyS3lRYnJnOVY2ME1wSERmdHZjQ1hhZWNtLV9nX0JuQzAyZ01MNC00bERycTYtSk5heDFydTgzSVFfaFdMSFRwQTloVmpLQ2dvOFg0ZHgySnU5NTlPUmZRRzl0bFdEaEV1bGhK?oc=5",
+    "source": "Syracuse.com",
+    "date": "2026-09-20"
+   },
+   {
+    "title": "Madison County real estate: See all residential properties sold, Aug. 31-Sept. 6",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTWFTT3lsc3ZBc3B5VGkzUEdDNmpyUFJHdFFaeWs0SFJHSURvcWhQdlZRMHFCY2RPYUw4a2hIN2dfU29CUkp2NjV2cWstX2QwTXFYaUxFVURzUnJYU3liSzFQTEQybUZ5cXJoQ2k4RmVQT1R1YzBUQWROUXctUXEyMlJvT0Y3OUxaQVRQZFJIb0pDS2g1N1hoLUpzRUNzSHd1b0pDZURVaUNNRVZLazdTQ0VmaHFudXV0elYyVC1sVktUTVJfNk04M2JB?oc=5",
+    "source": "Syracuse.com",
+    "date": "2026-09-13"
+   },
+   {
+    "title": "Firefighters battle blaze at Madison County recycling plant",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNS3FWQ3hlRTdGSG9GZ1B1WG5IemtkcEpjSUZubW5kbllCcHR0ZWlPMm1rNmRmT3pndmEyUjhQYnFIT3JfR2hlcTh6Q0RpaERXSnlGempjMjZHekxVT3c1UlFzWW1kVi1SZHFVdXI5b2FYbF9DZWtoYWxrRzR1WG40Tk5Sd09Zd2ZZLWZHdHdfU1FGWXlqbFFyS21BZDY?oc=5",
+    "source": "KMOV",
+    "date": "2026-09-08"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Manatee": {
+  "items": [
+   {
+    "title": "Do Manatee homebuyers or sellers have the edge? What the latest report says",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcE13ZDFCLXdSODJiNnhHSURKVmlDOXZfTHh5QkZET3FaTHBtUFpha3RWOWpsUF9hbE56M0Jwdk55bFozMGFONXpxSHFCUFZNWkNlb3NHOGhrOHlobUZTUmgzb0xLVkpPTUxWWkZOcUxKa2J5Y3JQYk1JNGJXekw0QWxPS2TSAYQBQVVfeXFMT29oMnZiU1J4bm9HandRWnZNa0xvdUVGaDI1bFJXSU12TXBTQTdiTm1BU0QxQjRsdjJFWFNOU3poM18wNlE5REZqbFhIa0kyVEZscHFHNkhmcVRHRkVUbUIzTWZkSDhra3RGcFNudlRXNUVZQlJnd1kydmJFdDRneHpPek9O?oc=5",
+    "source": "Bradenton Herald",
+    "date": "2026-09-21"
+   },
+   {
+    "title": "Three Manatee Apartment Projects Line Up $112.9 Million in Financing",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jWTAteTVQYXlDRnpjcG9GZnJZdWNlLVFaMzF1aUIwd2ZtZS1BZU40dGx1dVRrY1JJbFQzeUdRWUJXaGM3QjQySTF1bzB6akdUWEFYc0JEUWhZeUhpX0czTGk4RTNzLUxHbERN?oc=5",
+    "source": "Tampa Bay Business and Wealth",
+    "date": "2026-09-08"
+   },
+   {
+    "source": "Florida YIMBY",
+    "date": "2026-08-25",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOHYyUG5OQk9tWThJSmhsYUdHd1N6VG5YTThiOWd0QmdxZDJvTTJ5SXdFeEcybWVETFl0WC1LYUFoNVFkZkJPaC1WTVMxUV9zSlVWYXpBdXdpWk1VLUpXMkt4RDU5c2VvUHdKSUZIWFU2SzVYOThWUkU4WTFJTloxdkhLbzl1bUhVRHo5Mk1Va1djVC0zODZ2djlkNWZTdGgxb0l2SkVOV0djTUVTdkIxQXhNcGtOVk9HaWJEYkpMQTdQZUVSb0JfMXFFbjE2VG0t?oc=5",
+    "title": "Out-of-State Developer Seeks Permitting for 'Lotus Vyne' at 15005 E. State Road 64, Bradenton, Florida",
+    "summary": "New residential development project in Bradenton represents ongoing construction activity and housing supply expansion in the county."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Marion": {
+  "items": [
+   {
+    "title": "Cammack secures housing funds for Gainesville, Ocala veterans",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTEw4YWx2WW5Fd01KQVp6R2RCc3ZhLVFvaFZBX3N5dTVVbGFoS2hPM0xJbFo5NFpDaVo5RjhMeGxNQ3F2c25fSnRKSjhFdW1RR0FfWU5LTEVhVFVyWkpRUUUyT3dTaWd1bWpwNEMzenpsRkV6R0djT2RuZ01MR3VubzB5T0djWU0wQlpQUWlfZVc0UjRxUm9yUmdkTQ?oc=5",
+    "source": "Yahoo",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "2 injured in dog attack in Ocklawaha, Marion County firefighters say",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNb0R4R0IxUHdrc1NEREh1aDFqMVFnSFlvNGxwVkZ6QURfSW04bGJvMFZpa2lJcDhoZHhMWmhIQ2ZLWTFpUWRSU00tR2FQMmJnR2FxYTgwRFF2RldLejlUbTc5SUpPQzhvQXQweGU2X3ZNelAtVlM3TUhpUmthMDk0Rm5rRnFlR1JLcGdiTmM4al9zQ2JiSE1HNDhn0gGuAUFVX3lxTE1lUkFsUmpWSTdDNHo3bWVDSFpOc1hWeHlNZ09neWFxSUFmNTZNWlItZUJ5UjB5RXh2dzRYR0dmZ3VPRTBUbWlUY1hrQmFlQ3dSNHlyS1dMbWRhWDNnalNMY3dVQmQ3V2lLNlFZMDFuQTMwYzVBaEtRWHJjc3pkdG9BaU9EcTRiamVDdGtZX3R2ZWlLX2xxRkw5ZWFpcDJ6Q1RiOFZHTmVUT3F2VUNsdw?oc=5",
+    "source": "WCJB | TV20",
+    "date": "2026-09-28"
+   },
+   {
+    "title": "City celebrates rebuilt west Ocala home for family as part of housing services program",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNXy1LbzlFemFpbFZidWRZSTlFTUdGbkZwUVpnT3FaSzhVT2RZWDlLMDYwLXc2LVB3aUpmVmx3MXRjSHkxaTB2ekdSbnNad25PRlVYVXNYMFozYnk0LUtnN01GcWI4d2F5WHpfVE5fY01hVkpnOUN1eUpieFNnbVU2Z0xUalNNMlR5d0VXV2w4TG1kVDZOREhmQVlKVkZpTnphZU1KVFNMWGlWckR0TDVjVjIzcHpqYWZ2Tng1MkZYWkVOMnc?oc=5",
+    "source": "Ocala-News.com",
+    "date": "2026-09-25"
+   },
+   {
+    "source": "WCJB | TV20",
+    "date": "2026-09-18",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWGNPUmNaRWx4dVdkVUJld2p4TzFtNk0xdnlhem5SZXhzdnh1Zlg1RFBMRzBydUtCMjNmVVFTSmJ4ZzBvX1NVQzFGNkJFRFdLSWExZUR4QV80eHluSkNhd08wVEYzWGR0UFJMd05ONDZyZkhtbU5wTlZ5dlQtdGczZmZ3dmFHNmtTckdIbEJVVW80SjR3Tnh2c21NSEhDSGc?oc=5",
+    "title": "Workers drive bridge foundation piles for new I-75 exit in Marion County",
+    "summary": "New I-75 exit infrastructure development expands transportation access and may open adjacent land for future residential and commercial growth."
+   },
+   {
+    "title": "I believe we need more affordable housing for senior citizens in Marion County",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZ2E4WmNkSTRMZEMxaXlsa05hejZERWp6VnY3Skw0c21nOS1MS3BJaHFoWjBhQkYwNldDdzhOZEhqNFVJYmRkMjFjb2NWdmJoTzZzbjFkYWRUclEzUXB3aUJRc0loX1Q1V2IzVTlSZFQ1OXFpUEluX2ptQVpqVlRUMmVqdkhqMU1rcEEwY2tiemlIQlNDTURzUkVRRFh0ZjQ3ck5TZmlDTnFTU1lWX0pXMmdFUUhRZXBW?oc=5",
+    "source": "Ocala-News.com",
+    "date": "2026-09-08"
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Martin": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "source": "Treasure Coast News",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbjItcVNpTjM2Uk9XUC1xa3laZ1JwVF9Qb2RETHNjUVFkeEZaU1lDT1d2TXVTclM3UC0yUURZX1NuNy1uUWpoZXdNY0hLNENxNW5oTmtuYlpaVWZXalZMNHpkNGpYTTVMOHRqN0ptaElDd3ZEbTdhVVR6LUJSbU1PVDllT2tQMElFN2Z4VmVILWd3UTgtT1g2RnBqQUNHa3lYeWhKT19kYWs3S1JEZFNDRjh0bmJHMXNVZUVTX3VNd3FfOGd6OXFMODRFUjR0bmY3QzZEczNGZmFrQ0l1Q0Zab19n?oc=5",
+    "title": "Florida fair officials start construction on new home in Martin County",
+    "summary": "New residential construction activity underway in Martin County demonstrates active building momentum in the local housing market."
+   },
    {
     "source": "WPEC",
     "date": "2026-09-29",
@@ -325,30 +986,33 @@
     "summary": "A new state law may enable residential development after Martin County's initial rejection, potentially creating housing opportunities in the area."
    },
    {
-    "source": "Treasure Coast News",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQbjItcVNpTjM2Uk9XUC1xa3laZ1JwVF9Qb2RETHNjUVFkeEZaU1lDT1d2TXVTclM3UC0yUURZX1NuNy1uUWpoZXdNY0hLNENxNW5oTmtuYlpaVWZXalZMNHpkNGpYTTVMOHRqN0ptaElDd3ZEbTdhVVR6LUJSbU1PVDllT2tQMElFN2Z4VmVILWd3UTgtT1g2RnBqQUNHa3lYeWhKT19kYWs3S1JEZFNDRjh0bmJHMXNVZUVTX3VNd3FfOGd6OXFMODRFUjR0bmY3QzZEczNGZmFrQ0l1Q0Zab19n?oc=5",
-    "title": "Florida fair officials start construction on new home in Martin County",
-    "summary": "New residential construction activity underway in Martin County demonstrates active building momentum in the local housing market."
+    "title": "Gubernatorial Candidate Byron Donalds talks costs, insurance at Martin County roundtable",
+    "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxONThOTE1CcGNwSC1KcnViLUN0S0V2Mk94RVU1QXl0X0kzZkdXU0llV1BuNDRuN0E5RDdwNy1YdXFva0lFS0xFeDhMbVVuXzltZlhRMWpHMmRUSUQ0UlJHYVB3TUhNUWV6YmQzQUtxWE5PR0dZZDlaQTQzejhQd0xmaXpCWWU0eG9YZlUtOFVjZUNrYnRuLUtqMkgySk5mUE5MMzg0OUZNUXFXenZITmVUanI4VkpyNXdLNC1lNnRCTmNkdDZJMHNqNC04djU5Y1AybFFVRGNHdmFyVlN4OEctV21OSHphMW5iNElqZnVGSjdsV3FGb1ltY0Z3cDhpSDhfT0lSV0dxWQ?oc=5",
+    "source": "WPEC",
+    "date": "2026-09-23"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Miami-Dade": {
-  "updated": "2026-10-04",
   "items": [
    {
-    "source": "Florida YIMBY",
-    "date": "2026-10-04",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOa21zTTJVRm9EWWxxdDRSdV81QXpJNkFNeEE5U3RxcW9MMGdlbGZjWFlzRnpPdlFJa0ItZ0NiVy1jX2xya1pieFhJWkEzSXVTX1JLQm1lVF9JYVRnR0REUVk5anp5anpBZmEtemFHVl85TDVENGxYMm5qUzcxdmRZMEwzY0Z5aTJtWFJyOXN4aDNObE5kWWVUZGNKYUZKOFlLY3RqVWxKZFgtV2R2Y3I5QUZqam1tUXA2QllZQXpwdGZOakE?oc=5",
-    "title": "Developer Revises Plans for Workforce Housing High-Rise at 824 Alton Road, Miami, Florida",
-    "summary": "New workforce housing development underway in Miami with revised plans, expanding affordable housing options for local residents."
+    "title": "Miami-Dade offers up to $3,500 to homeowners for mortgage, HOA, insurance, and past due bills",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQd2xoQ2tGem52VU5SWERCNWxCaXpNdnBvLVlRaXREYW1Hem9xOXducXBWOUZOdGVqZ3B0UHRvQjJQbmMyWkpvNkZ5T3NyOEhuUUNfZ3RhR2JSejVPTmFSWmpscDktR3RRT05kaHF5LTJ2cDdjTE9DZGI4Mk5JU3NMcTJBS0RTXzVmdEpBQ05QcXBvQ3R1WF9zVElya0dWbXg1bm42UDgwdTJKZHNGTFIySkd2RXZ0VnJyUkR6OE5kOWMxQQ?oc=5",
+    "source": "CiberCuba",
+    "date": "2026-10-05"
    },
    {
-    "source": "The Business Journals",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSnBvYlZhbW1XRUZPakVfUi1SMXJMZTVYSjhqWjZyTjM3TVQ3UktBZG9vMkJ5QXk2U0dSZnBmMzF6VXZEUU5QODkzczlpOGJNZXh4MlA3cFJFQkxkWDh6VXU0blNwQjBDUnowd2NNRUJGSFVEaEI4NmJKbnFFYTVmYjFJRnNBdVFETEV6eUplRm52UzdKdmFKZ2s3Z3VKbFJNRFpFbTFfRDBUdw?oc=5",
-    "title": "Developer obtains $74M in construction funding on 4 South Florida communities",
-    "summary": "Major construction funding secured for four regional developments, signaling strong investment in South Florida residential expansion."
+    "title": "Property tax in Miami-Dade: paying in November gives a 4% discount",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQ3duUkpnV0taSDlUTW1JcXU1LTdvVl9oc0dvUWVGWVkwZDV6M0lWZ1ppSTU2Q25xS1huSzk3MUtnSEJvWDc5a25XX0pONVNnZDJBRkx3d1hkT3B2X0pYend4OWFIVE5GV1ctbHoxcXZuNkVwMW9rN1RHd2JJa3hreXo3YnV3ak03cXRUSmxtREFtLV9Tdkc1Z0I4cnU5Y1FsZ2lveU9SZUFmTHFzS1poV3dGOFVRc2d3UWFjWjVRVFk?oc=5",
+    "source": "CiberCuba",
+    "date": "2026-10-05"
+   },
+   {
+    "title": "Developer Revises Plans for Workforce Housing High-Rise at 824 Alton Road, Miami, Florida",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOa21zTTJVRm9EWWxxdDRSdV81QXpJNkFNeEE5U3RxcW9MMGdlbGZjWFlzRnpPdlFJa0ItZ0NiVy1jX2xya1pieFhJWkEzSXVTX1JLQm1lVF9JYVRnR0REUVk5anp5anpBZmEtemFHVl85TDVENGxYMm5qUzcxdmRZMEwzY0Z5aTJtWFJyOXN4aDNObE5kWWVUZGNKYUZKOFlLY3RqVWxKZFgtV2R2Y3I5QUZqam1tUXA2QllZQXpwdGZOakE?oc=5",
+    "source": "Florida YIMBY",
+    "date": "2026-10-04"
    },
    {
     "source": "Florida Politics",
@@ -356,12 +1020,36 @@
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ3huVW1BWEVGSUxUUVRiZ1dpbS1DVG53d0JkVUc3d053SDlFWFc0YnFiQ0VWS25GVmZOTUU1TWdyTmV6UEc4V0ppMnlxSWdBYUZ0ZUhwRjFMZGU1anV0a2wxakx5TW9HcS1hR25nRnBvelM0Ynh4U1dMSnJJTDZrUHdjMlRNYWhJLURNOGRCd1RFa0xOZ0hpVjlMT3VaUmc2T0xCakNrMVBnWXpVeHkxU21ZRWtaX1RNWGc?oc=5",
     "title": "Beyond Sunset Place: Miami-Dade weighs $438M South Miami redevelopment fund",
     "summary": "County considers substantial redevelopment investment in South Miami, promoting urban renewal and mixed-use community growth."
+   },
+   {
+    "title": "Miami Flunks New Housing Report Card While Two Florida Cities Earn A-'s",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMWVoQ0V4VnE2dFVYZnFVVDBjVGlydXBxcDFjUk9NTVBhRTlzQ0hnYUpMamxaT045U0xRckUxUlZLQlBCUXFUTWxTbUpHTDBjVklZVXNmRnhjdTJtcFU1UzRYaDY5SzhrSjJaRkFEb2lEaFhNTkRCaXQwWGprSU8xaWZWWTRiLVJRTW55aTdCaUxlaHgySTREckRwWnpHZTRTbEE?oc=5",
+    "source": "Hoodline",
+    "date": "2026-10-01"
+   },
+   {
+    "title": "Related Group secures $167M in construction funding for Miami apartments",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOb3pac2J4Z2FXeF9CQjhjVVAzLWtpNmdpc2t2YXYybFg4dlB4U25LYzhlMWd2aHI2VUNBa0U1MXJFODNQVlNkM2xCQTJpMWkzWHNIendmMS1LbEZhLXg0MDdWeldwQ18tRHFjVksxOVFDcVhIODB6bFJXX1VvMnItaXZhU0lmckRsVWVzMWJ4R0U3WVp6NHVkMnJiN29SOGZEVEk1TXd3U1hSSTJP?oc=5",
+    "source": "The Business Journals",
+    "date": "2026-09-30"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Monroe": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "Harborside Senior Living CEO Making Assisted Living More Affordable in Monroe County Ask About Up to $25K in Annual Care Support",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUy1DS1lza0plaEZWU0pFWnlJdzlJblg2bWlXUk9jNTh4RXZySGIzNEVKZm1tRWUwWVpqTHNDcmV3cWhJbndJTW5jeFFaWW9IUmxCUGlQWEJrVkRvaW80MERhTmlJNUxVZTctbEN2UmJLVExjTG90YnJZLUZ3dmpPY2lxRW9TeVQ4bjVrV2RGc0VFR1UxUmd3dWdXVUZRTEt5SGZOOElXT0t3UUl1THdEWm1zcmZDVC1ON3pxYzkxSllSUWcySGg2bnpPOGdkdlBxY09MVUdDbHhrZXlMZUkzWUhrNkpOZjEyZDdWVnhtVFdOS1NVZUE?oc=5",
+    "source": "PRLog",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Trial date set for former Monroe County deputy accused of sexual assault",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQSVgxMFVjQ0Ffc2NvNWh3bW1tRUtINjlpblQ1M3VtZXp1Ml9pUjJWY1JyQ3drOWVYT3JBb05mbnJvOWItcXh0R3V4emFydDFpTnVTWFc1OGRIZnRBMDdQVGVlSzM0X2ZmaXFxTTF0YzdmbUxhQTdONEpkMDF3VGo0aTZIV2J0YXQzM1ZQblc1NkROTExWamVra2hZUnNUS09tb0xONno0X21ubUowSXlzTDNhZE5kelNTLS1vR2Q2dUJ1bnNjdEkzMmFNVW81ZFVqeTEtUzI4ZUk0ejZwZms1TG1kUzRZajFlcHJnOVRBSQ?oc=5",
+    "source": "news8000.com",
+    "date": "2026-10-01"
+   },
    {
     "source": "Florida for Boomers",
     "date": "2026-09-22",
@@ -370,17 +1058,35 @@
     "summary": "Property tax rates significantly impact homeownership costs in Monroe County compared to other Florida regions."
    },
    {
+    "title": "Monroe County firefighters save girl trapped in Florida Keys house fire",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPd1IxTDNFOVVHOEVSa1Q0ZElTeTB4Z0RlLTB0eFdhM1NYaDdyR0JjeHZsa2NFQ0ItYzBaTHI1ZUNfbDBkZ2dSQWVxWHl5R05EOHlqX08zVElZcXVzV0pkSDNVZk5WS1dQcnh3UEgzR0M4MTNZbzhXdWRLNzJLMEdCb0lDdkltS3dabC1R0gGLAUFVX3lxTE5razFBMUVlX2dqbjl4dUlIMzU3N3FUV1NSNTNxSlF3b1A4eExaRWQ1NmktSnRVUjZKUHIxa1pnenAwTXEyM095dmJ0OUVrOVQtVnZCYy1rQk1mTC1FQndBdnFGSEVYaGF2SS1jSWVvZWx6Y0JyLW42YUc2UEdxSk1nTmxYaUhVT0RxeUk?oc=5",
+    "source": "Miami Herald",
+    "date": "2026-09-21"
+   },
+   {
     "source": "keysnews.com",
     "date": "2026-09-17",
     "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVzNpUEZfc3lQQmIxaWZrcnl1dG9yakV3RV8zaHI5eWVoUHhVemtlRWpiUy1kdFF5a1Zxa0haOUF4VEdBRG15WHNVSzBEZ1o5UGhxNnlmTXYtTXFoUm9fdnIyekU3ZlN5ejdsYVNOSTRzZXFTazlaNlNqSklTV09DTUlCblB3N2RtXzIzRnBMM0lmWktPdloyMEtPbUtoN2RsTWhvbHNLbzFMRVFwbUdMRmdlZkxmNmFsd2Q4NjhsRXhkbm9Ta05ydWswWVUySWxqQ1hfWUc3QWpFXzVyWUxuRUFTbw?oc=5",
     "title": "FEMA to draft new flood maps for Monroe County",
     "summary": "Updated flood maps will affect insurance requirements, development feasibility, and property valuations for local properties."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Nassau": {
-  "updated": "2026-09-22",
   "items": [
+   {
+    "title": "Nassau insurance broker William Bonomo accused of stealing more than $200,000 in COVID relief",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdGFtSmVkSjJsOWljTkxSVHYyTmhENEZWSmhlczhrUXlhWkRxeEZrVHRqcHFnS2hGYktndzBiSi1iTnlLemZZanZ1V0VkdTZ2RWxieEpUVUNncGtrV2UxbG55QnZZTlBTNnpia1J2Z05SdURrWUJ0WTZ1WG9GWlRxeFkxVDdQU1NhYlFGaWxWRQ?oc=5",
+    "source": "Newsday",
+    "date": "2026-09-18"
+   },
+   {
+    "title": "Nassau County honors the volunteer firefighters lost on 9/11 with new tribute",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1kMUxtQm82emlaMmJwdFhOZFMzeDhXeVJsblVRWUJWdks5LVI1amtsT09fSUkxLUJiaC1wSDNsbWdQMmIzNVYyRmVnWDZ6SEhiNGZUZERLOFdRd1pZeWJFZTgwWmVacjhza2hGcjFrdUtuNHR0WTBDMw?oc=5",
+    "source": "Herald Community Newspapers",
+    "date": "2026-09-10"
+   },
    {
     "source": "USAFacts",
     "date": "2026-09-08",
@@ -388,17 +1094,44 @@
     "title": "What is the unemployment rate in Nassau County, FL right now?",
     "summary": "Local employment levels influence housing demand and property values in Nassau County's real estate market."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
- "Orange": {
-  "updated": "2026-10-05",
+ "Okaloosa": {
   "items": [
    {
-    "source": "OCFL Newsroom",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOGRFVHFqU1IwRjlMOXlOb0ZrOUtiYVVPRnNkTktUYjh5X29MM1lKSEZVWFIxeVM0Rm9rdElFODhVQmE0ck10RFY5QUI0RDVoTXd5Ny1tVFB4bVFFeXpZVXJFZGt3ZGNkQnpxaE1JdHlRNVlnbjc4LTlOakJPTlYyNTM1YmdmZDJKVk55WUkybnp3OGtibF9lMkE1ZWJocHI0MnlBR2IwQ2c4dTM4aG9pTkVxSnBMQVZVOW5lckFLbXhfV081QkF5bjdBZ3hGdWlySHgwc2Nn?oc=5",
+    "title": "Open statements begin in trial of former Okaloosa County deputy",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNTEyX0E2VWMyb1BzRWZ3bHczQVpIWGZrN19NYWZ4VzEyMWltWWNudUJZWVdFY0dJSVN1NVZGb3JRdU9SbmNiRmtIQUlDd2NnVXB5XzV0d2VSRm1SNHkwRVBjZ1czWHVXT1dLaG10VU9CUnJwT3Z6SjVwVXpkS055T3NLSGtockN4a2xsTmNOQnpucm1FbGw5TmI2aXg?oc=5",
+    "source": "KNOE",
+    "date": "2026-09-29"
+   },
+   {
+    "source": "WEAR-TV",
+    "date": "2026-09-19",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWURySDJmR0FSS3J0cHhhd25vVzJqQVhzV2EzWEZjVm41RUY4Wld5bGJBSVhxUmswbFB3WWZjU0RIaDFYdm41NGhDT3hGVE9QOWVQbkhHQjBUU241Q3Z5WEhZU3hJTWVLUXFkMmNCMm1iNkdqZURLeTJpQlhmNER6b0c1UWw2Yjd5cHpkWDFNb0lqZkhHMW42T2hKNTlCbjJ4M09n?oc=5",
+    "title": "Okaloosa County commissioners opt to regulate data centers, not ban them - WEAR-TV",
+    "summary": "County's data center regulation strategy may influence commercial development patterns and local economic growth affecting property values and construction opportunities."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Okeechobee": {
+  "items": [],
+  "updated": "2026-10-06"
+ },
+ "Orange": {
+  "items": [
+   {
+    "title": "Orange County invites residents to Monday meeting on new housing plan",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcmpKNmtkN2NQN1poNWd5ZHZNYVJSTWdZejVsdTJWc0lSOGNWQ3RhR1dGUVVDUmdlbjJ4U3JTaXBZa1otWWNHejZwRkpLV0Y4YUo5VlRmOE83QmtZOWRsOGN6MHFoR0VRLV9kZlVsdEFFY3doQ3lwMVc2dE5UUzF6aUVyWk1rb2FyZGxlNkNyalJXYkVDTXRqN0FIU1lFYWwtdmFsZzIxb2tWMlBqSXphcUxMY2U0ajZJNGk2YkdEZjfSAdQBQVVfeXFMTjJCcXlkc054NW5TNVVycVMxQk5QQ08tdXdoN0ZQNDFjN2JqT2JoMkJZdE1QOEhHWFlMVDAwbG1EeE0wbFBWN1ZZVVF5UVdycURzWFQtV1lrOHhLSGVCNVRNeEc2amU3cU5XMTlpbS0wWTJOdFJCM3ZuM016bVpEX2NWR05PNUtaNFpUdWxrZVRIdTBsY2Y0QW9qcWhIVExQLWdGLUFnZXB1aHppUC1hUUdxcnlESHhqYkxwbGtJV2Rrd2lQYmFDa3NNdTBrSUtndXZqam4?oc=5",
+    "source": "WFTV",
+    "date": "2026-10-04"
+   },
+   {
     "title": "Orange County to Hold Community Meeting on New Housing Initiative",
-    "summary": "County officials are engaging residents on a new housing initiative, signaling active planning efforts to address residential growth and development."
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOOGRFVHFqU1IwRjlMOXlOb0ZrOUtiYVVPRnNkTktUYjh5X29MM1lKSEZVWFIxeVM0Rm9rcElFODhVQmE0ck10RFY5QUI0RDVoTXd5Ny1tVFB4bVFFeXpZVXJFZGt3ZGNkQnpxaE1JdHlRNVlnbjc4LTlOakJPTlYyNTM1YmdmZDJKVk55WUkybnp3OGtibF9lMkE1ZWJocHI0MnlBR2IwQ2c4dTM4aG9pTkVxSnBMQVZVOW5lckFLbXhfV081QkF5bjdBZ3hGdWlySHgwc2Nn?oc=5",
+    "source": "OCFL Newsroom",
+    "date": "2026-10-02"
    },
    {
     "source": "Orlando Sentinel",
@@ -408,16 +1141,28 @@
     "summary": "County commissioners approved the Tuscana project, a significant residential development, after previous rejection, showing progression in major housing development approvals."
    },
    {
+    "title": "Orange County applauded on vote that could impact data center and housing project",
+    "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPTXJPczdObEJhcXNsQ3F1MlYwczBOMU9hTUgzMWVqRlk5R2dLLWJ4NnFaNjA4NHY3eW8wSU40aDhFcS1XTHJ0NDQ2SmJLXzlWUy1YOTl2Z3BFUEpRajNackVLTEVtNEgtTjNfd0lVQ2ZRaXBPSDlkRFpTTWJPNjJkUVhQZmxFOVZlc3B5NWh5cHNEVm94VXBZNko1V0w4bjY4S193ZTBFaGZRLWFKc0cxOTMzZjBuY3ptUnRyeDlZWVhfTDF3R3E3OTM2RDBpekd1VW5tYkgyUXVLNVFVWWFCeUtVbFVCNmg5Vi1fMWlvVWVwVVlXX0tmbzl2V21uM1cwdkRPNmJZLXlTS1JlOHN4dW4wZmlaaWNJSW51eWVqdkNBaTRNZXVzVmF5bmdlbHE1akFJcg?oc=5",
+    "source": "WJLA",
+    "date": "2026-09-30"
+   },
+   {
     "source": "cfpublic.org",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSldfMEZmX1pBdm5tNjZYTmFpT2NUa1JTRmdhYUZaRVdYQ0RodjVwT2hkNFNSNXJfemdfZ0JnZTNUbVZ4b2o0SUpCQ3l5QzREZ1pRQXFBRWQ3UGxjUGI4T0szZkUyS3BfWFVYNWZ0TVhBTlZVdjZLTlp2dTZIWk1Wa2duWmtWc2xfSW5zdlg2RnFvYWVlaUROSFdhbEhyRXdGSzdkR3V4U2hDUzl1QzdBTjlja2xVV1FiNGhwVGV4UTQ?oc=5",
     "title": "Orange commissioners accept plans they previously rejected to develop near Shingle Creek",
     "summary": "County approval of previously rejected development plans near Shingle Creek reflects evolving zoning decisions affecting Orange County's residential expansion areas."
+   },
+   {
+    "title": "School data offer a different look at student homelessness in Orange County",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVTFGbUJLVEJZc3BNSnJxYmhJQW94aUZCeGxpbk1wbUhSWjVhNDlROHdTeXdabHR4N0QybUl1RzRWdzFUYkFVOW9mVDBiQ2VVX3liUWp6VGd1c1FsMWhtVzF2ZkVTNkNnT2Ywc0dvRnpkc0RVODY2dHVucXVJelNXR0lScEduZUdmZjhhdlFTTmgzX0RnV3l3N01tWU5XM0I5OXZF?oc=5",
+    "source": "OCDE Newsroom",
+    "date": "2026-09-28"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Osceola": {
-  "updated": "2026-10-04",
   "items": [
    {
     "source": "WESH",
@@ -440,243 +1185,10 @@
     "title": "Osceola approves new projects that could add 30,000+ homes south of Lake Toho",
     "summary": "County approval of large-scale residential projects totaling over 30,000 homes signals substantial housing expansion and long-term development momentum."
    }
-  ]
- },
- "Pasco": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "Florida YIMBY",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOd0c3YzJkdVNSRy1SMjRUWm1qd01uVEZDTHltRWM2cm1aN0NVTWVPSmlhQjFDQmFQYlh0ZEpHeGVPSFVqODRTMkJ5VE9xRElzWUIxU2JSTUhEelRMUm55U2RBb1h0THNJcmVWeFlRUWdCRWt0WkpNYmZUQlAtZTVjN0hZRkZ0MmxmYU1YUGt1MDNsS2E2el8wbENlazVkeUNNeUlyRFZZTF9mYTdOZ0dRVHVCZldkTjZ6UHVUNkRaei1vdG16ZjhUaXpSaWM1M0w5bk56cGlQcDhvNWk2M0hpbQ?oc=5",
-    "title": "Construction Starts on 330-Unit 'Springs at Abbey Crossing' at State Rd 52 and McKendree Rd, San Antonio, Florida",
-    "summary": "New 330-unit residential community beginning construction in San Antonio offers expanding housing options for Pasco County residents and families."
-   },
-   {
-    "source": "Florida Trend",
-    "date": "2026-09-28",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOT0dNZVYydy0wM0NKRVBvYVRkM3AyY29HUkRrdlhTX2FMX2ltVDY2Z3dxYk5kdWg5NkVubGpSSVNtbkQxVm5FMkIwbFZ3Z2kyOFQ3VnNmWUZzZUo5VF93eUE4R0V2VFg3M3MzZGUtdkZHcXdoNENYdEU0V2Fqb3NEMzdlVDF1eVpTN0hha0hEM1luYTVpamYydDdRU3hWX1dfMjUwX2c4ZExkWDJtR2tzM1ZJem1Wa01JRXl0U2FoRUsybXgwUEdTVjctUXk0TFJ5eDVCRTg4ZEpRdHNDOEE?oc=5",
-    "title": "New Florida Law May Help Pasco County Mobile Home Residents With Rising Lot Costs",
-    "summary": "New legislation addresses affordability concerns for mobile home residents by helping manage escalating lot costs in the Pasco County market."
-   }
-  ]
- },
- "Polk": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "GrowthSpotter",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeVE5aUlLY3A4R3lGQlk3THZheEJwYUdhVFpJSFIydVBUUFk4QVItb2RfaWVObVBoY3Ftb0RtWi1XSHdudkNXeDhhWDBwc2wzUUswX0VzMmhuQkpXMHNyQXczX0ZyNVhMb0Q1R0FTbHZBMjVrVjhWbzhlb2ROejJuazZRYk1DQVZnWHU5S2JMMGZ4UlpXb2huSGRaS24xU0R1MnQySUxSXzFWOW0xQ3dQMzU2cw?oc=5",
-    "title": "South Florida developer wants to build apartments on Davenport KOA site",
-    "summary": "New apartment development planned in Davenport represents active residential construction growth in Polk County's housing market."
-   },
-   {
-    "source": "Charter Communications",
-    "date": "2026-09-28",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeUN0d3NZOXJjSkxBVDhvU1A3SXZFYXVfdEEyNVl3VEdfVWRicTNtby1ZYlBYbk0tUkRkM3JIdFg0TlIyUHpfMmdUNE1DcHVCelFMWDg3aWxwaUpNUkVkS2ctV1ZtWmxGNGpmQl80bzhyODRqdnU2Y21xZXY2Zzdnb0ZwYkp6Mm1Nd0RhZzlkWUlDZ3ZwRnpFTjFRcEp4dTl2S3RQOA?oc=5",
-    "title": "Spectrum Launches High-Speed Internet to More Than 10,000 Homes and Small Businesses in Polk County, Florida",
-    "summary": "Expanded fiber-optic internet infrastructure improves utility services for new and existing residential developments throughout the county."
-   },
-   {
-    "source": "ABC7 WWSB",
-    "date": "2026-09-23",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTUJEYnZmNkwxSXoyNV82TnFSLUZacTRhYTRJa3dJbDVEUFRobkU2S2dTNG1XM01qSlpienpORFFwWXhFTE9EYWlITGJBYU9yZWFXWC1iM1lIV0x3NkEwVWlpRzlXRjRCV1c1bnhkSGVhN1Ywdm9ETzhZT0VEcFdwc3V2aFcwYlFJSVNhZkloYzNwTTFSV1ZmdF9RSFY?oc=5",
-    "title": "State, Polk County move to protect nearly 1,000 acres of farmland",
-    "summary": "Conservation easements on farmland affect future development patterns and may limit residential expansion in certain county areas."
-   }
-  ]
- },
- "Santa Rosa": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "weartv.com",
-    "date": "2026-09-28",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZGkzaDBwWDViMVlXT00ya0l3blRaSEtka0FTRlZWZE01Q0p0YVFlSU44YmllUlpXZVA5dUNHZTFLak1IVU8wZ2ZrRjhOamk5d0lrWjlfaXg4R0RUZE9LMUNhOU9BS2tOOGZaRk5YNHV1bUZJRVVKbHlhQUJYWDlwV0QwX1R4aVg5Q3l1eHpMNHBMR3RtdjRsZUZDZWVWNjJVbGRnTTVGSQ?oc=5",
-    "title": "Traffic concerns drive 3-2 vote against Santa Rosa County subdivision plan",
-    "summary": "A proposed subdivision faced county approval obstacles, reflecting local infrastructure and development considerations relevant to future housing projects."
-   }
-  ]
- },
- "St. Johns": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "St. Augustine Record",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTkJfMVBtNGROQmdmTnpDd2ZRaWdkZWoyTERfcUtXRldzejRMQ05mRklfdkRUa01aTkpXcmVpWUhST1ZhT3RaaHZEc1VDcXpOc0F2M0E0cE90cHlhWWd3WmpNeTBXdHRCSmw1VjllOWhxeF9QSXh4TWVZNVhXRFpmemQxem9oR3VTYkdKU3BaS2stSmNPT1lmbm1BVjhQLW9uSGh3YVVvek5Xb2tjWmdFQTdTbGg2b0p1bTJKZDhMSTZxRXBOeXFrRWQ3X0JxWUppci1oRnNJTWYtdVBjalAtMg?oc=5",
-    "title": "New townhome community coming to St. Johns County",
-    "summary": "A new townhome community is under development in St. Johns County, expanding housing options for prospective buyers in the region."
-   },
-   {
-    "source": "The Business Journals",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWluTnpaNkFsY2hwQWRuVnJJbmxFUk9VenFtUmdyWDlDMzZINlZubEdRXzBxeGV4STJFWlJVOUVCVV9wcWpvaFY1ZkpPOW1XcHdBTVF4empIWDJyYkhUOVlicEgxVmlnM3dtM3FSVURkeDlvUmxqdUxwLVFQbm55ejhSTUFhMjY0VDUwazItRkpDRno5VllLUHFVNA?oc=5",
-    "title": "PulteGroup to build townhome community in St. Johns County",
-    "summary": "Major homebuilder PulteGroup is constructing a new townhome community in St. Johns County, bringing established developer expertise to the local market."
-   },
-   {
-    "source": "The Florida Trib",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObVZIbmt2YjhFLWtvYzZmMG9zWGhBYkl5NkRQOHptQ1JNalgyYXNiZjZkcGpoS3ZLRW1kcTlnNWkzcUFjS2hodU52N3hNaW5lV0tqMVVoYWdWdlROWGhDSkcwb3VYRWwyYmhKSXJVWldsSGV6WGU4SEZud0JlSXlFNlphUXZtLWRMc0pGNlFzVkVPOGxzNFRGMEtYWDZ5YXVDTzBIc3A5U3FOYWFSNlZOV1pPQi1SNVNp?oc=5",
-    "title": "Unleashed by Florida lawmakers, landowners move to convert farms into subdivisions",
-    "summary": "Recent Florida legislation is enabling landowners to convert agricultural land into residential subdivisions, increasing development opportunities in St. Johns County."
-   }
-  ]
- },
- "Sumter": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "Florida for Boomers",
-    "date": "2026-09-22",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOHU4YnZuT3plUFJBNWt6TFZzN3EtU1RHSk1kLUl2ZmJhWmQ4eXZnMEJMd29ydTJULTBuUUYzanRUZ0tsaGRSVU56am5YVFM3M2otcURMTnNuOEFhYURPR01haWRVMHBnNGlLMHFhTl83NW9yRWVvdVhEc0VsbjcyWGRKTk5RZ283VEVwczFxeDA?oc=5",
-    "title": "Florida Counties with the Highest and Lowest Property Tax Rates",
-    "summary": "Understanding Sumter County's property tax position relative to other Florida counties helps homebuyers assess long-term ownership costs."
-   }
-  ]
- },
- "Taylor": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "The Cool Down",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcWNuVjc2aTVObk9md01nbjhIa0dQb2xLdFNzc1lhbGtTNnFNSnBURGFuVFQ0M1VoMEYwV3BtRFFsQ0lRQ0c2aWo3NkhqWFloQ0JyLWUtYjRuTm9NeDJfMHVjaURUSTl5STU0cnNza2k2cTJJTUhDdHppcEhVVkRpQjVJMHZQY3o5TmxtWUwyX3U?oc=5",
-    "title": "In Florida's Taylor County, only 10%-20% of lost homes have been rebuilt 2 years after Helene",
-    "summary": "Significant housing reconstruction opportunity exists in Taylor County as the majority of storm-damaged homes remain unbuilt, indicating strong demand for new construction."
-   },
-   {
-    "source": "WCTV",
-    "date": "2026-09-08",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTVc3WnZsOGYtcEhTMF9yLVFDaE5saEpEMVdnc0lXTll3akVuUVR3ZmFVZWdNNEh3N2FmcHhZSC1HQUlzb0NscUE1Mk5ZaFRDVW81Zk90Wm1JSmVBT1hxSDBERjZQTU40LTV5b29qQ1JFTU9vUEQxOS1oYlVCRFp2YmpOTGlJTC1TUllmZENaX1k5aG5LeVJWcDFWMVhwVTMzT2c0aXZDcjF6LWlwTzc2b3Q4U0M?oc=5",
-    "title": "Taylor County commissioners vote to add data center regulations to land development code",
-    "summary": "Updated land development regulations reflect Taylor County's growth planning and may influence availability and cost of developable land for residential projects."
-   }
-  ]
- },
- "Union": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "USAFacts",
-    "date": "2026-09-08",
-    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdUZKajB5Z29zaVBzRkdBdmJSUUk1Vy1tamU0cVd3eHFudm85QTdWOXMwaEpwdml5UXlRaElPc0xiV0FTSjdzVW1FNDRYZ0dvTExFdjd4NW4tdmFSXzRpUGYwRkg3NFFQci1LeUFleHY4TnhaRnNsUkxPY1dwNmlqVHc1bWlPT2QtYlR0QWl2alNSRi1URUE?oc=5",
-    "title": "What is the gross domestic product (GDP) in Union County, FL?",
-    "summary": "Understanding local economic output helps gauge Union County's growth potential and development opportunities for new construction projects."
-   }
-  ]
- },
- "Volusia": {
-  "updated": "2026-10-01",
-  "items": [
-   {
-    "source": "Daytona Beach News-Journal",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTTR2aHNkcE84enN0clk0WE54dFJud1NVclBYTEpoU2FYcjlGRFFqWGVldmtvbTF2Vy1WMDJJUXpoZVJPS1JYdkNXWUhXSmVfWHlKV05SOTYtZ0pwdVdfVk5ld3BCYmN1V1B4UmVBZEV1NTZwaXhnaGhoa0R4R1ZZaTVoMGhyVDJrS29aU3FEWWk5WGVSTjhnemJNTzVFSHNQZUVuSV9rY2pzdWFoeGx3dFkwMDU4VHBUNk1nclBlMnNQUXFaSW5sdUVUTWhGNmJVVXhJ?oc=5",
-    "title": "Study: Volusia County ranks among fastest-growing, most-at-risk in US - Daytona Beach News-Journal",
-    "summary": "Rapid population growth in Volusia County signals strong housing demand and development opportunities for builders and homebuyers."
-   },
-   {
-    "source": "WKMG",
-    "date": "2026-09-22",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZXFUZkZicjVGbzlRNTFMZGFubFpPUjdNY0p2UklaeEljNW5LcGwtb2lTVFNNV2FHOFhLX0dBY0ZmT1MwSExkdk9YWm9ITmFiWWJsMFNnOHFrUjg0QlI1NFdiRTF1Q2l0bGJGZTZxNXRTUmJaMlR1cTNwZk9hTGJlb2tpa1dNYzBNaFcyS2pZcGNOVkpjQjc4QWhERW5RQ2VfVnpxRml6bERmY2NaODliZmwwZVU1Nl9HUVZJRzBDdDA2TTNGa2c?oc=5",
-    "title": "Volusia County moves toward widening congested Daytona Beach road near I-95",
-    "summary": "Infrastructure improvements near I-95 enhance accessibility to residential and commercial properties in the corridor."
-   }
-  ]
- },
- "Wakulla": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "wtwcfox",
-    "date": "2026-10-03",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSlV3S0h5eHdxVUZxTFdkN0VoRHhCb1FZdjhRUG9oWEFaaWk1RzFUYlFhek93RTFXLWV2dzAtY1g0MzdkM1puR2N0cFQ4VWkycUZmcncyREZsOXNmbVVWVDA2UlZfNTFfTlo1eFBhS2FTMzhzSTVoSlE1c1M3ZmtYaVZocW5iallWdmtfZWRXcUFZcHRBRVJWSGcwVC11YkQwcDBPWTVJd1NZQ0c4WlE?oc=5",
-    "title": "Wakulla County homeowner raises flooding concerns as development grows around her",
-    "summary": "Growing development in Wakulla County raises flooding risks that prospective homebuyers and builders should evaluate when considering property purchases or construction projects."
-   },
-   {
-    "source": "wtwcfox",
-    "date": "2026-09-21",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcVJLZWRWemp2clhyWWJxVzljWkZCdmlyS2w3MnlUaHBRS0plYWFzZXRtRHJkQTBsU0FKYVRNRmliWnlJZmc1MldSRzFEQXRWQi1hT3hKcHk2MnhkTkQ3QnlDODFkYlRlUWkxMVpKSDYwcWFMbzhaX1hrSjRaYjJxd1V1X3I0Nl9idWFWeC1nOHd5al9VbVlrSVd0UVlHTDhlOFJTVzg1UzZJQnpkLW9N?oc=5",
-    "title": "Wakulla County confronts flooding concern — but state law blocks tougher local rules",
-    "summary": "State regulations limit local flood-control measures in Wakulla County, affecting development standards and drainage infrastructure for new construction and subdivisions."
-   },
-   {
-    "source": "Duke Energy | News Center",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbGJpcTdrWURvSFpiQ1pQYVdkRm9saGhmbWoyWjctZ1ZUU2puU3hGcnNTODd4bktVUHBKS1dvMVc0djJWZ2tQMDBGbG41dU96QjZkYWJNQ3RFM0hHV1ROWlhfVFZIZ2ttVVJhN2ZKeVdVb3dHdWlXMEpSUFg3NlEwV3JfNGlPbDJGd0Vmd0ZqZW9HdG9j?oc=5",
-    "title": "Duke Energy grants $326,500 to boost Florida's economy",
-    "summary": "Economic development funding in Florida supports infrastructure and growth initiatives that can influence housing demand and construction activity in Wakulla County."
-   }
-  ]
- },
- "Walton": {
-  "updated": "2026-10-03",
-  "items": [
-   {
-    "source": "NPR",
-    "date": "2026-09-04",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSkh4clVWOFpiVkM4Rlpjd3c4UTFSOWVldHpzNU40Q1l4cVpZS0ZrNVJPRXg2RVRwSEQ3dG1PbnBpNjEtZjc2TmdaRnRLelVyMTB6aVhiLW1tbzdNd2Zzdk8yZVFQUllWQlhtTDJRWnliQ0thNWFDZGtRcG13RUx0dW5ac3MxU2xoaXc?oc=5",
-    "title": "Who owns the beach? A heated battle plays out in the Florida Panhandle",
-    "summary": "Beach access and property rights disputes in the Panhandle may affect coastal real estate values and development opportunities for Walton County homebuyers."
-   }
-  ]
- },
- "Brevard": {
-  "updated": "2026-10-04",
-  "items": [
-   {
-    "source": "Florida Today",
-    "date": "2026-10-04",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN3hyVHc2dHpjYWFySWhwSGJ5djZfRFVUaERweGVqUjg0NGFNazlub05FWmt4aVhhMGI4b0lUN1UwbjNBd2NMbV9BNWozQW9CbDgtblhJRklyVUVUSXAxWVFDWjA1ZUs2aVQ2Nkp2SHU1YnpwMGQ0ZDRNWVN1WE5lc1VxVy1rVmd3RzVSeTdMS3draWhHRUl3TmFnLXdQaWNpV0xKbEZnVWxXTUs5LV9rNGxYT21IVlZoUk1XZDNWQWtNS3cy?oc=5",
-    "title": "Florida families can't afford Washington's version of the economy",
-    "summary": "Rising cost-of-living pressures in Florida may influence housing demand and affordability for Brevard County homebuyers and developers."
-   },
-   {
-    "source": "FOX 35 Orlando",
-    "date": "2026-09-21",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNamNkX1RQenl6eUVvdlRMZEs4a2xiV2hkSW5IRi1qR3RBclNNcGFhNDJPSUluOGhlbWlFbWpvaUlNU1Ixb1FNTHNnazN0dHRwT281YXRud2VEOTFlV0NaVHJVR1hlZ1VrWU84QXVNbFZ0M2FxbE9ldkc3MWNyVmR1U1dlSlF4NUk?oc=5",
-    "title": "Health First cuts over 200 jobs in Brevard County",
-    "summary": "Major employer job losses in Brevard County may impact local housing demand and economic conditions for residential real estate development."
-   }
-  ]
- },
- "Glades": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "WINK News",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxObXJiZ08yRkdCVnlzd3NlVHRQaEJBRTVKbUUtc0Z6X1VsZ2dPTDRFWFc3MXoxQ1pKVmM1U1U2RG5qMHBOc1RVamxHd0UzUTY3Mk5kZnI2aVc1bVJqYUlIR1FxeFlOdlpaWUw3RDFRSDZGbzlKVUtQMklTVnJ6RnltV2Z2b1Frc29FRXBTT0c2Q2thZHI5TGZQOTlvUExQWE92WW9HcFBEYW5qaWFvWEdEcExlMzVHMkVZdmFlcPN2YVNwNUdVc19fRjE3YmxyRDY3T0xNRjhVTWZER2poMnZ3NGJXcGN3WUlYdGJRZjBqMmVrQQ?oc=5",
-    "title": "72 acres in Ortona could become RV resort, Glades County residents worried",
-    "summary": "Large-scale development project in Ortona may reshape local land use and community character in Glades County."
-   },
-   {
-    "source": "Woodall's Campground Magazine",
-    "date": "2026-09-09",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOajN6NF9wVGhEeFJXV3ZNUG1sdWM3TXdzS1U0dWhuYkVZVXJSS1NXSmJ5bS1aMHVlYXJSWEd6aVNLbWxRYlJCc0pYV1FySTZLT1habmVpM1VaMk1CTmFGcEdBR25CaDRXNHJmMTJ4ZUtRQmIzM294SUQ2QS1GWWtBcUpZNmh0VUJr?oc=5",
-    "title": "Proposed 700-Site RV Resort Sparks Controversy in Florida",
-    "summary": "Large recreational development project signals expanding commercial and residential growth activity in the region."
-   }
-  ]
- },
- "Manatee": {
-  "updated": "2026-09-23",
-  "items": [
-   {
-    "source": "Florida YIMBY",
-    "date": "2026-08-25",
-    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOHYyUG5OQk9tWThJSmhsYUdHd1N6VG5YTThiOWd0QmdxZDJvTTJ5SXdFeEcybWVETFl0WC1LYUFoNVFkZkJPaC1WTVMxUV9zSlVWYXpBdXdpWk1VLUpXMkt4RDU5c2VvUHdKSUZIWFU2SzVYOThWUkU4WTFJTloxdkhLbzl1bUhVRHo5Mk1Va1djVC0zODZ2djlkNWZTdGgxb0l2SkVOV0djTUVTdkIxQXhNcGtOVk9HaWJEYkpMQTdQZUVSb0JfMXFFbjE2VG0t?oc=5",
-    "title": "Out-of-State Developer Seeks Permitting for 'Lotus Vyne' at 15005 E. State Road 64, Bradenton, Florida",
-    "summary": "New residential development project in Bradenton represents ongoing construction activity and housing supply expansion in the county."
-   }
-  ]
+  ],
+  "updated": "2026-10-04"
  },
  "Palm Beach": {
-  "updated": "2026-10-05",
   "items": [
    {
     "source": "Sun Sentinel",
@@ -698,135 +1210,140 @@
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLUx2cXI4UGZ0ZUlVQ1o1UjRzb0daUTJBLUgzbjZwZzJXeDdYelhYelZLMzZ6QUw1UndSUHA3VHpEMXNwRzRVQ0ZWV2VGaFpfNEd4MFVjME1PUWFoRUd1Z1VRZXpwSGdQNjdoZmtrcmU4cDdjY2NZb1I5RjhvMzhUeDN5c3ctV24xbzNDQmV6T21WOWlGQ2ZBWVlDcjc5X2VLMXRwX2UwRVZMRkxU?oc=5",
     "title": "13th Floor sells Palm Beach County rental community for $33M",
     "summary": "Multifamily rental property transaction signals continued investment activity and market activity in Palm Beach County's residential real estate sector."
-   }
-  ]
- },
- "Seminole": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "Duke Energy | News Center",
-    "date": "2026-09-30",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbGJpcTdrWURvSFpiQ1pQYVdkRm9saGhmbWoyWjctZ1ZUU2puU3hGcnNTODd4bktVUHBKS1dvMVc0djJWZ2tQMDBGbG41dU96QjZkYWJNQ3RFM0hHV1ROWlhfVFZIZ2ttVVJhN2ZKeVdVb3dHdWlXMEpSUFg3NlEwV3JfNGlPbDJGd0Vmd0ZqZW9HdG9j?oc=5",
-    "title": "Duke Energy grants $326,500 to boost Florida's economy",
-    "summary": "Economic investment in the region supports infrastructure development and business expansion that can attract residential growth and construction activity."
-   }
-  ]
- },
- "Highlands": {
-  "updated": "2026-09-09",
-  "items": [
-   {
-    "source": "Mid Florida Newspapers",
-    "date": "2026-08-11",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQT1V2b3FMTm5nLUdQbXZKVHQteEZ2WjAtX2MzeFRNd25xdV9tOFZCV2lGMGUwMjlXVUo5alo2eUVIWDVfcnpkanliYTlfdmZqWHAzalFaMmhocjlxeXk2NTlrelAyUzMzbEVyUEJ2Vk9mV3FsZFhuQ21EaTY2NWotbmhnX3JBWEtuSFR6eFhrOGJCNnVmbmYtYVdkSVRsenVURHlTMTJmQ1FZU01UWUVNQ1JDOGZoRTlrX0VfZGRHb0RmOEFzM2U3STZjc0o1Ukk?oc=5",
-    "title": "Impact fees are on the table | Highlands News-Sun",
-    "summary": "Impact fees charged to new construction projects affect development costs and housing affordability in Highlands County."
-   }
-  ]
- },
- "Calhoun": {
-  "updated": "2026-09-22",
-  "items": [
-   {
-    "source": "Yahoo",
-    "date": "2026-08-24",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa3NYREVXb2hLRTJ4NWR4SFhXaVBCazVReFNETHF2YmhDNzc3anM3bDNCNGo4eHp1bVpLNmRQY0lDeWt6Q0F1Nm9xWHhqdnNtTk1WS0NIYmd4OTdJQWNmU2RoZnVzSnowemdpeHpJWHNWTXRsWERGSU5yZC1PR1pOQzBUbDM5RTBjYUx3d3l4bHFldDRJNC04emFGbFhHdw?oc=5",
-    "title": "Four Development Control Easements Approved",
-    "summary": "Development control easement approvals facilitate land use planning and infrastructure coordination for future residential and commercial projects in Calhoun County."
-   }
-  ]
- },
- "Duval": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "Florida for Boomers",
-    "date": "2026-09-22",
-    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOHU4YnZuT3plUFJBNWt6TFZzN3EtU1RHSk1kLUl2ZmJhWmQ4eXZnMEJMd29ydTJULTBuUUYzanRUZ0tsaGRSVU56am5YVFM3M2otcURMTnNuOEFhYURPR01haWRVMHBnNGlLMHFhTl83NW9yRWVvdVhEc0VsbjcyWGRKTk5RZ283VEVwczFxeDA?oc=5",
-    "title": "Florida Counties with the Highest and Lowest Property Tax Rates",
-    "summary": "Property tax rates significantly impact long-term homeownership costs and investment returns in Duval County compared to other Florida regions."
    },
    {
-    "source": "News4JAX",
-    "date": "2026-09-11",
-    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjJQRWRueXdRNEp2WGR6NHE4LWRHeFgxSXZvdVVLT1JSS19yWmI1YlB5NldEOF96OWVYYkQyZGlLTEcwMnR0V2N4bTY4bldpOXh5cTlLdEQ5ZW1DMHhGM0V4LW10aGUyZGRibWNxQ09zTEd1QlllekRwLUY4amd3eGczUGMtZWJUSG9oaEJuTUE2RjVCc1RVc1VJVHlRNFZVX2hQRGJWekZxclJRTXdRWlpkNWdaOWFpcjM3QjEtS3ZYeVVueC1GTFZaSWgtTHE3YnBOcUQ0b2o?oc=5",
-    "title": "More inventory, fewer sales as Northeast Florida housing market moves toward balance in August",
-    "summary": "Increasing inventory levels provide more home selection options for buyers while potentially affecting negotiating power in the Duval County market."
+    "title": "Palm Beach $10M+ home sales hit record pace",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZ1ZBRlUwdGlPTnNpWEFoMk9xMHZUWUp2blZNMHoxX01aemFRWWpudWdoblF6NmtVRW9qeF9EclhwcnM5MUFuM0lKS1lGajd0enE1U1J1YlNMZEtQT0FFeFdJWE9lSEV4QW53c3FsUVpkRDlPWkV3cm85Ul9NRDBjTHpIcXUtTmhrdjY0cnJ1WGF6Nm9KNEp2NHRNd29Va0ZnXzh5aGFpeU1uRmdrQ1Etdm82ZWV6TlVpU1A2c3dJc2Z6NGM?oc=5",
+    "source": "keysnews.com",
+    "date": "2026-10-01"
    },
    {
-    "source": "News4JAX",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSkNCajFlNWJQQXdEU3RTVVA0VThaR0lkTGw5UjNCRGxIdWtnTkU2N01YMDN0VTM4MXNpTDFmU01taEdwYU0ydktDcndwUEl2R3pHWTRVeWdaUXFDelhkQTJ3aEc1Qkg4M01UN0poZlRlNzhKVWJTempIeGhRN3JFSGhpZ2FESWlheGsxcjdQcmdkalRpNGpHNnhuUk1FTTVoVkNCWEVhZTRFZnU4MmhXcE5nSUlfN055cEEw?oc=5",
-    "title": "Unemployment rate rises to 4.8% across Northeast Florida region in August",
-    "summary": "Regional employment trends reflect economic conditions affecting household purchasing power and demand for residential construction in Duval County."
-   }
-  ]
- },
- "Hendry": {
-  "updated": "2026-09-29",
-  "items": [
-   {
-    "source": "news-press.com",
-    "date": "2026-08-31",
-    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQOFFMUC1PRTlYZGhHVDA5NUZ3MHFFdXRRNm9rUHpSOUk3Smtvb3VJY0JKbnlGN1hUOUNTc2pGVk9NVFlKS2Z3dFF0UjRuaHlGaUhrVDE3c01tb3VaeWhXSHNPelJtcjNocS1hTWRmSTVDWGVrdnp1SGU3MEdDdmFJam5XNV9BZmItTUJBb1ZUX1BycGdoYjBKODVNWlBWVzVEdGVCaUlueHdOeUxhYnNfVjJPaWpHUmR6ckdOc2h1akFQaWYta2lMdWZNQlpXeWpHRjRCMVZiZW1VSnhGdDNfYURLaDdaSDRkS0V5elJ4Y0VkRWlT?oc=5",
-    "title": "Florida's rural Unbuilt Triangle adds Publix, Home Depot, Aldi, more - news-press.com",
-    "summary": "Major retail development including Home Depot signals infrastructure growth and increased commercial activity in the region."
-   }
-  ]
- },
- "St. Lucie": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "WPEC",
-    "date": "2026-10-01",
-    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWFZpU1Y3V1c5OUphNmI0YlQ0VGs5RjVXdmRSNmY3M0xoMnFsYnJfQnR5R0tBaWVjV29GT0hoQzNoSng2MWQxaUhWXzV1cXZQUE4ybHlxVm1raHgydmRzajFBSzhCTGpOdFZqVFhYWVNFMWZnNDhNT2dwb0hrLTZFclFENnk0QlRGVTZaQ0t4cW1kQ3A4VEJNWkF5VDhQanN0aWlxc2s0TU0tVG5YMDY4Ri0tVFhqU0dDd1pDdjVaR2d5OTNfS1c3eG1xbTNWUEFudDNkdnpoNDFtRWFVMmZ4Z0ZqMGcyYV94LUt5VlZkZXVWMHFtdk5J?oc=5",
-    "title": "As Buc-ee's nears construction, development interest builds in northern St. Lucie County",
-    "summary": "Major retail development attracting additional commercial and residential projects to northern St. Lucie County."
+    "title": "West Palm Beach Luxury Home Sales Surge 43.9%, Fastest Growth Among Major U.S. Metros",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaEZDSDh3TkRCbU9wUlg2Yjc5S1hLVEpuYURUWTBXb0pRV1dRSmJOdGZLcU9rTndKRnMxZFBlcGJoVjRQWTFTazMwYUlxWDM0VTFYQUJlX1JDV3U0WFVWaXVlcGpobDg0YkhYNkhmZ1hBbEdFQy03V2UtZG54UVpfMGVlT1hzOHlhQzZrWTBjZ3l1Y1hJaEhvOWFSd2hpcEF6bDM1QVhWMzBNSEFGeWVIVTlvai1FcUF1QkhEdzB5UTFpNGlzZ0N1b2hwQk8tSWxtamc?oc=5",
+    "source": "Kitsap Sun",
+    "date": "2026-10-01"
    },
    {
+    "title": "Palm Beach County commissioner to propose 'pause' on Ag Reserve housing development amid resident concerns",
+    "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQN2JTMkJodlBPX0xiSUlIT2tkcHdSZHcwNTZTc2g0WTAzMl90M2ZZUF8takNVSUg3RnVac05UYzVzZDdka1VlbTAwRVJqcDJNUFhnVVYySUFaMXl5N05tRVdwT2Qybi1VS3dib050SkRZNURTeDdxMGJmVUsxbDdoQkVhaGlWa2c5Z2cxZWM1WTlRS0FWMVEtdUdjM3ZwMGpvVlR6TFdTSGxpWE5PTmVlTWIxNGsxNER5c1ZkZzZleFJocC11M2tOcFJET3kycGRTMmxZdGxRTDFwQ2YtWXJXaXlmUU8tdC1wOUxsRkVOMU5Lc1ctLURhS0ZwdVVLSUdwZERNVGVR?oc=5",
     "source": "WPTV",
-    "date": "2026-09-29",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTFdocXk3YWw1Z3NkMFhTMTRoLXBuT09Zb0FYUjdLdUg2MmZlb1laY3huenBSQTBmVWNYNjE0M3gyeE9qMVVwTGxSekswaHM5TUNlbkRfUlJCRFp0T3AxR3RpRUllQlFtZ3BVVUdETkZzd2hMR2dqOHVTTlZiX0lRUTNaX2FQNFVQTmxIRTVqRE1rNFNhN3pLVFdHMjdjVXdoZHVZenFRSFg?oc=5",
-    "title": "Port St. Lucie lowers property tax rate for 11th straight year",
-    "summary": "Consecutive property tax reductions improve affordability for homeowners and investors in Port St. Lucie."
-   },
-   {
-    "source": "Florida for Boomers",
-    "date": "2026-09-27",
-    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fNUdyeGtUUlY0Q1JQRHUybHVSbl8zMVFMWWhfLXdGQWJrdTc1Mk1jWlBGQmRjejRfZjlpODN2ME1wOWV6Xy0tbFVTLTNBX0FaY3JYeTlGNmJ2dTBsRzZkbS1vODJMc2dKckxpZkwzNmg?oc=5",
-    "title": "Southeast Florida Retirement Guide: Vero Beach to the Keys",
-    "summary": "Regional retirement market guide highlights St. Lucie County's appeal to homebuyers considering relocation to Southeast Florida."
+    "date": "2026-09-29"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
- "Hernando": {
-  "updated": "2026-09-28",
+ "Pasco": {
   "items": [
    {
-    "source": "HousingWire",
+    "title": "330 Apartments Break Ground in Pasco County",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjbFlkWDhwSlljbXJyWEhNS1hTZUM2ZTJaTmhETjgwa0ZMaEM3V2VrNWx3dThWc3Q3LXI0OVdzUnRvX2pkb1BkUEFhSjZGNGk5SDgyaHhmVVNpcDVCSFFmc0ZYMV80UTMwcUE?oc=5",
+    "source": "Tampa Bay Business and Wealth",
+    "date": "2026-10-06"
+   },
+   {
+    "title": "Five-Story, $17 Million Apartment Project Planned in Hudson",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBjdjJKZ0N0eUx5T0pCbVdOQkl6TG1RZ0RGSGZTeXhoZmY5X1FBd2FWODFiRjUwMTdWbEI1M1Foa1pTZzVpZGJZbTE3NVdsQzZwV003MGlTcEp5bnR6TFE?oc=5",
+    "source": "Tampa Bay Business and Wealth",
+    "date": "2026-10-05"
+   },
+   {
+    "title": "Springs at Abbey Crossing Apartments Break Ground in Pasco County",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYXVBQlk4WXlWd2JMNkVUcG1MNUxHdHhOakIySUdkci1lY2M5S21Rczg3QXZTV29OZGdnbTIwY2F3eTBRZnZXbDlMZDJ1akVCcFliVmNvV1M4XzVidng3NVFaOW1TVy1QZVZTTXJoMDBteWNqWHJNMy1tU08yTnJWY19DOGYtOTh3d09OcDV3aktIRHhBZDlFVUNDejh2aHJMZENwcGVn?oc=5",
+    "source": "Hoodline",
+    "date": "2026-10-05"
+   },
+   {
+    "source": "Florida YIMBY",
+    "date": "2026-10-05",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOd0c3YzJkdVNSRy1SMjRUWm1qd01uVEZDTHltRWM2cm1aN0NVTWVPSmlhQjFDQmFQYlh0ZEpHeGVPSFVqODRTMkJ5VE9xRElzWUIxU2JSTUhEelRMUm55U2RBb1h0THNJcmVWeFlRUWdCRWt0WkpNYmZUQlAtZTVjN0hZRkZ0MmxmYU1YUGt1MDNsS2E2el8wbENlazVkeUNNeUlyRFZZTF9mYTdOZ0dRVHVCZldkTjZ6UHVUNkRaei1vdG16ZjhUaXpSaWM1M0w5bk56cGlQcDhvNWk2M0hpbQ?oc=5",
+    "title": "Construction Starts on 330-Unit 'Springs at Abbey Crossing' at State Rd 52 and McKendree Rd, San Antonio, Florida",
+    "summary": "New 330-unit residential community beginning construction in San Antonio offers expanding housing options for Pasco County residents and families."
+   },
+   {
+    "title": "Milwaukee developer building 330 Pasco County apartments",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPckhDMndYZHdzQU10bXA1cGw3U2owMmowMW5IZ2hXLUNnMDA4aERDdlhvSThuTGVFS3pVQk5wVDBFTDl3RWhXXzlsOXhZdFBHZHpjS0ZXQU9YdW93ZWxzX0tQejB6YnQ2ZXRHcTVIQ2pXRmpuMWZiaEgwVERsbGZ3VVFqZW8xNDYtUkctNXZiWElaQ2xDS1lOc3Q0YkY?oc=5",
+    "source": "Business Observer",
+    "date": "2026-09-30"
+   },
+   {
+    "source": "Florida Trend",
     "date": "2026-09-28",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE00RFVJWnNFVXA5ZVRyT05fNExVTlpFRzJYalhMUFZTZW9nMGd4LTItRkFUSnowXzdjWDhYVG91QjNxeHBEbFZyN3NjcFVNNFc1bThveUY4VFozcjhVdmdrTTlzTkdNMUc2My0tdWZsU29QVEU?oc=5",
-    "title": "Stellar MLS expands into Hernando County, Florida via merger",
-    "summary": "Expanded MLS services provide local real estate professionals with enhanced tools and market data for property transactions in Hernando County."
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOT0dNZVYydy0wM0NKRVBvYVRkM3AyY29HUkRrdlhTX2FMX2ltVDY2Z3dxYk5kdWg5NkVubGpSSVNtbkQxVm5FMkIwbFZ3Z2kyOFQ3VnNmWUZzZUo5VF93eUE4R0V2VFg3M3MzZGUtdkZHcXdoNENYdEU0V2Fqb3NEMzdlVDF1eVpTN0hha0hEM1luYTVpamYydDdRU3hWX1dfMjUwX2c4ZExkWDJtR2tzM1ZJem1Wa01JRXl0U2FoRUsybXgwUEdTVjctUXk0TFJ5eDVCRTg4ZEpRdHNDOEE?oc=5",
+    "title": "New Florida Law May Help Pasco County Mobile Home Residents With Rising Lot Costs",
+    "summary": "New legislation addresses affordability concerns for mobile home residents by helping manage escalating lot costs in the Pasco County market."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
  "Pinellas": {
-  "updated": "2026-10-05",
   "items": [
+   {
+    "title": "Clearwater rehab highlights Pinellas’ aging housing challenge",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQdUEzT1paak5teUFDNlY0MGhNSThyMTk0SGFydWR6bTR5eC1ON0o2d21SMzU4WEI1WEVxOFhOalZadjdqZ2prRGIxRHJHYk9YZ2dWajJkR25jZ0dqMjgwOEp3UjREWGZMM3lvR1UwVlFoU1lrZE1fQk9mMm9yU2podVZuUUljVlNGV25sOEwwSmNSQQ?oc=5",
+    "source": "St Pete Catalyst",
+    "date": "2026-10-05"
+   },
    {
     "source": "Tampa Bay 28",
     "date": "2026-09-29",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQM05mYUE3cTV1dkRIZV9VQnhLcFdMQUdIMU5JU09hZ3lwS0Nrd1lQbFA3eHltbFhzaDEwWFFIZWRlUE1TM09MRVdSQi1zSW1zZkRuYVlnMnQyalVZNXpzLXpWV2FMVl9PRTRSUHRzMTU3ekZkN0NZdlI0LTJETmNHUjV3UUhzVDV0TFVvRDJWNklVWVNGMDRQcW96Q3ZnbnVLbDBlMjNJUHRydTM1d3lQaHltZDlPczlucG9fb3dhUWowc282NXJHdzBzR3RBRkZKMUZWTXBn?oc=5",
     "title": "Residents, county leaders discuss protecting 30-acre property in Pinellas County from future development",
     "summary": "Land-use decisions on 30 acres will shape available development opportunities and growth patterns in Pinellas County."
+   },
+   {
+    "title": "Retired FDNY Firefighters Honor 9/11 in Pinellas",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1CeU5KcFNCS1J1Y3hQa1pMZnhIaXUwbUFwb3Z4ZTNtLTREY3RpclJjVDZFZDlBV1Z1NElhRkhTcnlDVXZ2UUZSTVBtb2t0dHluVDBfZURYbGNWSE8wdEdraFh30gFnQVVfeXFMTldhUnVWcVkxSG5oUXU5aW9DMU5lQWtWS05ZM3RHNXRYZEVjY3RQd2Z2RmZjNXZYWmJSQ1JCeFNLSDVYY3Y3bTdRbVZHSzZzUGVXUExhUlJ3RWxpa2xBSTh5WHctNllOQQ?oc=5",
+    "source": "FOX 13 Tampa Bay",
+    "date": "2026-09-10"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Polk": {
+  "items": [
+   {
+    "title": "Potential buyer explores building apartments on Davenport KOA site",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeVE5aUlLY3A4R3lGQlk3THZheEJwYUdhVFpJSFIydVBUUFk4QVItb2RfaWVObVBoY3Ftb0RtWi1XSHdudkNXeDhhWDBwc2wzUUswX0VzMmhuQkpXMHNyQXczX0ZyNVhMb0Q1R0FTbHZBMjVrVjhWbzhlb2ROejJuazZRYk1DQVZnWHU5S2JMMGZ4UlpXb2huSGRaS24xU0R1MnQySUxSXzFWOW0xQ3dQMzU2cw?oc=5",
+    "source": "GrowthSpotter",
+    "date": "2026-09-30"
+   },
+   {
+    "source": "GrowthSpotter",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPeVE5aUlLY3A4R3lGQlk3THZheEJwYUdhVFpJSFIydVBUUFk4QVItb2RfaWVObVBoY3Ftb0RtWi1XSHdudkNXeDhhWDBwc2wzUUswX0VzMmhuQkpXMHNyQXczX0ZyNVhMb0Q1R0FTbHZBMjVrVjhWbzhlb2ROejJuazZRYk1DQVZnWHU5S2JMMGZ4UlpXb2huSGRaS24xU0R1MnQySUxSXzFWOW0xQ3dQMzU2cw?oc=5",
+    "title": "South Florida developer wants to build apartments on Davenport KOA site",
+    "summary": "New apartment development planned in Davenport represents active residential construction growth in Polk County's housing market."
+   },
+   {
+    "source": "Charter Communications",
+    "date": "2026-09-28",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeUN0d3NZOXJjSkxBVDhvU1A3SXZFYXVfdEEyNVl3VEdfVWRicTNtby1ZYlBYbk0tUkRkM3JIdFg0TlIyUHpfMmdUNE1DcHVCelFMWDg3aWxwaUpNUkVkS2ctV1ZtWmxGNGpmQl80bzhyODRqdnU2Y21xZXY2Zzdnb0ZwYkp6Mm1Nd0RhZzlkWUlDZ3ZwRnpFTjFRcEp4dTl2S3RQOA?oc=5",
+    "title": "Spectrum Launches High-Speed Internet to More Than 10,000 Homes and Small Businesses in Polk County, Florida",
+    "summary": "Expanded fiber-optic internet infrastructure improves utility services for new and existing residential developments throughout the county."
+   },
+   {
+    "source": "ABC7 WWSB",
+    "date": "2026-09-23",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTUJEYnZmNkwxSXoyNV82TnFSLUZacTRhYTRJa3dJbDVEUFRobkU2S2dTNG1XM01qSlpienpORFFwWXhFTE9EYWlITGJBYU9yZWFXWC1iM1lIV0x3NkEwVWlpRzlXRjRCV1c1bnhkSGVhN1Ywdm9ETzhZT0VEcFdwc3V2aFcwYlFJSVNhZkloYzNwTTFSV1ZmdF9RSFY?oc=5",
+    "title": "State, Polk County move to protect nearly 1,000 acres of farmland",
+    "summary": "Conservation easements on farmland affect future development patterns and may limit residential expansion in certain county areas."
+   },
+   {
+    "title": "Homeless Coalition of Polk County faces major housing funding cut",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNWtQcTJON2pVcDZuM3I1YWtmY0tOY3F4LXJaQmFncUI3bDk4QzFQdEdzRnV2UUpkLUNUb1g5Y1R5dElPa3pMSi1YZEJHNEktc0hDWnQ1RGZHZkprYlpTdDNOai1oMGQxcXZLYkxHQVNhTzlPVl95VkxnakdBMG96MDFkNHM0S0Ribk04QlhnYlZTeXE2cTlVZVJTaDJ0bFo5R3NWa2stU3Q2MHFiMjZBMQ?oc=5",
+    "source": "Bay News 9",
+    "date": "2026-09-15"
+   },
+   {
+    "title": "Lakeland weighs removal of CareerSource Polk leader from housing board",
+    "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOWnctNi1pZGhtQnYtRXB1UVhZX1hvWS1JeWNQVDZWdjBfZFF2QzRic083WVJMRlBnVnVfR2ZFUUhpbW5yRGJKNkc3dUt0WE9ONUxEUGN4czd3UjVweHBxU2tQREtfcm9sREdLU1Z0d0Z4Q1huQndnak9sUk9JY24zYXVhZmhPLWNMUXZ3ZThjZnk4TWJzeVZzRk1objdRMjh2SzFsWlRlZ0YzWmZDZzhDNC1CUHlkS2dBMWdVVUdPZzdSR0N3RjNQb1I4T3lib1RTdlN6dHFpaF93QmdwTVJPS01qUmRjZ1NBWUVGQzBhaUc4MlR0NmYyRGRuaE8?oc=5",
+    "source": "Lakeland Ledger",
+    "date": "2026-09-09"
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Putnam": {
-  "updated": "2026-10-05",
   "items": [
    {
     "source": "104.5 WOKV",
@@ -835,10 +1352,22 @@
     "title": "Over 800 acres in Putnam County permanently conserved via new easement",
     "summary": "Conservation easement restricts development on 800+ acres, affecting future land availability and housing expansion potential in the county."
    }
-  ]
+  ],
+  "updated": "2026-10-05"
+ },
+ "Santa Rosa": {
+  "items": [
+   {
+    "source": "weartv.com",
+    "date": "2026-09-28",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZGkzaDBwWDViMVlXT00ya0l3blRaSEtka0FTRlZWZE01Q0p0YVFlSU44YmllUlpXZVA5dUNHZTFLak1IVU8wZ2ZrRjhOamk5d0lrWjlfaXg4R0RUZE9LMUNhOU9BS2tOOGZaRk5YNHV1bUZJRVVKbHlhQUJYWDlwV0QwX1R4aVg5Q3l1eHpMNHBMR3RtdjRsZUZDZWVWNjJVbGRnTTVGSQ?oc=5",
+    "title": "Traffic concerns drive 3-2 vote against Santa Rosa County subdivision plan",
+    "summary": "A proposed subdivision faced county approval obstacles, reflecting local infrastructure and development considerations relevant to future housing projects."
+   }
+  ],
+  "updated": "2026-10-05"
  },
  "Sarasota": {
-  "updated": "2026-10-04",
   "items": [
    {
     "source": "Business Observer",
@@ -855,252 +1384,120 @@
     "summary": "Record-breaking luxury home sale indicates strong high-end real estate market activity and property valuations in Sarasota County."
    },
    {
+    "title": "Sarasota Lands Among the Nation’s Best Cities for Renters",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNcG1JRmhYbEpZcEt2MFFQWHVWRGs2dTNWN043Tk5lWVZzWGxnRHozem1fcWRObHVZWUJ2V20yYk9FZFJDa0FpSngxOWh1NWdRMU5YSUxGM2hhdFdkOTB5c1U1QXdJbnVha1hrT0dmMmtZS0piSm5ZYTZWRTN3RmZ1T0JZRTJzSWhQQTRsc2s5bHp1Uko4NmZGMzNBbWotUENCSXROazBxUEc4OEVNelJTZDFNVzNsa05pQXBn?oc=5",
+    "source": "Sarasota Magazine",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Florida’s Live Local Act promises affordable rent. For many in Sarasota, it’s still out of reach",
+    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdFV3elhjZExmNFdoM0Jtdkc1QWZlcC1ack9jTTM0ZVFhY2p3QmlCMzNUM09mMm44ZVotRlBBM1N4UVhBbVRWWkxpZzZZUVVvblVMcFBrRnBxY1BRSEpxWGtvcjBoUmlLNExfOUZwQnRMWTduZk9FdTNYbElodTFqMjU5QmpkVlRJbElORDhPWGlLQTAyUUpBU2NIanZERnVyMlk4OTVWdl81bFh1d0hLMl9MS2dvWU9PNmhFbjRqTDFjLWdUSUFERUFvem5fQlE?oc=5",
     "source": "WGCU",
-    "date": "2026-10-04",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdFV3elhjZExmNFdoM0Jtdkc1QWZlcC1ack9jTTM0ZVFhY2p3QmlCMzNUM09mMm44ZVotRlBBM1N4UVhBbVRWWkxpZzZZUVVvblVMcFBrRnBxY1BRSEpxWGtvcjBoUmlLNExfOUZwQnRMWTduZk9FdTNYbElodTFqMjU5QmpkVlRJbElORDhPWGlLQTAyUUpBU2NIanZERnVyMlk4OTVWdl81bFh1d0hLMl9MS2dvWU9PNmhFbjRqTDFjLWdUSUFERUFvem5fQlE",
-    "title": "Florida's Live Local Act promises affordable rent. For many in Sarasota, it's still out of reach",
-    "summary": "State affordable housing initiative reveals ongoing challenges in meeting local rental demand and housing affordability needs in Sarasota County."
+    "date": "2026-09-12"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
- "Okeechobee": {
-  "updated": "2026-08-05",
+ "Seminole": {
   "items": [
    {
-    "source": "theapopkavoice.com",
-    "date": "2026-07-23",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT3Z1ZFJZNUVSOHo1X2w0QWpYR3hpVU1kY3V6SERzOWI4U25TOTNRT2w2NWQ5eFd3Rkd0SE5RNWhBZDRnZkpjaUptc2lXaW1IeGtXNUF1UDBuVXN5MjI2cDhRdmdOU1haTnJOemJEZGdsSWhVVEdyNlA3eDhlSzluWkJKS0RDYUtWaGI5M0JaNGROU2o4WWc3ODRoeHRfZw?oc=5",
-    "title": "Florida leads nation in foreclosures as filings climb in June",
-    "summary": "Rising foreclosure activity in Florida may create opportunities for real estate investment and home purchases in Okeechobee County."
-   }
-  ]
- },
- "Charlotte": {
-  "updated": "2026-09-29",
-  "items": [
-   {
-    "source": "Florida Weekly",
-    "date": "2026-09-22",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSjl5dGNYWjNuUkFJYUN1aXRQVnhKaXFpOFFzRDNwOU5ZazFINm1nSUhaWl9sSmNmaUZPM0lmOGsxdlVxZ0xGQW5lUmQ4dVlrTGprV1ZUZ3hnMmZwYjFhS2M3bXF6ejhtenVPdi14ZjNpcHNYSEplRURpMlFZeWphTVZjRU5WT2ZVaXdsZHp6THNLbHU2RzFGSjdkRkJ5LWhiZGw0U2ZpUmxsaUFqLWlpa0YyTWgteEhZZVNndnNXMm4?oc=5",
-    "title": "Construction underway for nearly 300 apartments and retail in Estero",
-    "summary": "New mixed-use development adding housing and commercial space to the Estero area, expanding local residential options."
+    "title": "Sanford homeowners can apply for up to $30,000 in critical home repairs",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNM0JtdF9fVW9OQlM2aEtOdGphTDg0cFh2aWVzOXdRcnY3LWV6OUNYVVJnd2Fldk5jbVNfd2pEYjc4VjBrb2lDT3NkbHplQ0tNdVhLYU1mRXN3bm9rQnRucG5WT2RPbGpjYk9zTm0wRnJwbVAySEI5bm1Kd0c1dFVwZ0J3eGc0eWJPZm5uSi1TNzVJd0tWM3B0WGwtZldtU0VfbmVmN0lOZlVyWVpfYTZNdXQyakt6TEw0NEJHZVNqbUJPSldfYkFseWZDYTl0SEkt0gHkAUFVX3lxTE96WTFmVlh1TUY5QlNSM1Z1MDhrdzhyRW1aRUhNQjRvT1FGNHJRalk0VXdmQ1N2WHFEVDVINFFyS3haRXJGMzNsWGZnRHN4RkhSRDNTZTVhWF9FenZBQ0Nlc3Z1bnh1cDRMdjhqdldDQ296Sl9wMkF3TTQwUHNfRzZxVFFaOXg0M3hMNjFPY3dwRTJHcVJCYUJKdGc0X3dtU3A5TFhQeW5aUzkzcktjZmxoREpVLUkwM2w1eUNzU1ctR255a2JIc0JiMXNucFZyQ2ZwWjhKZS1OZVVvOFZfM2RaY3VlTg?oc=5",
+    "source": "WFTV",
+    "date": "2026-10-02"
    },
-   {
-    "source": "WINK News",
-    "date": "2026-09-09",
-    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNX2t6YjZWcmV1dHU4RTI0VUlaZkhxRWp0Mk9tQlVTUTlUMFNvOWljYTlGQ1NuTmRyVjBDMDBuWVNxcVFtTjljQkF1Y09jLWJVQ2hUYkRoSk9WV19UVFowOHdBalFHVE1zR0t1ZGVSNlRPUTFGNWYzVWEzRDQyM1Y3MmRMTTZNSVIwWE9lakxNN0tJcVFTS1lub3Fjb3pzaWQ0ZUdCOTlHSXFGTUdhMFgxMXppWmREcUdGNjRndWJ2NjZlQzRIY2dDVEtFRDhPbHlxRVMza0NLckcxUW9xdjFLSHJqVkVvR1RWOHpDd1pGcw?oc=5",
-    "title": "Charlotte County approves Buc-ee's site plan near Peace River on I-75",
-    "summary": "Site plan approval signals continued commercial development and infrastructure growth along the I-75 corridor in Charlotte County."
-   },
-   {
-    "source": "HousingWire",
-    "date": "2026-09-23",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80RFVJWnNFVXA5ZVRyT05fNExVTlpFRzJYalhMUFZTZW9nMGd4LTItRkFUSnowXzdjWDhYVG91QjNxeHBEbFZyN3NjcFVNNFc1bThveUY4VFozcjhVdmdrTTlzTkdNMUc2My0tdWZsU29QVEU?oc=5",
-    "title": "Stellar MLS expands into Hernando County, Florida via merger",
-    "summary": "Regional real estate infrastructure expansion provides enhanced market access and information tools for homebuyers and sellers."
-   }
-  ]
- },
- "Lee": {
-  "updated": "2026-10-02",
-  "items": [
-   {
-    "source": "WINK News",
-    "date": "2026-09-18",
-    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQQ19CQnFuSkZnUHYySTJFcEt3UmRVRzZna0VtOWxzNFVtWmRkYnlpaklxZWN3eDFCd0VaY2tOTFhyWHM4ZER4ZGdiZVBUWnZZMF9vcGN3UFFhU1dtWWpGMjlVcEpGN21rVkVWRWpEV2Z2LXJiLVRaTkhPN0VBWG02aVdmakJRWVpfbHRuQm1nWURjZkhqOXhhZ0syUnJyTEk2ODVES3Q1SXBoa1hsQjBwNEdjUl9tM2t5eHhUTFJqa3FHZWVxR1V0Wm9tMWVPMTVneGI4WDJrZXI5eTJESm1mMndVQQ?oc=5",
-    "title": "Whispering Lakes offers affordable homes for educators | Lee County",
-    "summary": "New residential community in Lee County provides housing options designed for educators, expanding local housing availability."
-   },
-   {
-    "source": "floridaweekly.com",
-    "date": "2026-10-02",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbjRlUmJhX1pyS0l5NnVETnQ1VUlkV1VjS3ZLc3NZQkI5bG1zU2pvTWhDbVp5YjdZaTAtQm53YXJoSU5IdmQxNExPTngtVjFaUHVod1hsbko1bnl1cFBuc19xaWI1NzBNZlBtczNLTDk2d2V3dHVzMHNDRlYtT1l1MGJ2dVI2X09iSTZmYmJBMWMwel9tMXhaX0Naa2RabWtfODc0UHhzVUltS3Rt?oc=5",
-    "title": "Southwest Florida debates taxes, jobs and data centers",
-    "summary": "Regional discussion of economic development priorities, including data center projects, reflects Lee County's growth trajectory and business climate."
-   },
-   {
-    "source": "Yahoo",
-    "date": "2026-09-23",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdlBxaGZ2RERDRkFzZ3NYZzBEbGp6Y2NUcm5pZTZmVkJHS25lTGNFd2hic0I0RU1SNzNzamVDNEhSdlpFRXYybFJfeUJsRmNyaHczeEtCRkl5T2VRcllnSFJXNGRBQ3o3N3ptS2tFSFE3STdJek82ZXpKeUM0TnpFUjZsV2lSaUJOZ0NaMEcyOGY2Rzlib1Q3Tg?oc=5",
-    "title": "'It's so ridiculous': Florida residents mocked a bid to silence development input",
-    "summary": "Lee County residents engaged in development approval processes, highlighting community involvement in local growth and zoning decisions."
-   }
-  ]
- },
- "Levy": {
-  "updated": "2026-10-05",
-  "items": [
    {
     "source": "Duke Energy | News Center",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbGJpcTdrWURvSFpiQ1pQYVdkRm9saGhmbWoyWjctZ1ZUU2puU3hGcnNTODd4bktVUHBKS1dvMVc0djJWZ2tQMDBGbG41dU96QjZkYWJNQ3RFM0hHV1ROWlhfVFZIZ2ttVVJhN2ZKeVdVb3dHdWlXMEpSUFg3NlEwV3JfNGlPbDJGd0Vmd0ZqZW9HdG9j?oc=5",
     "title": "Duke Energy grants $326,500 to boost Florida's economy",
-    "summary": "Energy infrastructure investment supports regional economic development and growth capacity for new residential and commercial projects."
+    "summary": "Economic investment in the region supports infrastructure development and business expansion that can attract residential growth and construction activity."
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
- "Collier": {
-  "updated": "2026-09-24",
+ "St. Johns": {
   "items": [
    {
-    "source": "Naples Daily News",
-    "date": "2026-09-24",
-    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObWZCWmtfaFprWWEtQV9Sc0R2QTRRdlpaZU1femd0SVFxR1o0UUVlSjF3Z3I1NlRfQjFGY1hWU01Zd2tDLVhGcWU5N2ZMVEphalExbGw4OE1QeG10N0I3NkhDRk9wQ0lYbnl0cjhpcUdGT21JbnBmZnMtOFBqdV9hWlZpZjExNWJTMm1CVko4Z0s4eFdDWXdUZ3RKYks3VnMxTXc3bXlQcHdnakduV2tfZXQ5VWRsZ194T2txVEJNTE1oaTl2ekxfTl90UGZldnNaZkRwNE1DbDlmWDdW",
-    "title": "Ave Maria grows in east Collier County with more homes, jobs, students",
-    "summary": "Established community expansion demonstrates residential growth momentum and economic development in eastern Collier County."
+    "source": "The Florida Trib",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObVZIbmt2YjhFLWtvYzZmMG9zWGhBYkl5NkRQOHptQ1JNalgyYXNiZjZkcGpoS3ZLRW1kcTlnNWkzcUFjS2hodU52N3hNaW5lV0tqMVVoYWdWdlROWGhDSkcwb3VYRWwyYmhKSXJVWldsSGV6WGU4SEZud0JlSXlFNlphUXZtLWRMc0pGNlFzVkVPOGxzNFRGMEtYWDZ5YXVDTzBIc3A5U3FOYWFSNlZOV1pPQi1SNVNp?oc=5",
+    "title": "Unleashed by Florida lawmakers, landowners move to convert farms into subdivisions",
+    "summary": "Recent Florida legislation is enabling landowners to convert agricultural land into residential subdivisions, increasing development opportunities in St. Johns County."
    },
    {
-    "source": "WINK News",
-    "date": "2026-09-24",
-    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNlNZeDdkYmdySEhkY3VHSjQxYXdIZnhnY0FTYl9jZ3BCaS1jbkpSQUsyQ25JeE5TY0o5dy1NZUd5Ylc2UHpERVZ5TFFZT1o0VUl4UlZVSEpCRGF2Ni1BTHRjS2REZ3pzRFlQMmF3dzUyU2JkS0J0TGVjYjA4anNuVWRzZERMTUQ4dk5CcjdsME82WS0wZHBPa2VxLTRMbWRKTmF5c096cDJERkJ1VDdHTTR5aVRCNEhoWW1La21iYUdFQm9MdU9IaUdrMk4zdEwxUnI4REhsRS1teERJMEhITkVHRVU",
-    "title": "South Naples citrus grove could turn into housing development",
-    "summary": "Potential land conversion from agricultural use signals new residential development opportunity in south Collier County."
+    "source": "St. Augustine Record",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOTkJfMVBtNGROQmdmTnpDd2ZRaWdkZWoyTERfcUtXRldzejRMQ05mRklfdkRUa01aTkpXcmVpWUhST1ZhT3RaaHZEc1VDcXpOc0F2M0E0cE90cHlhWWd3WmpNeTBXdHRCSmw1VjllOWhxeF9QSXh4TWVZNVhXRFpmemQxem9oR3VTYkdKU3BaS2stSmNPT1lmbm1BVjhQLW9uSGh3YVVvek5Xb2tjWmdFQTdTbGg2b0p1bTJKZDhMSTZxRXBOeXFrRWQ3X0JxWUppci1oRnNJTWYtdVBjalAtMg?oc=5",
+    "title": "New townhome community coming to St. Johns County",
+    "summary": "A new townhome community is under development in St. Johns County, expanding housing options for prospective buyers in the region."
    },
    {
-    "source": "gulfcoastnewsnow.com",
-    "date": "2026-09-24",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb1NIWHRTOGgyVEU5Nng2dkl2cGxlYUg4dGFZckZqdTJfbG43US1kSVVjdGlkLXlHYUhMU05yLWY4VHRiRlpPcU1oM1RRTFhhOWlxRnJUVHQ2SUMxckN5NGNnSTRPU3FrY0huWXpvZGcwOWxtRE9PWGVhbHdqY1R5VDJFTXU3TVJPbEFhNU12SUFPWmFONmFsNlVJRHBIdw",
-    "title": "Collier County citrus grove rezoned for private golf course despite community concerns",
-    "summary": "Land rezoning demonstrates changing land use patterns and ongoing development decisions affecting Collier County's growth trajectory."
-   }
-  ]
- },
- "Franklin": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "WCTV",
-    "date": "2026-09-09",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRVVBVFhBS1ZGd3V6VjJQUk1Qd0xSdnl0Q2czSVd0cTdSYnRHNFBpQmg0MU1MdmVnSVRjM2oyaGR2TzR0Q1dkdzJyRHlNV25lVmhOSC14YS11dndjSkRKdjlZM1duZUZwMkstRlZ4N19lamVBNmRYMlFYWGpvcEpQZDZQUDlXeTB4WlhuODRXSjFrQ1AtZUY1TFlNenBVWXFlMVFCNUxqakJfQTUxWWszblRR?oc=5",
-    "title": "Franklin County road closed due to culvert collapse now expected to be fixed this week",
-    "summary": "Road infrastructure repairs in Franklin County will improve accessibility for construction projects and property access throughout the region."
-   }
-  ]
- },
- "Hamilton": {
-  "updated": "2026-10-01",
-  "items": [
-   {
-    "source": "Florida Politics",
-    "date": "2026-09-02",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXNTY1IyTUlXREtDaTBnNkQxQ0kxSjdEbU1LOHBEN0NwenY5Umc1R29wUEhhckdYTWQtUW4tVWU0aXhEaHB6Z1JIR1ZWNFl2UF9CQmRoWk5xOVRFQlpnbUhaRUN2UEpsdzR5eTZtT2c3N3ctbmtsNVBkRlFWeExoVnlqUHFtVHVjUjJ0X2YxRUV1M2tmTmVJRHowaFJoamdpZnVDNUZvRWpSNW5YMkZUWGFvYW5aZi1hQ1V2Ty05Y0FieXhQUGxNSnJyWmc1VWxpdnJmQXVNRFVVZw?oc=5",
-    "title": "Gov. DeSantis sends more than $15M to rural communities for economic and infrastructure development",
-    "summary": "State infrastructure funding to rural communities can support road, utility, and development projects that facilitate residential and commercial construction growth."
-   }
-  ]
- },
- "Gilchrist": {
-  "updated": "2026-09-27",
-  "items": [
-   {
-    "source": "The Times of India",
-    "date": "2026-09-06",
-    "url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOUVZRUVVSYUFhN1cyYWs3ZXgzU25ReVZOSlBjc3duSW1lbUVWbjczLWhwcjhJQUgyamZHN2F2SzVONDdKcmlMcDI5M0hFcy1ZX3JSZkxaWnJOZEp4emM5TWZ2cDFIZnVUS29QZzduczN2cXk1dmE3Um5PQXhqaXFUamhmNFhhMHpLUTFkQ1FrbDF3bmE2QVdNb3ZnZnFUSkp0SVoxaGtfcnpPdkxjZm1tWnBWQi1ILXNUY1lxRnVNTE5zaC12aUFhUzlJT2I2RW5PYWVBREtWZHRBVHF4dWEwbmFSaVN5djJVR1BtalVvanl1dkRfOWxCaGtTb3Q2R1BMaEswVjhnc0dBRUFQQUQ4VHhmc3JHd2trUWI1MXpXazJDTzJJUkxyUnY3YUJKbVI0Y09mM1BsNWlVUVRVaG1lbENXYXpGLWJpX19KNVBISi0zMUx4MVZ1MWh2S0RSU0I3SlVWQlZB0gHrAkFVX3lxTFAzNDhGUTZyZEdtS0ZzLTltdzluZWJWcHhzX3JoSVJWVHF1SUdRTko0RXhPYXFqYzlGRzFDdkNuZnhBWkRQbEhFOHVReXlTVTBmdzMwR0ZpeHVNOERxMzdOaDlJbFk2U1huYVp0eWpfOVFlX2FpaVdqR3FqcU80ZmhhZ1BqT1lTeWhqeTZvOEhUMl81V1Z4aEFuaWgzUklGNGVnNjBVSF9ZR1NIc04xTkF2dHJQN2VUWjVfM0U2T056UTN5X2VzczNTcTNnZTMxTWNyRTZGSW9SaE42LTIyTDNtRTJDLU51eVBldUlSamsxMVdyckptRnZ5TlFFS19UNHM0blcwUGxXVEFVbHE0TU1iaEc4T28wNFYxb2J2WXIzRWpKVWk0U2NVRWtONFFpNmsyYldZWi1WNXZyZ0xiZ1FLdkZ6dk5FZnlHMnYzVmhub1JYaFA2QjJBc3RuMTdFNFFGXzNUWWp5U0FEdw?oc=5",
-    "title": "In 2024, Florida paid $1.54 million for development rights to the Watson family's 550-acre Gilchrist Coun",
-    "summary": "Conservation of large acreage impacts available land for future residential and commercial development in the county."
-   }
-  ]
- },
- "Gadsden": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "WCTV",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPVjZDXy1yVlhsX0l6enlMNzR0em53YjUyOGNLdTFCNUlIeloteTZZZ0Z4UHJoWTNEdFZzX0JFUDczMTByUHRYQ3BWLUNYT1E5VzVzcGxPMlN2eUF2UWdaVFptWlNhZVU4ZTExQUJHaXJWZkp6UWI0MXZqLTY1NDJiRWJvUVVFTmZNRlHSAZ4BQVVfeXFMTUxfQ0h6ZDc3bGV1b19EdkVXVWtIaW1HMUpwcnlPc1BNTTJ0cnhpQnYzbGFzMmZDLWJjcng1TWVVOVhmeERwT3BzWnRMTEt4T0NzaXUxVW41NS1BeVY1eU5Tc2NnbHdidUpzbkdkcWQ1ekJGcVgtX2JRdUxqblRnYWpJalRBX1o2eTZGM3ZKOWp5ZjdnSzVLMU9CeVZ3Nmc?oc=5",
-    "title": "Gadsden County breaks ground on Havana Medical Center",
-    "summary": "New medical facility construction represents infrastructure development that can influence property values and community growth in the Havana area."
-   }
-  ]
- },
- "Washington": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "WJHG",
-    "date": "2026-09-25",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMzZ2dDluREtpbXRoWWRscmJUXzJicVEtYXBMdkUtT0FoQWtvY25Ma01RWVcyelBSeU85MW1aSDhOSlctb0IzYkg3VE1wN29Ua0Vrd3d0eHppV1ktNDVyTWs0b2Qzc3BUNlF6ZklES3FzbkhxS2NJN3h3MHdnbFN6Z0ZRNzlzbjJ0R0JDYzl2d0x3UXRnNjdUM24wbzdSdjZNTXZqMFRIeVBJTURpdTJVUGg1c1VJejhMWnfSAc4BQVVfeXFMTWJBczJ6WjNrNTQtWThIVnFPZWQxVmRXdG9JTDlGSnB3NE04WG11Yl9mR19FcTNmcXVBdkg5NE9UUEJ3LVBNeXNNV09nQWQybEtPNEpUeEtLYWNya0VvTnJvR0lLV3hFTm5RSWNZWk11eDZxSUNiYXBGeVEwbU0yQUFFWmUyVkFTY1hlMlpIUlVJa1FGamNmLVFSZlN6Ymt3WXRnVXNQV3dldWgtZ0hNUHBrT29TWkZkbExjTzVZRWoyMUtydmY0TWtCMV9YWWc?oc=5",
-    "title": "Renowned golf developer building 'World-Class' resort in Vernon: What to know about Old Shores",
-    "summary": "Major resort development in Vernon signals significant commercial and residential investment activity in Washington County."
-   }
-  ]
- },
- "Bradford": {
-  "updated": "2026-10-01",
-  "items": [
-   {
-    "source": "Florida Politics",
-    "date": "2026-09-02",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMXNTY1IyTUlXREtDaTBnNkQxQ0kxSjdEbU1LOHBEN0NwenY5Umc1R29wUEhhckdYTWQtUW4tVWU0aXhEaHB6Z1JIR1ZWNFl2UF9CQmRoWk5xOVRFQlpnbUhaRUN2UEpsdzR5eTZtT2c3N3ctbmtsNVBkRlFWeExoVnlqUHFtVHVjUjJ0X2YxRUV1M2tmTmVJRHowaFJoamdpZnVDNUZvRWpSNW5YMkZUWGFvYW5aZi1hQ1V2Ty05Y0FieXhQUGxNSnJyWmc1VWxpdnJmQXVNRFVVZw?oc=5",
-    "title": "Gov. DeSantis sends more than $15M to rural communities for economic and infrastructure development",
-    "summary": "State infrastructure funding to rural Florida communities can support roads, utilities, and services essential for residential development and housing growth."
-   }
-  ]
- },
- "Dixie": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "Florida Politics",
-    "date": "2026-09-20",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTHZNQnV6cUF6dVdEdGJrREp4blVMcy0zUXZGbFBtQk8wRGVVSHBhOEE1ekhmRGFwMDA2d2NYVi1FZXpVNXpEOFNXdVE1bmpzU3VsU3NJNmt6Z2xtcFhKTTZOLTVaUEpSVTdma2xwbHRfU0VKeXRycm9vdEVzdWxTRnJTZU5PdXVrQU1BNVp4TE9YMXNLeVRiODB1NjBkeVd0Q2dMWGtrX0NXTDZxdjVsVFJmVlhJYVFxZGRJUlQyRTZwbkhTbWNmczdZV1NJQklUYTA2Sw?oc=5",
-    "title": "Kat Cammack announces major federal funding for several Big Bend area infrastructure projects",
-    "summary": "Federal infrastructure funding supports regional development that can enhance utilities, roads, and services critical for residential and construction projects in Dixie County."
-   }
-  ]
- },
- "Holmes": {
-  "updated": "2026-09-19",
-  "items": [
-   {
-    "source": "WJHG",
-    "date": "2026-08-24",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOb2VEN1BBSVBpNkppT0tXME01YWNpX1ZEa1JYMGNYdkxHWjRLRjNDaWdibTVlbGROYkpIemNteG14NFA1VHp0Y3A5bVFUaWpxT0FDbDJhajh3c0xuYTJnb3kyN09HWWlnREFRRFVrU1lkZ3d5WTR0Z2twd3g0V2UtbWw4ZEo4XzE5d1AtSl9TSVRlc1I3Qm1GVE5B0gGuAUFVX3lxTE9PekhZb0Y3cThJZm9ia3dpN1FFN19nelFjUDhzSEVoaG1SYU9YWTU5dUVzeGtyWlhiMmszT1JvQmdLZVRpTXRQN1NNbG9kUVBSNl92WnBOLTBXc0xuT2RzdzFZTjVQUmdMX2l2NHgtQWV1OS0tbm9jZ2JsdFoyeE9XeHU0VV9VSHFCSXFCX2Z1ZDVrQTNZQy1RSWpMRllnWU1XNUVFNTQ0ZncxVjdrdw?oc=5",
-    "title": "Amendment 3 property tax overhaul sparks debate in Holmes County",
-    "summary": "Property tax changes could significantly impact homeownership costs and real estate values in Holmes County."
+    "source": "The Business Journals",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWluTnpaNkFsY2hwQWRuVnJJbmxFUk9VenFtUmdyWDlDMzZINlZubEdRXzBxeGV4STJFWlJVOUVCVV9wcWpvaFY1ZkpPOW1XcHdBTVF4empIWDJyYkhUOVlicEgxVmlnM3dtM3FSVURkeDlvUmxqdUxwLVFQbm55ejhSTUFhMjY0VDUwazItRkpDRno5VllLUHFVNA?oc=5",
+    "title": "PulteGroup to build townhome community in St. Johns County",
+    "summary": "Major homebuilder PulteGroup is constructing a new townhome community in St. Johns County, bringing established developer expertise to the local market."
    },
    {
-    "source": "thecentersquare.com",
-    "date": "2026-08-21",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOS2RUb3FrZHJ4YXl5dnVNZnBacFM5anJMRmhfS0l3R1ZlQi1hQzZtcDl6MFRyeDhRMmlQSURSTVJQOFdPOGVGYXJxZVZSdS1WYzBsZ2RKYm9sekp1QnVCYnlhUXRwQ1oxTC1mbXR2Y280eVpxeGNncC0yek1hRENHazlRVWFQYldFTmcyajhWTmNSNEXSAZgBQVVfeXFMUFJ3YjVQRHlaOTdTYTdYSUFiejZkYXhfWWJFVEU4LUFYLVZlRTZ2RHZYb1o1bXhza3N3RV9KRHA4VDU1Zl9HUU9HU29YdVltQ2tJQnBzbzVMWWFCbzM5WDZ0Q3FDSDhvN3NfblM3YnpJbGFWMlVVTXEyQmZkdnN1R0dLbG9xeWhuSFdNT2hqWTNJQk4wVDRESTM?oc=5",
-    "title": "Florida directs $8.8M to rural infrastructure, planning",
-    "summary": "State infrastructure funding supports rural development and planning initiatives that enable housing growth in Holmes County."
+    "title": "Florida's 2023 homebuyers are now selling at a loss, with St. Johns County topping the list",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQd3o4QlZXSE1QMjBZQmplbF94dkNpWlhuSzMtQVRjTkp5c0VkTUNCMjl1M3ZMd1lNbl9KdVhaN2tjZGJpNS1CT3hfVDdHcWVmLXdJUklpZzE3cmw4b1dta2tOV1p1ZVNyQWtCb29Mci11a2tzUFJrSkZua2VOVGVmZnhvbWtlM25ZRUNIWkFNYkZHWEhTUWlmNThRTEZ5aHM?oc=5",
+    "source": "Yahoo Finance",
+    "date": "2026-09-11"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
  },
- "Jackson": {
-  "updated": "2026-10-05",
+ "St. Lucie": {
   "items": [
    {
-    "source": "Florida Politics",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMFo2cXFqLTVrWFpkUFNnSUtjaDFMQVdIenRDc0JkVzBCUm5LczM5WnVmTGlrNDFQZjdJMVdMdVlWUDFET1JaQWJPMnBweTNpVXpuYXFGNVBqdlY3X0JFN3VYcktTM3JzMVlFR21haFhxaE9VNjczeWVYeUxJWnEzMFVMUXJxbkhNc1lKTmtmRi1EUkxDZ1FacDNiQTFSaXpWdHM2R2xLS1Y3ME5XNURQX2RvdXFQbHBJN3YzUXV2U3ZQSHdxU3RzbnBVelF4UQ?oc=5",
-    "title": "Jackson County lands $3.8M federal economic development grant with Shumaker Advisors' help",
-    "summary": "Federal funding supports Jackson County's economic development, potentially creating infrastructure and business opportunities that attract new residents and housing demand."
-   }
-  ]
- },
- "Baker": {
-  "updated": "2026-10-05",
-  "items": [
-   {
-    "source": "flgov.com",
-    "date": "2026-10-05",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQNk1HQVdRTjZwbi1yQTFIbzV3QjFfZW1CYmdlVzB3S2RpWnJPN0NTNjJtMGtvSGJCNFBQakstaTJ5bURQbXVaT1pObFVZX29oeEdEclpDb216MlZEdWlfM0xUcl9wTVNKMHotZHRPYjBRYkgyb2hXN2hUU0VoVVdKdEp3QVVQRE5UaW9hOWFfQVhXRFJvMmY0SmhNNnd1OWM4VmRrVTAzYUZlLVBIanpVdDhJaTM?oc=5",
-    "title": "Governor Ron DeSantis Appoints Three to the Baker County Development Commission",
-    "summary": "New Development Commission leadership may influence zoning decisions, infrastructure projects, and future residential development patterns in Baker County."
+    "source": "WPEC",
+    "date": "2026-10-01",
+    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNWFZpU1Y3V1c5OUphNmI0YlQ0VGs5RjVXdmRSNmY3M0xoMnFsYnJfQnR5R0tBaWVjV29GT0hoQzNoSng2MWQxaUhWXzV1cXZQUE4ybHlxVm1raHgydmRzajFBSzhCTGpOdFZqVFhYWVNFMWZnNDhNT2dwb0hrLTZFclFENnk0QlRGVTZaQ0t4cW1kQ3A4VEJNWkF5VDhQanN0aWlxc2s0TU0tVG5YMDY4Ri0tVFhqU0dDd1pDdjVaR2d5OTNfS1c3eG1xbTNWUEFudDNkdnpoNDFtRWFVMmZ4Z0ZqMGcyYV94LUt5VlZkZXVWMHFtdk5J?oc=5",
+    "title": "As Buc-ee's nears construction, development interest builds in northern St. Lucie County",
+    "summary": "Major retail development attracting additional commercial and residential projects to northern St. Lucie County."
    },
    {
-    "source": "News4JAX",
-    "date": "2026-09-11",
-    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjJQRWRueXdRNEp2WGR6NHE4LWRHeFgxSXZvdVVLT1JSS19yWmI1YlB5NldEOF96OWVYYkQyZGlLTEcwMnR0V2N4bTY4bldpOXh5cTlLdEQ5ZW1DMHhGM0V4LW10aGUyZGRibWNxQ09zTEd1QlllekRwLUY4amd3eGczUGMtZWJUSG9oaEJuTUE2RjVCc1RVc1VJVHlRNFZVX2hQRGJWekZxclJRTXdRWlpkNWdaOWFpcjM3QjEtS3ZYeVVueC1GTFZaSWgtTHE3YnBOcUQ0b2o?oc=5",
-    "title": "More inventory, fewer sales as Northeast Florida housing market moves toward balance in August",
-    "summary": "Increasing home inventory and shifting buyer demand patterns create different market dynamics for both sellers and prospective homebuyers in the region."
+    "title": "Port St. Lucie lowers property tax rate for 11th straight year",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTFdocXk3YWw1Z3NkMFhTMTRoLXBuT09Zb0FYUjdLdUg2MmZlb1laY3huenBSQTBmVWNYNjE0M3gyeE9qMVVwTGxSekswaHM5TUNlbkRfUlJCRFp0T3AxR3RpRUllQlFtZ3BVVUdETkZzd2hMR2dqOHVTTlZiX0lRUTNaX2FQNFVQTmxIRTVqRE1rNFNhN3pLVFdHMjdjVXdoZHVZenFRSFg?oc=5",
+    "source": "WPTV",
+    "date": "2026-09-29"
+   },
+   {
+    "source": "Florida for Boomers",
+    "date": "2026-09-27",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1fNUdyeGtUUlY0Q1JQRHUybHVSbl8zMVFMWWhfLXdGQWJrdTc1Mk1jWlBGQmRjejRfZjlpODN2ME1wOWV6Xy0tbFVTLTNBX0FaY3JYeTlGNmJ2dTBsRzZkbS1vODJMc2dKckxpZkwzNmg?oc=5",
+    "title": "Southeast Florida Retirement Guide: Vero Beach to the Keys",
+    "summary": "Regional retirement market guide highlights St. Lucie County's appeal to homebuyers considering relocation to Southeast Florida."
+   },
+   {
+    "title": "St. Lucie firefighters extinguish blaze in attic of new, unoccupied home",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQUXlxSkh3R3Bkbl9pcy1wbXcwMTBEN0JiWFVVclFraGpNekdZZDN3VHVKUV9uVjE0UDkzUlZocHN0eWUxNXlXR19JM19PWDhkeFR2blpCR0RFUDlXZk5ueVZtYnl5dmtTOXRvZWMtd3FGVkM3NGtBNDR3MTVSdmxzRTNkeUdVNnlyUFIxbkxLWFREYjBBOWhkbDl1RVQtZ3pIMFVfWXpBd0RqalRZZFNxRWN6Zm1XYXJOQ3lkdHZIaEVCRWhXNEY2WDZjWlJGZm90MjV0RXBMQ3NuZ2NG?oc=5",
+    "source": "WPEC",
+    "date": "2026-09-08"
    }
-  ]
+  ],
+  "updated": "2026-10-06"
+ },
+ "Sumter": {
+  "items": [
+   {
+    "title": "Sumter County housing services office moving from Bushnell to The Villages",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWXNpVkRVX3RzUGtfdUZOQ0U1TV84Njc2ZGh5YW9MLTkzSUlpMzJMckFOWDhtMmlITVNRUFRkTzc4N1Qtc1VTTkd5X3JsNDZzVGJIaTlPejVGcGZMOWpvNUhkY1dfSy14ZEwzVFhjOC1XOEl3VEtrWFo3Y3kwQXVXWVllc1Iyek1aNkoydmtyN1Aybkt3YTZKZk92djVHX2JsY0Zib0xVMzhQb0VZbXktQnRqblppRFk?oc=5",
+    "source": "Villages-News.com",
+    "date": "2026-10-03"
+   },
+   {
+    "source": "Florida for Boomers",
+    "date": "2026-09-22",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOHU4YnZuT3plUFJBNWt6TFZzN3EtU1RHSk1kLUl2ZmJhWmQ4eXZnMEJMd29ydTJULTBuUUYzanRUZ0tsaGRSVU56am5YVFM3M2otcURMTnNuOEFhYURPR01haWRVMHBnNGlLMHFhTl83NW9yRWVvdVhEc0VsbjcyWGRKTk5RZ283VEVwczFxeDA?oc=5",
+    "title": "Florida Counties with the Highest and Lowest Property Tax Rates",
+    "summary": "Understanding Sumter County's property tax position relative to other Florida counties helps homebuyers assess long-term ownership costs."
+   }
+  ],
+  "updated": "2026-10-06"
  },
  "Suwannee": {
-  "updated": "2026-10-04",
   "items": [
    {
     "source": "Duke Energy | News Center",
@@ -1109,6 +1506,131 @@
     "title": "Duke Energy grants $326,500 to boost Florida's economy",
     "summary": "Economic investment in the region supports growth opportunities and infrastructure development relevant to residential and commercial construction projects."
    }
-  ]
+  ],
+  "updated": "2026-10-04"
+ },
+ "Taylor": {
+  "items": [
+   {
+    "source": "The Cool Down",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcWNuVjc2aTVObk9md01nbjhIa0dQb2xLdFNzc1lhbGtTNnFNSnBURGFuVFQ0M1VoMEYwV3BtRFFsQ0lRQ0c2aWo3NkhqWFloQ0JyLWUtYjRuTm9NeDJfMHVjaURUSTl5STU0cnNza2k2cTJJTUhDdHppcEhVVkRpQjVJMHZQY3o5TmxtWUwyX3U?oc=5",
+    "title": "In Florida's Taylor County, only 10%-20% of lost homes have been rebuilt 2 years after Helene",
+    "summary": "Significant housing reconstruction opportunity exists in Taylor County as the majority of storm-damaged homes remain unbuilt, indicating strong demand for new construction."
+   },
+   {
+    "title": "See how much home prices fell in Taylor County recently",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNGtwZ09oZk1Sd3g0WFpJTlR3OVhKN0V1RE1VTWpPVEJNcER1VnE3M18xNTVvSnNRaURTcnB0NzVmY1UtZHdNZ3loQXVVM2N6QlhHQWh3TXYyRS0zTkxHcEFwR1c3S2I4Z3dwWnltWFRpNW91azNhOG9pU0pHM0paZDZVTkoxTm9zSFpiUGZ6MGU?oc=5",
+    "source": "Abilene Reporter-News",
+    "date": "2026-09-19"
+   },
+   {
+    "title": "Taylor County GOP chair discusses data centers, affordability & November election",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQa1BoejBORnpxc19fc0NqLUpYNWRpdEo2dWJxQS00M19UMUl2UmNzRnFRNGR3ZVhzbGYzMk5taXRkRFJFY3BkVW1JSE5kaks0TEg4RnlyWEJFRFZtWlVpOUhLWnNkN2RPOU9ETlZIaEZNN3hGS1dGaUdGQWQ0OWNFUnhfMkx4ekJDbkN2YWNZc2wzSUdYTDdUNw?oc=5",
+    "source": "Yahoo",
+    "date": "2026-09-13"
+   },
+   {
+    "source": "WCTV",
+    "date": "2026-09-08",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTVc3WnZsOGYtcEhTMF9yLVFDaE5saEpEMVdnc0lXTll3akVuUVR3ZmFVZWdNNEh3N2FmcHhZSC1HQUlzb0NscUE1Mk5ZaFRDVW81Zk90Wm1JSmVBT1hxSDBERjZQTU40LTV5b29qQ1JFTU9vUEQxOS1oYlVCRFp2YmpOTGlJTC1TUllmZENaX1k5aG5LeVJWcDFWMVhwVTMzT2c0aXZDcjF6LWlwTzc2b3Q4U0M?oc=5",
+    "title": "Taylor County commissioners vote to add data center regulations to land development code",
+    "summary": "Updated land development regulations reflect Taylor County's growth planning and may influence availability and cost of developable land for residential projects."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Union": {
+  "items": [
+   {
+    "source": "USAFacts",
+    "date": "2026-09-08",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdUZKajB5Z29zaVBzRkdBdmJSUUk1Vy1tamU0cVd3eHFudm85QTdWOXMwaEpwdml5UXlRaElPc0xiV0FTSjdzVW1FNDRYZ0dvTExFdjd4NW4tdmFSXzRpUGYwRkg3NFFQci1LeUFleHY4TnhaRnNsUkxPY1dwNmlqVHc1bWlPT2QtYlR0QWl2alNSRi1URUE?oc=5",
+    "title": "What is the gross domestic product (GDP) in Union County, FL?",
+    "summary": "Understanding local economic output helps gauge Union County's growth potential and development opportunities for new construction projects."
+   }
+  ],
+  "updated": "2026-10-05"
+ },
+ "Volusia": {
+  "items": [
+   {
+    "source": "Daytona Beach News-Journal",
+    "date": "2026-09-29",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTTR2aHNkcE84enN0clk0WE54dFJud1NVclBYTEpoU2FYcjlGRFFqWGVldmtvbTF2Vy1WMDJJUXpoZVJPS1JYdkNXWUhXSmVfWHlKV05SOTYtZ0pwdVdfVk5ld3BCYmN1V1B4UmVBZEV1NTZwaXhnaGhoa0R4R1ZZaTVoMGhyVDJrS29aU3FEWWk5WGVSTjhnemJNTzVFSHNQZUVuSV9rY2pzdWFoeGx3dFkwMDU4VHBUNk1nclBlMnNQUXFaSW5sdUVUTWhGNmJVVXhJ?oc=5",
+    "title": "Study: Volusia County ranks among fastest-growing, most-at-risk in US - Daytona Beach News-Journal",
+    "summary": "Rapid population growth in Volusia County signals strong housing demand and development opportunities for builders and homebuyers."
+   },
+   {
+    "source": "WKMG",
+    "date": "2026-09-22",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZXFUZkZicjVGbzlRNTFMZGFubFpPUjdNY0p2UklaeEljNW5LcGwtb2lTVFNNV2FHOFhLX0dBY0ZmT1MwSExkdk9YWm9ITmFiWWJsMFNnOHFrUjg0QlI1NFdiRTF1Q2l0bGJGZTZxNXRTUmJaMlR1cTNwZk9hTGJlb2tpa1dNYzBNaFcyS2pZcGNOVkpjQjc4QWhERW5RQ2VfVnpxRml6bERmY2NaODliZmwwZVU1Nl9HUVZJRzBDdDA2TTNGa2c?oc=5",
+    "title": "Volusia County moves toward widening congested Daytona Beach road near I-95",
+    "summary": "Infrastructure improvements near I-95 enhance accessibility to residential and commercial properties in the corridor."
+   }
+  ],
+  "updated": "2026-10-01"
+ },
+ "Wakulla": {
+  "items": [
+   {
+    "source": "wtwcfox",
+    "date": "2026-10-03",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSlV3S0h5eHdxVUZxTFdkN0VoRHhCb1FZdjhRUG9oWEFaaWk1RzFUYlFhek93RTFXLWV2dzAtY1g0MzdkM1puR2N0cFQ4VWkycUZmcncyREZsOXNmbVVWVDA2UlZfNTFfTlo1eFBhS2FTMzhzSTVoSlE1c1M3ZmtYaVZocW5iallWdmtfZWRXcUFZcHRBRVJWSGcwVC11YkQwcDBPWTVJd1NZQ0c4WlE?oc=5",
+    "title": "Wakulla County homeowner raises flooding concerns as development grows around her",
+    "summary": "Growing development in Wakulla County raises flooding risks that prospective homebuyers and builders should evaluate when considering property purchases or construction projects."
+   },
+   {
+    "source": "Duke Energy | News Center",
+    "date": "2026-09-30",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbGJpcTdrWURvSFpiQ1pQYVdkRm9saGhmbWoyWjctZ1ZUU2puU3hGcnNTODd4bktVUHBKS1dvMVc0djJWZ2tQMDBGbG41dU96QjZkYWJNQ3RFM0hHV1ROWlhfVFZIZ2ttVVJhN2ZKeVdVb3dHdWlXMEpSUFg3NlEwV3JfNGlPbDJGd0Vmd0ZqZW9HdG9j?oc=5",
+    "title": "Duke Energy grants $326,500 to boost Florida's economy",
+    "summary": "Economic development funding in Florida supports infrastructure and growth initiatives that can influence housing demand and construction activity in Wakulla County."
+   },
+   {
+    "source": "wtwcfox",
+    "date": "2026-09-21",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcVJLZWRWemp2clhyWWJxVzljWkZCdmlyS2w3MnlUaHBRS0plYWFzZXRtRHJkQTBsU0FKYVRNRmliWnlJZmc1MldSRzFEQXRWQi1hT3hKcHk2MnhkTkQ3QnlDODFkYlRlUWkxMVpKSDYwcWFMbzhaX1hrSjRaYjJxd1V1X3I0Nl9idWFWeC1nOHd5al9VbVlrSVd0UVlHTDhlOFJTVzg1UzZJQnpkLW9N?oc=5",
+    "title": "Wakulla County confronts flooding concern — but state law blocks tougher local rules",
+    "summary": "State regulations limit local flood-control measures in Wakulla County, affecting development standards and drainage infrastructure for new construction and subdivisions."
+   }
+  ],
+  "updated": "2026-10-06"
+ },
+ "Walton": {
+  "items": [
+   {
+    "source": "NPR",
+    "date": "2026-09-04",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSkh4clVWOFpiVkM4Rlpjd3c4UTFSOWVldHpzNU40Q1l4cVpZS0ZrNVJPRXg2RVRwSEQ3dG1PbnBpNjEtZjc2TmdaRnRLelVyMTB6aVhiLW1tbzdNd2Zzdk8yZVFQUllWQlhtTDJRWnliQ0thNWFDZGtRcG13RUx0dW5ac3MxU2xoaXc?oc=5",
+    "title": "Who owns the beach? A heated battle plays out in the Florida Panhandle",
+    "summary": "Beach access and property rights disputes in the Panhandle may affect coastal real estate values and development opportunities for Walton County homebuyers."
+   }
+  ],
+  "updated": "2026-10-03"
+ },
+ "Washington": {
+  "items": [
+   {
+    "title": "Q&A: Washington County chair candidates on housing, immigration",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZUZ2Y0ZPWkRtQlpUbHI1akVsbU9zLU5vZ211NDRnZUtWRHJvd3poS25JV2hJcmJ3MU13RFpTQkctMHJuLTdzYzlSSjNGbGIwZ2tseV9Ccnh0OEF2ZGVJQ2VHU2VhSzNUSnVva2VMUjVoUXkxOHRFY18wdnBPNmU5U3hvSU1FWU90bm9mWUcyVVlIUG5NRDN3enBOS0JhOWRUZ0ljcHJmbWg?oc=5",
+    "source": "Beaverton Valley Times",
+    "date": "2026-10-01"
+   },
+   {
+    "source": "WJHG",
+    "date": "2026-09-25",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMzZ2dDluREtpbXRoWWRscmJUXzJicVEtYXBMdkUtT0FoQWtvY25Ma01RWVcyelBSeU85MW1aSDhOSlctb0IzYkg3VE1wN29Ua0Vrd3d0eHppV1ktNDVyTWs0b2Qzc3BUNlF6ZklES3FzbkhxS2NJN3h3MHdnbFN6Z0ZRNzlzbjJ0R0JDYzl2d0x3UXRnNjdUM24wbzdSdjZNTXZqMFRIeVBJTURpdTJVUGg1c1VJejhMWnfSAc4BQVVfeXFMTWJBczJ6WjNrNTQtWThIVnFPZWQxVmRXdG9JTDlGSnB3NE04WG11Yl9mR19FcTNmcXVBdkg5NE9UUEJ3LVBNeXNNV09nQWQybEtPNEpUeEtLYWNya0VvTnJvR0lLV3hFTm5RSWNZWk11eDZxSUNiYXBGeVEwbU0yQUFFWmUyVkFTY1hlMlpIUlVJa1FGamNmLVFSZlN6Ymt3WXRnVXNQV3dldWgtZ0hNUHBrT29TWkZkbExjTzVZRWoyMUtydmY0TWtCMV9YWWc?oc=5",
+    "title": "Renowned golf developer building 'World-Class' resort in Vernon: What to know about Old Shores",
+    "summary": "Major resort development in Vernon signals significant commercial and residential investment activity in Washington County."
+   },
+   {
+    "title": "Washington County community gardens face relocation as county plans new housing development",
+    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQYmhUaDlQQVpOaEZYeS1BczFySG1ZdlNUTFFDR2ZvZDJtZ3dHdUdlekVKSTRLUXZoVnFleGZLWFBnQWI0bnYxbEVqdTlzbExaMFVVNXVFLXdUdVQ0ZHhIWktlbExSLXZud3RUcExlSDN1UnFXWFJLT3drb1N2RThyNmlYdmNxaTZTX2h4SUdyWjVBaFRuS1VncmVnSG5BUDFHWU9CXzhISlRaelJEYllJVjNKaUJuM21FT1pEMEh6NF9lMUg2X0xZOWxBQTl1UjJfUXVSYUN5YW1mWkEtUmlJaXQ5MFJCZm5mOWlkOXdsT1NnYUVsVTdn?oc=5",
+    "source": "TMJ4 News",
+    "date": "2026-09-21"
+   }
+  ],
+  "updated": "2026-10-06"
  }
 }
