@@ -3,8 +3,8 @@
 // injected at runtime by includes.js), so search engines see them.
 import header from '../raw/header.html?raw';
 import footer from '../raw/footer.html?raw';
-interface Props { head: string; main: string; tail?: string; }
-const { head, main, tail = '' } = Astro.props;
+interface Props { head: string; main?: string; tail?: string; }
+const { head, main = '', tail = '' } = Astro.props;
 // Highlight the current nav link (replaces includes.js highlightActiveLink).
 const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
 const nav = header.replace(/<nav[\s\S]*?<\/nav>/, (block) =>
@@ -21,7 +21,7 @@ const nav = header.replace(/<nav[\s\S]*?<\/nav>/, (block) =>
 </head>
 <body>
   <Fragment set:html={nav} />
-  <Fragment set:html={main} />
+  {main ? <Fragment set:html={main} /> : <slot />}
   <Fragment set:html={footer} />
   <Fragment set:html={tail} />
 </body>
