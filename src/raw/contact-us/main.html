@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact us – Florida Hometown Heroes Housing Program 2026</title>
-  <meta name="description" content="Get in touch with a Florida Hometown Heroes Housing Program expert. Have a mortgage question, deal review, or want to talk strategy?">
-  <link rel="canonical" href="https://floridahometownheroeshousingprogram2026.com/contact-us">
-  <link rel="stylesheet" href="style.css">
-  <script src="includes.js" defer></script>
-  <style>[data-include]{min-height:60px;}</style>
-</head>
-<body>
-  <div data-include="header"></div>
-
   <main>
     <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
       <div class="hero-inner">
@@ -150,57 +135,4 @@
     </section>
   </main>
 
-  <div data-include="footer"></div>
-
-  <!-- Shared lead pipeline: attribution + postLead(), then the generic form enhancer. -->
-  <script src="js/lead.js"></script>
-  <script src="js/form-validate.js"></script>
-  <script>
-    FHTH.enhanceForm('lead-form', {
-      honeypot: 'company_website',
-      fields: [
-        { id: 'first_name', validate: FHTH.validators.required('Please enter your first name.') },
-        { id: 'last_name',  validate: FHTH.validators.required('Please enter your last name.') },
-        { id: 'email',      validate: FHTH.validators.email() },
-        { id: 'phone',      validate: FHTH.validators.phone(10, 'Please enter a valid phone number (at least 10 digits).') },
-        { id: 'occupation', validate: FHTH.validators.required('Please select your occupation.') },
-        { id: 'timeline',   validate: FHTH.validators.required('Please select your buying timeline.') },
-        { id: 'county',     validate: FHTH.validators.required('Please select your county.') },
-        { id: 'message',    validate: FHTH.validators.required('Please share a little about your situation.') },
-        { id: 'consent',    validate: FHTH.validators.required('Please agree to be contacted so we can reply.') }
-      ],
-      messages: {
-        success: 'Thanks — your message has been sent. Jim will get back to you shortly.',
-        botSuccess: 'Thanks — your message has been sent.',
-        fixErrors: 'Please fix the highlighted fields and try again.',
-        networkError: 'Something went wrong sending your message. Please try again, or call (954) 993-1625.'
-      },
-      buildPayload: function (form) {
-        var consentEl = document.getElementById('consent-text');
-        return {
-          source: 'contact',
-          page_url: location.href,
-          submitted_at: new Date().toISOString(),
-          contact: {
-            first_name: form.first_name.value.trim(),
-            last_name: form.last_name.value.trim(),
-            email: form.email.value.trim(),
-            phone: form.phone.value.trim()
-          },
-          profile: {
-            occupation: form.occupation.value,
-            county: form.county.value,
-            timeline: form.timeline.value
-          },
-          calculator: null,
-          consent: {
-            tcpa: form.consent.checked,
-            text: consentEl ? consentEl.textContent.replace(/\s+/g, ' ').trim() : ''
-          },
-          meta: FHTH.getAttribution()
-        };
-      }
-    });
-  </script>
-</body>
-</html>
+  

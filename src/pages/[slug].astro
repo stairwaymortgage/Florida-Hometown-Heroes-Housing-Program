@@ -1,0 +1,282 @@
+---
+// One page per Florida county: /{county}-county-housing-program
+// Variation comes from real county data (limits, seat, cities, employers,
+// bases, USDA status, news) plus deterministic rotating phrasings — never
+// from invented local facts.
+import Base from '../layouts/Base.astro';
+import {
+  counties, config, countyFacts, countyNews, pageSlug, pick, usd,
+  SITE, SHIP_URL, NMLS, OCCUPATION_LINKS,
+} from '../lib/county.js';
+
+export function getStaticPaths() {
+  return counties.map((c) => ({ params: { slug: pageSlug(c) }, props: { c } }));
+}
+
+const { c } = Astro.props;
+const f = countyFacts(c);
+const n = countyNews(c);
+const name = `${c.name} County`;
+const url = `${SITE}/${pageSlug(c)}`;
+const contact = `/contact-us?src=county-${c.slug}`;
+const otherCities = c.cities.filter((x) => x !== c.seat);
+const cityLine = otherCities.slice(0, 6).join(', ');
+const triggers = config.dpa.repayment_triggers;
+const dateFmt = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+const P = (key, opts) => pick(c, key, opts);
+
+// ---------------- top of page ----------------
+const h1 = P('h1', [
+  `${name} Housing Program: Hometown Heroes and Local Down Payment Help`,
+  `${name} Housing Program 2026: Down Payment Help for Local Heroes`,
+  `Down Payment Assistance in ${name}: Hometown Heroes and the County Program`,
+]);
+const intro = P('intro', [
+  `If you work in healthcare, education, public safety or the military and want to buy in ${name}, two separate pots of down payment help can apply to you: the statewide Florida Hometown Heroes Housing Program and ${name}'s own locally run housing assistance.`,
+  `${name} home buyers who serve their community, from nurses in ${c.seat} to deputies and teachers across the county, can look at two kinds of help: the state's Hometown Heroes program and the county's own down payment assistance.`,
+  `Buying your first home in ${name}? If you hold an eligible job, the Florida Hometown Heroes Housing Program can cover part of your down payment and closing costs, and ${name} runs its own local program alongside it.`,
+]);
+const rankLine = f.rank === 1
+  ? `${name}'s Hometown Heroes income limit of ${usd(f.income)} is the highest in Florida.`
+  : f.tied > 1
+    ? `${name}'s income limit of ${usd(f.income)} is shared with ${f.tied - 1} other ${f.tied - 1 === 1 ? 'county' : 'counties'}; ${f.rank - 1} ${f.rank - 1 === 1 ? 'county has' : 'counties have'} a higher limit.`
+    : `${name}'s income limit of ${usd(f.income)} ranks ${f.rank} of 67 Florida counties.`;
+const fhaLine = P('fha', [
+  `On an FHA loan at ${name}'s FHA maximum of ${usd(f.fhaLimit)}, the 5% formula works out to ${usd(f.dpaAtFhaMax)} of assistance.`,
+  `${name}'s FHA loan ceiling is ${usd(f.fhaLimit)}; a first mortgage that size would draw ${usd(f.dpaAtFhaMax)} under the 5% rule.`,
+  `Run the numbers at the ${name} FHA limit (${usd(f.fhaLimit)}) and Hometown Heroes would provide ${usd(f.dpaAtFhaMax)}.`,
+]);
+const peersShown = f.peers.slice(0, 4);
+
+// ---------------- two programs ----------------
+const h2Two = P('h2two', [
+  `Hometown Heroes vs. the ${name} housing program`,
+  `State help and county help in ${name}: how they differ`,
+  `Two sources of down payment help in ${name}`,
+]);
+const stateText = P('state', [
+  `A 0% interest deferred second mortgage worth 5% of your first mortgage, with no monthly payment. It is not forgiven: you repay it when you sell, refinance, pay off the first mortgage or move out. Funding is first come, first served through approved lenders.`,
+  `Florida Housing lends you 5% of your first mortgage (between ${usd(config.dpa.min)} and ${usd(config.dpa.max)}) as a silent second mortgage at 0%. Nothing is due monthly, and it adds nothing to your debt-to-income ratio, but the full amount comes due on sale, refinance or payoff.`,
+  `Statewide and run by Florida Housing Finance Corporation. You borrow 5% of the first mortgage at 0% interest, make no payments, and repay the whole balance later, when you sell or refinance. It is never forgiven, and money is reserved first come, first served.`,
+]);
+const countyText = P('county', [
+  `${name} receives state SHIP money every year and decides locally how to spend it. Down payment and closing cost help is an approved use. Amounts, income caps and whether the help is forgivable are set in the county's Local Housing Assistance Plan, so they differ from Hometown Heroes.`,
+  `Each year Florida sends ${name} a share of State Housing Initiatives Partnership (SHIP) funds, at least $350,000. The county's housing office writes its own Local Housing Assistance Plan, which sets who qualifies, how much is offered and whether that help is forgiven over time.`,
+  `${name}'s local program is funded by the state SHIP trust fund but run by the county. Its rules, including income limits, award size and repayment, come from the county's Local Housing Assistance Plan and can change when new funding years open.`,
+]);
+const comboLine = P('combo', [
+  `Whether the two can be combined depends on both programs' rules at the time you apply. A participating lender confirms before funds are reserved.`,
+  `Some buyers use both; others qualify for only one. The lender checks layering rules before anything is reserved.`,
+  `Stacking state and county help is sometimes possible and sometimes not. That is decided case by case before you reserve funds.`,
+]);
+
+// ---------------- who qualifies ----------------
+const h2Who = P('h2who', [`Eligible jobs for ${name} buyers`, `Who qualifies in ${name}`, `Hometown Heroes jobs in ${name}`]);
+const whoIntro = P('who', [
+  `Hometown Heroes is for full-time employees of Florida-based employers in eligible occupations.`,
+  `You need a full-time job with a Florida-based employer in one of the program's eligible fields.`,
+  `Eligibility starts with your job: full-time work for a Florida-based employer in an approved occupation.`,
+]);
+const employers = P('emp', [
+  `In ${name}, that includes staff of the <a href="${c.school}" target="_blank" rel="noopener">${c.name} County school district</a> and deputies and detention staff at the <a href="${c.sheriff}" target="_blank" rel="noopener">${c.name} County Sheriff's Office</a>, along with hospital, fire rescue and licensed childcare workers.`,
+  `Typical ${name} employers whose staff can qualify include the <a href="${c.school}" target="_blank" rel="noopener">county school district</a>, the <a href="${c.sheriff}" target="_blank" rel="noopener">Sheriff's Office</a>, local hospitals and clinics, fire rescue and courts.`,
+  `Teachers and school staff (<a href="${c.school}" target="_blank" rel="noopener">${c.name} schools</a>), sheriff's deputies and corrections staff (<a href="${c.sheriff}" target="_blank" rel="noopener">${c.name} Sheriff</a>), nurses, paramedics and childcare workers in ${name} are among the eligible groups.`,
+]);
+
+// ---------------- where to buy ----------------
+const h2Where = P('h2where', [`Buying a home in ${c.seat} and across ${name}`, `Where you can use it in ${name}`, `Homes that qualify in ${name}`]);
+const whereText = P('where', [
+  `Hometown Heroes applies county-wide, from ${c.seat}${cityLine ? ` to ${cityLine}` : ''}. The home must be your primary residence: single-family, townhome, eligible condo, or a 2 to 4 unit property where you live in one unit.`,
+  `Any part of ${name} works${cityLine ? `, including ${c.seat}, ${cityLine}` : `, including ${c.seat}`}, as long as you live in the home. Single-family houses, townhomes, approved condos and 2 to 4 unit buildings (you occupy one unit) are all eligible.`,
+  `There is no neighborhood restriction inside ${name}: ${c.seat}${cityLine ? `, ${cityLine}` : ''} and unincorporated areas all qualify. It has to be your primary residence, and manufactured homes must be 1994 or newer.`,
+]);
+const usdaLine = c.usda
+  ? P('usdaY', [
+      `Parts of ${name} fall inside USDA-eligible areas, so a USDA first mortgage (zero down) can be paired with Hometown Heroes for qualifying addresses. The USDA income limit here is ${usd(f.usdaIncome)}.`,
+      `Some ${name} addresses are USDA-eligible. There, a zero-down USDA loan plus Hometown Heroes can cover most of the cash needed at closing, with a ${usd(f.usdaIncome)} USDA income limit.`,
+    ])
+  : P('usdaN', [
+      `${name} has no USDA-eligible areas, so buyers here typically pair Hometown Heroes with an FHA, VA or conventional HFA first mortgage.`,
+      `USDA loans are not available in ${name}; FHA, VA and conventional HFA loans are the usual first mortgages here.`,
+    ]);
+
+// ---------------- FAQ ----------------
+const faqs = [
+  {
+    q: P('fq1', [`What is the Hometown Heroes income limit in ${name}?`, `How much can I earn and still qualify for Hometown Heroes in ${name}?`]),
+    a: `For FHA, VA and conventional HFA loans, the 2026 Hometown Heroes income limit in ${name} is ${usd(f.income)} (TBA funding, effective ${dateFmt(f.effective)}). For USDA loans it is ${usd(f.usdaIncome)}. Under the TBA option, only the income of borrowers on the loan is counted, not the whole household.`,
+  },
+  {
+    q: P('fq2', [`Is Hometown Heroes in ${name} a grant?`, `Do I have to pay back Hometown Heroes assistance in ${name}?`]),
+    a: `It is not a grant. Hometown Heroes is a 0% interest, deferred second mortgage with no monthly payment. It is repaid in full on ${triggers.slice(0, 4).join(', ')}, or if the home stops being your primary residence. Local programs funded through ${name}'s SHIP allocation can be structured differently, which is why it pays to compare both.`,
+  },
+  {
+    q: P('fq3', [`Does ${name} have its own down payment assistance program?`, `Is there a ${name} housing program separate from Hometown Heroes?`]),
+    a: `Yes. Every Florida county, including ${name}, receives state SHIP (State Housing Initiatives Partnership) funds, a minimum of $350,000 a year, and can use them for down payment and closing cost help. ${name} sets its own income caps, amounts and repayment terms in its Local Housing Assistance Plan, and funding windows vary.`,
+  },
+  {
+    q: P('fq4', [`How much Hometown Heroes help can I get buying in ${c.seat} or elsewhere in ${name}?`, `What is the maximum Hometown Heroes assistance in ${name}?`]),
+    a: `Assistance is 5% of your first mortgage amount, with a minimum of ${usd(config.dpa.min)} and a maximum of ${usd(config.dpa.max)}. ${fhaLine}`,
+  },
+  {
+    q: P('fq5', [`Who can help me apply for Hometown Heroes in ${name}?`, `How do I start a Hometown Heroes application in ${name}?`]),
+    a: `Hometown Heroes is reserved through Florida Housing–approved participating lenders, first come, first served. Stairway Mortgage (Jim Blackburn, ${NMLS}) can review your occupation, income against the ${name} limit, and whether ${name}'s local program fits alongside it.`,
+  },
+];
+if (c.bases.length) faqs.splice(3, 0, {
+  q: P('fq6', [`Can military members at ${c.bases[0]} use Hometown Heroes?`, `Does Hometown Heroes cover service members stationed in ${name}?`]),
+  a: `Yes. Active-duty U.S. military, Reserves, Coast Guard and Florida National Guard members are eligible occupations, including personnel at ${c.bases.slice(0, 2).join(' and ')}. Under the TBA option, active-duty members with a current LES are exempt from the first-time buyer requirement, and veterans discharged other than dishonorably (DD214) are exempt too.`,
+});
+
+// ---------------- CTA ----------------
+const ctaH = P('ctah', [`Buying in ${name}?`, `Ready to look at homes in ${name}?`, `Questions about ${name} assistance?`]);
+const ctaP = P('ctap', [
+  `Jim Blackburn, ${NMLS}, and the Stairway Mortgage team review your job, your income against the ${usd(f.income)} ${name} limit, and which assistance fits. No credit pull to start.`,
+  `Send us your job title and the area of ${name} you're looking in. Jim Blackburn (${NMLS}) and our team will tell you which programs you can use.`,
+  `Our team, led by Jim Blackburn, ${NMLS}, checks your eligibility for Hometown Heroes and ${name}'s local program in one conversation.`,
+]);
+
+const title = `${name} Housing Program 2026: Hometown Heroes + Local Down Payment Help`;
+const description = `${name}, FL home buyers: 2026 Hometown Heroes income limit ${usd(f.income)}, up to ${usd(config.dpa.max)} in down payment help, plus ${name}'s own SHIP-funded program. ${c.seat} and county-wide.`;
+const jsonld = [
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Florida Hometown Heroes Housing Program', item: `${SITE}/` },
+      { '@type': 'ListItem', position: 2, name: 'Florida County Housing Programs', item: `${SITE}/florida-county-housing-programs` },
+      { '@type': 'ListItem', position: 3, name: `${name} Housing Program`, item: url },
+    ],
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })),
+  },
+];
+const esc = (s) => s.replace(/"/g, '&quot;');
+const head = `<title>${title}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+---
+<Base head={head}>
+  <main>
+    <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">{name}, Florida · 2026</span>
+        <h1>{h1}</h1>
+        <p class="hero-sub">Up to {usd(config.dpa.max)} from the <a href="/">Florida Hometown Heroes Housing Program</a>, plus {name}'s own county assistance. Income limit here: <strong>{usd(f.income)}</strong>.</p>
+        <div class="hero-actions">
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+          <a href="/loan-calculator" class="btn btn-outline-white">Estimate My Assistance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <p style="font-size:14px;margin-bottom:1.5rem;"><a href="/">Hometown Heroes</a> › <a href="/florida-county-housing-programs">County Housing Programs</a> › {name}</p>
+        <p class="lead">{intro}</p>
+        <p>{rankLine} {fhaLine}</p>
+        <div class="facts-grid">
+          <div class="fact-card"><h4>Income limit (FHA / VA / HFA)</h4><p><strong>{usd(f.income)}</strong></p></div>
+          <div class="fact-card"><h4>Income limit (USDA)</h4><p><strong>{usd(f.usdaIncome)}</strong></p></div>
+          <div class="fact-card"><h4>Max loan, FHA</h4><p><strong>{usd(f.fhaLimit)}</strong></p></div>
+          <div class="fact-card"><h4>Max loan, HFA / VA</h4><p><strong>{usd(f.hfaLimit)}</strong></p></div>
+          <div class="fact-card"><h4>Hometown Heroes help</h4><p><strong>5% of first mortgage</strong>, {usd(config.dpa.min)} to {usd(config.dpa.max)}</p></div>
+          <div class="fact-card"><h4>County seat</h4><p><strong>{c.seat}</strong></p></div>
+        </div>
+        <p style="font-size:13px;margin-top:1rem;">Income limits: TBA funding option, effective {dateFmt(f.effective)}. Loan limits effective {dateFmt(f.loanEffective)}. Source: Florida Housing Finance Corporation Hometown Heroes lender guide. Bond-funded limits may differ.</p>
+        {peersShown.length > 0 && (
+          <p>Same {usd(f.income)} limit: {peersShown.map((o, i) => <>{i > 0 && ', '}<a href={`/${pageSlug(o)}`}>{o.name} County</a></>)}{f.peers.length > peersShown.length ? ` and ${f.peers.length - peersShown.length} more` : ''}.</p>
+        )}
+      </div>
+    </section>
+
+    <section class="section-blue">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Two programs, one county</span>
+        <h2>{h2Two}</h2>
+        <h3>Florida Hometown Heroes (state)</h3>
+        <p>{stateText} <a href="/">Read the full Hometown Heroes guide</a>.</p>
+        <h3>{name} local assistance (SHIP-funded)</h3>
+        <p>{countyText}</p>
+        <p>
+          <a href={c.gov} target="_blank" rel="noopener">{name} government website</a> ·
+          <a href={SHIP_URL} target="_blank" rel="noopener">Florida Housing SHIP local contacts</a>
+        </p>
+        <p>{comboLine}</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Who qualifies</span>
+        <h2>{h2Who}</h2>
+        <p>{whoIntro} <Fragment set:html={employers} /></p>
+        <p>We have dedicated mortgage guides for many of these jobs:</p>
+        <ul>
+          {OCCUPATION_LINKS.map((o) => <li>{o.group}: <a href={o.href} target="_blank" rel="noopener">mortgage options for {o.label}</a></li>)}
+        </ul>
+        {c.bases.length > 0 && (
+          <p>{name} is home to {c.bases.slice(0, 3).join(', ')}{c.bases.length > 3 ? ` and ${c.bases.length - 3} more installation${c.bases.length - 3 > 1 ? 's' : ''}` : ''}. Active-duty service members, Reserves, Coast Guard and Florida National Guard members are eligible.</p>
+        )}
+        <p><a href="/eligible-occupations">See the full eligible occupations list</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Where you can buy</span>
+        <h2>{h2Where}</h2>
+        <p>{whereText}</p>
+        <p>{usdaLine}</p>
+        {c.appraiser && <p>Check property records and taxes with the <a href={c.appraiser} target="_blank" rel="noopener">{name} Property Appraiser</a>.</p>}
+      </div>
+    </section>
+
+    {n.items.length > 0 && (
+      <section class="section-white">
+        <div class="section-inner narrow">
+          <span class="eyebrow">Local news</span>
+          <h2>{name} housing news</h2>
+          <ul>
+            {n.items.map((it) => (
+              <li><a href={it.url} target="_blank" rel="noopener nofollow">{it.title}</a> <span style="font-size:13px;">({it.source}{it.date ? `, ${dateFmt(it.date)}` : ''})</span></li>
+            ))}
+          </ul>
+          {n.updated && <p style="font-size:13px;">Updated {dateFmt(n.updated)}.</p>}
+        </div>
+      </section>
+    )}
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">FAQ</span>
+        <h2>{name} Hometown Heroes questions</h2>
+        <div class="faq-list">
+          {faqs.map((x) => (
+            <details class="faq-item">
+              <summary>{x.q}</summary>
+              <div class="faq-answer"><p>{x.a}</p></div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <div class="cta-banner" style="background:var(--navy);">
+          <h3>{ctaH}</h3>
+          <p>{ctaP}</p>
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+        </div>
+        <p style="font-size:13px;margin-top:1.5rem;">Jim Blackburn, {NMLS} · Stairway Mortgage. Program terms, limits and funding availability are set by Florida Housing Finance Corporation and {name} and can change. Estimates are not a commitment to lend. Equal Housing Opportunity.</p>
+        <p><a href="/florida-county-housing-programs">← All 67 Florida county housing programs</a></p>
+      </div>
+    </section>
+  </main>
+</Base>

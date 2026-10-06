@@ -1,0 +1,1473 @@
+[
+ {
+  "name": "Alachua",
+  "slug": "alachua-county",
+  "seat": "Gainesville",
+  "usda": true,
+  "gov": "https://alachuacounty.us",
+  "cities": [
+   "Alachua",
+   "Archer",
+   "Earleton",
+   "Gainesville",
+   "High Springs",
+   "Island Grove",
+   "La Crosse",
+   "Lochloosa",
+   "Micanopy",
+   "Newberry",
+   "Waldo"
+  ],
+  "bases": [],
+  "school": "https://www.alachuaschools.net",
+  "sheriff": "https://www.acso.us",
+  "appraiser": "https://www.acpafl.org",
+  "paper": "https://www.gainesville.com"
+ },
+ {
+  "name": "Baker",
+  "slug": "baker-county",
+  "seat": "Macclenny",
+  "usda": true,
+  "gov": "https://www.bakercountyfl.org",
+  "cities": [
+   "Glen Saint Mary",
+   "Macclenny",
+   "Olustee",
+   "Sanderson"
+  ],
+  "bases": [],
+  "school": "https://www.bakerk12.org",
+  "sheriff": "https://www.bakersheriff.org",
+  "appraiser": "https://www.bakerpa.com",
+  "paper": "https://www.bakercountypress.com"
+ },
+ {
+  "name": "Bay",
+  "slug": "bay-county",
+  "seat": "Panama City",
+  "usda": true,
+  "gov": "https://www.baycountyfl.gov",
+  "cities": [
+   "Fountain",
+   "Lynn Haven",
+   "Mexico Beach",
+   "Panama City",
+   "Panama City Beach",
+   "Youngstown"
+  ],
+  "bases": [
+   "Tyndall Air Force Base",
+   "Naval Support Activity Panama City"
+  ],
+  "school": "https://www.bay.k12.fl.us",
+  "sheriff": "https://www.bayso.org",
+  "appraiser": "https://baypa.net",
+  "paper": "https://www.newsherald.com"
+ },
+ {
+  "name": "Bradford",
+  "slug": "bradford-county",
+  "seat": "Starke",
+  "usda": true,
+  "gov": "https://www.bradfordcountyfl.gov",
+  "cities": [
+   "Brooker",
+   "Graham",
+   "Hampton",
+   "Lawtey",
+   "Raiford",
+   "Starke"
+  ],
+  "bases": [],
+  "school": "https://www.bradfordschools.org",
+  "sheriff": "https://www.bradfordsheriff.org",
+  "appraiser": "https://www.bradfordappraiser.com",
+  "paper": "https://bctelegraph.com/"
+ },
+ {
+  "name": "Brevard",
+  "slug": "brevard-county",
+  "seat": "Titusville",
+  "usda": true,
+  "gov": "https://www.brevardfl.gov",
+  "cities": [
+   "Cape Canaveral",
+   "Cocoa",
+   "Cocoa Beach",
+   "Grant",
+   "Indialantic",
+   "Malabar",
+   "Melbourne",
+   "Melbourne Beach",
+   "Merritt Island",
+   "Mims",
+   "Orlando",
+   "Palm Bay",
+   "Patrick Afb",
+   "Rockledge",
+   "Satellite Beach"
+  ],
+  "bases": [
+   "Patrick Space Force Base",
+   "Cape Canaveral Space Force Station"
+  ],
+  "school": "https://www.brevardschools.org",
+  "sheriff": "https://www.brevardsheriff.com",
+  "appraiser": "https://www.bcpao.us",
+  "paper": "https://www.floridatoday.com"
+ },
+ {
+  "name": "Broward",
+  "slug": "broward-county",
+  "seat": "Fort Lauderdale",
+  "usda": false,
+  "gov": "https://www.broward.org",
+  "cities": [
+   "Coconut Creek",
+   "Coral Springs",
+   "Dania",
+   "Deerfield Beach",
+   "Fort Lauderdale",
+   "Hallandale",
+   "Hollywood",
+   "Margate",
+   "Pembroke Pines",
+   "Plantation",
+   "Pompano Beach"
+  ],
+  "bases": [],
+  "school": "https://www.browardschools.com",
+  "sheriff": "https://www.sheriff.org",
+  "appraiser": "https://bcpa.net",
+  "paper": "https://www.sun-sentinel.com"
+ },
+ {
+  "name": "Calhoun",
+  "slug": "calhoun-county",
+  "seat": "Blountstown",
+  "usda": true,
+  "gov": "https://calhouncountyfl.org",
+  "cities": [
+   "Altha",
+   "Blountstown",
+   "Clarksville",
+   "Wewahitchka"
+  ],
+  "bases": [],
+  "school": "https://calhounflschools.org",
+  "sheriff": "https://www.calhounsheriff.com",
+  "appraiser": "https://calhounpa.net",
+  "paper": "https://www.thecountyrecord.net"
+ },
+ {
+  "name": "Charlotte",
+  "slug": "charlotte-county",
+  "seat": "Punta Gorda",
+  "usda": true,
+  "gov": "https://www.charlottecountyfl.gov",
+  "cities": [
+   "El Jobean",
+   "Englewood",
+   "Murdock",
+   "Placida",
+   "Port Charlotte",
+   "Punta Gorda",
+   "Rotonda West"
+  ],
+  "bases": [],
+  "school": "https://www.yourcharlotteschools.net",
+  "sheriff": "https://www.ccso.org",
+  "appraiser": "https://www.ccappraiser.com",
+  "paper": "https://www.yoursun.com"
+ },
+ {
+  "name": "Citrus",
+  "slug": "citrus-county",
+  "seat": "Inverness",
+  "usda": true,
+  "gov": "https://www.citruscounty.gov",
+  "cities": [
+   "Beverly Hills",
+   "Crystal River",
+   "Dunnellon",
+   "Floral City",
+   "Hernando",
+   "Holder",
+   "Homosassa",
+   "Homosassa Springs",
+   "Inverness",
+   "Lecanto"
+  ],
+  "bases": [],
+  "school": "https://www.citrusschools.org/",
+  "sheriff": "https://www.sheriffcitrus.org",
+  "appraiser": "https://www.citruspa.org",
+  "paper": "https://www.chronicleonline.com"
+ },
+ {
+  "name": "Clay",
+  "slug": "clay-county",
+  "seat": "Green Cove Springs",
+  "usda": true,
+  "gov": "https://www.claycountygov.com",
+  "cities": [
+   "Doctors Inlet",
+   "Fleming Island",
+   "Green Cove Springs",
+   "Keystone Heights",
+   "Lake Geneva",
+   "Middleburg",
+   "Orange Park",
+   "Penney Farms"
+  ],
+  "bases": [
+   "Camp Blanding Joint Training Center"
+  ],
+  "school": "https://www.oneclay.net",
+  "sheriff": "https://www.claysheriff.com",
+  "appraiser": "https://www.ccpao.com",
+  "paper": "https://www.claytodayonline.com"
+ },
+ {
+  "name": "Collier",
+  "slug": "collier-county",
+  "seat": "Naples",
+  "usda": true,
+  "gov": "https://www.colliercountyfl.gov",
+  "cities": [
+   "Chokoloskee",
+   "Copeland",
+   "Everglades City",
+   "Goodland",
+   "Immokalee",
+   "Marco Island",
+   "Naples",
+   "Ochopee"
+  ],
+  "bases": [],
+  "school": "https://www.collierschools.com",
+  "sheriff": "https://www.colliersheriff.org",
+  "appraiser": "https://www.collierappraiser.com",
+  "paper": "https://www.naplesnews.com"
+ },
+ {
+  "name": "Columbia",
+  "slug": "columbia-county",
+  "seat": "Lake City",
+  "usda": true,
+  "gov": "https://www.columbiacountyfla.com",
+  "cities": [
+   "Fort White",
+   "Lake City",
+   "Lulu"
+  ],
+  "bases": [],
+  "school": "https://www.columbiak12.com/",
+  "sheriff": "https://www.columbiasheriff.org",
+  "appraiser": "https://columbia.floridapa.com",
+  "paper": "https://www.lakecityreporter.com"
+ },
+ {
+  "name": "DeSoto",
+  "slug": "desoto-county",
+  "seat": "Arcadia",
+  "usda": true,
+  "gov": "https://www.desotobocc.com",
+  "cities": [
+   "Arcadia",
+   "Fort Ogden",
+   "Nocatee"
+  ],
+  "bases": [],
+  "school": "https://www.desotoschools.com",
+  "sheriff": "https://www.desotosheriff.com",
+  "appraiser": "https://www.desotopa.com",
+  "paper": "https://www.yoursun.com"
+ },
+ {
+  "name": "Dixie",
+  "slug": "dixie-county",
+  "seat": "Cross City",
+  "usda": true,
+  "gov": "https://www.dixiecounty.us",
+  "cities": [
+   "Cross City",
+   "Horseshoe Beach",
+   "Old Town",
+   "Suwannee"
+  ],
+  "bases": [],
+  "school": "https://www.dixie.k12.fl.us",
+  "sheriff": "https://dixiesheriff.org",
+  "appraiser": "https://www.qpublic.net/fl/dixie",
+  "paper": "https://www.facebook.com/DixieCountyAdvocate"
+ },
+ {
+  "name": "Duval",
+  "slug": "duval-county",
+  "seat": "Jacksonville",
+  "usda": true,
+  "gov": "https://www.jacksonville.gov",
+  "cities": [
+   "Atlantic Beach",
+   "Jacksonville",
+   "Jacksonville Beach",
+   "Neptune Beach"
+  ],
+  "bases": [
+   "125th Fighter Wing (FL Air National Guard, Jacksonville)",
+   "Naval Air Station Jacksonville",
+   "Naval Station Mayport",
+   "Naval Hospital Jacksonville",
+   "Blount Island Command (U.S. Marine Corps)",
+   "Coast Guard Sector Jacksonville"
+  ],
+  "school": "https://www.duvalschools.org",
+  "sheriff": "https://www.jaxsheriff.org",
+  "appraiser": "https://www.jacksonville.gov/departments/property-appraiser",
+  "paper": "https://www.jacksonville.com"
+ },
+ {
+  "name": "Escambia",
+  "slug": "escambia-county",
+  "seat": "Pensacola",
+  "usda": true,
+  "gov": "https://myescambia.com",
+  "cities": [
+   "Cantonment",
+   "Century",
+   "Gonzalez",
+   "Mc David",
+   "Molino",
+   "Pensacola"
+  ],
+  "bases": [
+   "Naval Air Station Pensacola",
+   "NAS Pensacola Corry Station (Center for Information Warfare Training)"
+  ],
+  "school": "https://www.escambia.k12.fl.us",
+  "sheriff": "https://www.escambiaso.com",
+  "appraiser": "https://www.escpa.org",
+  "paper": "https://www.pnj.com"
+ },
+ {
+  "name": "Flagler",
+  "slug": "flagler-county",
+  "seat": "Bunnell",
+  "usda": true,
+  "gov": "https://www.flaglercounty.gov",
+  "cities": [
+   "Bunnell",
+   "Flagler Beach",
+   "Palm Coast"
+  ],
+  "bases": [],
+  "school": "https://www.flaglerschools.com",
+  "sheriff": "https://www.flaglersheriff.com",
+  "appraiser": "https://flaglerpa.com",
+  "paper": "https://www.palmcoastobserver.com"
+ },
+ {
+  "name": "Franklin",
+  "slug": "franklin-county",
+  "seat": "Apalachicola",
+  "usda": true,
+  "gov": "https://www.franklincountyflorida.com",
+  "cities": [
+   "Apalachicola",
+   "Carrabelle",
+   "Eastpoint",
+   "Lanark Village"
+  ],
+  "bases": [],
+  "school": "https://www.franklincountyschools.org",
+  "sheriff": "https://www.franklinsheriff.com",
+  "appraiser": "https://www.franklincountypa.net",
+  "paper": "https://franklincounty.news"
+ },
+ {
+  "name": "Gadsden",
+  "slug": "gadsden-county",
+  "seat": "Quincy",
+  "usda": true,
+  "gov": "https://www.gadsdencountyfl.gov",
+  "cities": [
+   "Chattahoochee",
+   "Greensboro",
+   "Gretna",
+   "Havana",
+   "Midway",
+   "Quincy"
+  ],
+  "bases": [],
+  "school": "https://www.gadsdenschools.org",
+  "sheriff": "https://gadsdensheriff.com",
+  "appraiser": "https://gadsdenpa.com",
+  "paper": "https://gadsdencountytimes.com"
+ },
+ {
+  "name": "Gilchrist",
+  "slug": "gilchrist-county",
+  "seat": "Trenton",
+  "usda": true,
+  "gov": "https://www.gilchrist.fl.us",
+  "cities": [
+   "Bell",
+   "Trenton"
+  ],
+  "bases": [],
+  "school": "https://www.gilchristschools.org",
+  "sheriff": "https://www.gcso.us",
+  "appraiser": "https://www.qpublic.net/fl/gilchrist",
+  "paper": "https://gilchristcountyherald.com/"
+ },
+ {
+  "name": "Glades",
+  "slug": "glades-county",
+  "seat": "Moore Haven",
+  "usda": true,
+  "gov": "https://www.myglades.com",
+  "cities": [
+   "Moore Haven",
+   "Palmdale"
+  ],
+  "bases": [],
+  "school": "https://www.gladesedu.org",
+  "sheriff": "https://www.gladessheriff.org",
+  "appraiser": "https://qpublic.net/fl/glades",
+  "paper": "https://www.lakeonews.com/okeechobee"
+ },
+ {
+  "name": "Gulf",
+  "slug": "gulf-county",
+  "seat": "Port St. Joe",
+  "usda": true,
+  "gov": "https://www.gulfcounty-fl.gov",
+  "cities": [
+   "Port Saint Joe",
+   "Wewahitchka"
+  ],
+  "bases": [],
+  "school": "https://www.gulfcoschools.com",
+  "sheriff": "https://www.gulfsheriff.com",
+  "appraiser": "https://gulfpa.com",
+  "paper": "https://gulfcounty.news"
+ },
+ {
+  "name": "Hamilton",
+  "slug": "hamilton-county",
+  "seat": "Jasper",
+  "usda": true,
+  "gov": "https://hamiltoncountyfl.com",
+  "cities": [
+   "Jasper",
+   "Jennings",
+   "White Springs"
+  ],
+  "bases": [],
+  "school": "https://www.hamiltonfl.com",
+  "sheriff": "https://hamiltonsheriff.com",
+  "appraiser": "https://hamiltonpa.com",
+  "paper": "https://valdostadailytimes.com/wp-content/uploads/sites/3/2024/12/8b9db2d2da97cde61651f5160386a61c.jpg"
+ },
+ {
+  "name": "Hardee",
+  "slug": "hardee-county",
+  "seat": "Wauchula",
+  "usda": true,
+  "gov": "https://www.hardeecountyfl.gov",
+  "cities": [
+   "Bowling Green",
+   "Ona",
+   "Wauchula",
+   "Zolfo Springs"
+  ],
+  "bases": [],
+  "school": "https://www.hardee.k12.fl.us",
+  "sheriff": "https://www.hardeeso.com",
+  "appraiser": "https://hardeepa.com",
+  "paper": "https://www.theheraldadvocate.com"
+ },
+ {
+  "name": "Hendry",
+  "slug": "hendry-county",
+  "seat": "LaBelle",
+  "usda": true,
+  "gov": "https://hendryfla.net",
+  "cities": [
+   "Clewiston",
+   "Felda",
+   "Labelle"
+  ],
+  "bases": [],
+  "school": "https://www.hendry-schools.org",
+  "sheriff": "https://www.hendrysheriff.org",
+  "appraiser": "https://hendryprop.com",
+  "paper": "https://www.lakeonews.com/clewiston/"
+ },
+ {
+  "name": "Hernando",
+  "slug": "hernando-county",
+  "seat": "Brooksville",
+  "usda": true,
+  "gov": "https://www.hernandocounty.us",
+  "cities": [
+   "Brooksville",
+   "Istachatta",
+   "Nobleton",
+   "Spring Hill"
+  ],
+  "bases": [],
+  "school": "https://www.hernandoschools.org",
+  "sheriff": "https://www.hernandosheriff.org",
+  "appraiser": "https://hernandocountypa-florida.us",
+  "paper": "https://www.hernandosun.com"
+ },
+ {
+  "name": "Highlands",
+  "slug": "highlands-county",
+  "seat": "Sebring",
+  "usda": true,
+  "gov": "https://www.highlandsfl.gov",
+  "cities": [
+   "Avon Park",
+   "Lake Placid",
+   "Lorida",
+   "Sebring",
+   "Venus"
+  ],
+  "bases": [
+   "Avon Park Air Force Range"
+  ],
+  "school": "https://www.highlands.k12.fl.us",
+  "sheriff": "https://www.highlandssheriff.gov",
+  "appraiser": "https://www.hcpao.org",
+  "paper": "https://www.midfloridanewspapers.com/highlands_news-sun"
+ },
+ {
+  "name": "Hillsborough",
+  "slug": "hillsborough-county",
+  "seat": "Tampa",
+  "usda": true,
+  "gov": "https://hcfl.gov",
+  "cities": [
+   "Apollo Beach",
+   "Balm",
+   "Brandon",
+   "Dover",
+   "Durant",
+   "Gibsonton",
+   "Lithia",
+   "Lutz",
+   "Mango",
+   "Odessa",
+   "Plant City",
+   "Riverview",
+   "Ruskin",
+   "Seffner",
+   "Sun City"
+  ],
+  "bases": [
+   "MacDill Air Force Base (CENTCOM & SOCOM)"
+  ],
+  "school": "https://www.hillsboroughschools.org",
+  "sheriff": "https://www.teamhcso.com",
+  "appraiser": "https://www.hcpafl.org",
+  "paper": "https://www.tampabay.com"
+ },
+ {
+  "name": "Holmes",
+  "slug": "holmes-county",
+  "seat": "Bonifay",
+  "usda": true,
+  "gov": "https://www.holmescountyonline.com",
+  "cities": [
+   "Bonifay",
+   "Noma",
+   "Westville"
+  ],
+  "bases": [],
+  "school": "https://www.hdsb.org",
+  "sheriff": "https://www.holmescosheriff.org",
+  "appraiser": "https://www.holmescountyonline.com/property-appraiser/",
+  "paper": "https://www.bonifaynow.com"
+ },
+ {
+  "name": "Indian River",
+  "slug": "indian-river-county",
+  "seat": "Vero Beach",
+  "usda": true,
+  "gov": "https://indianriver.gov",
+  "cities": [
+   "Fellsmere",
+   "Roseland",
+   "Sebastian",
+   "Vero Beach",
+   "Wabasso",
+   "Winter Beach"
+  ],
+  "bases": [],
+  "school": "https://www.indianriverschools.org",
+  "sheriff": "https://www.ircsheriff.org",
+  "appraiser": "https://www.ircpa.org",
+  "paper": "https://www.tcpalm.com"
+ },
+ {
+  "name": "Jackson",
+  "slug": "jackson-county",
+  "seat": "Marianna",
+  "usda": true,
+  "gov": "https://www.jacksoncountyfl.gov",
+  "cities": [
+   "Alford",
+   "Bascom",
+   "Campbellton",
+   "Cottondale",
+   "Cypress",
+   "Graceville",
+   "Grand Ridge",
+   "Greenwood",
+   "Malone",
+   "Marianna",
+   "Sneads"
+  ],
+  "bases": [],
+  "school": "https://www.jcsb.org",
+  "sheriff": "https://www.facebook.com/jcsoflorida",
+  "appraiser": "https://jacksonpa.com",
+  "paper": "https://www.tuckedinntheharbour.com/gallery.html"
+ },
+ {
+  "name": "Jefferson",
+  "slug": "jefferson-county",
+  "seat": "Monticello",
+  "usda": true,
+  "gov": "https://www.jeffersoncountyfl.gov",
+  "cities": [
+   "Lamont",
+   "Lloyd",
+   "Monticello",
+   "Wacissa"
+  ],
+  "bases": [],
+  "school": "https://www.jeffersonschools.net",
+  "sheriff": "https://www.jcso-fl.org",
+  "appraiser": "https://jeffersonpa.net",
+  "paper": "https://www.ecbpublishing.com"
+ },
+ {
+  "name": "Lafayette",
+  "slug": "lafayette-county",
+  "seat": "Mayo",
+  "usda": true,
+  "gov": "https://lafayettecountyfl.org",
+  "cities": [
+   "Day",
+   "Mayo"
+  ],
+  "bases": [],
+  "school": "https://www.lafayette.k12.fl.us",
+  "sheriff": "https://www.lafayetteso.org",
+  "appraiser": "https://www.lafayettepa.com",
+  "paper": "https://riverbendnews.org/"
+ },
+ {
+  "name": "Lake",
+  "slug": "lake-county",
+  "seat": "Tavares",
+  "usda": true,
+  "gov": "https://www.lakecountyfl.gov",
+  "cities": [
+   "Altoona",
+   "Astatula",
+   "Astor",
+   "Clermont",
+   "Eustis",
+   "Ferndale",
+   "Fruitland Park",
+   "Grand Island",
+   "Groveland",
+   "Howey In The Hills",
+   "Lady Lake",
+   "Leesburg",
+   "Mascotte",
+   "Minneola",
+   "Montverde"
+  ],
+  "bases": [],
+  "school": "https://www.lake.k12.fl.us",
+  "sheriff": "https://www.lcso.org",
+  "appraiser": "https://www.lakecopropappr.com",
+  "paper": "https://www.dailycommercial.com"
+ },
+ {
+  "name": "Lee",
+  "slug": "lee-county",
+  "seat": "Fort Myers",
+  "usda": true,
+  "gov": "https://www.leegov.com",
+  "cities": [
+   "Alva",
+   "Boca Grande",
+   "Bokeelia",
+   "Bonita Springs",
+   "Cape Coral",
+   "Captiva",
+   "Estero",
+   "Fort Myers",
+   "Fort Myers Beach",
+   "Lehigh Acres",
+   "North Fort Myers",
+   "Pineland",
+   "Saint James City",
+   "Sanibel"
+  ],
+  "bases": [],
+  "school": "https://www.leeschools.net",
+  "sheriff": "https://www.sheriffleefl.org",
+  "appraiser": "https://www.leepa.org",
+  "paper": "https://www.news-press.com"
+ },
+ {
+  "name": "Leon",
+  "slug": "leon-county",
+  "seat": "Tallahassee",
+  "usda": true,
+  "gov": "https://cms.leoncountyfl.gov",
+  "cities": [
+   "Tallahassee",
+   "Woodville"
+  ],
+  "bases": [],
+  "school": "https://www.leonschools.net",
+  "sheriff": "https://www.leoncountyso.com",
+  "appraiser": "https://www.leonpa.gov",
+  "paper": "https://www.tallahassee.com"
+ },
+ {
+  "name": "Levy",
+  "slug": "levy-county",
+  "seat": "Bronson",
+  "usda": true,
+  "gov": "https://www.levycounty.org",
+  "cities": [
+   "Bronson",
+   "Cedar Key",
+   "Chiefland",
+   "Gulf Hammock",
+   "Inglis",
+   "Morriston",
+   "Otter Creek",
+   "Williston",
+   "Yankeetown"
+  ],
+  "bases": [],
+  "school": "https://www.levyk12.org",
+  "sheriff": "https://www.levyso.com",
+  "appraiser": "https://www.qpublic.net/fl/levy",
+  "paper": "https://www.chieflandcitizen.com"
+ },
+ {
+  "name": "Liberty",
+  "slug": "liberty-county",
+  "seat": "Bristol",
+  "usda": true,
+  "gov": "https://libertycountyfl.org",
+  "cities": [
+   "Bristol",
+   "Hosford",
+   "Sumatra",
+   "Telogia"
+  ],
+  "bases": [],
+  "school": "https://www.lcsb.org",
+  "sheriff": "https://libertycountysheriff.org",
+  "appraiser": "https://libertypa.org",
+  "paper": "https://www.cljnews.com"
+ },
+ {
+  "name": "Madison",
+  "slug": "madison-county",
+  "seat": "Madison",
+  "usda": true,
+  "gov": "https://www.madisoncountyfl.com",
+  "cities": [
+   "Greenville",
+   "Lee",
+   "Madison",
+   "Pinetta"
+  ],
+  "bases": [],
+  "school": "https://www.madison.k12.fl.us",
+  "sheriff": "https://madisonflsheriff.org",
+  "appraiser": "https://madisonpa.com",
+  "paper": "https://www.greenepublishing.com"
+ },
+ {
+  "name": "Manatee",
+  "slug": "manatee-county",
+  "seat": "Bradenton",
+  "usda": true,
+  "gov": "https://www.mymanatee.org",
+  "cities": [
+   "Anna Maria",
+   "Bradenton",
+   "Bradenton Beach",
+   "Cortez",
+   "Ellenton",
+   "Holmes Beach",
+   "Myakka City",
+   "Oneco",
+   "Palmetto",
+   "Parrish",
+   "Sarasota",
+   "Tallevast",
+   "Terra Ceia"
+  ],
+  "bases": [],
+  "school": "https://www.manateeschools.net",
+  "sheriff": "https://www.manateesheriff.com",
+  "appraiser": "https://www.manateepao.gov",
+  "paper": "https://www.bradenton.com"
+ },
+ {
+  "name": "Marion",
+  "slug": "marion-county",
+  "seat": "Ocala",
+  "usda": true,
+  "gov": "https://www.marionfl.org",
+  "cities": [
+   "Anthony",
+   "Belleview",
+   "Candler",
+   "Citra",
+   "Dunnellon",
+   "Eastlake Weir",
+   "Evinston",
+   "Fairfield",
+   "Fort Mc Coy",
+   "Lowell",
+   "Mc Intosh",
+   "Ocala",
+   "Ocklawaha",
+   "Orange Lake",
+   "Orange Springs"
+  ],
+  "bases": [],
+  "school": "https://www.marionschools.net",
+  "sheriff": "https://www.marionso.com",
+  "appraiser": "https://www.pa.marion.fl.us",
+  "paper": "https://www.ocala.com"
+ },
+ {
+  "name": "Martin",
+  "slug": "martin-county",
+  "seat": "Stuart",
+  "usda": true,
+  "gov": "https://www.martin.fl.us",
+  "cities": [
+   "Hobe Sound",
+   "Indiantown",
+   "Jensen Beach",
+   "Palm City",
+   "Port Salerno",
+   "Stuart"
+  ],
+  "bases": [],
+  "school": "https://www.martinschools.org",
+  "sheriff": "https://www.mcsofl.org",
+  "appraiser": "https://www.pamartinfl.gov",
+  "paper": "https://www.tcpalm.com"
+ },
+ {
+  "name": "Miami-Dade",
+  "slug": "miami-dade-county",
+  "seat": "Miami",
+  "usda": false,
+  "gov": "https://www.miamidade.gov",
+  "cities": [
+   "Coral Gables",
+   "Hialeah",
+   "Homestead",
+   "Key Biscayne",
+   "Miami",
+   "Miami Beach",
+   "Miami Gardens",
+   "North Miami Beach",
+   "Opa Locka"
+  ],
+  "bases": [
+   "Homestead Air Reserve Base",
+   "U.S. Southern Command (SOUTHCOM, Doral)",
+   "Coast Guard Air Station Miami"
+  ],
+  "school": "https://www.dadeschools.net",
+  "sheriff": "https://www.miamidade.gov/global/police/home.page",
+  "appraiser": "https://www.miamidadepa.gov/pa/home.page",
+  "paper": "https://www.miamiherald.com"
+ },
+ {
+  "name": "Monroe",
+  "slug": "monroe-county",
+  "seat": "Key West",
+  "usda": false,
+  "gov": "https://www.monroecounty-fl.gov",
+  "cities": [
+   "Big Pine Key",
+   "Islamorada",
+   "Key Colony Beach",
+   "Key Largo",
+   "Key West",
+   "Long Key",
+   "Marathon",
+   "Marathon Shores",
+   "Summerland Key",
+   "Tavernier"
+  ],
+  "bases": [
+   "Naval Air Station Key West",
+   "Coast Guard Sector Key West"
+  ],
+  "school": "https://www.keysschools.com",
+  "sheriff": "https://www.keysso.net",
+  "appraiser": "https://www.mcpafl.org",
+  "paper": "https://www.keysnews.com"
+ },
+ {
+  "name": "Nassau",
+  "slug": "nassau-county",
+  "seat": "Fernandina Beach",
+  "usda": true,
+  "gov": "https://www.nassaucountyfl.com",
+  "cities": [
+   "Bryceville",
+   "Callahan",
+   "Fernandina Beach",
+   "Hilliard",
+   "Yulee"
+  ],
+  "bases": [],
+  "school": "https://www.nassau.k12.fl.us",
+  "sheriff": "https://www.nassauso.com",
+  "appraiser": "https://www.ncpafl.com",
+  "paper": "https://www.fbnewsleader.com"
+ },
+ {
+  "name": "Okaloosa",
+  "slug": "okaloosa-county",
+  "seat": "Crestview",
+  "usda": true,
+  "gov": "https://myokaloosa.com",
+  "cities": [
+   "Baker",
+   "Crestview",
+   "Destin",
+   "Eglin Afb",
+   "Fort Walton Beach",
+   "Holt",
+   "Hurlburt Field",
+   "Laurel Hill",
+   "Mary Esther",
+   "Milligan",
+   "Niceville",
+   "Shalimar",
+   "Valparaiso"
+  ],
+  "bases": [
+   "Eglin Air Force Base",
+   "Hurlburt Field",
+   "Duke Field (919th Special Operations Wing)"
+  ],
+  "school": "https://www.okaloosaschools.com",
+  "sheriff": "https://www.sheriff-okaloosa.org",
+  "appraiser": "https://www.okaloosapa.com",
+  "paper": "https://www.nwfdailynews.com"
+ },
+ {
+  "name": "Okeechobee",
+  "slug": "okeechobee-county",
+  "seat": "Okeechobee",
+  "usda": true,
+  "gov": "https://www.okeechobeecountyfl.gov",
+  "cities": [
+   "Okeechobee"
+  ],
+  "bases": [],
+  "school": "https://www.okee.k12.fl.us",
+  "sheriff": "https://www.okeesheriff.org",
+  "appraiser": "https://www.okeechobeepa.com",
+  "paper": "https://www.lakeonews.com"
+ },
+ {
+  "name": "Orange",
+  "slug": "orange-county",
+  "seat": "Orlando",
+  "usda": true,
+  "gov": "https://www.ocfl.net",
+  "cities": [
+   "Apopka",
+   "Christmas",
+   "Clarcona",
+   "Goldenrod",
+   "Gotha",
+   "Killarney",
+   "Maitland",
+   "Oakland",
+   "Ocoee",
+   "Orlando",
+   "Plymouth",
+   "Tangerine",
+   "Windermere",
+   "Winter Garden",
+   "Winter Park"
+  ],
+  "bases": [
+   "Naval Support Activity Orlando (Team Orlando)"
+  ],
+  "school": "https://www.ocps.net",
+  "sheriff": "https://www.ocso.com",
+  "appraiser": "https://ocpaweb.ocpafl.org",
+  "paper": "https://www.orlandosentinel.com"
+ },
+ {
+  "name": "Osceola",
+  "slug": "osceola-county",
+  "seat": "Kissimmee",
+  "usda": true,
+  "gov": "https://www.osceola.org",
+  "cities": [
+   "Intercession City",
+   "Kenansville",
+   "Kissimmee",
+   "Saint Cloud"
+  ],
+  "bases": [],
+  "school": "https://www.osceolaschools.net",
+  "sheriff": "https://www.osceolasheriff.org",
+  "appraiser": "https://www.property-appraiser.org",
+  "paper": "https://www.aroundosceola.com"
+ },
+ {
+  "name": "Palm Beach",
+  "slug": "palm-beach-county",
+  "seat": "West Palm Beach",
+  "usda": true,
+  "gov": "https://discover.pbc.gov",
+  "cities": [
+   "Belle Glade",
+   "Boca Raton",
+   "Boynton Beach",
+   "Canal Point",
+   "Delray Beach",
+   "Greenacres",
+   "Jupiter",
+   "Lake Harbor",
+   "Lake Worth",
+   "Loxahatchee",
+   "North Palm Beach",
+   "Pahokee",
+   "Palm Beach",
+   "Palm Beach Gardens",
+   "Royal Palm Beach"
+  ],
+  "bases": [],
+  "school": "https://www.palmbeachschools.org",
+  "sheriff": "https://www.pbso.org",
+  "appraiser": "https://pbcpao.gov",
+  "paper": "https://www.palmbeachpost.com"
+ },
+ {
+  "name": "Pasco",
+  "slug": "pasco-county",
+  "seat": "Dade City",
+  "usda": true,
+  "gov": "https://www.pascocountyfl.gov",
+  "cities": [
+   "Aripeka",
+   "Crystal Springs",
+   "Dade City",
+   "Elfers",
+   "Holiday",
+   "Hudson",
+   "Lacoochee",
+   "Land O Lakes",
+   "New Port Richey",
+   "Port Richey",
+   "Saint Leo",
+   "San Antonio",
+   "Spring Hill",
+   "Trilby",
+   "Wesley Chapel"
+  ],
+  "bases": [],
+  "school": "https://www.pasco.k12.fl.us",
+  "sheriff": "https://www.pascosheriff.com",
+  "appraiser": "https://pascopa.gov",
+  "paper": "https://www.tampabay.com/news/pasco"
+ },
+ {
+  "name": "Pinellas",
+  "slug": "pinellas-county",
+  "seat": "Clearwater",
+  "usda": false,
+  "gov": "https://pinellas.gov",
+  "cities": [
+   "Bay Pines",
+   "Belleair Beach",
+   "Clearwater",
+   "Clearwater Beach",
+   "Crystal Beach",
+   "Dunedin",
+   "Indian Rocks Beach",
+   "Largo",
+   "Oldsmar",
+   "Ozona",
+   "Palm Harbor",
+   "Pinellas Park",
+   "Safety Harbor",
+   "Saint Petersburg",
+   "Seminole"
+  ],
+  "bases": [
+   "Coast Guard Air Station Clearwater",
+   "Coast Guard Sector St. Petersburg"
+  ],
+  "school": "https://www.pcsb.org",
+  "sheriff": "https://www.pinellassheriff.gov",
+  "appraiser": "https://www.pcpao.gov",
+  "paper": "https://www.tampabay.com"
+ },
+ {
+  "name": "Polk",
+  "slug": "polk-county",
+  "seat": "Bartow",
+  "usda": true,
+  "gov": "https://www.polkfl.gov",
+  "cities": [
+   "Alturas",
+   "Auburndale",
+   "Babson Park",
+   "Bartow",
+   "Bradley",
+   "Davenport",
+   "Dundee",
+   "Eagle Lake",
+   "Eaton Park",
+   "Fort Meade",
+   "Frostproof",
+   "Haines City",
+   "Highland City",
+   "Homeland",
+   "Indian Lake Estates"
+  ],
+  "bases": [
+   "Avon Park Air Force Range"
+  ],
+  "school": "https://www.polkschoolsfl.com",
+  "sheriff": "https://www.polksheriff.org",
+  "appraiser": "https://www.polkflpa.gov",
+  "paper": "https://www.theledger.com"
+ },
+ {
+  "name": "Putnam",
+  "slug": "putnam-county",
+  "seat": "Palatka",
+  "usda": true,
+  "gov": "https://www.putnam-fl.gov",
+  "cities": [
+   "Bostwick",
+   "Crescent City",
+   "East Palatka",
+   "Edgar",
+   "Florahome",
+   "Georgetown",
+   "Grandin",
+   "Hawthorne",
+   "Hollister",
+   "Interlachen",
+   "Lake Como",
+   "Melrose",
+   "Palatka",
+   "Pomona Park",
+   "Putnam Hall"
+  ],
+  "bases": [],
+  "school": "https://www.putnamschools.org",
+  "sheriff": "https://www.putnamsherifffl.com/",
+  "appraiser": "https://pa.putnam-fl.com",
+  "paper": "https://www.palatkadailynews.com"
+ },
+ {
+  "name": "Santa Rosa",
+  "slug": "santa-rosa-county",
+  "seat": "Milton",
+  "usda": true,
+  "gov": "https://santarosa.fl.gov",
+  "cities": [
+   "Bagdad",
+   "Gulf Breeze",
+   "Jay",
+   "Milton",
+   "Navarre"
+  ],
+  "bases": [
+   "Naval Air Station Whiting Field"
+  ],
+  "school": "https://www.santarosaschools.org",
+  "sheriff": "https://www.santarosasheriff.org",
+  "appraiser": "https://srcpa.gov",
+  "paper": "https://www.srpressgazette.com"
+ },
+ {
+  "name": "Sarasota",
+  "slug": "sarasota-county",
+  "seat": "Sarasota",
+  "usda": true,
+  "gov": "https://www.scgov.net",
+  "cities": [
+   "Englewood",
+   "Laurel",
+   "Longboat Key",
+   "Nokomis",
+   "North Port",
+   "Osprey",
+   "Sarasota",
+   "Venice"
+  ],
+  "bases": [],
+  "school": "https://www.sarasotacountyschools.net",
+  "sheriff": "https://www.sarasotasheriff.org",
+  "appraiser": "https://www.sc-pa.com",
+  "paper": "https://www.heraldtribune.com"
+ },
+ {
+  "name": "Seminole",
+  "slug": "seminole-county",
+  "seat": "Sanford",
+  "usda": true,
+  "gov": "https://www.seminolecountyfl.gov",
+  "cities": [
+   "Altamonte Springs",
+   "Casselberry",
+   "Geneva",
+   "Lake Mary",
+   "Lake Monroe",
+   "Longwood",
+   "Mid Florida",
+   "Oviedo",
+   "Sanford",
+   "Winter Springs"
+  ],
+  "bases": [],
+  "school": "https://www.scps.k12.fl.us",
+  "sheriff": "https://www.seminolesheriff.org",
+  "appraiser": "https://www.scpafl.org",
+  "paper": "https://www.orlandosentinel.com"
+ },
+ {
+  "name": "St. Johns",
+  "slug": "st-johns-county",
+  "seat": "St. Augustine",
+  "usda": true,
+  "gov": "https://www.sjcfl.us",
+  "cities": [
+   "Elkton",
+   "Hastings",
+   "Ponte Vedra",
+   "Ponte Vedra Beach",
+   "Saint Augustine",
+   "Saint Johns"
+  ],
+  "bases": [
+   "St. Francis Barracks (FL National Guard HQ, St. Augustine)"
+  ],
+  "school": "https://www.stjohns.k12.fl.us",
+  "sheriff": "https://www.sjso.org",
+  "appraiser": "https://www.sjcpa.gov",
+  "paper": "https://www.staugustine.com"
+ },
+ {
+  "name": "St. Lucie",
+  "slug": "st-lucie-county",
+  "seat": "Fort Pierce",
+  "usda": true,
+  "gov": "https://www.stlucieco.gov",
+  "cities": [
+   "Fort Pierce",
+   "Port Saint Lucie"
+  ],
+  "bases": [],
+  "school": "https://www.stlucie.k12.fl.us",
+  "sheriff": "https://www.stluciesheriff.com",
+  "appraiser": "https://www.paslc.gov",
+  "paper": "https://www.tcpalm.com"
+ },
+ {
+  "name": "Sumter",
+  "slug": "sumter-county",
+  "seat": "Bushnell",
+  "usda": true,
+  "gov": "https://www.sumtercountyfl.gov",
+  "cities": [
+   "Bushnell",
+   "Center Hill",
+   "Coleman",
+   "Lake Panasoffkee",
+   "Oxford",
+   "Sumterville",
+   "The Villages",
+   "Webster",
+   "Wildwood"
+  ],
+  "bases": [],
+  "school": "https://www.sumter.k12.fl.us",
+  "sheriff": "https://www.sumtercountysheriff.org",
+  "appraiser": "https://www.sumterpa.com",
+  "paper": "https://www.thevillagesdailysun.com"
+ },
+ {
+  "name": "Suwannee",
+  "slug": "suwannee-county",
+  "seat": "Live Oak",
+  "usda": true,
+  "gov": "https://suwanneecountyfl.gov",
+  "cities": [
+   "Branford",
+   "Live Oak",
+   "Mc Alpin",
+   "O Brien",
+   "Wellborn"
+  ],
+  "bases": [],
+  "school": "https://www.suwannee.k12.fl.us",
+  "sheriff": "https://www.suwanneesheriff.com",
+  "appraiser": "https://www.suwanneepa.com",
+  "paper": "https://valdostadailytimes.com/wp-content/uploads/sites/3/2024/12/8b9db2d2da97cde61651f5160386a61c.jpg"
+ },
+ {
+  "name": "Taylor",
+  "slug": "taylor-county",
+  "seat": "Perry",
+  "usda": true,
+  "gov": "https://www.taylorcountygov.com",
+  "cities": [
+   "Perry",
+   "Salem",
+   "Shady Grove",
+   "Steinhatchee"
+  ],
+  "bases": [],
+  "school": "https://www.taylor.k12.fl.us",
+  "sheriff": "https://taylorsheriff.org",
+  "appraiser": "https://www.qpublic.net/fl/taylor/",
+  "paper": "https://www.perrynewspapers.com"
+ },
+ {
+  "name": "Union",
+  "slug": "union-county",
+  "seat": "Lake Butler",
+  "usda": true,
+  "gov": "https://unioncounty-fl.gov",
+  "cities": [
+   "Lake Butler",
+   "Raiford",
+   "Worthington Springs"
+  ],
+  "bases": [],
+  "school": "https://www.union.k12.fl.us",
+  "sheriff": "http://www.unionsheriff.us",
+  "appraiser": "https://union.floridapa.com",
+  "paper": ""
+ },
+ {
+  "name": "Volusia",
+  "slug": "volusia-county",
+  "seat": "DeLand",
+  "usda": true,
+  "gov": "https://www.volusia.org",
+  "cities": [
+   "Barberville",
+   "Cassadaga",
+   "Daytona Beach",
+   "De Leon Springs",
+   "Debary",
+   "Deland",
+   "Deltona",
+   "Edgewater",
+   "Glenwood",
+   "Lake Helen",
+   "New Smyrna Beach",
+   "Oak Hill",
+   "Orange City",
+   "Ormond Beach",
+   "Osteen"
+  ],
+  "bases": [],
+  "school": "https://www.vcsedu.org",
+  "sheriff": "https://www.volusiasheriff.gov",
+  "appraiser": "https://vcpa.vcgov.org",
+  "paper": "https://www.news-journalonline.com"
+ },
+ {
+  "name": "Wakulla",
+  "slug": "wakulla-county",
+  "seat": "Crawfordville",
+  "usda": true,
+  "gov": "https://www.mywakulla.com",
+  "cities": [
+   "Crawfordville",
+   "Panacea",
+   "Saint Marks",
+   "Sopchoppy"
+  ],
+  "bases": [],
+  "school": "https://www.wakullaschooldistrict.org",
+  "sheriff": "https://www.wcso.org",
+  "appraiser": "https://mywakullapa.com",
+  "paper": "https://www.chronicleonline.com/weeklies/wakulla_news"
+ },
+ {
+  "name": "Walton",
+  "slug": "walton-county",
+  "seat": "DeFuniak Springs",
+  "usda": true,
+  "gov": "https://www.mywaltonfl.gov",
+  "cities": [
+   "Argyle",
+   "Defuniak Springs",
+   "Freeport",
+   "Miramar Beach",
+   "Mossy Head",
+   "Paxton",
+   "Point Washington",
+   "Ponce De Leon",
+   "Rosemary Beach",
+   "Santa Rosa Beach"
+  ],
+  "bases": [],
+  "school": "https://www.walton.k12.fl.us",
+  "sheriff": "https://www.waltonso.org",
+  "appraiser": "https://waltonpa.com",
+  "paper": "https://www.defuniakherald.com"
+ },
+ {
+  "name": "Washington",
+  "slug": "washington-county",
+  "seat": "Chipley",
+  "usda": true,
+  "gov": "https://www.washingtonfl.com",
+  "cities": [
+   "Caryville",
+   "Chipley",
+   "Ebro",
+   "Vernon",
+   "Wausau"
+  ],
+  "bases": [],
+  "school": "https://www.wcsdschools.com",
+  "sheriff": "https://wcso.us",
+  "appraiser": "https://www.qpublic.net/fl/washington/",
+  "paper": "https://www.chipleypaper.com"
+ }
+]

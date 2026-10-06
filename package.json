@@ -1,0 +1,14 @@
+{
+  "name": "florida-hometown-heroes",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node test/calculator.test.js && node test/county-news.test.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.5.0"
+  }
+}

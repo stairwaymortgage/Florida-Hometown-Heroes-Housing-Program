@@ -1,0 +1,44 @@
+---
+// Hub: lists all 67 county housing program pages.
+import Base from '../layouts/Base.astro';
+import { counties, countyFacts, pageSlug, usd, SITE, NMLS } from '../lib/county.js';
+
+const rows = counties.map((c) => ({ c, f: countyFacts(c) }));
+const title = 'Florida County Housing Programs 2026: Hometown Heroes Limits for All 67 Counties';
+const description = 'Every Florida county: 2026 Hometown Heroes income limits, loan limits and the county\'s own SHIP-funded down payment program. Pick your county.';
+const head = `<title>${title}</title>
+  <meta name="description" content="${description.replace(/"/g, '&quot;')}">
+  <link rel="canonical" href="${SITE}/florida-county-housing-programs">`;
+---
+<Base head={head}>
+  <main>
+    <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">All 67 counties · 2026</span>
+        <h1>Florida County Housing Programs</h1>
+        <p class="hero-sub">Hometown Heroes income and loan limits for every Florida county, plus each county's own down payment assistance. Part of the <a href="/">Florida Hometown Heroes Housing Program</a> guide.</p>
+      </div>
+    </section>
+    <section class="section-white">
+      <div class="section-inner">
+        <p>Choose your county to see its 2026 limits, eligible jobs, local news and how the county's SHIP-funded program compares with Hometown Heroes.</p>
+        <div class="table-wrap">
+          <table class="county-table">
+            <thead><tr><th>County</th><th>County seat</th><th>Income limit (FHA/VA/HFA)</th><th>Income limit (USDA)</th></tr></thead>
+            <tbody>
+              {rows.map(({ c, f }) => (
+                <tr>
+                  <td><a href={`/${pageSlug(c)}`}>{c.name} County Housing Program</a></td>
+                  <td>{c.seat}</td>
+                  <td>{usd(f.income)}</td>
+                  <td>{usd(f.usdaIncome)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:13px;margin-top:1rem;">TBA funding option limits, Florida Housing Finance Corporation. Jim Blackburn, {NMLS} · Stairway Mortgage. Equal Housing Opportunity.</p>
+      </div>
+    </section>
+  </main>
+</Base>

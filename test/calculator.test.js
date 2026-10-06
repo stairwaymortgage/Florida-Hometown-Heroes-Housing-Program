@@ -4,8 +4,8 @@
    coverage: config-derived rates (TBA/Bond) and null-MI handling.
    ============================================================ */
 var assert = require('assert');
-var calc = require('../js/calculator.js');
-var config = require('../config/program-2026.json');
+var calc = require('../public/js/calculator.js');
+var config = require('../public/config/program-2026.json');
 
 var pass = 0;
 function eq(name, got, want) {

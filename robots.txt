@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://floridahometownheroeshousingprogram2026.com/sitemap.xml
