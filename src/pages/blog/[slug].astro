@@ -1,0 +1,133 @@
+---
+// Blog post: /blog/{slug}
+// One page per Markdown file in src/content/blog/. The n8n "Blog Auto-Post"
+// workflow writes those files; this route renders them with the site's design
+// system plus Article + FAQPage + BreadcrumbList JSON-LD for answer engines.
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+const SITE = 'https://floridahometownheroeshousingprogram2026.com';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.draft !== true);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const d = post.data;
+const url = `${SITE}/blog/${post.id}`;
+const iso = (x) => new Date(x).toISOString();
+const dateFmt = (x) =>
+  new Date(x).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+const esc = (s) => String(s).replace(/"/g, '&quot;');
+
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Florida Hometown Heroes Housing Program', item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog` },
+    { '@type': 'ListItem', position: 3, name: d.title, item: url },
+  ],
+};
+const author = { '@type': 'Person', name: d.author };
+if (d.nmls) author.identifier = `NMLS #${d.nmls}`;
+const article = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.title,
+  description: d.description,
+  datePublished: iso(d.pubDate),
+  dateModified: iso(d.pubDate),
+  author,
+  publisher: { '@type': 'Organization', name: 'Stairway Mortgage' },
+  mainEntityOfPage: url,
+};
+if (d.heroImage) article.image = d.heroImage;
+const jsonld = [breadcrumb, article];
+if (d.faq && d.faq.length) {
+  jsonld.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: d.faq.map((x) => ({
+      '@type': 'Question',
+      name: x.q,
+      acceptedAnswer: { '@type': 'Answer', text: x.a },
+    })),
+  });
+}
+
+// Built as plain strings (no nested template literals) so the Astro compiler
+// parses the <script> block cleanly.
+const ogImage = d.heroImage
+  ? '<meta property="og:image" content="' + esc(d.heroImage) + '">'
+  : '';
+const head = `<title>${d.title}</title>
+  <meta name="description" content="${esc(d.description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${esc(d.title)}">
+  <meta property="og:description" content="${esc(d.description)}">
+  <meta property="og:type" content="article">
+  ${ogImage}
+  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+---
+<Base head={head}>
+  <main>
+    <article>
+      <section class="hero hero-contact" style="padding:3rem 1.5rem 2.5rem;">
+        <div class="hero-inner">
+          {d.county && <span class="hero-eyebrow">{d.county} County, Florida</span>}
+          <h1>{d.title}</h1>
+          <p class="hero-sub">{d.description}</p>
+        </div>
+      </section>
+
+      <section class="section-white">
+        <div class="section-inner narrow">
+          <p style="font-size:14px;margin-bottom:1.5rem;"><a href="/">Hometown Heroes</a> › <a href="/blog">Blog</a> › {d.title}</p>
+
+          {d.heroImage && (
+            <img class="post-hero" src={d.heroImage} alt={d.heroAlt || d.title} width="1536" height="1024" />
+          )}
+
+          <p class="post-meta">By {d.author}{d.nmls ? `, NMLS #${d.nmls}` : ''} · {dateFmt(d.pubDate)}</p>
+
+          <div class="post-body">
+            <Content />
+          </div>
+        </div>
+      </section>
+
+      {d.faq && d.faq.length > 0 && (
+        <section class="section-white">
+          <div class="section-inner narrow">
+            <span class="eyebrow">FAQ</span>
+            <h2>Frequently asked questions</h2>
+            <div class="faq-list">
+              {d.faq.map((x) => (
+                <details class="faq-item">
+                  <summary>{x.q}</summary>
+                  <div class="faq-answer"><p>{x.a}</p></div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section class="section-white">
+        <div class="section-inner narrow">
+          <div class="cta-banner" style="background:var(--navy);">
+            <h3>See where you stand</h3>
+            <p>Our team, led by {d.author}{d.nmls ? `, NMLS #${d.nmls}` : ''}, reviews your occupation, income and which assistance fits{d.county ? ` in ${d.county} County` : ''}. No credit pull to start.</p>
+            <a href="/contact-us?src=blog" class="btn btn-orange">Talk to Our Team →</a>
+          </div>
+          <p style="font-size:13px;margin-top:1.5rem;">{d.author}{d.nmls ? `, NMLS #${d.nmls}` : ''} · Stairway Mortgage. Program terms, limits and funding availability are set by Florida Housing Finance Corporation and can change. Funding is first come, first served. Estimates are not a commitment to lend. Equal Housing Opportunity.</p>
+          <p><a href="/blog">← More Hometown Heroes guides</a></p>
+        </div>
+      </section>
+    </article>
+  </main>
+</Base>

@@ -1222,3 +1222,40 @@ table.county-table td:first-child {
 }
 .funding-banner strong { color: var(--text-inverse); }
 .funding-asof { font-size: 13px; font-weight: 400; color: rgba(255, 255, 255, 0.8); }
+/* ============================================
+   BLOG  (index cards + post body / "prose")
+   Tokens only; all text/bg pairs AA on white.
+   ============================================ */
+.blog-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.75rem; }
+.blog-card { display: grid; grid-template-columns: 220px 1fr; gap: 1.25rem; align-items: start;
+  border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: var(--white); }
+.blog-card-media { display: block; }
+.blog-card-media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.blog-card-body { padding: 1.25rem 1.25rem 1.25rem 0; }
+.blog-card-body h2 { font-size: var(--h3-size); margin: 0.35rem 0 0.5rem; }
+.blog-card-body h2 a { color: var(--navy); text-decoration: none; }
+.blog-card-body h2 a:hover { text-decoration: underline; }
+.blog-card-body p { color: var(--text-body); margin: 0 0 0.5rem; }
+.blog-card-meta { font-size: 13px; color: var(--text-light); }
+
+.post-hero { display: block; width: 100%; height: auto; border-radius: var(--radius); margin: 0 0 1.25rem; }
+.post-meta { font-size: 14px; color: var(--text-light); margin: 0 0 1.75rem; }
+
+.post-body { color: var(--text-body); font-size: 17px; line-height: 1.7; }
+.post-body > :first-child { margin-top: 0; }
+.post-body h2 { color: var(--navy); font-size: var(--h2-size); margin: 2rem 0 0.75rem; }
+.post-body h3 { color: var(--navy); font-size: var(--h3-size); margin: 1.75rem 0 0.5rem; }
+.post-body p { margin: 0 0 1.1rem; }
+.post-body ul, .post-body ol { margin: 0 0 1.1rem; padding-left: 1.5rem; }
+.post-body li { margin: 0 0 0.4rem; }
+.post-body a { color: var(--blue-deep); }
+.post-body a:hover { color: var(--navy); }
+.post-body strong { color: var(--text); }
+.post-body blockquote { margin: 0 0 1.1rem; padding: 0.75rem 1.25rem; border-left: 4px solid var(--orange);
+  background: var(--surface-tint); color: var(--text); border-radius: 0 var(--radius) var(--radius) 0; }
+
+@media (max-width: 640px) {
+  .blog-card { grid-template-columns: 1fr; }
+  .blog-card-body { padding: 0 1.25rem 1.25rem; }
+  .post-body { font-size: 16px; }
+}

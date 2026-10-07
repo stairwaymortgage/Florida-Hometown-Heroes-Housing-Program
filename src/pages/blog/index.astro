@@ -1,0 +1,74 @@
+---
+// Blog index: /blog
+// Lists every published post (newest first). Posts are added automatically by
+// the n8n "Blog Auto-Post" workflow as Markdown files in src/content/blog/.
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const SITE = 'https://floridahometownheroeshousingprogram2026.com';
+const url = `${SITE}/blog`;
+
+const posts = (await getCollection('blog', ({ data }) => data.draft !== true))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const dateFmt = (d) =>
+  new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+const title = 'Hometown Heroes Blog: Florida Down Payment Help Guides';
+const description =
+  'Guides for Florida frontline workers on using the Hometown Heroes Housing Program with a first mortgage, county by county. From Stairway Mortgage.';
+const esc = (s) => s.replace(/"/g, '&quot;');
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: title,
+  url,
+  publisher: { '@type': 'Organization', name: 'Stairway Mortgage' },
+};
+const head = `<title>${title}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+---
+<Base head={head}>
+  <main>
+    <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Florida Hometown Heroes · Guides</span>
+        <h1>Hometown Heroes Blog</h1>
+        <p class="hero-sub">Plain-language guides for Florida frontline and community workers using the <a href="/">Hometown Heroes Housing Program</a> to buy a home.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <p style="font-size:14px;margin-bottom:1.5rem;"><a href="/">Hometown Heroes</a> › Blog</p>
+
+        {posts.length === 0 ? (
+          <p class="lead">New guides are on the way. In the meantime, see the <a href="/">Hometown Heroes program overview</a> or <a href="/florida-county-housing-programs">Florida county housing programs</a>.</p>
+        ) : (
+          <ul class="blog-list">
+            {posts.map((post) => (
+              <li class="blog-card">
+                {post.data.heroImage && (
+                  <a href={`/blog/${post.id}`} class="blog-card-media" aria-hidden="true" tabindex="-1">
+                    <img src={post.data.heroImage} alt={post.data.heroAlt || ''} loading="lazy" width="400" height="250" />
+                  </a>
+                )}
+                <div class="blog-card-body">
+                  {post.data.county && <span class="eyebrow">{post.data.county} County</span>}
+                  <h2><a href={`/blog/${post.id}`}>{post.data.title}</a></h2>
+                  <p>{post.data.description}</p>
+                  <p class="blog-card-meta">{dateFmt(post.data.pubDate)}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </section>
+  </main>
+</Base>
