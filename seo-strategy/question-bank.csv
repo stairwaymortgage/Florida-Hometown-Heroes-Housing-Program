@@ -1,0 +1,34 @@
+question,intent,funnel,audience,location,volume,volume_source,difficulty,serp_features,aeo_likelihood,cluster_id,current_url,current_position,source
+How does the Florida Hometown Heroes program work?,informational,awareness,all,statewide,H,estimated,M,"PAA,AIO",H,c-explainer,/,unknown,paa
+Is Florida Hometown Heroes a grant or do you pay it back?,informational,consideration,all,statewide,M,estimated,L,"PAA,AIO",H,c-grant,/,unknown,paa
+Is Hometown Heroes forgivable?,informational,consideration,all,statewide,M,estimated,L,PAA,H,c-grant,/,unknown,modifier
+How much down payment assistance does Hometown Heroes give?,informational,consideration,all,statewide,H,estimated,M,"PAA,AIO",H,c-amount,/,unknown,paa
+What is the maximum Hometown Heroes assistance?,informational,consideration,all,statewide,M,estimated,L,PAA,H,c-amount,/,unknown,modifier
+Who qualifies for Florida Hometown Heroes?,informational,consideration,all,statewide,H,estimated,M,"PAA,AIO",H,c-eligibility,/eligible-occupations,unknown,paa
+What jobs are eligible for Hometown Heroes?,informational,consideration,all,statewide,M,estimated,M,PAA,H,c-eligibility,/eligible-occupations,unknown,competitor:supermoney.com
+Can teachers use Florida Hometown Heroes?,informational,consideration,teachers,statewide,M,estimated,L,PAA,H,c-teachers,/eligible-occupations,unknown,modifier
+Do nurses qualify for Hometown Heroes?,informational,consideration,healthcare,statewide,M,estimated,L,PAA,H,c-nurses,/eligible-occupations,unknown,modifier
+Can police officers get Hometown Heroes down payment help?,informational,consideration,law enforcement,statewide,L,estimated,L,PAA,H,c-police,/eligible-occupations,unknown,modifier
+How do firefighters use Hometown Heroes?,informational,consideration,firefighters,statewide,L,estimated,L,PAA,M,c-fire,/eligible-occupations,unknown,modifier
+Do EMTs and paramedics qualify for Hometown Heroes?,informational,consideration,ems,statewide,L,estimated,L,PAA,M,c-emt,/eligible-occupations,unknown,modifier
+Can corrections officers use Hometown Heroes?,informational,consideration,corrections,statewide,L,estimated,L,PAA,M,c-corrections,/eligible-occupations,unknown,modifier
+Can military members and veterans combine Hometown Heroes with a VA loan?,informational,consideration,military,statewide,M,estimated,M,PAA,H,c-military,/eligible-occupations,unknown,modifier
+Does working remotely disqualify me from Hometown Heroes?,informational,consideration,all,statewide,L,estimated,L,PAA,M,c-eligibility,/eligible-occupations,unknown,reddit
+Can you use Hometown Heroes with an FHA loan?,informational,consideration,first-time buyer,statewide,M,estimated,M,PAA,H,c-fha,/loan-calculator,unknown,modifier
+Can you use Hometown Heroes with a conventional loan?,informational,consideration,first-time buyer,statewide,M,estimated,M,PAA,H,c-conv,/loan-calculator,unknown,modifier
+How do first-time buyers use Hometown Heroes?,informational,consideration,first-time buyer,statewide,M,estimated,M,PAA,M,c-ftb,/,unknown,modifier
+How much can I earn and still qualify for Hometown Heroes?,informational,decision,all,statewide,H,estimated,M,"PAA,AIO",H,c-income,/income-limits,unknown,paa
+Is Hometown Heroes income household or borrower only?,informational,decision,all,statewide,L,estimated,L,PAA,M,c-income,/income-limits,unknown,reddit
+What if my income is over the Hometown Heroes limit?,informational,decision,all,statewide,L,estimated,M,PAA,M,c-income,/income-limits,unknown,modifier
+Do I have to be a first-time buyer for Hometown Heroes?,informational,consideration,all,statewide,M,estimated,L,PAA,H,c-ftb,/,unknown,modifier
+When will Hometown Heroes funding run out?,informational,decision,all,statewide,M,estimated,M,"PAA,news",M,c-funding,/,unknown,news
+Can I combine Hometown Heroes with my county down payment program?,informational,decision,all,statewide,L,estimated,M,PAA,M,c-combine,/florida-county-housing-programs,unknown,modifier
+Does the Hometown Heroes second mortgage have a monthly payment?,informational,decision,all,statewide,L,estimated,L,PAA,H,c-explainer,/loan-calculator,unknown,reddit
+What credit score do I need for Hometown Heroes?,informational,decision,all,statewide,M,estimated,L,PAA,H,c-eligibility,/eligible-occupations,unknown,modifier
+What is the Hometown Heroes income limit in Miami-Dade County?,local,decision,all,Miami-Dade,M,estimated,M,"PAA,localpack",H,c-income-local,/miami-dade-county-housing-program,unknown,modifier
+What is the Hometown Heroes income limit in Broward County?,local,decision,all,Broward,M,estimated,M,PAA,H,c-income-local,/broward-county-housing-program,unknown,modifier
+Hometown Heroes for teachers in Orange County,local,consideration,teachers,Orange,L,estimated,L,PAA,M,c-teachers-local,/orange-county-housing-program,unknown,modifier
+Down payment assistance for nurses in Hillsborough County,local,consideration,healthcare,Hillsborough,L,estimated,L,PAA,M,c-nurses-local,/hillsborough-county-housing-program,unknown,competitor:movewithmomentum.com
+Does Palm Beach County have its own down payment assistance program?,local,decision,all,Palm Beach,L,estimated,M,PAA,M,c-combine,/palm-beach-county-housing-program,unknown,modifier
+How do I apply for Hometown Heroes?,transactional,decision,all,statewide,M,estimated,M,PAA,M,c-apply,/contact-us,unknown,modifier
+Who are the Hometown Heroes approved lenders in Florida?,navigational,decision,all,statewide,M,estimated,M,PAA,M,c-apply,/contact-us,unknown,modifier
