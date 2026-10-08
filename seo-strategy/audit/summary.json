@@ -1,0 +1,53 @@
+{
+  "site": "https://floridahometownheroeshousingprogram2026.com",
+  "crawledAt": "2026-10-07T22:14:31.902Z",
+  "pagesCrawled": 1,
+  "indexablePages": 0,
+  "sitemapUrls": 0,
+  "hitMaxLimit": false,
+  "hasLlmsTxt": false,
+  "aiBots": {
+    "GPTBot": "allowed",
+    "OAI-SearchBot": "allowed",
+    "ChatGPT-User": "allowed",
+    "PerplexityBot": "allowed",
+    "ClaudeBot": "allowed",
+    "Claude-Web": "allowed",
+    "anthropic-ai": "allowed",
+    "Google-Extended": "allowed",
+    "CCBot": "allowed",
+    "Applebot-Extended": "allowed"
+  },
+  "avgWords": 0,
+  "questionHeadingShare": 0,
+  "pagesWithFaqSchema": 0,
+  "schemaTypes": {},
+  "sections": {},
+  "issues": [
+    {
+      "sev": "Critical",
+      "code": "BROKEN",
+      "msg": "Pages not returning 200",
+      "count": 1,
+      "urls": [
+        "https://floridahometownheroeshousingprogram2026.com/ (403)"
+      ]
+    },
+    {
+      "sev": "Medium",
+      "code": "NO_LLMS_TXT",
+      "msg": "AEO: no /llms.txt",
+      "count": 1,
+      "urls": [
+        "https://floridahometownheroeshousingprogram2026.com/llms.txt"
+      ]
+    },
+    {
+      "sev": "High",
+      "code": "NO_SITEMAP",
+      "msg": "No sitemap found (robots.txt or /sitemap.xml)",
+      "count": 1,
+      "urls": []
+    }
+  ]
+}

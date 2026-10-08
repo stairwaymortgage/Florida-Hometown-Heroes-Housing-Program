@@ -1,0 +1,3 @@
+Blog posts live here. The n8n "Blog Auto-Post" workflow commits one <slug>.md
+file per post into this folder; Astro's content collection (src/content.config.ts)
+renders each at /blog/<slug>. This placeholder keeps the folder in git while empty.

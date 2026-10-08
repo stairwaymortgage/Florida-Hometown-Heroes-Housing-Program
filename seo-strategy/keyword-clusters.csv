@@ -1,0 +1,22 @@
+cluster_id,primary_question,supporting_questions,intent,target_url,page_type,priority,notes
+c-explainer,How does the Florida Hometown Heroes program work?,Does the second mortgage have a monthly payment?|Is it 0% interest?|How is the 5% calculated?,informational,/,pillar,P1,Home pillar. Add FAQ schema.
+c-grant,Is Florida Hometown Heroes a grant or do you pay it back?,Is it forgivable?|When do I repay it?,informational,/,pillar,P1,Best AEO gap. Own the 'not a grant' answer.
+c-amount,How much down payment assistance does Hometown Heroes give?,What is the maximum?|What is the minimum?,informational,/,pillar,P1,5% / $10k-$35k.
+c-eligibility,Who qualifies for Florida Hometown Heroes?,What jobs are eligible?|What credit score?|Does remote work disqualify me?,informational,/eligible-occupations,hub,P1,Hub needs FAQ schema + question H2s + checklist.
+c-income,How much can I earn and still qualify for Hometown Heroes?,Household or borrower income?|What if I'm over the limit?,informational,/income-limits,hub,P1,Update 2025 tables to 2026 first.
+c-teachers,Can teachers use Florida Hometown Heroes?,Do school staff qualify?,informational,/eligible-occupations,audience,P1,Blog topic (noVA). High-volume audience.
+c-nurses,Do nurses and healthcare workers qualify for Hometown Heroes?,Which healthcare roles count?,informational,/eligible-occupations,audience,P1,Blog topic (noVA).
+c-fha,Can you use Hometown Heroes with an FHA loan?,How does the 5% work on FHA?,informational,/loan-calculator,article,P1,Blog topic. Calculator backs it.
+c-conv,Can you use Hometown Heroes with a conventional loan?,HFA Advantage?,informational,/loan-calculator,article,P2,Blog topic.
+c-police,Can police officers get Hometown Heroes down payment help?,,informational,/eligible-occupations,audience,P2,Blog topic (noVA).
+c-fire,How can firefighters use the Hometown Heroes program?,,informational,/eligible-occupations,audience,P2,Blog topic (noVA).
+c-emt,Do EMTs and paramedics qualify for Hometown Heroes?,,informational,/eligible-occupations,audience,P2,Blog topic (noVA).
+c-corrections,Can corrections officers use Hometown Heroes?,,informational,/eligible-occupations,audience,P2,Blog topic (noVA).
+c-military,Can military members and veterans combine Hometown Heroes with a VA loan?,First-time buyer waiver for vets?,informational,/eligible-occupations,audience,P2,Blog topic. VA allowed here only.
+c-ftb,How do first-time buyers use Hometown Heroes?,Do I have to be a first-time buyer?,informational,/,article,P2,Blog topic.
+c-combine,Can I combine Hometown Heroes with my county's program?,Does my county have its own DPA?,local,/florida-county-housing-programs,hub,P2,Pillar FAQ + county pages.
+c-funding,When will Hometown Heroes funding run out?,Is funding still available?,informational,/,faq,P2,Trend/news angle; first-come first-served.
+c-apply,How do I apply for Hometown Heroes?,Who are the approved lenders?,transactional,/contact-us,faq,P3,Conversion intent.
+c-income-local,What is the Hometown Heroes income limit in {county}?,,local,/{county}-county-housing-program,local,P1,Owned by county pages (already live).
+c-teachers-local,Hometown Heroes for teachers in {county},,local,/{county}-county-housing-program,local,P2,Blog spoke links to county page.
+c-nurses-local,Down payment assistance for nurses in {county},,local,/{county}-county-housing-program,local,P2,Blog spoke; beats movewithmomentum on structure.
