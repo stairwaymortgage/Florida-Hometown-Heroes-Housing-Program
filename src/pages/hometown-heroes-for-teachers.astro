@@ -1,0 +1,105 @@
+---
+// Profession page (Type B): teachers & school staff. Civilian — never imply VA.
+// Compliant: no rates/fees/"better"/guarantees. Draft for NEXA review.
+import Base from '../layouts/Base.astro';
+
+const SITE = 'https://floridahometownheroeshousingprogram2026.com';
+const url = `${SITE}/hometown-heroes-for-teachers`;
+const NMLS = 'NMLS #1072866';
+const contact = '/contact-us?src=teachers';
+
+const title = 'Hometown Heroes for Teachers in Florida: How It Works';
+const description = 'Florida teachers and school staff can use Hometown Heroes down payment assistance to buy a home. Who qualifies, how it works, and how to get started.';
+
+const faqs = [
+  { q: 'Can teachers use the Florida Hometown Heroes program?', a: 'Yes. Full-time K-12 teachers and many school staff employed by a Florida-based employer are eligible occupations for Hometown Heroes, buying a primary home within their county income and purchase-price limits.' },
+  { q: 'Does summer or 10-month pay affect qualifying?', a: 'It can be handled. Teacher pay schedules are common and lenders understand them; a broker can present your contract and pay history appropriately. Jim Blackburn, ' + NMLS + ', can review how your pay is structured.' },
+  { q: 'Do school support staff and administrators qualify?', a: 'Often yes — eligibility is based on your employer and role, not only the title "teacher." Bring your employment details and the lender confirms at reservation.' },
+  { q: 'Is Hometown Heroes assistance a grant for teachers?', a: 'No. It is a 0% interest deferred second mortgage with no monthly payment, repaid when you sell, refinance, pay off the first mortgage, or stop living in the home. It is never forgiven.' },
+  { q: 'How does a teacher get started?', a: 'Begin with a short review of your occupation and income against your county limit, with no credit pull to start. Jim Blackburn, ' + NMLS + ', and the Stairway Mortgage team can guide you.' },
+];
+
+const esc = (s) => String(s).replace(/"/g, '&quot;');
+const breadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: 'Florida Hometown Heroes Housing Program', item: `${SITE}/` },
+  { '@type': 'ListItem', position: 2, name: 'Eligible Occupations', item: `${SITE}/eligible-occupations` },
+  { '@type': 'ListItem', position: 3, name: 'For Teachers', item: url },
+] };
+const faqPage = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
+const jsonld = [breadcrumb, faqPage];
+const head = `<title>${title}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+---
+<Base head={head}>
+  <main>
+    <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Eligible occupations · Education</span>
+        <h1>Hometown Heroes for Teachers in Florida</h1>
+        <p class="hero-sub">Yes — full-time teachers and many school staff at a Florida-based employer can use Hometown Heroes down payment assistance to buy a primary home, within their county's income and price limits.</p>
+        <div class="hero-actions">
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+          <a href="/loan-calculator" class="btn btn-outline-white">Estimate My Assistance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <p style="font-size:14px;margin-bottom:1.5rem;"><a href="/">Hometown Heroes</a> › <a href="/eligible-occupations">Eligible Occupations</a> › Teachers</p>
+        <p class="lead">Teachers are a core Hometown Heroes audience. The program provides down payment and closing-cost help as a repayable 0% deferred second mortgage, used alongside your first mortgage to make a first home reachable sooner.</p>
+      </div>
+    </section>
+
+    <section class="section-blue">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Eligibility</span>
+        <h2>Which school employees qualify?</h2>
+        <p>Full-time employees of a Florida-based employer in education — K-12 teachers, and commonly administrators and support staff — are generally eligible, buying a primary residence within the county income and purchase-price limits. Eligibility is based on your employer and role. <a href="/eligible-occupations">See the full eligible-occupations list</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Income documentation</span>
+        <h2>How is a teacher's pay schedule handled?</h2>
+        <p>Ten-month and summer pay schedules are familiar to lenders. The key is documenting your contract and pay history clearly — and because Stairway Mortgage works as a broker across many lenders, Jim Blackburn, {NMLS}, can match your pay structure to a first mortgage that pairs with Hometown Heroes.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Next step</span>
+        <h2>How does a teacher start?</h2>
+        <p>Start with a short conversation about your role, your Florida school employer and your income against your county limit — no credit pull to start. A participating lender confirms eligibility and the final assistance figure at reservation, and funding is first come, first served.</p>
+        <div class="cta-banner" style="background:var(--navy);margin-top:2rem;">
+          <h3>See what you may qualify for</h3>
+          <p>Jim Blackburn, {NMLS}, and the Stairway Mortgage team review your occupation, income and goals.</p>
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">FAQ</span>
+        <h2>Teachers &amp; Hometown Heroes — common questions</h2>
+        <div class="faq-list">
+          {faqs.map((x) => (
+            <details class="faq-item">
+              <summary>{x.q}</summary>
+              <div class="faq-answer"><p>{x.a}</p></div>
+            </details>
+          ))}
+        </div>
+        <p style="font-size:13px;margin-top:1.5rem;">Jim Blackburn, {NMLS} · Stairway Mortgage. Educational information only; not a commitment to lend. Program terms, limits and funding availability are set by Florida Housing Finance Corporation and can change; funding is first come, first served. Equal Housing Opportunity.</p>
+        <p><a href="/eligible-occupations">← All eligible occupations</a></p>
+      </div>
+    </section>
+  </main>
+</Base>

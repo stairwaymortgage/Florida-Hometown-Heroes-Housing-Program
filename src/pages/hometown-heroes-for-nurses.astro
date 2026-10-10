@@ -1,0 +1,105 @@
+---
+// Profession page (Type B): nurses & healthcare workers. Civilian — never imply VA.
+// Compliant: no rates/fees/"better"/guarantees. Draft for NEXA review.
+import Base from '../layouts/Base.astro';
+
+const SITE = 'https://floridahometownheroeshousingprogram2026.com';
+const url = `${SITE}/hometown-heroes-for-nurses`;
+const NMLS = 'NMLS #1072866';
+const contact = '/contact-us?src=nurses';
+
+const title = 'Hometown Heroes for Nurses & Healthcare Workers in Florida';
+const description = 'Nurses and healthcare workers can use Florida Hometown Heroes down payment assistance. Who qualifies, how shift and per-diem income is handled, and how to start.';
+
+const faqs = [
+  { q: 'Can nurses use the Florida Hometown Heroes program?', a: 'Yes. Full-time healthcare workers employed by a Florida-based employer are among the eligible occupations for Hometown Heroes, buying a primary residence within their county income and purchase-price limits.' },
+  { q: 'Does shift differential or per-diem income count?', a: 'It often can, with the right documentation. A broker who works with healthcare income can help present shift differentials, overtime and per-diem history to a lender. Jim Blackburn, ' + NMLS + ', can review your pay structure.' },
+  { q: 'Do travel nurses qualify?', a: 'It depends on your employer and how your income is documented. Bring your contracts and recent pay history; the lender confirms eligibility at reservation.' },
+  { q: 'Is Hometown Heroes a grant for nurses?', a: 'No. It is a 0% interest deferred second mortgage with no monthly payment, repaid when you sell, refinance, pay off the first mortgage, or stop living in the home. It is never forgiven.' },
+  { q: 'How do nurses start a Hometown Heroes application?', a: 'Start with a short review of your occupation and income against your county limit. Jim Blackburn, ' + NMLS + ', and the Stairway Mortgage team can walk you through it with no credit pull to start.' },
+];
+
+const esc = (s) => String(s).replace(/"/g, '&quot;');
+const breadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: 'Florida Hometown Heroes Housing Program', item: `${SITE}/` },
+  { '@type': 'ListItem', position: 2, name: 'Eligible Occupations', item: `${SITE}/eligible-occupations` },
+  { '@type': 'ListItem', position: 3, name: 'For Nurses & Healthcare Workers', item: url },
+] };
+const faqPage = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
+const jsonld = [breadcrumb, faqPage];
+const head = `<title>${title}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+---
+<Base head={head}>
+  <main>
+    <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Eligible occupations · Healthcare</span>
+        <h1>Hometown Heroes for Nurses &amp; Healthcare Workers</h1>
+        <p class="hero-sub">Yes — full-time healthcare workers at a Florida-based employer can use Hometown Heroes down payment assistance to buy a primary home, within their county's income and price limits.</p>
+        <div class="hero-actions">
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+          <a href="/loan-calculator" class="btn btn-outline-white">Estimate My Assistance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <p style="font-size:14px;margin-bottom:1.5rem;"><a href="/">Hometown Heroes</a> › <a href="/eligible-occupations">Eligible Occupations</a> › Nurses &amp; Healthcare</p>
+        <p class="lead">Nurses, techs, therapists and other healthcare staff are exactly who Hometown Heroes was built for. The program provides down payment and closing-cost help as a repayable 0% deferred second mortgage, used alongside your first mortgage.</p>
+      </div>
+    </section>
+
+    <section class="section-blue">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Eligibility</span>
+        <h2>Which healthcare workers qualify?</h2>
+        <p>Full-time employees of a Florida-based employer in healthcare are generally eligible, buying a primary residence and meeting the county income and purchase-price limits. The occupation list is broad and based on your employer and role, not a single job title. <a href="/eligible-occupations">See the full eligible-occupations list</a>.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Income documentation</span>
+        <h2>How is nursing income — shifts, overtime, per-diem — handled?</h2>
+        <p>Healthcare pay is rarely a flat salary. Shift differentials, overtime and per-diem work can count toward qualifying when documented well, and this is where working with a broker helps: Stairway Mortgage shops many lenders and knows how to present healthcare income. Jim Blackburn, {NMLS}, can review your pay structure and which first mortgage pairs best with Hometown Heroes.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Next step</span>
+        <h2>How does a nurse start?</h2>
+        <p>Start with a short conversation about your role, your Florida employer and your income against your county limit — no credit pull to start. A participating lender confirms your eligibility and the final assistance figure at reservation, and funding is first come, first served.</p>
+        <div class="cta-banner" style="background:var(--navy);margin-top:2rem;">
+          <h3>See what you may qualify for</h3>
+          <p>Jim Blackburn, {NMLS}, and the Stairway Mortgage team review your occupation, income and goals.</p>
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">FAQ</span>
+        <h2>Nurses &amp; Hometown Heroes — common questions</h2>
+        <div class="faq-list">
+          {faqs.map((x) => (
+            <details class="faq-item">
+              <summary>{x.q}</summary>
+              <div class="faq-answer"><p>{x.a}</p></div>
+            </details>
+          ))}
+        </div>
+        <p style="font-size:13px;margin-top:1.5rem;">Jim Blackburn, {NMLS} · Stairway Mortgage. Educational information only; not a commitment to lend. Program terms, limits and funding availability are set by Florida Housing Finance Corporation and can change; funding is first come, first served. Equal Housing Opportunity.</p>
+        <p><a href="/eligible-occupations">← All eligible occupations</a></p>
+      </div>
+    </section>
+  </main>
+</Base>

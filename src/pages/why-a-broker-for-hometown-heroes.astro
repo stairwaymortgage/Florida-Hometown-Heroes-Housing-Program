@@ -1,0 +1,105 @@
+---
+// Comparison / "why Stairway" reference page (Type C).
+// Compliant: no rates/fees/"better"/guarantees; compares against CATEGORIES
+// (big banks / online lenders), never named competitors. Draft for NEXA review.
+import Base from '../layouts/Base.astro';
+
+const SITE = 'https://floridahometownheroeshousingprogram2026.com';
+const url = `${SITE}/why-a-broker-for-hometown-heroes`;
+const NMLS = 'NMLS #1072866';
+const contact = '/contact-us?src=why-broker';
+
+const title = 'Why Use a Mortgage Broker for Florida Hometown Heroes?';
+const description = 'A broker shops many lenders for your Hometown Heroes first mortgage, knows the program paperwork, and gives one point of contact. Here is how that compares to a big bank.';
+
+const faqs = [
+  { q: 'Do you have to use a specific lender for Hometown Heroes?', a: 'No. Hometown Heroes is reserved through any Florida Housing–approved participating lender, first come, first served. A broker that is approved can shop your first mortgage across many wholesale lenders while handling the program reservation.' },
+  { q: 'What does a mortgage broker do that a bank does not?', a: 'A broker submits one application to many wholesale lenders and compares program fit, instead of offering a single in-house menu. For a program like Hometown Heroes, that often means more first-mortgage options to pair with the assistance.' },
+  { q: 'Is a broker slower than a big bank or an online lender?', a: 'Not necessarily. Stairway Mortgage, led by Jim Blackburn, ' + NMLS + ', works as both a direct lender and a broker and gives you one point of contact, often with a same-day answer and no credit pull to start.' },
+  { q: 'Can a broker help if my income is self-employed or complex?', a: 'Yes. Stairway specializes in scenarios many big lenders decline — self-employed and 1099 income, investors, jumbo, condos and foreign-national buyers — which can matter when layering Hometown Heroes with a first mortgage.' },
+  { q: 'Who confirms my Hometown Heroes eligibility and assistance amount?', a: 'A participating lender confirms your occupation, income against your county limit, and the final assistance figure at reservation. Jim Blackburn, ' + NMLS + ', and the Stairway team can review your situation first with no credit pull.' },
+];
+
+const esc = (s) => String(s).replace(/"/g, '&quot;');
+const breadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: 'Florida Hometown Heroes Housing Program', item: `${SITE}/` },
+  { '@type': 'ListItem', position: 2, name: 'Why Use a Broker for Hometown Heroes', item: url },
+] };
+const faqPage = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
+const jsonld = [breadcrumb, faqPage];
+const head = `<title>${title}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+---
+<Base head={head}>
+  <main>
+    <section class="hero hero-contact" style="padding:3.5rem 1.5rem 3rem;">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Choosing a lender · Hometown Heroes</span>
+        <h1>Why Use a Mortgage Broker for Hometown Heroes?</h1>
+        <p class="hero-sub">Short answer: a broker shops your first mortgage across many lenders, knows the program paperwork, and gives you one point of contact — instead of a single in-house menu.</p>
+        <div class="hero-actions">
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+          <a href="/loan-calculator" class="btn btn-outline-white">Estimate My Assistance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <p style="font-size:14px;margin-bottom:1.5rem;"><a href="/">Hometown Heroes</a> › Why a broker</p>
+        <p class="lead">Florida Hometown Heroes is a down payment and closing-cost assistance program you use <em>alongside</em> a first mortgage. Who you choose for that first mortgage shapes your options — so it helps to understand how a broker differs from a big bank or an online lender.</p>
+      </div>
+    </section>
+
+    <section class="section-blue">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Options &amp; access</span>
+        <h2>How does a broker compare to a big bank for Hometown Heroes?</h2>
+        <p>A big bank or an online lender offers its own in-house loan menu. A mortgage broker submits one application and compares first-mortgage options across many wholesale lenders, then pairs the strongest fit with your Hometown Heroes assistance. Stairway Mortgage, led by Jim Blackburn, {NMLS}, works as both a direct lender and a licensed broker with access to a large network of wholesale partners — so you get choice without filling out multiple applications.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Scenario fit</span>
+        <h2>What if my income or property is not "standard"?</h2>
+        <p>This is where a broker often helps most. Stairway specializes in the scenarios large lenders frequently decline: self-employed and 1099 income documented with bank statements, investors, jumbo and non-warrantable condos, and foreign-national buyers. If your situation is not a simple W-2, having a team that knows these programs can keep Hometown Heroes on the table.</p>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">Process &amp; people</span>
+        <h2>Will I get a real person, and a fast answer?</h2>
+        <p>Yes. You work with one dedicated point of contact who knows your file, coordinates the title company, appraiser and insurance, and manages conditions proactively. You can often get a same-day answer with no credit pull to start. Jim Blackburn, {NMLS}, is a Scotsman Guide Top Producer who has personally closed over $500M in loans — experience that matters when a file gets complicated.</p>
+        <div class="cta-banner" style="background:var(--navy);margin-top:2rem;">
+          <h3>See which first mortgage fits your Hometown Heroes plan</h3>
+          <p>No credit pull to start. Jim Blackburn, {NMLS}, and the Stairway Mortgage team review your occupation, income and goals.</p>
+          <a href={contact} class="btn btn-orange">Talk to Our Team →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="section-inner narrow">
+        <span class="eyebrow">FAQ</span>
+        <h2>Broker vs. bank for Hometown Heroes — common questions</h2>
+        <div class="faq-list">
+          {faqs.map((x) => (
+            <details class="faq-item">
+              <summary>{x.q}</summary>
+              <div class="faq-answer"><p>{x.a}</p></div>
+            </details>
+          ))}
+        </div>
+        <p style="font-size:13px;margin-top:1.5rem;">Jim Blackburn, {NMLS} · Stairway Mortgage. Educational information only; not a commitment to lend. Program terms, limits and funding availability are set by Florida Housing Finance Corporation and can change; funding is first come, first served. Equal Housing Opportunity.</p>
+        <p><a href="/">← Back to the Hometown Heroes overview</a></p>
+      </div>
+    </section>
+  </main>
+</Base>
