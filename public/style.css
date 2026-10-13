@@ -419,6 +419,18 @@ section { padding: 4rem 1.5rem; }
 .section-blue .faq-item[open] summary { color: var(--white); }
 .section-blue .faq-item[open] summary::after { color: var(--white); }
 .section-blue .faq-answer { color: var(--text-inverse); }
+/* Light-surface callout cards inside the blue band must keep dark text —
+   otherwise they inherit the section's white ink and vanish on white/sage/peach. */
+.section-blue .occ-category,
+.section-blue .occ-requirement,
+.section-blue .not-qualified { color: var(--text-body); }
+.section-blue .occ-category h3 { color: var(--navy); }
+.section-blue .occ-category p,
+.section-blue .occ-category li,
+.section-blue .occ-category p strong,
+.section-blue .occ-category li strong { color: var(--text-body); }
+.section-blue .occ-requirement strong { color: var(--sage-text); }
+.section-blue .not-qualified h3 { color: var(--orange-text); }
 .section-sage { background: var(--sage-bg); }
 .section-peach { background: var(--peach-tint); }
 .section-navy { background: var(--navy); color: var(--white); }
