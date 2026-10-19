@@ -113,7 +113,7 @@
    },
    {
     "title": "Historic Orlando hospital site could become affordable housing, health care hub",
-    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNXdpbENaOGNybzNMSHJjYmYxQjFoOHNoMV9kM2ktYTc1aXFoeEpCLVZRaElQaDk4T1UwY21oSnA1SWt3WXM4V0lNM2EzNjZwblZuaWwwVjB4ZHVIdWRzQTdoU084eGdTSGVHcnFJSVIxcjBQdFlTd1lXaWhkUTZwNlVXd24xeUY4ZUNJQy1vVjRyUC1QSzlnRGdZa29vaHgzeE5OWnAtOFVvNGtmb3NSRkJOeE55bGs3NTlSYkZvU0lENVpJbGY1TGtn?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNSW1YeGxuU1o4eC1Zd2Zyd3h1TlZKeXkyMTBrUmVweUgwd0RtRURXM1Rkb3VTNDBjaDVkSzc1NHM5Y01PajhyNDZQdFhjek9xWG9NUXVKRVRIUExzZVhPQ0hyWEk1MER0Y3ZVMHM1VmpCel9UbjF3bUwwTkp1ZDE4MFF3RHJxanRmNHdrYnJWQ0VrOEl5YktQUWp5TEMtTHdqVmZ0eWR3THJWZ2UxVzBWVmc2bjhQb1JfQjBsMUJ0dkViYm1Ya2NZNmln?oc=5",
     "source": "WKMG",
     "date": "2026-10-16"
    },
@@ -142,10 +142,16 @@
     "date": "2026-10-08"
    }
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-19"
  },
  "Broward": {
   "items": [
+   {
+    "title": "Teacher pay, school security issues on Dade and Broward ballots",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRk5lSF9Kczg5R1MxR2JraG45RUNjdEQ2SjkxMXdHZ29faUR5TXJhRk54TVJ6NEZMTTY3UVRrdGN4aDhvVzNLZWYxWlZMNFR0eWxtY3hLZUVlMzZGREV0UEVVLXlqeWlRVklpaTRGNGxySnREX3YzNXJYVzZJTGVOY3RJUkhyZFhTMjlmMm9rdzRrV3JUU1hJU0hacW53eWtC?oc=5",
+    "source": "CBS News",
+    "date": "2026-10-18"
+   },
    {
     "title": "Michael Hudak named to Broward County Housing Authority",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPX0ZncTFwT2hfTHVNc0cxWncwUW9sLWs4UmNOemtHOGFOYXhESUFqamFvakEtb0hTQUhvOXpoWnE4QVVOeDBXSWlvcUJHaXRyamhTWUFuZTZVdXRScUxmbTRiUVg5NDZ2Y1JQdmtyZzhUWUloMmZFLWlJQVRpWGZTNlVfekhBS24yTlU0QXYxMk5QQzJXejBpa1B2c1MxMzM0MVE?oc=5",
@@ -175,15 +181,9 @@
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM0hFclhFa0hhaHBUaUE2M2lRLUQ5dTllbU14cldxUFpqdV9MMThhNG9sVlgtY19uVUh4amxma0cxMUZEclZ0Q285azZNUlhqMWlaVk5BZ0xzZ2xYOFJMb0pyem9qdlB6bzh4Ukg0dDdrZmV6VGhkTzJvSVZkSUpHdVBtelhPRi14S19WcGcyNlZhOUxzRVd1ckdwWGFEcHJVQ1E?oc=5",
     "source": "The Real Deal",
     "date": "2026-10-13"
-   },
-   {
-    "title": "Inside Broward County’s battle for health care real estate",
-    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPY09mZ1F0LU5ReHBxV1MxQU51akJCQUptYTJqV21tZzMyOC1Mdnp1ei1BemFsWkpybWV0MnMxMGR0TVVXNExBdjBFNkdnSnZvZ0ZhcjJoN3JmUHU4ZVN0b3ppYTVPRkhfcURwNDZ4NFhLT0VWd192ZmdLT3hUM2NDYnhwQk5SRUZ2cTNxVk5VOXBjN2hPMFVDWEFBS2ZKUQ?oc=5",
-    "source": "The Real Deal",
-    "date": "2026-10-09"
    }
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-19"
  },
  "Calhoun": {
   "items": [
@@ -378,6 +378,12 @@
     "date": "2026-10-08"
    },
    {
+    "title": "Grovetown Elementary’s Heather Cottingham named Columbia County Teacher of the Year",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNXBJSm5jVHB5VGVhVE1Wajl0T0F2TkRRMnlIaFNGWlFJUGVSU0htdWEybEpuQm90QnFIdjZETjM3eF9UcURPSExqMWVEMWtsLUF2d1Fxbm9pd0JBMV9Hc2FPeUFIWS1CWUxnUmhha0JqMGpTdEdUYVgyQkNlSUE1WkE4UlFSRkU0T2V2RGJaaVVjWEIzZlRXX0ZZdE44YTY0RXJQV1BYME9OY21YOFItaA?oc=5",
+    "source": "The Augusta Press",
+    "date": "2026-10-02"
+   },
+   {
     "title": "Grovetown teacher named 2027 Columbia County Teacher of the Year",
     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQk1Ld19jN0txLUJxWHduQUVEaEtPQ3dsVmR1NlVzdlRUaGxmaVNZWUZfZ2ZKdFBXS0NzOFRxMlBEQ2NyNkFnNEpkUlZYLWdtZGZrSEd2NHY4cFB3YzdnU3d0VXZqZkhjU2VLTDV4cDlSeXEzMWRkZTY2cFBVMFkwVkVKQWFrc2JnTXF6MHZXMHAyc1BWOGNzQllPUEk?oc=5",
     "source": "WRDW",
@@ -388,16 +394,9 @@
     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQTVSX2RQRDZyUTZpZWZveV9tMk5YaXBoV3Zuc3ROM1FmQ09raE9zSWlUQWN1MDdmZFNpVzZDSUU0UkJvNUQ5Nnl6bC1wMHRhT1NKcVhLRTdpbWF2TWFiV3kzbGNiMUxSTkdZRDdnaVUtbnc4VmhRWjJKQlFSaW5BTGhBQkdUREVGTUxhWlRqVlN6M1RTU1JaSUpwei01bkhB0gGmAUFVX3lxTE5GM2MtSlVDZWI5ejAxbWpWemtCT1dDNjN1ZDBudWVjV3VoSlFQRkNsb2Q3VVd2ZnhXOTFXSDFtUkNKWXZxS3NxdXVCUTk2eU45b2U3MHRVSGs5c1Jla0ZDT1lPaVJJRWFPVDlROHlZTlFzYlNpdG04bzZRLWltMXgwUDlNdVZqVXFrbm5qbkJVQ2V2NFlOTl9qNXJ6U3dWTS1JYmVQUnc?oc=5",
     "source": "WJBF",
     "date": "2026-10-01"
-   },
-   {
-    "source": "wtwcfox",
-    "date": "2026-09-26",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVWFkdDVNRWp0NTlITjdVQWptNVFLNnZ4LV95SDVJUG9NZUJXa2NScDdLSDg3WlJQdGxaTXk2OF92RTR2QVZ5X1ZId05jYjVnUnNob1pjcEhIclJlZTJzM0xPY05OM25mc0hybl9WX1RyS3VmbnpXU3dfQWZWckRQVmwwSlFGVjVxOU54NG5YZUJjUjNDYmlLY1R2bmJHUWViTlMxNHNiOERGX2h5U3l0aWNETEc?oc=5",
-    "title": "North Florida communities land millions in state grants for roads, economic development",
-    "summary": "State funding for infrastructure and economic development in North Florida regions supports growth conditions for new residential construction projects."
    }
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-19"
  },
  "DeSoto": {
   "items": [
@@ -415,7 +414,7 @@
   "items": [
    {
     "title": "Fishing tournament raises money for Dixie County first responders",
-    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbk9walBhWE5LV0JILTlIZDhkTkNuaEpBcXFBUm0zMUJFU3U4WTNxYjZsTml1Q29IbWowZ3k1UTFHRnZoUV9nSEN0TnA4M0gycGdLcy1IRWtWV0g1WDgwRGNSNU5tQzk2STZIMWFVWkxkWTVXQ19xc2dqeVpOVGtSalVmR2xsa1FuSnNpQWhNRmNGamRHS21IUFFB0gGuAUFVX3lxTE9JNHJHQTVjeG5aWG8wT3NfSlFZUkliQ2tERWhZQmR5OUFlSm1FTUZETk4xeW8tUy01MlpVWWF1bkE5VDJpQkdxRU5FYlBfNEtyRE1kclpUbVAwRm9obGE3cklIbEtleE44Z2tRUVlxWTRFeXg4SzRyMDVmY3dUQUlOR2RJOHoxTzJCOVo3RUhScDBuN19WV0xuZnd1SkZZUWZFNGl0QVFvOEJfRElRQQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMElMZG1uR19vYXltYWYyclpkTWt1YXBxdkd5S1V1Z0p1OGdvNHNhRzFwbENkT3J3R2x3LVlQTHg2enVBWnlpZnZUN0lMbG4tQlUtSlF0WVZrNkdKNnF4MnNoUVZFcW9lbzBJbWEzVzRPUVU2S0JsbWZVVWxyNEV3LTh1NTc5YldEUGUxejlQaVJkT1U5V3VOSTU2eGtDQUF5Wnc?oc=5",
     "source": "WCJB",
     "date": "2026-09-26"
    },
@@ -427,7 +426,7 @@
     "summary": "Federal infrastructure funding supports regional development that can enhance utilities, roads, and services critical for residential and construction projects in Dixie County."
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Duval": {
   "items": [
@@ -857,7 +856,7 @@
    {
     "title": "New Jefferson County Animal Care and Control facility to begin housing animals within weeks",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQck1hNUN2ODdVMlJ4VjZkTEVmRGRUMDlUc2p1MVJYVjJOeThsTW5xcnpScnBzQXVhUUFkNnZzQkl2bVY3cWpYNmljdURhUjRGQWRMM0tWWUtEMDNfSmtYSGtuTkloMktOUHpSVTdOQnJaSUZoRVdsaG9LV0lyRVp6NTJzTkVKNlA2ZUoxV09sem5KMm5oQlFTYzRmMGt4bTQ?oc=5",
-    "source": "wvtm",
+    "source": "WVTM Channel 13",
     "date": "2026-09-29"
    },
    {
@@ -867,7 +866,7 @@
     "date": "2026-09-18"
    }
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-19"
  },
  "Lafayette": {
   "items": [
@@ -883,6 +882,18 @@
  },
  "Lake": {
   "items": [
+   {
+    "title": "Salt Lake City home sales drop 11% from a year ago",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeUstMEM0OE04clBoSkhRWlF0djVZM253NVFfWWlqMFQ1YnNUcWROSkRmVmhFbkVWdVh0X3hlR3hnVVhJUjRhdjJ4WUhhRGVFTXk3cVJwUG5lX0pGVXduZDQtdU5kcE1aSGRTX21ydndudlplNm5vX3g3VmpzUlBzWTBhY3BLNDJ0LVZ6dVJqWHZQUWM?oc=5",
+    "source": "Axios",
+    "date": "2026-10-19"
+   },
+   {
+    "title": "Salt Lake City Amputee Awaits Housing Despite High-Need Status",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPY3BVQnNIaWJELXdYQk9RUF9LYVhxYmd0ZlQtTWlISVQ4cV9oamdCXy1ZTXRhay16YjdQVGtxLUdWdUZ6eHl1aXpBRW5TeHBjU1E3OTVERUo4UXFDZldWeDN2OEFJaFN6TUw0LTAxOWtJRDJ1eFJZQ1pJRDFFWEZCb2dVNzdYUXY1SGxjSHl6UDROcS1pUzg5dWhfZkd4MllfZm1YT2FLRnZJTW1LM3NmZ2ZwNA?oc=5",
+    "source": "Hoodline",
+    "date": "2026-10-17"
+   },
    {
     "title": "Salt Lake City Amputee Deemed High Need Still Waits Weeks for Housing, No Caseworker",
     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPY3BVQnNIaWJELXdYQk9RUF9LYVhxYmd0ZlQtTWlISVQ4cV9oamdCXy1ZTXRhay16YjdQVGtxLUdWdUZ6eHl1aXpBRW5TeHBjU1E3OTVERUo4UXFDZldWeDN2OEFJaFN6TUw0LTAxOWtJRDJ1eFJZQ1pJRDFFWEZCb2dVNzdYUXY1SGxjSHl6UDROcS1pUzg5dWhfZkd4MllfZm1YT2FLRnZJTW1LM3NmZ2ZwNA?oc=5",
@@ -906,21 +917,9 @@
     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSjFsU3hfemhraFBmSEhkbjdGdTJOd1dIdURSdlBuS2tHY2RSQUZKTV9BMm1DOEJBLTVzS3V3cWM4ZzUtZzkxMllZd2JTZjFJRDNXejdUVGZtMTg3dzNSenY4cl9DZlNLak5nMGs0NGFtMzJxTWFpYkpxMVNXdVh2ckJYTGZZR2Y2THJZQnE0Qk11N2I2THlXanFVOVFZRWV6MXdGN3hLUkxsX0psemdvUFZJS0xpaWtYMk1EaDJzVkM2VGJuSm9jTDFickczUTNYSWVWd19rM2lucm54TVpkZ0dfZXFpZEJNN2FkR093?oc=5",
     "source": "The Leadville Herald",
     "date": "2026-10-08"
-   },
-   {
-    "title": "Lake Elmo woman convicted in $3.6M Medicaid Housing Services fraud scheme",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMXBucjNBREI3YVBGbVpYVjlPeHo5Ty1kSzZrQ3BhWW5iRDZFcktOdlZYN3lVNk5jQUJVQU9jSTBXa3p6OTJJbFdaZGh6MWY5d2tnNWYxN2NUWDh6RzJGNmNMSmhKZTZsNkhQUE1BYkZYSktseDJYT2xhcWdXNVJzWXN5SlIyTEVzZVlwbVNld1REbE1MSFJnX3VwWQ?oc=5",
-    "source": "FOX 9 Minneapolis-St. Paul",
-    "date": "2026-10-08"
-   },
-   {
-    "title": "Lake County voters to decide proposed school property tax increase in 2026",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQS2dTaEJhdkgxdFNlZkc2OGtjb1JhN2p5MHExQTZ1bVFuT242NXA1ejk0dkRScWhoZG8wVGdZd2dsT2hNX2ZxQ29FVVdaM0VRUnFJS0NyV2o4YmRZaHJZZUtuaXZDVWdFVlp0R3pXclRTc0ROU05LMEx4TmEzamFaWmxEaWJFUnJYSzdrQTBGR2M0LVgwcFB1WlQwTEkxc19qMHpteENuNVEzdVVJalAxTDE0d2JuZ1pJZHNVXzEtcFJSbFdX?oc=5",
-    "source": "WKMG",
-    "date": "2026-10-04"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Lee": {
   "items": [
@@ -1096,11 +1095,11 @@
     "title": "Bradenton home prices fall as buyers gain negotiating power",
     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQU3FIemEtdUFGSTlzcjZBX182UmpkVHVVeGE4UzFEdWVqanQ5U21pYUJrZzRoczQ2ckFudURQaTVPMmdGajhXNmo2a2VaSGc3ZkN3UW9YbHpwM083eXI3YjFpemFlQzJJaHFVZF80cVc4dVdrQUhNQkxiU2FCSW9KQUF6dHR5RDJUdXlaNjNFZmpEZzJsTFBYRjRXSTFMbVRqcFJoMzhkaTB5eThfcTJIUTc4LXBkNWI5NERJejdCN1lfaDkxS1E?oc=5",
     "source": "Tampa Bay 28",
-    "date": "2026-10-11"
+    "date": "2026-10-07"
    },
    {
     "title": "Do Manatee homebuyers or sellers have the edge? What the latest report says",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcE13ZDFCLXdSODJiNnhHSURKVmlDOXZfTHh5QkZET3FaTHBtUFpha3RWOWpsUF9hbE56M0Jwdk55bFozMGFONXpxSHFCUFZNWkNlb3NHOGhrOHlobUZTUmgzb0xLVkpPTUxWWkZOcUxKa2J5Y3JQYk1JNGJXekw0QWxPS2TSAYQBQVVfeXFMT29oMnZiU1J4bm9HandRWnZNa0xvdUVGaDI1bFJXSU12TXBTQTdiTm1BU0QxQjRsdjJFWFNOU3poM18wNlE5REZqbFhIa0kyVEZscHFHNkhmcVRHRkVUbUIzTWZkSDhra3RGcFNudlRXNUVZQlJnd1kydmJFdDRneHpPek9O?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcE13ZDFCLXdSODJiNnhHSURKVmlDOXZfTHh5QkZET3FaTHBtUFpha3RWOWpsUF9hbE56M0Jwdk55bFozMGFONXpxSHFCUFZNWkNlb3NHOGhrOHlobUZTUmgzb0xLVkpPTUxWWkZOcUxKa2J5Y3JQYk1JNGJXekw0QWxPS2Q?oc=5",
     "source": "Bradenton Herald",
     "date": "2026-09-21"
    },
@@ -1124,7 +1123,7 @@
     "summary": "New residential development project in Bradenton represents ongoing construction activity and housing supply expansion in the county."
    }
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-19"
  },
  "Marion": {
   "items": [
@@ -1191,15 +1190,21 @@
    },
    {
     "title": "Gubernatorial Candidate Byron Donalds talks costs, insurance at Martin County roundtable",
-    "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxONThOTE1CcGNwSC1KcnViLUN0S0V2Mk94RVU1QXl0X0kzZkdXU0llV1BuNDRuN0E5RDdwNy1YdXFva0lFS0xFeDhMbVVuXzltZlhRMWpHMmRUSUQ0UlJHYVB3TUhNUWV6YmQzQUtxWE5PR0dZZDlaQTQzejhQd0xmaXpCWWU0eG9YZlUtOFVjZUNrYnRuLUtqMkgySk5mUE5MMzg0OUZNUXFXenZITmVUanI4VkpyNXdLNC1lNnRCTmNkdDZJMHNqNC04djU5Y1AybFFVRGNHdmFyVlN4OEctV21OSHphMW5iNElqZnVGSjdsV3FGb1ltY0Z3cDhpSDhfT0lSV0dxWQ?oc=5",
-    "source": "WPEC",
+    "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPVTVCTUh0QmpsWDlQSnBNVklheDN2aG91dDEwd05IOFRVaEhOWmlrMUx0YkFwaXg4THJ3MHhmdG9TUjRpM2tHY2ZWVFVzMTkxTVNGbDZsSEhMMTAxMmpDeFhUd2dpUXVuR25wNE9HaHpTbUtMa3NXX1BTZHdBZWp3dXVGT0JkZVA1YWx3ZTN3Y01oQ0FLSlV0bnZPTGdIN3pra2s1azUxZVVOQVNqaVhvSVNHRmtzXzRpcGZCU0dRcndqdG9wdjJiRC1GMTNFQUU0d0FFbUlXd042S3BUeG52bmI2cVJuSGRWZlZnd2ZfeXdMWkJabU1ZRDJjdXBGUWVXd3V6UVZRYm53blY4QWc?oc=5",
+    "source": "cw34.com",
     "date": "2026-09-23"
    }
   ],
-  "updated": "2026-10-15"
+  "updated": "2026-10-19"
  },
  "Miami-Dade": {
   "items": [
+   {
+    "title": "From grocery prices to housing costs, Miami-Dade voters weigh in at the polls",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSEhLMFUydmllNjRhQU9iTDhwUzNYQzRRYTl5aUxoUzRidEJoREVQRUlBWnJKU1ZFcmY3NXppYW9INFpWZ3RaelZmTndHTndZeTlsd0lxaHdnN3YwUnByX0NWUjJNUkM0eXpPTjEyQ0JZdEVTeXZEcnNXM29tY1p1aTZUM2YyLVduS3QzLWdYaUVaMGprM1U2U0NubnJrVnVLZnRlX1lHV1NRODNPZ1JpU21sMkRXS29zcjFTTXUxSkF0ZzNvbXVJVkV5eUY?oc=5",
+    "source": "WPLG Local 10",
+    "date": "2026-10-19"
+   },
    {
     "title": "Miami-Dade Sets Record for $30 Million-Plus Home Sales in First Nine Months of 2026",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVmtWRTFHalR1akN6VU5aakZ1OHRQZU80ZUxyeVRRM1ZFbDVNUE81Z2JYazNrNmRUUmZ1OWx3eHRlRDJmekRlbGVQbi1ZQi0tTXJBZ1dPVkZoSEVPdVRmWkFuV3JhNHBKSGJTRVZJbUtIejd0NEFTckNESG44LVVSVEgzUHpOdk9Dc042czl4dFVSVzZFYlRCal9VRi1sUTBjcmh3MVBadmtpaUo4aUt5TGNFVE5FV3Vo?oc=5",
@@ -1229,15 +1234,9 @@
     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbXF0SnFMQUhySm9QMFpUUTYtRDY5VW9DRG5JV09KVkQ2R292VFNvMFNxZ0pQbWNCb1lLYmt5Qjh6cUJwYXJHblp4eWFqZWl6eklMenBfMC1PUFl1TUt5QXhHN3ZsOEZHZTVWT05Udms2bDhwcmxHQ2p4QmxxNTFwRXdGRzhOMV9NOHB4N0hqNi1YVUlvYzFhRg?oc=5",
     "source": "Yahoo Finance",
     "date": "2026-10-16"
-   },
-   {
-    "title": "Miami-Dade Weighs 800-Unit Workforce Housing Proposal Near West Dade Center",
-    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOV3JSTmlmMHNQOWowMDlMdVduTnBsbjVXSlVtaXFSanM3cXNTMWduV2NPLVZISmh4SGUzRWVNZkJkeFFGdklmQ091MDhOY2xYcUxYRzlhNXUyV0gwY1lELVNXX2ViSXJGX09PeWZ1N1JrWkQ5S0lkanBySFFoak5yV0Q5eUE3X3pWWVJqWDJST3NXM0pMbVdPanpxQ0FUdDU5VFBkR2VuUVc?oc=5",
-    "source": "Hoodline",
-    "date": "2026-10-16"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Monroe": {
   "items": [
@@ -1285,7 +1284,7 @@
   "items": [
    {
     "title": "Benjamin Jackson seeks Nassau County District 6 seat with focus on affordability",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPeVBpN0pPY2dMaTE5SjVWaTFDTTZxOGhhNnFacGhpTVJ5R1FDbmw3UG1WbHY2OEZ0Tk5BUmtXd0Y1ME5OcFhrRnUzMExlXzFEdWhYUnFBZDBSQ1QyYURUZDRHOW5mYVdodUJ1VnB1dm1LR1FZakg4UzZIQnJZaDk2RjZvREw0UQ?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQnUtQmJCbS1tXzN4MTN0NDdKcHBjMTRyLWtybGdWVjlsNWMzSldscEtpcXVfYmx4MFNteXBBV3ZEZ2ZIV2RheUthYWhGcVV2alE4cERlbVZYeWV0bjdnSF9vMHJBLU9neW1pNnNEdEo5TlVqZVhkUHdFTXZWQUpWTDV2ak0?oc=5",
     "source": "Herald Community Newspapers",
     "date": "2026-10-16"
    },
@@ -1320,7 +1319,7 @@
     "date": "2026-09-10"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Okaloosa": {
   "items": [
@@ -1378,12 +1377,6 @@
  "Orange": {
   "items": [
    {
-    "title": "Habitat for Humanity of Orange County and NC pastors strike deal on ‘deeply affordable’ housing",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSENVSFdQUmVHSzBIUVpoWHNXUFJ1cWk3cDRqWm1qUVNlMmdlSjBna1RsX0p1MmRVRVM2bjU3RjYtNGtJcnlzM296QUVoczdpZUxyb3NNbnhzM24xZ3d4UW0yaWtVMVpTWVRUOEtEMTBXQnNTMFFKTFgzb0xDWUVEZndKYlRBaTBHczlPdGI1UGdYTnUtZnVZTDBRNGtNUU1oUVNYN0NEcWM4OFpyeG1qWlFVcjJKQjVPRE1xTm1oYXFVUDg?oc=5",
-    "source": "News From The States",
-    "date": "2026-10-17"
-   },
-   {
     "title": "Historic Orlando hospital site could become affordable housing, health care hub",
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNXdpbENaOGNybzNMSHJjYmYxQjFoOHNoMV9kM2ktYTc1aXFoeEpCLVZRaElQaDk4T1UwY21oSnA1SWt3WXM4V0lNM2EzNjZwblZuaWwwVjB4ZHVIdWRzQTdoU084eGdTSGVHcnFJSVIxcjBQdFlTd1lXaWhkUTZwNlVXd24xeUY4ZUNJQy1vVjRyUC1QSzlnRGdZa29vaHgzeE5OWnAtOFVvNGtmb3NSRkJOeE55bGs3NTlSYkZvU0lENVpJbGY1TGtn?oc=5",
     "source": "WKMG",
@@ -1402,6 +1395,12 @@
     "date": "2026-10-15"
    },
    {
+    "title": "Habitat for Humanity of Orange County and NC pastors strike deal on 'deeply affordable' housing",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNGkxQ0Ezd05vT2JXWFBIeGI0amJ0QTdORGZpQTdSWWlocF9RZHA2UTV5b3Vud0ZndTlMTXBHeFZKWjZPNUc5dGIyc1lVcGFyT05ZOENRVmo0R05pd0Q3WDgyZUxKX1lBUHBWNkwwX3RRVzB1eFdQWWZ5dUMwVERaWURZYnV6WTBrakhiN25wWW9IRFRhVW5RY0tBSkpza1pvN21YUHRXUXo1OUJ6UURYVw?oc=5",
+    "source": "NC Newsline",
+    "date": "2026-10-13"
+   },
+   {
     "title": "Orange County seeks input on housing and community development priorities",
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLWVBV01wQ1JTU3cybDkwdnlwemJvaE1JSDQ5Smo1TEpyVlRTbTNRZVVWemJPRVdWcXB5X1VnajBXaUd2c0stRHd5WVNlZ2lKV2EzbE1QbE1DbXE2RkRTaWdTT04yNmtCaHgxeENvQVNMUE9BNzl3bTRrOTBrUWVKcjBfaExkS1hta2hrSG5yTVFkR1VzWG56NmEwWEY0M3dSS0ZXN1ZHemdIZk1UYlE4T04zTng?oc=5",
     "source": "The Apopka Voice",
@@ -1414,7 +1413,7 @@
     "date": "2026-10-09"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Osceola": {
   "items": [
@@ -1457,6 +1456,12 @@
     "date": "2026-10-15"
    },
    {
+    "title": "Palm Beach County faith leaders sound alarm on housing affordability crisis",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOU5qX3NLT0dLZkRBODZYTnFJZjNJLS1sVXJpZm53ckpxMXpGR1dfckU5dUlIUExQSlJVX3BIandIa1lzeUJ3elprcGh3T2ZtaW9fcXZyMW5oNFJERENQVFQyNE1sUE9sWkhsYkxQY25qN2JDVlRYLW9Rd3FNbGdsV1JJdW1ORDBQZVlpaWwzNmdsbExsMEhON1F6bk9WS0U4NnI2X3M1SHkwMl9ISWIwOQ?oc=5",
+    "source": "WFLX",
+    "date": "2026-10-13"
+   },
+   {
     "title": "Palm Beach County Faith Leaders Press Housing Crisis",
     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbEpRLXFvV0xQXzMtalotWHI5ZXRodEFnWVJ6aGZsU3hVQ2xOU3B1aTRUQjBFZXJSUFFMR1UzeVdSZUFrdmE3N29aNlZGRVFvSVltWnpvS1B0SHFRb1V1ZENLcFpkdF8wNVVOQWlaS3hYdFFSMDI4SVRHRUhHcU5NbUlYWm8tOGdWZnJzcS0zdWdrMUtPZ3RwTHp3NkM4Tnc?oc=5",
     "source": "Hoodline",
@@ -1466,12 +1471,6 @@
     "title": "Local organization calls for action on affordable housing crisis in Palm Beach County",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV20tQllXazc1dEt2OEpvTHoxZmc2d1g2RHIyNUJ2TlpIN3VmMmRvTFVJYUdxejNlVV94Q2FwRUpLVU9ubXlEbmktdzhXZDBnZmlpSEhVMUpwTkJCLWZ4S09YY09XNXpNT2N5UlkxZEtnNTBVakZVWTRGelBFemY3S0VZbExnUkxh?oc=5",
     "source": "WPBF",
-    "date": "2026-10-12"
-   },
-   {
-    "title": "Palm Beach County faith leaders sound alarm on housing affordability crisis",
-    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVy1KRldjLTNUc1JkTDJfWm45YUZYcTRwaGZ3UGxqZDh1clNWdFFCY0JWc203LTh1MUtKR19URmxyUVlEMjBPeUZycjk2S2k0VlU5Zk53ODRXSGo0NDhyOHlDSy1Gb3ZSVlhVMGphcmdFMTZjRFBKU1k2YndMNWI2Z3luT3ZMOVZDQUJHSWV6X0EyRTlydE0xUl9sb21HTThnd0xwUkd3QmZJbkhQTDdYUzVaZ3l5b2M5SUpETDVTdXNrQmxqQ0piOWxlT3ZJOEQ0aHVmak9GZWRzaTdZS29meTNsRlpNNjkxSVp4X3AzYUhvUjVWdkJUdg?oc=5",
-    "source": "WPTV",
     "date": "2026-10-12"
    },
    {
@@ -1487,7 +1486,7 @@
     "date": "2026-10-11"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Pasco": {
   "items": [
@@ -1638,12 +1637,6 @@
  "Sarasota": {
   "items": [
    {
-    "title": "See downtown Sarasota site for affordable housing near Payne Park",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWWN3ZU44R20tcjJPU0hzZ19MOGZDWV9BcUo0Vnc1N3VJUnpSM183Qnp1OU5MYWtSd0dCejlEWGY5bWtoUVk1S2FfYW02M0ppN01DSlBVQkk0cmNTZko5NmdEcEtQLXBOWFJsZjJsVGhHZnZqYi1yU0VYcWtPemZ6Qm9RbVVUdzhtZFdkYXJIenFldjdwb0F6YTFPYmFBQnNpSl9QdG5Bb3RFNU1tVUFsaS1XVGFoX0Rnd01XRm4ycHpnbVJQQzNBRWFOS0VGdHBLajh2Vjk0SQ?oc=5",
-    "source": "Sarasota Herald-Tribune",
-    "date": "2026-10-15"
-   },
-   {
     "title": "Luxury real estate exec backs downtown Sarasota affordable housing",
     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPb1ZqRDkyNklZX3NLVnBoR09Vc3FkOEhSM094NjZZRXdnSnVFNUtES1I0S3lOcVhKbWxjaGprYkJBR1pUaVZORXowU1o1ODNhTld2WEJwcm5vSFQwUHlQaWlfNmJSdEw5aG9MdXJRcnlvZmJiTnNpdlVtemFFMENlZ081MkVPTVAzS251TjhmaW94YjNzYUNtRi1mVXdQclVQN092b0ZFamdERVcxOXJmRmZKbjRMRE9iR2RVV1V6Y2hWLU9rNzY0NHhsc1NBNG5OdThhd25OR2tjbF9VNlRjNGdjSTdNdlEyUVE?oc=5",
     "source": "Sarasota Herald-Tribune",
@@ -1652,6 +1645,12 @@
    {
     "title": "Sarasota workforce housing builder receives real estate exec support",
     "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQOTZLcUlrdjFsTTFzcHdCVlRBazUyejE5QUJja2hwQTFNVHptMnhGNVVFUzN0MGJnUkVEUG9fNm1vNFl5Z1FBemV3SUhTYW1wMndFajFYYmw2cDBsZlRNUGx4R096dkNXbHRuNmdhOHQzbUlteVhNaWF3bmhfeGY4bkt3cGxqb09iY2VuZWhXV2NlYWlydXdNN1FSbHFDcVlDbnlPbDFxMFlXWkFPWGZLcElUS2RENk9hcFZYY1ZfMkE2OXJyS3QyeGVnZDFlYndpQldkWEN1cTR6UmJRYkE?oc=5",
+    "source": "Sarasota Herald-Tribune",
+    "date": "2026-10-15"
+   },
+   {
+    "title": "See downtown Sarasota site for affordable housing near Payne Park",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWWN3ZU44R20tcjJPU0hzZ19MOGZDWV9BcUo0Vnc1N3VJUnpSM183Qnp1OU5MYWtSd0dCejlEWGY5bWtoUVk1S2FfYW02M0ppN01DSlBVQkk0cmNTZko5NmdEcEtQLXBOWFJsZjJsVGhHZnZqYi1yU0VYcWtPemZ6Qm9RbVVUdzhtZFdkYXJIenFldjdwb0F6YTFPYmFBQnNpSl9QdG5Bb3RFNU1tVUFsaS1XVGFoX0Rnd01XRm4ycHpnbVJQQzNBRWFOS0VGdHBLajh2Vjk0SQ?oc=5",
     "source": "Sarasota Herald-Tribune",
     "date": "2026-10-15"
    },
@@ -1674,7 +1673,7 @@
     "date": "2026-10-12"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  },
  "Seminole": {
   "items": [
@@ -1715,6 +1714,12 @@
  "St. Johns": {
   "items": [
    {
+    "title": "Homeless Coalition of St. Johns Supports Affordable Housing",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPTTZNSENDbHdhNjBIbUV6Q0ZLQ1FuRzd6c3p3SG1haGlNNjRodWRaaXlmRTlDcmhRcTZyYVpSaUZ0TW1Jc3F2MzFuNEFjTkU1S01SN0lUNnlvTndVX1BvRVFxY0tRaFZTVVZTc0U0eWpycThsUXdkcWdlRnV2ajlwSDRtTGJRbHZBQXVTZEZxNmJJSlVraDRCRDlpQXozUDMtWWlOYXI4N1lPWG5QQjNfSlNZMUJfQmFkay1iak9PX05wT0R3T3MtSXdYYWRvdmlk?oc=5",
+    "source": "TD Stories",
+    "date": "2026-10-19"
+   },
+   {
     "source": "The Florida Trib",
     "date": "2026-09-30",
     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObVZIbmt2YjhFLWtvYzZmMG9zWGhBYkl5NkRQOHptQ1JNalgyYXNiZjZkcGpoS3ZLRW1kcTlnNWkzcUFjS2hodU52N3hNaW5lV0tqMVVoYWdWdlROWGhDSkcwb3VYRWwyYmhKSXJVWldsSGV6WGU4SEZud0JlSXlFNlphUXZtLWRMc0pGNlFzVkVPOGxzNFRGMEtYWDZ5YXVDTzBIc3A5U3FOYWFSNlZOV1pPQi1SNVNp?oc=5",
@@ -1748,7 +1753,7 @@
     "date": "2026-09-11"
    }
   ],
-  "updated": "2026-10-09"
+  "updated": "2026-10-19"
  },
  "St. Lucie": {
   "items": [
@@ -1956,16 +1961,16 @@
  "Washington": {
   "items": [
    {
+    "title": "Washington County Commission candidates clash over Northern Corridor, growth and housing",
+    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTlBtb09lOFlyOWZ3R1RYTS1tQzdEWUczekI5YU1vc1RhUDJ0cW9YTTdHbEtMa1NRQ3oxaUc1RlptVFZYUnYza2Fwb1RVOUJxSEgtTzBXMWhOUm5hRFNxZFhTcW1ubjR5SXhrZGo1d2h1V3FpMWdZLUtYTlBWUGRSaVFXcDVOUXBzeUN4OU1qN1Z0YlF3U2VsUmhnOWRVc3p0UmRHRVgtVmprelBZV0g5LU5fTWcwNEpibGlkVWJ3cTROdDFJZV8xUHg5MnpyZC1lSjhyOTItLWFMQk5NclA5Q2NyaTdnaFlIV1Jqa2RqdWRSUjd4dHZQaENFdm9qLWc3?oc=5",
+    "source": "St. George News",
+    "date": "2026-10-16"
+   },
+   {
     "title": "Port Washington neighbors react to second rejection of housing development near Harbor Campus",
     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPRzk1UW9fV0RFSUhYZUtpLWVLU3czYnpYM1NuS01ULUZYU2N2UGN3TzBFOFFsdzl5TDJZckJsS0FpMDIyVFduMldQaGsybW03QTJlUGlxa1ItUExjZDR4UWJTX0xZeUgzQmp5MzhMRzk1Uk4tbWJtQ2UzT2ROTlA5TDJOMHlJWkxRTjIxNkEwTWFWS1R5OTcySUQyOE83bTJ6aUVHMnB1RVlzTFh4ZklMWmZHTE1KREM4RTF2azVocFQwUTVZaTE0Qk1lVThieUk3dExhcEVwRHYtcjVZN3VUUE90T1BUQ0dWZTZDejZsa1o3czA4bEE?oc=5",
     "source": "TMJ4 News",
     "date": "2026-10-16"
-   },
-   {
-    "title": "Washington County Commission candidates clash over Northern Corridor, growth and housing",
-    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOTlBtb09lOFlyOWZ3R1RYTS1tQzdEWUczekI5YU1vc1RhUDJ0cW9YTTdHbEtMa1NRQ3oxaUc1RlptVFZYUnYza2Fwb1RVOUJxSEgtTzBXMWhOUm5hRFNxZFhTcW1ubjR5SXhrZGo1d2h1V3FpMWdZLUtYTlBWUGRSaVFXcDVOUXBzeUN4OU1qN1Z0YlF3U2VsUmhnOWRVc3p0UmRHRVgtVmprelBZV0g5LU5fTWcwNEpibGlkVWJ3cTROdDFJZV8xUHg5MnpyZC1lSjhyOTItLWFMQk5NclA5Q2NyaTdnaFlIV1Jqa2RqdWRSUjd4dHZQaENFdm9qLWc3?oc=5",
-    "source": "St. George News",
-    "date": "2026-10-12"
    },
    {
     "title": "Q&A: Washington County chair candidates on housing, immigration",
@@ -1993,6 +1998,6 @@
     "date": "2026-09-17"
    }
   ],
-  "updated": "2026-10-18"
+  "updated": "2026-10-19"
  }
 }
